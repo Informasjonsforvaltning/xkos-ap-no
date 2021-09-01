@@ -1,2 +1,5 @@
 # xkos-ap-no
-Norsk applikasjonsprofil av XKOS" (spesifikasjon for beskrivelse av kodeverk/klassifikasjoner)
+
+For forvaltning av "XKOS-AP-NO (Norsk applikasjonsprofil av XKOS)" (Spesifikasjon for beskrivelse av klassifikasjoner)
+
+\ [_Digitaliseringsdirektoratet / Norwegian Digitalisation Agency_](https://digdir.no)
