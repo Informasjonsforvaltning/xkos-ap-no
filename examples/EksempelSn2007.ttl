@@ -2,7 +2,7 @@
 # Eksempler på bruk av XKOS-AP-NO, med "Næringsgruppering 2007" (https://www.ssb.no/klass/klassifikasjoner/6/) som eksempel
 # Kun de første par eksemplene i hver bolk er forholdsvis komplette, resten minimalt med egenskaper
 #
-# Status: undervikling - kun RDF/Turtle-syntaksvalidert men ikke mot noen slags shacl-regler.
+# Status: under utvikling - kun RDF/Turtle-syntaksvalidert men ikke mot noen slags shacl-regler.
 #####
 
 @prefix dct: <http://purl.org/dc/terms/> .
