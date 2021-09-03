@@ -50,7 +50,7 @@
 <fastlandsNorge2009> a skos:Concept ; . # for å illustrere bruk av xkos:variant
 
 ### -------------------------------------------
-### klassifikasjonsnivåer (xkos:ClassificationLevel)
+### klassifikasjonsnivåer (xkos:ClassificationLevel som er siubklasse av skos:Collection)
 ### -------------------------------------------
 
 <sn2007-1> a xkos:ClassificationLevel ;
