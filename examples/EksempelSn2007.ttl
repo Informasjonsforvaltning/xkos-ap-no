@@ -50,7 +50,7 @@
 <fastlandsNorge2009> a skos:Concept ; . # for å illustrere bruk av xkos:variant
 
 ### -------------------------------------------
-### klassifikasjonsnivåer (xkos:ClassificationLevel som er siubklasse av skos:Collection)
+### klassifikasjonsnivåer (xkos:ClassificationLevel som er subklasse av skos:Collection)
 ### -------------------------------------------
 
 <sn2007-1> a xkos:ClassificationLevel ;
@@ -98,7 +98,7 @@
 <A> a skos:Concept ;
   skos:prefLabel "Jordbruk, skogbruk og fiske"@nb ;
   skos:notation "A" ;
-  xkos:inclusionNote "Omfatter bruken av planteressursene og de animalske ressursene, inkludert aktiviteter i forbindelse med dyrking av vekster, husdyrhold og -avl, produksjon av tømmer og høsting/utnyttelse av andre planter, dyr og animalske produkter fra en gård eller fra naturen"@nb ;
+  xkos:coreContentNote "Inkluderer: Omfatter bruken av planteressursene og de animalske ressursene, inkludert aktiviteter i forbindelse med dyrking av vekster, husdyrhold og -avl, produksjon av tømmer og høsting/utnyttelse av andre planter, dyr og animalske produkter fra en gård eller fra naturen."@nb ;
   skos:topConceptOf <sn2007> ;
   skos:narrower <A01> ;
   .
@@ -106,9 +106,9 @@
 <A01> a skos:Concept ;
   skos:prefLabel "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell"@nb ;
   skos:notation "A01" ;
-  xkos:inclusionNote "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."@nb ,
-    "Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst."@nb ;
-  xkos:exclusionNote "Ekskluderer: Grunnarbeid, f.eks. anlegg av jordterrasser, drenering o.l. grupperes under næringshovedområde: F Bygge- og anleggsvirksomhet. Kjøpere og andelslag engasjert i markedsføring av jordbruksprodukter grupperes under næringshovedområde: G Varehandel, reparasjon av motorvogner. Stell og vedlikehold av landskap grupperes under: 81.30 Beplantning av hager og parkanlegg"@nb ;
+  xkos:coreContentNote "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."@nb ;
+  xkos:additionalContentNote "Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst."@nb ;
+  xkos:exclusionNote "Ekskluderer: Grunnarbeid, f.eks. anlegg av jordterrasser, drenering o.l. grupperes under næringshovedområde: F Bygge- og anleggsvirksomhet. Kjøpere og andelslag engasjert i markedsføring av jordbruksprodukter grupperes under næringshovedområde: G Varehandel, reparasjon av motorvogner. Stell og vedlikehold av landskap grupperes under: 81.30 Beplantning av hager og parkanlegg."@nb ;
   skos:inScheme <sn2007> ; .
 
 <B05> a skos:Concept ; skos:prefLabel "Bryting av steinkull og brunkull"@nb ; skos:inScheme <sn2007> ; .
