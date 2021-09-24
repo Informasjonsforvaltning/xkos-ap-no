@@ -57,7 +57,7 @@
   skos:prefLabel "SN2007 - nivå 1 - Næringshovedområde"@nb ;
   xkos:depth "1"^^xsd:positiveInteger ;
   xkos:organizedBy <næringsområde> ;
-  skos:member <A>, <B>, <C> ;
+  skos:member <A>, <B>, <C> ; # bare noen eksempler
   xkos:covers <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   xkos:coversExhaustively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   xkos:coversMutuallyExclusively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
@@ -67,28 +67,28 @@
   skos:prefLabel "SN2007 - nivå 2 - Næring"@nb ;
   xkos:depth "2"^^xsd:positiveInteger ;
   xkos:organizedBy <næring> ;
-  skos:member <A01> , <B05> ;
+  skos:member <01> , <05> ;
   .
 
 <sn2007-3> a xkos:ClassificationLevel ;
   skos:prefLabel "SN2007 - nivå 3 - Næringshovedgruppe"@nb ;
   xkos:depth "3"^^xsd:positiveInteger ;
   xkos:organizedBy <næringshovedgruppe> ;
-  skos:member <A011> , <B051> ;
+  skos:member <01.1> , <05.1> ;
   .
 
 <sn2007-4> a xkos:ClassificationLevel ;
   skos:prefLabel "SN2007 - nivå 4 - Næringsgruppe"@nb ;
   xkos:depth "4"^^xsd:positiveInteger ;
   xkos:organizedBy <næringsgruppe> ;
-  skos:member <A0111> , <B0510> ;
+  skos:member <01.11> , <05.10> ;
   .
 
 <sn2007-5> a xkos:ClassificationLevel ;
   skos:prefLabel "SN2007 - nivå 5 - Næringsundergruppe"@nb ;
   xkos:depth "5"^^xsd:positiveInteger ;
   xkos:organizedBy <næringsundergruppe> ;
-  skos:member <A01110> , <B05100> ;
+  skos:member <01.110> , <05.100> ;
   .
 
 ### -------------------------------------------
@@ -100,34 +100,71 @@
   skos:notation "A" ;
   xkos:coreContentNote "Inkluderer: Omfatter bruken av planteressursene og de animalske ressursene, inkludert aktiviteter i forbindelse med dyrking av vekster, husdyrhold og -avl, produksjon av tømmer og høsting/utnyttelse av andre planter, dyr og animalske produkter fra en gård eller fra naturen."@nb ;
   skos:topConceptOf <sn2007> ;
-  skos:narrower <A01> ;
+  skos:narrower <01> ;
   .
 
-<A01> a skos:Concept ;
+<01> a skos:Concept ;
   skos:prefLabel "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell"@nb ;
-  skos:notation "A01" ;
+  skos:notation "01" ;
   xkos:coreContentNote "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."@nb ;
   xkos:additionalContentNote "Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst."@nb ;
   xkos:exclusionNote "Ekskluderer: Grunnarbeid, f.eks. anlegg av jordterrasser, drenering o.l. grupperes under næringshovedområde: F Bygge- og anleggsvirksomhet. Kjøpere og andelslag engasjert i markedsføring av jordbruksprodukter grupperes under næringshovedområde: G Varehandel, reparasjon av motorvogner. Stell og vedlikehold av landskap grupperes under: 81.30 Beplantning av hager og parkanlegg."@nb ;
-  skos:inScheme <sn2007> ; .
+  skos:inScheme <sn2007> ;
+  .
 
-<B05> a skos:Concept ; skos:prefLabel "Bryting av steinkull og brunkull"@nb ; skos:inScheme <sn2007> ; .
+<05> a skos:Concept ;
+skos:notation "05" ;
+skos:prefLabel "Bryting av steinkull og brunkull"@nb ;
+skos:inScheme <sn2007> ;
+.
 
-<A011> a skos:Concept ; skos:prefLabel "Dyrking av ettårige vekster"@nb ; skos:inScheme <sn2007> ; .
+<01.1> a skos:Concept ;
+  skos:notation "01.1" ;
+  skos:prefLabel "Dyrking av ettårige vekster"@nb ;
+  skos:inScheme <sn2007> ;
+  .
 
-<B051> a skos:Concept ; skos:prefLabel "Bryting av steinkull"@nb ; skos:inScheme <sn2007> ; .
+<05.1> a skos:Concept ;
+  skos:notation "05.1" ;
+  skos:prefLabel "Bryting av steinkull"@nb ;
+  skos:inScheme <sn2007> ;
+  .
 
-<A0111> a skos:Concept ; skos:prefLabel "Dyrking av korn (unntatt ris), belgvekster og oljeholdige vekster"@nb ; skos:inScheme <sn2007> ; .
+<01.11> a skos:Concept ;
+  skos:notation "01.11" ;
+  skos:prefLabel "Dyrking av korn (unntatt ris), belgvekster og oljeholdige vekster"@nb ;
+  skos:inScheme <sn2007> ;
+  .
 
-<B0510> a skos:Concept ; skos:prefLabel "Bryting av steinkull"@nb ; skos:inScheme <sn2007> ; .
+<05.10> a skos:Concept ;
+  skos:notation "05.10" ;
+  skos:prefLabel "Bryting av steinkull"@nb ;
+  skos:inScheme <sn2007> ;
+  .
 
-<A01110> a skos:Concept ; skos:prefLabel "Dyrking av korrn (unntatt ris), belgvekster og oljeholdige vekster"@nb ; skos:inScheme <sn2007> ; .
+<01.110> a skos:Concept ;
+  skos:notation "01.110" ;
+  skos:prefLabel "Dyrking av korrn (unntatt ris), belgvekster og oljeholdige vekster"@nb ;
+  skos:inScheme <sn2007> ;
+  .
 
-<B05100> a skos:Concept ; skos:prefLabel "Bryting av steinkull"@nb ; skos:inScheme <sn2007> ; .
+<05.100> a skos:Concept ;
+  skos:notation "05.100" ;
+  skos:prefLabel "Bryting av steinkull"@nb ;
+  skos:inScheme <sn2007> ;
+  .
 
-<B> a skos:Concept ; skos:prefLabel "Bergverksdrift og utvinning"@nb ; skos:inScheme <sn2007> ; .
+<B> a skos:Concept ;
+  skos:notation "B" ;
+  skos:prefLabel "Bergverksdrift og utvinning"@nb ;
+  skos:inScheme <sn2007> ;
+  .
 
-<C> a skos:Concept ; skos:prefLabel "Industri"@nb ; skos:inScheme <sn2007> ; .
+<C> a skos:Concept ;
+  skos:notation "C" ;
+  skos:prefLabel "Industri"@nb ;
+  skos:inScheme <sn2007> ;
+  .
 
 ###
 ### begreper (skos:Concept) som ble referert til ovenfor, her under minimalt med egenskaper:
