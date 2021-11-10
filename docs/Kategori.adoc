@@ -1,0 +1,3 @@
+= Klassen Kategori (skos:Concept) [[Kategori]]
+
+<tekst kommer>
