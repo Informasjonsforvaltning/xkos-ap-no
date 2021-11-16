@@ -445,7 +445,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
 <li><a href="#Om_denne_versjonen">Om denne versjonen</a></li>
-<li><a href="#Om_denne_spesifikasjonen">Om denne spesifikasjonen</a></li>
+<li><a href="#OmSpesifikasjonen">Om spesifikasjonen</a>
+<ul class="sectlevel3">
+<li><a href="#_formål">Formål</a></li>
+<li><a href="#_omfang_og_avgrensing">Omfang og avgrensing</a></li>
+<li><a href="#_målgrupper">Målgrupper</a></li>
+<li><a href="#_forvaltningsregime">Forvaltningsregime</a></li>
+<li><a href="#_om_kravene_i_spesifikasjonen">Om kravene i spesifikasjonen</a></li>
+<li><a href="#_navnerom_som_er_brukt_i_spesifikasjonen">Navnerom som er brukt i spesifikasjonen</a></li>
+</ul>
+</li>
 <li><a href="#Innledning">Innledning</a></li>
 <li><a href="#Forenklet_modell">Forenklet modell for XKOS-AP-NO</a></li>
 <li><a href="#Klassifikasjon">Klassen Klassifikasjon (skos:ConceptScheme)</a></li>
@@ -519,10 +528,162 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Om_denne_spesifikasjonen"><a class="link" href="#Om_denne_spesifikasjonen">Om denne spesifikasjonen</a></h2>
+<h2 id="OmSpesifikasjonen"><a class="link" href="#OmSpesifikasjonen">Om spesifikasjonen</a></h2>
 <div class="sectionbody">
+<div class="sect3">
+<h4 id="_formål"><a class="link" href="#_formål">Formål</a></h4>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Kapitlet er ikke-normativt.</p>
+</div>
+<div class="paragraph">
+<p>Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive og tilgjengeliggjøre klassifikasjoner. En felles måte å beskrive strukturen av og innholdet i en klassifikasjon, vil gjøre det enklere for brukere av en klassifikasjon å forstå og bruke klassifikasjonen korrekt. Dette vil også muliggjøre maskinell tilgang til innholdet i en klassifikasjon.</p>
+</div>
+<div class="paragraph">
+<p>Et eksempel på en klassifikasjon er <a href="https://www.ssb.no/klass/klassifikasjoner/6/">«Standard for næringsgruppering (SN)»</a> forvaltet og publisert av Statistisk sentralbyrå (SSB), som vi bruker som et gjennomgående eksempel i spesifikasjonen. Andre eksempler er <a href="https://www.ehelse.no/kodeverk/kodeverket-icd-10-og-icd-11">«Den internasjonale klassifikasjon av sykdommer og beslektede helseproblemer (ICD-10 og ICD-11)»</a> og <a href="https://www.ehelse.no/kodeverk/icpc-2.den-internasjonale-klassifikasjonen-for-primaerhelsetjenesten">«Den internasjonale klassifikasjonen for primærhelsetjenesten (ICPC-2)»</a>, forvaltet og publisert av Direktoratet for e-helse.</p>
+</div>
+<div class="paragraph">
+<p>Spesifikasjonen inngår i <a href="https://www.digdir.no/informasjonsforvaltning/rammeverk-informasjonsforvaltning/2118">Rammeverk for informasjonsforvaltning</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_omfang_og_avgrensing"><a class="link" href="#_omfang_og_avgrensing">Omfang og avgrensing</a></h4>
+<div class="paragraph">
+<p>Kapitlet er ikke-normativt.</p>
+</div>
+<div class="paragraph">
+<p>Spesifikasjonen er anbefalt brukt til å beskrive strukturen av og innholdet i en klassifikasjon. Ettersom spesifikasjonen er basert på RDF (se «Introduksjon til RDF» (under utarbeidelse, kommer)), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinlesbare. Som støtte til teknisk implementering av spesifikasjonen, er det i spesifikasjonen også tatt med en god del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.</p>
+</div>
+<div class="paragraph">
+<p>Spesifikasjonen er en norsk applikasjonsprofil og ikke en direkte oversettelse av <a href="https://rdf-vocabulary.ddialliance.org/xkos.html">XKOS</a>. Engelske navn og tekster som er tatt med i spesifikasjonen er ikke alle nødvendigvis ordrett sitat fra engelske kilder.  Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).</p>
+</div>
+<div class="paragraph">
+<p>Spesifikasjonen supplerer XKOS med følgende hovedtyper norske utvidelser:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Kravsnivå (obligatorisk, anbefalt eller valgfri) for både klasser og egenskaper og multiplisitet for egenskaper, som XKOS ikke spesifiserer.</p>
+</li>
+<li>
+<p>Administrative egenskaper som XKOS ikke dekker, ved å gjenbruke veletablerte internasjonale vokabularer, f.eks. «utgiver» av en klassifikasjon (<code>dct:publisher</code>), «sist oppdatert» (<code>dct:modified</code>) etc.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Den enkelte utvidelsen er kommentert i kommentar-feltet til den aktuelle egenskapen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_målgrupper"><a class="link" href="#_målgrupper">Målgrupper</a></h4>
+<div class="paragraph">
+<p>Kapitlet er ikke-normativt.</p>
+</div>
+<div class="paragraph">
+<p>Spesifikasjonen er primært for</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>deg som skal beskrive klassifikasjoner på en strukturert måte,<br></p>
+</li>
+<li>
+<p>deg som skal utvikle/tilpasse verktøystøtte for beskrivelser av klassifikasjoner og/eller for utveksling/tilgjengeliggjøring av klassifikasjoner som er beskrevet i henhold til spesifikasjonen.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Spesifikasjonen kan sekundært også brukes av:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>deg som ønsker å finne, forstå og gjenbruke andre sine klassifikasjoner.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_forvaltningsregime"><a class="link" href="#_forvaltningsregime">Forvaltningsregime</a></h4>
+<div class="paragraph">
+<p>Kapitlet er ikke-normativt.</p>
+</div>
+<div class="paragraph">
+<p>Spesifikasjonen forvaltes av <a href="https://digdir.no/">Digitaliseringsdirektoratet (Digdir)</a>.</p>
+</div>
+<div class="paragraph">
+<p>Utarbeidelse av nye versjoner av denne spesifikasjon initieres av Digdir. Mindre endringer håndteres av Digdir med ev. konsultasjon med enkelte ressurspersoner utenfor Digdir. Ved behov for større endringer vil Digdir vurdere å sette sammen en arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som ev. sendes ut til bred kommentering før fastsetting.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_om_kravene_i_spesifikasjonen"><a class="link" href="#_om_kravene_i_spesifikasjonen">Om kravene i spesifikasjonen</a></h4>
+<div class="paragraph">
+<p>Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene">DCAT-AP-NO</a> og gjentas derfor ikke her.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_navnerom_som_er_brukt_i_spesifikasjonen"><a class="link" href="#_navnerom_som_er_brukt_i_spesifikasjonen">Navnerom som er brukt i spesifikasjonen</a></h4>
+<div class="paragraph">
+<p>Navnerom for spesifikasjonen er <code><a href="https://data.norge.no/vocabulary/xkosno#" class="bare">https://data.norge.no/vocabulary/xkosno#</a></code></p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 45%;">
+<col style="width: 45%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Prefiks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navnerom</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring/navn</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/" class="bare">http://purl.org/dc/terms/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DCMI Metadata Terms</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>foaf</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/0.1/" class="bare">http://xmlns.com/foaf/0.1/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/spec/">FOAF Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdf</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns" class="bare">http://www.w3.org/1999/02/22-rdf-syntax-ns</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-syntax-grammar/">RDF 1.1 XML Syntax</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdfs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2000/01/rdf-schema" class="bare">http://www.w3.org/2000/01/rdf-schema</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-schema/">RDF Schema 1.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>skos</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2004/02/skos/core" class="bare">http://www.w3.org/2004/02/skos/core</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/">SKOS Simple Knowledge Organization System</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>uneskos</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/umu/uneskos" class="bare">http://purl.org/umu/uneskos</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://skos.um.es/TR/uneskos/">UNESKOS Vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xkos</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://rdf-vocabulary.ddialliance.org/xkos" class="bare">http://rdf-vocabulary.ddialliance.org/xkos</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://rdf-vocabulary.ddialliance.org/xkos.html">An SKOS extension for representing statistical classifications</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xkosno</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/xkosno" class="bare">https://data.norge.no/vocabulary/xkosno</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema" class="bare">http://www.w3.org/2001/XMLSchema</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/xmlschema-2/">XML Schema Part 2: Datatypes Second Edition</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -648,7 +809,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-16 12:31:48 UTC
+Sist oppdatert 2021-11-16 12:54:17 UTC
 </div>
 </div>
 </body>
