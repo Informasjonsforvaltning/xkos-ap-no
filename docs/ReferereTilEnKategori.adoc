@@ -1,0 +1,18 @@
+=== Å referere til en gitt kategori (i en gitt klassifikasjon) [[ReferereTilEnKategori]]
+
+Hovedhensikten med å ha en klassifikasjon er å kunne klassifisere «ting» som hører til eller opererer innen det aktuelle domenet som klassifikasjonen dekker, ved å gruppere «tingene» inn i uttømmende og gjensidige utelukkende kategorier. Det vil derfor være behov for å kunne referere fra en konkret «ting» til en gitt kategori i en gitt klassifikasjon som den aktuelle «tingen» er klassifisert under. I XKOS er det en generisk egenskap `xkos:classifiedUnder` («er klassifisert under») som kan brukes til å referere fra en konkret «ting» (`rdfs:Resource`) til en gitt kategori (en instans av `skos:Concept`) i en gitt klassifikasjon (en instans av `skos:ConceptScheme`). Dette er som sagt en generisk egenskap, av hvilken det kan lages spesialiseringer (subegenskaper) i konkrete anvendelser.
+
+Eksempel: Digdir er klassifisert under kategorien «84.110 Generell offentlig administrasjon» i https://www.ssb.no/klass/klassifikasjoner/6[Næringsgruppering 2007 (SN2007)].
+
+Eksempel i RDF Turtle:
+
+```
+<Digdir> a foaf:Agent ;
+   xkos:classifiedUnder <84110> ; .
+<84110> a skos:Concept ;
+   skos:inScheme <sn2007> ;
+   skos:notation "84.110" ;
+   skos:prefLabel "Generell offentlig administrasjon"@nb ; .
+<sn2007> a skos:ConceptScheme ;
+   skos:prefLabel "Næringsgruppering 2007 (SN2007)"@nb ; .
+```
