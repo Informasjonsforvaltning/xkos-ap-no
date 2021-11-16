@@ -46,7 +46,7 @@ include::Klassifikasjonsnivå.adoc[]
 
 include::Kategori.adoc[]
 
-include::Sammenligning.adoc[]
+include::Klassifikasjonssammenligning.adoc[]
 
 include::Kategorisammenligning.adoc[]
 
