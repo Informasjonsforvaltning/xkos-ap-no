@@ -1,6 +1,6 @@
 = Om spesifikasjonen [[OmSpesifikasjonen]]
 
-=== Formål
+== Formål
 
 Kapitlet er ikke-normativt.
 
@@ -10,7 +10,7 @@ Et eksempel på en klassifikasjon er https://www.ssb.no/klass/klassifikasjoner/6
 
 Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammeverk-informasjonsforvaltning/2118[Rammeverk for informasjonsforvaltning].
 
-=== Omfang og avgrensing
+== Omfang og avgrensing
 
 Kapitlet er ikke-normativt.
 
@@ -26,7 +26,7 @@ Spesifikasjonen supplerer XKOS med følgende hovedtyper norske utvidelser:
 
 Den enkelte utvidelsen er kommentert i kommentar-feltet til den aktuelle egenskapen.
 
-=== Målgrupper
+== Målgrupper
 
 Kapitlet er ikke-normativt.
 
@@ -39,7 +39,7 @@ Spesifikasjonen kan sekundært også brukes av:
 
 * deg som ønsker å finne, forstå og gjenbruke andre sine klassifikasjoner.
 
-=== Forvaltningsregime
+== Forvaltningsregime
 
 Kapitlet er ikke-normativt.
 
@@ -47,11 +47,11 @@ Spesifikasjonen forvaltes av https://digdir.no/[Digitaliseringsdirektoratet (Dig
 
 Utarbeidelse av nye versjoner av denne spesifikasjon initieres av Digdir. Mindre endringer håndteres av Digdir med ev. konsultasjon med enkelte ressurspersoner utenfor Digdir. Ved behov for større endringer vil Digdir vurdere å sette sammen en arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som ev. sendes ut til bred kommentering før fastsetting.
 
-=== Om kravene i spesifikasjonen
+== Om kravene i spesifikasjonen
 
 Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
 
-=== Navnerom som er brukt i spesifikasjonen
+== Navnerom som er brukt i spesifikasjonen
 
 Navnerom for spesifikasjonen er `https://data.norge.no/vocabulary/xkosno#`
 
