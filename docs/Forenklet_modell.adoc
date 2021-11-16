@@ -1,13 +1,11 @@
 = Forenklet modell for XKOS-AP-NO [[ForenkletModell]]
 
-== Forenklet modell med obligatoriske klasser samt deres obligatoriske egenskaper [[img-ForenkletModellObligatoriske]]
 
 [[img-ForenkletModellObligatoriske]]
 .Forenklet modell for XKOS-AP-NO, med kun obligatoriske klasser og deres obligatoriske egenskaper.
 [link=images/ForenkletModell-XKOS-AP-NO-Obligatoriske.png]
 image::images/ForenkletModell-XKOS-AP-NO-Obligatoriske.png[]
 
-== Forenklet modell med obligatoriske og anbefalte klasser samt deres obligatoriske og anbefalte egenskaper [[ForenkletModellObligatoriskOgAnbefalte]]
 
 [[img-ForenkletModellObligatoriskeOgAnbefalte]]
 .Forenklet modell for XKOS-AP-NO, med obligatoriske og anbefalte klasser og deres obligatoriske og anbefalte egenskaper.
