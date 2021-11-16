@@ -1,3 +1,70 @@
-= Om denne spesifikasjonen [[Om_denne_spesifikasjonen]]
+= Om spesifikasjonen [[OmSpesifikasjonen]]
 
-<tekst kommer>
+=== Formål
+
+Kapitlet er ikke-normativt.
+
+Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive og tilgjengeliggjøre klassifikasjoner. En felles måte å beskrive strukturen av og innholdet i en klassifikasjon, vil gjøre det enklere for brukere av en klassifikasjon å forstå og bruke klassifikasjonen korrekt. Dette vil også muliggjøre maskinell tilgang til innholdet i en klassifikasjon.
+
+Et eksempel på en klassifikasjon er https://www.ssb.no/klass/klassifikasjoner/6/[«Standard for næringsgruppering (SN)»] forvaltet og publisert av Statistisk sentralbyrå (SSB), som vi bruker som et gjennomgående eksempel i spesifikasjonen. Andre eksempler er https://www.ehelse.no/kodeverk/kodeverket-icd-10-og-icd-11[«Den internasjonale klassifikasjon av sykdommer og beslektede helseproblemer (ICD-10 og ICD-11)»] og https://www.ehelse.no/kodeverk/icpc-2.den-internasjonale-klassifikasjonen-for-primaerhelsetjenesten[«Den internasjonale klassifikasjonen for primærhelsetjenesten (ICPC-2)»], forvaltet og publisert av Direktoratet for e-helse.
+
+Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammeverk-informasjonsforvaltning/2118[Rammeverk for informasjonsforvaltning].
+
+=== Omfang og avgrensing
+
+Kapitlet er ikke-normativt.
+
+Spesifikasjonen er anbefalt brukt til å beskrive strukturen av og innholdet i en klassifikasjon. Ettersom spesifikasjonen er basert på RDF (se «Introduksjon til RDF» (under utarbeidelse, kommer)), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinlesbare. Som støtte til teknisk implementering av spesifikasjonen, er det i spesifikasjonen også tatt med en god del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+
+Spesifikasjonen er en norsk applikasjonsprofil og ikke en direkte oversettelse av https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS]. Engelske navn og tekster som er tatt med i spesifikasjonen er ikke alle nødvendigvis ordrett sitat fra engelske kilder.  Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
+
+Spesifikasjonen supplerer XKOS med følgende hovedtyper norske utvidelser:
+
+1.       Kravsnivå (obligatorisk, anbefalt eller valgfri) for både klasser og egenskaper og multiplisitet for egenskaper, som XKOS ikke spesifiserer.
+
+2.       Administrative egenskaper som XKOS ikke dekker, ved å gjenbruke veletablerte internasjonale vokabularer, f.eks. «utgiver» av en klassifikasjon (`dct:publisher`), «sist oppdatert» (`dct:modified`) etc.
+
+Den enkelte utvidelsen er kommentert i kommentar-feltet til den aktuelle egenskapen.
+
+=== Målgrupper
+
+Kapitlet er ikke-normativt.
+
+Spesifikasjonen er primært for
+
+* deg som skal beskrive klassifikasjoner på en strukturert måte, +
+* deg som skal utvikle/tilpasse verktøystøtte for beskrivelser av klassifikasjoner og/eller for utveksling/tilgjengeliggjøring av klassifikasjoner som er beskrevet i henhold til spesifikasjonen.
+
+Spesifikasjonen kan sekundært også brukes av:
+
+* deg som ønsker å finne, forstå og gjenbruke andre sine klassifikasjoner.
+
+=== Forvaltningsregime
+
+Kapitlet er ikke-normativt.
+
+Spesifikasjonen forvaltes av https://digdir.no/[Digitaliseringsdirektoratet (Digdir)].
+
+Utarbeidelse av nye versjoner av denne spesifikasjon initieres av Digdir. Mindre endringer håndteres av Digdir med ev. konsultasjon med enkelte ressurspersoner utenfor Digdir. Ved behov for større endringer vil Digdir vurdere å sette sammen en arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som ev. sendes ut til bred kommentering før fastsetting.
+
+=== Om kravene i spesifikasjonen
+
+Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
+
+=== Navnerom som er brukt i spesifikasjonen
+
+Navnerom for spesifikasjonen er `https://data.norge.no/vocabulary/xkosno#`
+
+[cols="10s,45d,45d"]
+|===
+|Prefiks |*Navnerom* |*Forklaring/navn*
+|dct |http://purl.org/dc/terms/ |https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
+|foaf |http://xmlns.com/foaf/0.1/ |http://xmlns.com/foaf/spec/[FOAF Vocabulary]
+|rdf |http://www.w3.org/1999/02/22-rdf-syntax-ns |https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
+|rdfs |http://www.w3.org/2000/01/rdf-schema |https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
+|skos |http://www.w3.org/2004/02/skos/core |https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
+|uneskos |http://purl.org/umu/uneskos |https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
+|xkos |http://rdf-vocabulary.ddialliance.org/xkos |https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
+|xkosno |https://data.norge.no/vocabulary/xkosno |Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.
+|xsd |http://www.w3.org/2001/XMLSchema |https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition]
+|===
