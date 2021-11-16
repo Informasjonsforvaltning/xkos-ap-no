@@ -9,10 +9,12 @@ Eksempel i RDF Turtle:
 ```
 <Digdir> a foaf:Agent ;
    xkos:classifiedUnder <84110> ; .
+
 <84110> a skos:Concept ;
    skos:inScheme <sn2007> ;
    skos:notation "84.110" ;
    skos:prefLabel "Generell offentlig administrasjon"@nb ; .
+   
 <sn2007> a skos:ConceptScheme ;
    skos:prefLabel "Næringsgruppering 2007 (SN2007)"@nb ; .
 ```
