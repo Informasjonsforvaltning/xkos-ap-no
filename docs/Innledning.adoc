@@ -1,4 +1,4 @@
-= Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori [[Innledning]]
+== Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori [[Innledning]]
 
 Kapitlet er ikke-normativt.
 
