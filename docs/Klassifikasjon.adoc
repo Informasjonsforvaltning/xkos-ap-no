@@ -26,7 +26,7 @@ Eksempel i RDF Turtle:
    skos:prefLabel "Standard for næringsgruppering"@nb ; .
 ----
 
-=== Obligatoriske egenskaper for klassen Klassifikasjon [[Klassifikasjon-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Klassifikasjon_ [[Klassifikasjon-obligatoriske-egenskaper]]
 
 ==== Klassifikasjon – antall nivåer (xkos:numberOfLevels) [[Klassifikasjon-antallNivåer]]
 
@@ -117,7 +117,7 @@ Eksempel i RDF Turtle:
    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> . # Statistisk sentralbyrå
 ----
 
-=== Anbefalte egenskaper for klassen Klassifikasjon [[Klassifikasjon-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Klassifikasjon_ [[Klassifikasjon-anbefalte-egenskaper]]
 
 ==== Klassifikasjon – beskrivelse (dct:description) [[Klassifikasjon-beskrivelse]]
 
@@ -339,6 +339,7 @@ Eksempel i RDF Turtle:
 
 # osv.
 ----
+
 ==== Klassifikasjon – inneholder kategori (uneskos:contains) [[Klassifikasjon-inneholderKategori]]
 
 [cols="30s,70d"]
@@ -435,7 +436,7 @@ Eksempel i RDF Turtle:
    dct:issued "2009-01-01"^^xsd:date ; .
 ----
 
-=== Valgfrie egenskaper for klassen Klassifikasjon [[Klassifikasjon-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Klassifikasjon_ [[Klassifikasjon-valgfrie-egenskaper]]
 
 ==== Klassifikasjon – har variant (xkos:variant) [[Klassifikasjon-harVariant]]
 
