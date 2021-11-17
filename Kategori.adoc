@@ -332,7 +332,7 @@ Eksempel i RDF Turtle:  +
 |Eksempel|
 |===
 
-==== Kategori – inklusjonsmerknad (xkos:inclusionNote) [[Kategori –inklusjonsmerknad]]
+==== Kategori – inklusjonsmerknad (xkos:inclusionNote) [[Kategori–inklusjonsmerknad]]
 
 [cols="30s,70d"]
 |===
