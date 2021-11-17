@@ -241,7 +241,7 @@ Eksempel i RDF Turtle:
 ==== Klassifikasjon – følger (xkos:follows)
 
 
-[yellow-background]#Spørsmål til kommenteringsrunden#: Ser du behov for denne egenskapen, dvs. behov for å kunne uttrykke et forhold mellom to klassifikasjoner/versjoner som er «følger _i tid_», men som ikke er «erstatter» eller «er variant av» (som er dekket med to andre egenskaper)? Vi kommer til å fjerne denne egenskapen hvis det ikke er behov for den.
+[yellow-background]#Spørsmål til kommenteringsrunden#: Har du konkret eksempel på at det er behov for denne egenskapen, dvs. behov for å kunne uttrykke et forhold mellom to klassifikasjoner/versjoner som er «følger _i tid_», men som ikke er «erstatter» eller «er variant av» (som er dekket med to andre egenskaper)? Vi kommer til å fjerne denne egenskapen hvis det ikke er behov for den.
 
 [cols="30s,70d"]
 |===
