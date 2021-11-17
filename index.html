@@ -535,7 +535,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Kategori-identifikator">Kategori – identifikator (dct:identifier)</a></li>
 <li><a href="#Kategori-kode">Kategori – kode (skos:notation)</a></li>
 <li><a href="#Kategori-referererTilBegrep">Kategori – refererer til begrep (dct:subject)</a></li>
-<li><a href="#Kategori-Tilleggsinnhold">Kategori – tilleggsinnhold (xkos:additionalContentNote)</a></li>
+<li><a href="#Kategori-tilleggsinnhold">Kategori – tilleggsinnhold (xkos:additionalContentNote)</a></li>
 </ul>
 </li>
 <li><a href="#Kategori-valgfrie-egenskaper">Valgfrie egenskaper for klassen Kategori</a>
@@ -1624,7 +1624,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">I motsetning til egenskapen xkos:follows sier denne egenskapen eksplisitt at denne versjonen erstatter en annen versjon.</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -1645,7 +1645,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="sect4">
 <h5 id="_klassifikasjon_følger_xkosfollows"><a class="link" href="#_klassifikasjon_følger_xkosfollows">Klassifikasjon – følger (xkos:follows)</a></h5>
 <div class="paragraph">
-<p><span class="yellow-background">Spørsmål til kommenteringsrunden</span>: Har du konkret eksempel på at det er behov for denne egenskapen, dvs. behov for å kunne uttrykke et forhold mellom to klassifikasjoner/versjoner som er «følger <em>i tid</em>», men som ikke er «erstatter» eller «er variant av» (som er dekket med to andre egenskaper)? Vi kommer til å fjerne denne egenskapen hvis det ikke er behov for den.</p>
+<p><span class="yellow-background">Spørsmål til kommenteringsrunden</span>: Har du konkret eksempel på at det er behov for denne egenskapen, dvs. behov for å kunne uttrykke et forhold mellom to klassifikasjoner/versjoner som er «følger <em>i tid</em>», men som ikke er «erstatter» eller «er variant av» (behov som dekket av to andre egenskaper)? Vi kommer til å fjerne denne egenskapen hvis det ikke er behov for den.</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1671,7 +1671,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The succession in time of classifications and classification schemes is expressed by the xkos:follows property.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The succession in time of classifications and classification schemes is expressed by the <code>xkos:follows</code> property.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -1936,6 +1936,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="listingblock">
 <div class="content">
 <pre>&lt;sivilstand1993&gt; a skos:ConceptScheme ;
+   dct:title "Sivilstand 1993"@nb ;
    uneskos:contains &lt;ugift&gt; , &lt;gift&gt; , &lt;enkeEllerEnkemann&gt; , &lt;skilt&gt; , &lt;separert&gt; , &lt;registrertPartner&gt; , &lt;separertPartner&gt; , &lt;skiltPartner&gt; , &lt;gjenlevendePartner&gt; ; .
 
 &lt;ugift&gt; a skos:Concept ;
@@ -2747,7 +2748,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Classification items of a given levels usually have a code (expressed by the skos:notation property) that conforms to a specific structure. In order to capture this information, XKOS defines the xkos:notationPattern property. This property is attached to a classification level and should contain a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a> reflecting the code structure of the items of this level.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Classification items of a given levels usually have a code (expressed by the <code>skos:notation</code> property) that conforms to a specific structure. In order to capture this information, XKOS defines the <code>xkos:notationPattern</code> property. This property is attached to a classification level and should contain a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a> reflecting the code structure of the items of this level.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -3069,7 +3070,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Example</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:coreContentNote is generally labelled "This category includes", "This item includes", "This division includes", "Includes" or similar.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xkos:coreContentNote</code> is generally labelled "This category includes", "This item includes", "This division includes", "Includes" or similar.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3266,7 +3267,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Kategori-Tilleggsinnhold"><a class="link" href="#Kategori-Tilleggsinnhold">Kategori – tilleggsinnhold (xkos:additionalContentNote)</a></h5>
+<h5 id="Kategori-tilleggsinnhold"><a class="link" href="#Kategori-tilleggsinnhold">Kategori – tilleggsinnhold (xkos:additionalContentNote)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3315,12 +3316,12 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Example</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:additionalContentNote is generally labelled "This category includes also", "This item includes also", "This division includes also", "Includes also", or similar.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>xkos:additionalContentNote</code> is generally labelled "This category includes also", "This item includes also", "This division includes also", "Includes also", or similar.</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Eksempel i RDF Turtle: Se under Kategori – hovedinnhold (xkos:coreContentNote).</p>
+<p>Eksempel i RDF Turtle: Se under <a href="#Kategori-hovedinnhold">Kategori – hovedinnhold (xkos:coreContentNote)</a>.</p>
 </div>
 </div>
 </div>
@@ -3418,7 +3419,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk heller egenskapen <a href="#Kategori-referererTil">[Kategori-referererTil]</a> til å referere til en begrepsbeskrivelse som er tilgjengeliggjort f.eks. i begrepsdelen av <a href="https://data.norge.no/concepts/">Felles datakatalog</a> og som inneholder definisjonen av begrepet, istedenfor å duplisere/«gjemme» definisjonen i en klassifikasjon.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk heller egenskapen <a href="#Kategori-referererTilBegrep">Kategori – refererer til begrep (dct:subject)</a> til å referere til en begrepsbeskrivelse som er tilgjengeliggjort f.eks. i begrepsdelen av <a href="https://data.norge.no/concepts/">Felles datakatalog</a> og som inneholder definisjonen av begrepet, istedenfor å duplisere/«gjemme» definisjonen i en klassifikasjon.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3684,7 +3685,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk heller den semantisk sett mer presise egenskapen <a href="#Kategori-hovedinnhold">Kategori – hovedinnhold (xkos:coreContentNote)</a>, ev. kombinert med egenskapen <a href="#Kategori-tillleggsinnhold">[Kategori-tillleggsinnhold]</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk heller den semantisk sett mer presise egenskapen <a href="#Kategori-hovedinnhold">Kategori – hovedinnhold (xkos:coreContentNote)</a>, ev. kombinert med egenskapen <a href="#Kategori-tilleggsinnhold">Kategori – tilleggsinnhold (xkos:additionalContentNote)</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3797,7 +3798,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes kun til merknader som ikke kan tas med i en av de andre semantisk sett mer presise egenskapene som <a href="#Kategori-eksklusjonsmerknad">Kategori – eksklusjonsmerknad (skos:exclusionNote)</a>, <a href="#Kategori-hovedinnhold">Kategori – hovedinnhold (xkos:coreContentNote)</a> og <a href="#Kategori-tilleggsinnhold">[Kategori-tilleggsinnhold]</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes kun til merknader som ikke kan tas med i en av de andre semantisk sett mer presise egenskapene som <a href="#Kategori-eksklusjonsmerknad">Kategori – eksklusjonsmerknad (skos:exclusionNote)</a>, <a href="#Kategori-hovedinnhold">Kategori – hovedinnhold (xkos:coreContentNote)</a> og <a href="#Kategori-tilleggsinnhold">Kategori – tilleggsinnhold (xkos:additionalContentNote)</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3995,7 +3996,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-17 15:03:47 UTC
+Sist oppdatert 2021-11-17 18:43:09 UTC
 </div>
 </div>
 </body>

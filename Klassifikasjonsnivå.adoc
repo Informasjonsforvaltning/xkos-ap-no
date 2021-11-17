@@ -169,7 +169,7 @@ Eksempel i RDF Turtle:
 |URI|xkos:notationPattern
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi mønsteret for kodene på et gitt klassifikasjonsnivå. Verdien bør inneholde et https://en.wikipedia.org/wiki/Regular_expression[regulært uttrykk].
-|Usage note|Classification items of a given levels usually have a code (expressed by the skos:notation property) that conforms to a specific structure. In order to capture this information, XKOS defines the xkos:notationPattern property. This property is attached to a classification level and should contain a https://en.wikipedia.org/wiki/Regular_expression[regular expression] reflecting the code structure of the items of this level.
+|Usage note|Classification items of a given levels usually have a code (expressed by the `skos:notation` property) that conforms to a specific structure. In order to capture this information, XKOS defines the `xkos:notationPattern` property. This property is attached to a classification level and should contain a https://en.wikipedia.org/wiki/Regular_expression[regular expression] reflecting the code structure of the items of this level.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
 |Merknad|
