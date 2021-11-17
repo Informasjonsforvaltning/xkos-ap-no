@@ -32,6 +32,6 @@ Kjernegruppen som har utarbeidet dette utkastet ønsker dine innspill på bl.a. 
 Hvordan gir du tilbakemeldinger?
 
 * Vi ber deg fortrinnsvis legge dine tilbakemeldinger inn som https://github.com/Informasjonsforvaltning/xkos-ap-no/issues[Issues på Github]. Dersom du ikke allerede har bruker på Github kan du opprette en bruker gratis.
-* Du kan også sende oss dine tilbakemeldinger på e-post, til adressen mailto:informasjonsforvaltning@digdir.no[informasjonsforvaltning(at)digdir.no, Tilbakemeldinger på XKOS-AP-NO v.0.8].
+* Du kan også sende oss dine tilbakemeldinger på e-post, til adressen mailto:informasjonsforvaltning@digdir.no[informasjonsforvaltning(at)digdir.no, XKOS-AP-NOv08].
 
 Kjernegruppen har vært ledet av Digdir, med representanter fra Statistisk sentralbyrå, Skattedirektoratet, Arbeids- og velferdsdirektoratet, Brønnøysundregistrene og Statens kartverk.
