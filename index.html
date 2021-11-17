@@ -443,21 +443,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO)</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
-<ul class="sectlevel1">
-<li><a href="#Om_denne_versjonen">Om denne versjonen</a></li>
-<li><a href="#OmSpesifikasjonen">Om spesifikasjonen</a>
 <ul class="sectlevel2">
-<li><a href="#_formål">Formål</a></li>
-<li><a href="#_omfang_og_avgrensing">Omfang og avgrensing</a></li>
-<li><a href="#_målgrupper">Målgrupper</a></li>
-<li><a href="#_forvaltningsregime">Forvaltningsregime</a></li>
-<li><a href="#_om_kravene_i_spesifikasjonen">Om kravene i spesifikasjonen</a></li>
-<li><a href="#_navnerom_som_er_brukt_i_spesifikasjonen">Navnerom som er brukt i spesifikasjonen</a></li>
+<li><a href="#OmDenneVersjonen">Om denne versjonen</a></li>
+<li><a href="#OmSpesifikasjonen">Om spesifikasjonen</a>
+<ul class="sectlevel3">
+<li><a href="#Formål">Formål</a></li>
+<li><a href="#OmfangOgAvgrensing">Omfang og avgrensing</a></li>
+<li><a href="#Målgrupper">Målgrupper</a></li>
+<li><a href="#Forvaltningsregime">Forvaltningsregime</a></li>
+<li><a href="#OmKravene">Om kravene i spesifikasjonen</a></li>
+<li><a href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a></li>
 </ul>
 </li>
 <li><a href="#Innledning">Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</a></li>
 <li><a href="#ForenkletModell">Forenklet modell for XKOS-AP-NO</a>
-<ul class="sectlevel2">
+<ul class="sectlevel3">
 <li><a href="#Klasseoversikt">Oversikt over klasser i XKOS-AP-NO</a></li>
 </ul>
 </li>
@@ -466,7 +466,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Kategori">Klassen Kategori (skos:Concept)</a></li>
 <li><a href="#Klassifikasjonssammenligning">Klassen Klassifikasjonssammenligning (xkos:Correspondence)</a></li>
 <li><a href="#Kategorisammenligning">Klassen Kategorisammenligning (xkos:ConceptAssociation)</a></li>
-<li><a href="#Kontrollerte_vokabularer">Bruk av kontrollerte vokabularer</a></li>
+<li><a href="#Kontrollerte_vokabularer">Bruk av kontrollerte vokabularer</a>
+<ul class="sectlevel3">
+<li><a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a></li>
+</ul>
+</li>
 <li><a href="#Vedlegg">Vedlegg</a>
 <ul class="sectlevel3">
 <li><a href="#HvorforOrdetKlassifikasjon">Hvorfor bruker dette dokumentet ordet «klassifikasjon»?</a></li>
@@ -522,20 +526,146 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="Om_denne_versjonen"><a class="link" href="#Om_denne_versjonen">Om denne versjonen</a></h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="OmDenneVersjonen"><a class="link" href="#OmDenneVersjonen">Om denne versjonen</a></h3>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Denne versjonen (v.0.8) er til åpen og uformell kommentering, med <strong><span class="yellow-background">kommenteringsfrist 10. desember 2021</span></strong>. Hvem som helst kan kommentere, og du trenger ikke å få dine innspill formelt forankret i din organisasjon.</p>
+</div>
+<div class="paragraph">
+<p>Etter denne kommenteringsrunden vil det bli ferdigstilt en versjon 0.9 (med status «til utprøving») av spesifikasjonen, tentativt før årsskiftet 2021/2022.</p>
+</div>
+<div class="paragraph">
+<p>Kjernegruppen som har utarbeidet dette utkastet ønsker dine innspill på bl.a. følgende:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Innledende kapitler <a href="#OmSpesifikasjonen">Om spesifikasjonen</a> og <a href="#Innledning">Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</a>:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Generelt, gi oss tilbakemelding på om vi treffer de aktuelle målgruppene med disse innledende kapitlene, med konkrete forbedringsforslag hvis ikke.</p>
+</li>
+<li>
+<p>Spesielt om <a href="#Målgrupper">Målgrupper</a>: Savner du flere/andre målgrupper som spesifikasjonen også kan være nyttig for, i så fall hvem, hvorfor og hvordan?</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Omfang:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Er det noen behov som ikke er dekket av spesifikasjonen?</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva du mener mangler, med konkrete eksempler på behov, samt forslag til kravsnivå (obligatorisk/anbefalt/valgfri) og norske navn og beskrivelser.</p>
+</li>
+<li>
+<p>Spesielt, vi har lagt inn spørsmål under noen av egenskapene, der vi eksplisitt spør om du ser behov for de aktuelle egenskapene.</p>
+</li>
+<li>
+<p>Spesielt, dekker de endringstypene som er foreslått under <a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a> de endringstypene du ser behov for?</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Er noen av kravene (obligatoriske/anbefalte/valgfrie) for strenge eller for svake?</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva du mener er for strengt eller for svakt og hvorfor, og forslag til det du mener er riktig kravsnivå.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Forståelighet:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Norske klasse- og egenskapsnavn. Selv om i utvekslingen/tilgjengeliggjøringen er det URIene (f.eks. <code>skos:prefLabel</code>) som skal tas med og ikke de norske klasse- og egenskapsnavnene, er det viktig at norske navn (f.eks. «anbefalt kodetekst» for egenskapen <code>skos:prefLabel</code>) er forståelige og meningsfulle for målgruppene av spesifikasjonen.</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva du mener kan forbedres, med konkrete forbedringsforslag samt kort begrunnelse.</p>
+</li>
+<li>
+<p>Spesielt ber vi om innspill til norske navn for endringstypene i <a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Struktur:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt: gi oss tilbakemelding på hva du konkret mener bør kunne forbedres strukturmessig, f.eks. rekkefølgen mellom (under)kapitlene, «mal» for tabellene som nå er brukt til å beskrive klasser og egenskaper, osv.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Beskrivelser av klasser og egenskaper:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva (beskrivelsen av hvilken klasse eller egenskap) du konkret mener bør kunne forbedres, med forslag til alternativ formulering.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Eksempler:</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Generelt, gi oss tilbakemelding på hva (eksempler til hvilken klasse/egenskap) du mener er feil eller uklare, eller mangler etc., med konkrete forbedringsforslag, ev. forslag til (alternative) eksempler.</p>
+<div class="olist upperalpha">
+<ol class="upperalpha" type="A">
+<li>
+<p>Når det gjelder eksempler har kjernegruppen brukt følgende prioriteringsrekkefølge: obligatoriske – anbefalte – valgfrie egenskaper, og prosatekst (i tabellene) – eksempel i RDF Turtle (etter tabellene), og derfor ikke alt er eller vil være eksemplifisert.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Hvordan gir du tilbakemeldinger?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vi ber deg fortrinnsvis legge dine tilbakemeldinger inn som <a href="https://github.com/Informasjonsforvaltning/xkos-ap-no/issues">Issues på Github</a>. Dersom du ikke allerede har bruker på Github kan du opprette en bruker gratis.</p>
+</li>
+<li>
+<p>Du kan også sende oss dine tilbakemeldinger på e-post, til adressen <a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning(at)digdir.no</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Kjernegruppen har vært ledet av Digdir, med representanter fra Statistisk sentralbyrå, Skattedirektoratet, Arbeids- og velferdsdirektoratet, Brønnøysundregistrene og Statens kartverk.</p>
 </div>
 <!-- toc disabled -->
 </div>
-</div>
-<div class="sect1">
-<h2 id="OmSpesifikasjonen"><a class="link" href="#OmSpesifikasjonen">Om spesifikasjonen</a></h2>
-<div class="sectionbody">
 <div class="sect2">
-<h3 id="_formål"><a class="link" href="#_formål">Formål</a></h3>
+<h3 id="OmSpesifikasjonen"><a class="link" href="#OmSpesifikasjonen">Om spesifikasjonen</a></h3>
+<div class="sect3">
+<h4 id="Formål"><a class="link" href="#Formål">Formål</a></h4>
 <div class="paragraph">
 <p>Kapitlet er ikke-normativt.</p>
 </div>
@@ -549,8 +679,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Spesifikasjonen inngår i <a href="https://www.digdir.no/informasjonsforvaltning/rammeverk-informasjonsforvaltning/2118">Rammeverk for informasjonsforvaltning</a>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_omfang_og_avgrensing"><a class="link" href="#_omfang_og_avgrensing">Omfang og avgrensing</a></h3>
+<div class="sect3">
+<h4 id="OmfangOgAvgrensing"><a class="link" href="#OmfangOgAvgrensing">Omfang og avgrensing</a></h4>
 <div class="paragraph">
 <p>Kapitlet er ikke-normativt.</p>
 </div>
@@ -577,8 +707,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Den enkelte utvidelsen er kommentert i kommentar-feltet til den aktuelle egenskapen.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_målgrupper"><a class="link" href="#_målgrupper">Målgrupper</a></h3>
+<div class="sect3">
+<h4 id="Målgrupper"><a class="link" href="#Målgrupper">Målgrupper</a></h4>
 <div class="paragraph">
 <p>Kapitlet er ikke-normativt.</p>
 </div>
@@ -606,8 +736,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_forvaltningsregime"><a class="link" href="#_forvaltningsregime">Forvaltningsregime</a></h3>
+<div class="sect3">
+<h4 id="Forvaltningsregime"><a class="link" href="#Forvaltningsregime">Forvaltningsregime</a></h4>
 <div class="paragraph">
 <p>Kapitlet er ikke-normativt.</p>
 </div>
@@ -618,14 +748,14 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Utarbeidelse av nye versjoner av denne spesifikasjon initieres av Digdir. Mindre endringer håndteres av Digdir med ev. konsultasjon med enkelte ressurspersoner utenfor Digdir. Ved behov for større endringer vil Digdir vurdere å sette sammen en arbeidsgruppe med representanter fra relevante virksomheter, for utarbeidelse av forslag til den reviderte versjonen som ev. sendes ut til bred kommentering før fastsetting.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_om_kravene_i_spesifikasjonen"><a class="link" href="#_om_kravene_i_spesifikasjonen">Om kravene i spesifikasjonen</a></h3>
+<div class="sect3">
+<h4 id="OmKravene"><a class="link" href="#OmKravene">Om kravene i spesifikasjonen</a></h4>
 <div class="paragraph">
 <p>Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene">DCAT-AP-NO</a> og gjentas derfor ikke her.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_navnerom_som_er_brukt_i_spesifikasjonen"><a class="link" href="#_navnerom_som_er_brukt_i_spesifikasjonen">Navnerom som er brukt i spesifikasjonen</a></h3>
+<div class="sect3">
+<h4 id="Navnerom"><a class="link" href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a></h4>
 <div class="paragraph">
 <p>Navnerom for spesifikasjonen er <code><a href="https://data.norge.no/vocabulary/xkosno#" class="bare">https://data.norge.no/vocabulary/xkosno#</a></code></p>
 </div>
@@ -690,10 +820,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="Innledning"><a class="link" href="#Innledning">Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</a></h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="Innledning"><a class="link" href="#Innledning">Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</a></h3>
 <div class="paragraph">
 <p>Kapitlet er ikke-normativt.</p>
 </div>
@@ -722,10 +850,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="title">Figur 2. Eksempel – Standard for næringsgruppering, med de ulike versjonene.</div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="ForenkletModell"><a class="link" href="#ForenkletModell">Forenklet modell for XKOS-AP-NO</a></h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="ForenkletModell"><a class="link" href="#ForenkletModell">Forenklet modell for XKOS-AP-NO</a></h3>
 <div id="img-ForenkletModellObligatoriske" class="imageblock">
 <div class="content">
 <a class="image" href="images/ForenkletModell-XKOS-AP-NO-Obligatoriske.png"><img src="images/ForenkletModell-XKOS-AP-NO-Obligatoriske.png" alt="ForenkletModell XKOS AP NO Obligatoriske"></a>
@@ -747,8 +873,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="paragraph">
 <p>Figurene ovenfor viser forenklet modell for XKOS-AP-NO. Diagrammene i figurene er ikke ment som en formell representasjon av XKOS-AP-NO, men kun for å gi en visuell oversikt over klassene og relasjoner mellom klassene. Inntil eventuell overensstemmelse blir rettet opp, har de tekstlige beskrivelsene av klasser og egenskaper forrang. Tilsvarende forrang gjelder også forholdet mellom diagrammene og de tekstlige beskrivelsene i kapitlene der klassene blir nærmere beskrevet.</p>
 </div>
-<div class="sect2">
-<h3 id="Klasseoversikt"><a class="link" href="#Klasseoversikt">Oversikt over klasser i XKOS-AP-NO</a></h3>
+<div class="sect3">
+<h4 id="Klasseoversikt"><a class="link" href="#Klasseoversikt">Oversikt over klasser i XKOS-AP-NO</a></h4>
 <div class="paragraph">
 <p>Følgende klasser er obligatoriske:</p>
 </div>
@@ -803,58 +929,50 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="Klassifikasjon"><a class="link" href="#Klassifikasjon">Klassen Klassifikasjon (skos:ConceptScheme)</a></h3>
+<div class="paragraph">
+<p>&lt;tekst kommer&gt;</p>
 </div>
-<div class="sect1">
-<h2 id="Klassifikasjon"><a class="link" href="#Klassifikasjon">Klassen Klassifikasjon (skos:ConceptScheme)</a></h2>
-<div class="sectionbody">
+</div>
+<div class="sect2">
+<h3 id="Klassifikasjonsnivå"><a class="link" href="#Klassifikasjonsnivå">Klassen Klassifikasjonsnivå (xkos:ClassificationLevel)</a></h3>
+<div class="paragraph">
+<p>&lt;tekst kommer&gt;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Kategori"><a class="link" href="#Kategori">Klassen Kategori (skos:Concept)</a></h3>
+<div class="paragraph">
+<p>&lt;tekst kommer&gt;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Klassifikasjonssammenligning"><a class="link" href="#Klassifikasjonssammenligning">Klassen Klassifikasjonssammenligning (xkos:Correspondence)</a></h3>
+<div class="paragraph">
+<p>&lt;tekst kommer&gt;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Kategorisammenligning"><a class="link" href="#Kategorisammenligning">Klassen Kategorisammenligning (xkos:ConceptAssociation)</a></h3>
+<div class="paragraph">
+<p>&lt;tekst kommer&gt;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Kontrollerte_vokabularer"><a class="link" href="#Kontrollerte_vokabularer">Bruk av kontrollerte vokabularer</a></h3>
+<div class="paragraph">
+<p>&lt;tekst kommer&gt;</p>
+</div>
+<div class="sect3">
+<h4 id="ForslagTilEndringstyper"><a class="link" href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a></h4>
 <div class="paragraph">
 <p>&lt;tekst kommer&gt;</p>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="Klassifikasjonsnivå"><a class="link" href="#Klassifikasjonsnivå">Klassen Klassifikasjonsnivå (xkos:ClassificationLevel)</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Kategori"><a class="link" href="#Kategori">Klassen Kategori (skos:Concept)</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Klassifikasjonssammenligning"><a class="link" href="#Klassifikasjonssammenligning">Klassen Klassifikasjonssammenligning (xkos:Correspondence)</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Kategorisammenligning"><a class="link" href="#Kategorisammenligning">Klassen Kategorisammenligning (xkos:ConceptAssociation)</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Kontrollerte_vokabularer"><a class="link" href="#Kontrollerte_vokabularer">Bruk av kontrollerte vokabularer</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Vedlegg"><a class="link" href="#Vedlegg">Vedlegg</a></h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="Vedlegg"><a class="link" href="#Vedlegg">Vedlegg</a></h3>
 <div class="paragraph">
 <p>Vedlegget er ikke-normativt.</p>
 </div>
@@ -909,10 +1027,9 @@ ga('send', 'pageview');
 </div>
 </div>
 </div>
-</div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-16 16:02:58 UTC
+Sist oppdatert 2021-11-17 07:42:29 UTC
 </div>
 </div>
 </body>
