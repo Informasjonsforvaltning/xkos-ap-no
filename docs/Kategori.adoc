@@ -114,7 +114,7 @@ Eksempel i RDF Turtle:
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|
 |Eksempel|Kategori med koden «01» i «Næringsgruppering 2007 (SN 2007)» har følgende note om hovedinnhold: "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."
-|Example|xkos:coreContentNote is generally labelled "This category includes", "This item includes", "This division includes", "Includes" or similar.
+|Example|`xkos:coreContentNote` is generally labelled "This category includes", "This item includes", "This division includes", "Includes" or similar.
 |===
 
 Eksempel I RDF Turtle:
@@ -201,7 +201,7 @@ Eksempel i RDF Turtle:  +
 <primærnæring> a skos:Concept ; .
 ----
 
-==== Kategori – tilleggsinnhold (xkos:additionalContentNote) [[Kategori-Tilleggsinnhold]]
+==== Kategori – tilleggsinnhold (xkos:additionalContentNote) [[Kategori-tilleggsinnhold]]
 
 [cols="30s,70d"]
 |===
@@ -215,10 +215,10 @@ Eksempel i RDF Turtle:  +
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|
 |Eksempel|Kategori med koden «01» i «Næringsgruppering 2007 (SN 2007)» har følgende note om tilleggsinnhold: «Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst.»
-|Example|xkos:additionalContentNote is generally labelled "This category includes also", "This item includes also", "This division includes also", "Includes also", or similar.
+|Example|`xkos:additionalContentNote` is generally labelled "This category includes also", "This item includes also", "This division includes also", "Includes also", or similar.
 |===
 
-Eksempel i RDF Turtle: Se under Kategori – hovedinnhold (xkos:coreContentNote).
+Eksempel i RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 
 === Valgfrie egenskaper for klassen Kategori [[Kategori-valgfrie-egenskaper]]
 
@@ -251,7 +251,7 @@ Eksempel i RDF Turtle: Se under Kategori – hovedinnhold (xkos:coreContentNote)
 |Usage note|To specify the definition of the concept that the category represents, repeated when the definition is in different languages.
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri
-|Merknad|Bruk heller egenskapen <<Kategori-referererTil>> til å referere til en begrepsbeskrivelse som er tilgjengeliggjort f.eks. i begrepsdelen av https://data.norge.no/concepts/[Felles datakatalog] og som inneholder definisjonen av begrepet, istedenfor å duplisere/«gjemme» definisjonen i en klassifikasjon.
+|Merknad|Bruk heller egenskapen <<Kategori-referererTilBegrep>> til å referere til en begrepsbeskrivelse som er tilgjengeliggjort f.eks. i begrepsdelen av https://data.norge.no/concepts/[Felles datakatalog] og som inneholder definisjonen av begrepet, istedenfor å duplisere/«gjemme» definisjonen i en klassifikasjon.
 |Eksempel|
 |===
 
@@ -344,7 +344,7 @@ Eksempel i RDF Turtle:  +
 |Subegenskap av|skos:scopeNote
 |Multiplisitet|0..n
 |Kravsnivå|Valgfri/Optional
-|Merknad|Bruk heller den semantisk sett mer presise egenskapen <<Kategori-hovedinnhold>>, ev. kombinert med egenskapen <<Kategori-tillleggsinnhold>>.
+|Merknad|Bruk heller den semantisk sett mer presise egenskapen <<Kategori-hovedinnhold>>, ev. kombinert med egenskapen <<Kategori-tilleggsinnhold>>.
 |Eksempel|
 |===
 
