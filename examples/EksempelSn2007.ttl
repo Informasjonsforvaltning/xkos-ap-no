@@ -24,18 +24,17 @@
   xkos:coversExhaustively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   xkos:coversMutuallyExclusively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   xkos:belongsTo <sn> ;
-  xkos:follows <sn2002> ;
   xkos:supersedes <sn2002> ;
   xkos:levels [ a rdf:List ;
-    rdf:first <sn2007-1> ;
+    rdf:first <sn2007-1> ; # nivå 1
     rdf:rest [ a rdf:List ;
-        rdf:first <sn2007-2> ;
+        rdf:first <sn2007-2> ; # nivå 1
         rdf:rest [ a rdf:List ;
-          rdf:first <sn2007-3> ;
+          rdf:first <sn2007-3> ; # nivå 1
           rdf:rest [ a rdf:List ;
-            rdf:first <sn2007-4> ;
+            rdf:first <sn2007-4> ; # nivå 1
             rdf:rest [a rdf:List ;
-              rdf:first <sn2007-5>;
+              rdf:first <sn2007-5>; # nivå 1
               rdf:rest rdf:nil ;
               ] ;
             ] ;
@@ -45,7 +44,7 @@
   xkos:variant <fastlandsNorge2009> ;
   .
 
-<sn2002> a skos:ConceptScheme ; . # for å illustrere bruk av xkos:follows, xkos:supersedes
+<sn2002> a skos:ConceptScheme ; . # for å illustrere bruk av xkos:supersedes
 
 <fastlandsNorge2009> a skos:Concept ; . # for å illustrere bruk av xkos:variant
 
@@ -92,7 +91,7 @@
   .
 
 ### -------------------------------------------
-### et lite utvalg av koder (skos:Concept)
+### et lite utvalg av kategorier (skos:Concept)
 ### -------------------------------------------
 
 <A> a skos:Concept ;
@@ -100,7 +99,6 @@
   skos:notation "A" ;
   xkos:coreContentNote "Inkluderer: Omfatter bruken av planteressursene og de animalske ressursene, inkludert aktiviteter i forbindelse med dyrking av vekster, husdyrhold og -avl, produksjon av tømmer og høsting/utnyttelse av andre planter, dyr og animalske produkter fra en gård eller fra naturen."@nb ;
   skos:topConceptOf <sn2007> ;
-  skos:narrower <01> ;
   .
 
 <01> a skos:Concept ;
