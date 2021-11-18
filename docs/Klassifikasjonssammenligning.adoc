@@ -64,7 +64,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Merknad 2 |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111 er identifikator for klassifikasjonssammenligningen mellom «Klassifisering av informasjonssektoren 2007» og «Næringsgruppering 2007 (SN 2007)»
 |===
- 
+
+
 ==== Klassifikasjonssammenligning – navn (dct:title) [[Klassifikasjonssammenligning-navn]]
 
 [cols="30s,70d"]
@@ -114,7 +115,7 @@ Eksempel i RDF Turtle:
 ----
 
 ==== Klassifikasjonssammenligning – utgiver (dct:publisher) [[Klassifikasjonssammenligning-utgiver]]
- 
+
 [cols="30s,70d"]
 |===
 |English name |publisher 
@@ -129,15 +130,15 @@ Eksempel i RDF Turtle:
 |===
 
 Eksempel i RDF Turtle:
-```
+----
 <https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111> a xkos:Correspondence ;  
    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ; . # Statistisk sentralbyrå 
-```
- 
+----
+
 === Anbefalte egenskaper for klassen _Klassifikasjonssammenligning_ [[Klassifikasjonssammenligning-anbefalte-egenskaper]]
 
 ==== Klassifikasjonssammenligning – beskrivelse (dct:description) [[Klassifikasjonssammenligning-beskrivelse]]
- 
+
 [cols="30s,70d"]
 |===
 |English name |description 
@@ -177,9 +178,9 @@ Eksempel i RDF Turtle: 
 <https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111> a xkos:Correspondence ;  
    dct:modified "2009-01-01"^^xsd:dateTime ; . 
 ----
- 
+
 ==== Klassifikasjonssammenligning – språk (dct:language) [[Klassifikasjonssammenligning-språk]]
- 
+
 [cols="30s,70d"]
 |===
 |English name |language 
@@ -203,7 +204,7 @@ Eksempel i RDF Turtle: 
       <https://publications.europa.eu/resource/authority/language/ENG>; # engelsk 
    . 
 ----
- 
+
 ==== Klassifikasjonssammenligning – tilgjengeliggjøringsdato (dct:issued) [[Klassifikasjonssammenligning-tilgjengeliggjøringsdato]]
 
 [cols="30s,70d"]
