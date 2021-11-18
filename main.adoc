@@ -19,11 +19,10 @@ include::shared/download.adoc[]
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/xkos-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
-
-*Status*: [yellow-background]#Under utvikling# +
-*Versjon*: [yellow-background]#Under utvikling# +
-*Publisert*: [yellow-background]#<ikke publisert ennå># +
-*Oppdatert*: [yellow-background]#<ikke publisert ennå># +
+*Status*: [yellow-background]#til kommentering# +
+*Versjon*: 0.8 +
+*Publisert*: 2021-11-18 +
+*Oppdatert*: 2021-11-18 +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/xkos-ap-no/ +
