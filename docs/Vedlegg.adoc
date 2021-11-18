@@ -1,3 +1,7 @@
 == Vedlegg [[Vedlegg]]
 
 Vedlegget er ikke-normativt.
+
+include::HvorforOrdetKlassifikasjon.adoc[]
+
+include::ReferereTilEnKategori.adoc[]

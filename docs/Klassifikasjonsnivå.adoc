@@ -37,7 +37,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|Det ene nivået i en flat klassifikasjon har verdi 1 som sitt nivånummer.
-|Eksempel|Nivå 4 «Næringsgruppe» i Næringsgruppering har verdi 4 som nivånummer. Fjerdetegnsnivået i ICD-10 har verdi 4 som nivånummer.
+|Eksempel|Nivå 4 «Næringsgruppe» i Næringsgruppering har verdi 4 som nivånummer. 
 |===
 
 Eksempel i RDF Turtle:
