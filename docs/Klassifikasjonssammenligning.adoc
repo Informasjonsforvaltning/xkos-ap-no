@@ -32,7 +32,6 @@ Eksempel i RDF Turtle:
 |Range|xkos:ConceptAssociation
 |Beskrivelse|Brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.
 |Usage note|To group category correspondences that this correspondence is made of.
-|Subegenskap av|
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|
@@ -48,7 +47,7 @@ Eksempel i RDF Turtle:
 ----
 
 ==== Klassifikasjonssammenligning – identifikator (dct:identifier) [[Klassifikasjonssammenligning-identifikator]]
- 
+
 [cols="30s,70d"]
 |===
 |English name |identifier 

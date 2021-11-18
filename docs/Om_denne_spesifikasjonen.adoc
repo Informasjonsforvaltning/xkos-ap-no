@@ -63,8 +63,8 @@ Navnerom for spesifikasjonen er `https://data.norge.no/vocabulary/xkosno#`
 |rdf |http://www.w3.org/1999/02/22-rdf-syntax-ns |https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
 |rdfs |http://www.w3.org/2000/01/rdf-schema |https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
 |skos |http://www.w3.org/2004/02/skos/core |https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
-|uneskos |http://purl.org/umu/uneskos |https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
+|uneskos |http://purl.org/umu/uneskos# |https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
 |xkos |http://rdf-vocabulary.ddialliance.org/xkos |https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
-|xkosno |https://data.norge.no/vocabulary/xkosno |Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.
+|xkosno |https://data.norge.no/vocabulary/xkosno# |Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.
 |xsd |http://www.w3.org/2001/XMLSchema |https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition]
 |===
