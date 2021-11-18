@@ -263,7 +263,7 @@ Eksempel i RDF Turtle:
 |===
 |English name|valid from inclusive
 |URI|schema:validFrom
-|Range|rdfs:Literal typed as xsd:date of xsd:dateTime
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse|Brukes til å oppgi fra og med når klassifikasjonen er gyldig.
 |Usage note|To specific the date or time from (inclusive) which the classification is valid.
 |Multiplisitet|0..1
@@ -284,7 +284,7 @@ Eksempel i RDF Turtle:
 |===
 |English name|valid through inclusive
 |URI|schema:validThrough
-|Range|rdfs:Literal typed as xsd:date of xsd:dateTime
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse|Brukes til å oppgi fra og med når klassifikasjonen er gyldig.
 |Usage note|To specific the date or time from (inclusive) which the classification is valid.
 |Multiplisitet|0..1
@@ -376,7 +376,7 @@ Eksempel i RDF Turtle:
 |===
 |English name|modified
 |URI|dct:modified
-|Range|rdfs:Literal typed as xsd:date of xsd:dateTime
+|Range|rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse|Brukes til å oppgi dato/tidspunkt når klassifikasjonen ble sist oppdatert.
 |Usage note|To specific the date or time when the classification was last modified.
 |Multiplisitet|0..1
