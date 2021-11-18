@@ -15,9 +15,10 @@
 # Vokabularet xkosno:ItemChangeType (instans av skos:ConceptScheme):
 
 :ItemChangeType a skos:ConceptScheme ;
-  dct:title "Kategoriendringstype"@nb , "Classification Items Change Types"@en ;
-  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemChangeType" ;
-  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # Digdir
+  xkos:numberOfLevels "1"^^xsd:positiveInteger ; # antall nivå
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemChangeType" ; # identifikator
+  dct:title "Kategoriendringstype"@nb , "Classification Items Change Types"@en ; # navn
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver = Digdir
   uneskos:contains :ItemDeletion, :ItemCreation , :ItemMerging , :ItemTakeOver , :ItemBreakdown , :ItemSplitOff , :NotationTransfer , :CodeChange , :NameChange ; # inneholder kategorier
   dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ; # åpen lisens CCBY4
   .
@@ -25,10 +26,10 @@
 # Kategoriene (instanser av skos:Concept):
 
 :ItemDeletion a skos:Concept ;
-  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemDeletion" ;
-  skos:notation "1" ;
-  skos:prefLabel "sletting"@nb , "deletion"@en ;
-  skos:inScheme :ItemChangeType ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemDeletion" ; # identifikator
+  skos:notation "1" ; # kode
+  skos:prefLabel "sletting"@nb , "deletion"@en ; # anbefalt kodetekst
+  skos:inScheme :ItemChangeType ; # er i klassifikasjon
   .
 
 :ItemCreation a skos:Concept ;

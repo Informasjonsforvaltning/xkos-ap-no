@@ -64,3 +64,5 @@ Under utarbeidelse av dette dokumentet ble det identifisert behov for å ha en k
 *** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
 *** anbefalt kodetekst (`skos:prefLabel`): "kodetekstendring"@nb , "name change"@en
 *** identifikator (`dct:identifier`): `xkosno:NameChange`
+
+En RDF Turtle representasjon av det foreslåtte vokabularet finnes også på https://github.com/Informasjonsforvaltning/xkos-ap-no/blob/develop/examples/eksEndringstyper.ttl[Github].
