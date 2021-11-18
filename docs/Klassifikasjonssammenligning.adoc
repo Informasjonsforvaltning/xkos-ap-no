@@ -1,7 +1,7 @@
 == Klassen Klassifikasjonssammenligning (xkos:Correspondence) [[Klassifikasjonssammenligning]]
 
 [[img-KlassenKlassifikasjonssammenligning]]
-.Klassen Sammenligning (xkos:Correspondence) og klassene den refererer til.
+.Klassen Klassifikasjonssammenligning (xkos:Correspondence) og klassene den refererer til.
 [link=images/KlassenKlassifikasjonssammenligning.png]
 image::images/KlassenKlassifikasjonssammenligning.png[]
 
