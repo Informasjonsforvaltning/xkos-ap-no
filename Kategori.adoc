@@ -170,7 +170,7 @@ Eksempel i RDF Turtle:
 
 <031> a skos:Concept ;
    skos:notation "03.1" ; # koden i denne klassifikasjonen
-   skos:prefLabel "Fiske og fangst+"@nb ,
+   skos:prefLabel "Fiske og fangst"@nb ,
    skos:notation "01.20.00"^^ssb:miljøregnskap2012 ; . # koden i en annen klassifikasjon
 
 ssb:miljøregnskap2012 a skos:ConceptScheme ; .
@@ -191,7 +191,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .
 |Eksempel|Kategorien med koden «A» i «Næringsgruppering 2007» refererer til begrepet ‘primærnæring’.
 |===
 
-Eksempel i RDF Turtle:  +
+Eksempel i RDF Turtle:
 ----
 <A> a skos:Concept ;
    skos:notation "A" ;
@@ -311,7 +311,7 @@ Eksempel I RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 |Eksempel|Den forrige kategori til «B» er «A» i Nivå 1 av «Næringsgruppering 2007 (SN 2007)»
 |===
 
-Eksempel i RDF Turtle:  +
+Eksempel i RDF Turtle:
 ----
 <B> a skos:Concept ;
    xkos:previus <A> ; .
@@ -414,7 +414,7 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |Eksempel|Kategorien med kode «D» og anbefalt tekst «Elektrisitets-, gass-, damp- og varmtvannsforsyning» i «Næringsgruppering 2007» har tillatt kodetekst «Kraftforsyning».
 |===
 
-Eksempel i RDF Turtle:  +
+Eksempel i RDF Turtle:  
 ----
 <sn2007-D> a skos:Concept ;
    skos:notation "D" ;
