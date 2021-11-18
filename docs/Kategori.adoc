@@ -24,7 +24,7 @@ Eksempel i RDF Turtle:
 
 ----
 
-=== Obligatoriske egenskaper for klassen Kategori [[Kategori-obligatoriske-egenskaper]]
+=== Obligatoriske egenskaper for klassen _Kategori_ [[Kategori-obligatoriske-egenskaper]]
 
 ==== Kategori – anbefalt kodetekst (skos:prefLabel) [[Kategori-anbefaltKodetekst]]
 
@@ -73,7 +73,7 @@ Eksempel i RDF Turtle:
 <sn2007> a skos:ConceptScheme ; .
 ----
 
-=== Anbefalte egenskaper for klassen Kategori [[Kategori-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Kategori_ [[Kategori-anbefalte-egenskaper]]
 
 ==== Kategori – er første kategori i (skos:topConceptOf) [[Kategori-erFørsteKategoriI]]
 
@@ -220,7 +220,7 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 
-=== Valgfrie egenskaper for klassen Kategori [[Kategori-valgfrie-egenskaper]]
+=== Valgfrie egenskaper for klassen _Kategori_ [[Kategori-valgfrie-egenskaper]]
 
 ==== Kategori – case law (xkos:caseLaw) [[Kategori-caseLaw]]
 
@@ -332,7 +332,7 @@ Eksempel i RDF Turtle:
 |Eksempel|
 |===
 
-==== Kategori – inklusjonsmerknad (xkos:inclusionNote) [[Kategori–inklusjonsmerknad]]
+==== Kategori – inklusjonsmerknad (xkos:inclusionNote) [[Kategori-inklusjonsmerknad]]
 
 [cols="30s,70d"]
 |===
@@ -414,7 +414,7 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |Eksempel|Kategorien med kode «D» og anbefalt tekst «Elektrisitets-, gass-, damp- og varmtvannsforsyning» i «Næringsgruppering 2007» har tillatt kodetekst «Kraftforsyning».
 |===
 
-Eksempel i RDF Turtle:  
+Eksempel i RDF Turtle:
 ----
 <sn2007-D> a skos:Concept ;
    skos:notation "D" ;
