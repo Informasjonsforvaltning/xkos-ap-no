@@ -53,8 +53,6 @@ include::Kontrollerte_vokabularer.adoc[]
 
 include::Vedlegg.adoc[]
 
-include::HvorforOrdetKlassifikasjon.adoc[]
 
-include::ReferereTilEnKategori.adoc[]
 
 include::shared/stats.adoc[]

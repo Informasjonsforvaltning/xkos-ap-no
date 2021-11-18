@@ -13,7 +13,7 @@ image::images/KlassenKlassifikasjon.png[]
 |URI|skos:ConceptScheme
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|I konteksten av dette dokumentet er en gitt variant/versjon av en klassifikasjon også en klassifikasjon.
-|Eksempel|Næringsgruppering 2007 (SN 2007); ICD-10 2021.
+|Eksempel|Næringsgruppering 2007 (SN 2007)
 |===
 
 Eksempel i RDF Turtle:
