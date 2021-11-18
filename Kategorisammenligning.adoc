@@ -1,6 +1,6 @@
 == Klassen Kategorisammenligning (xkos:ConceptAssociation) [[Kategorisammenligning]]
 
-[[img-KlassenKlassifikasjon]]
+[[img-KlassenKategorisammenligning]]
 .Klassen Kategorisammenligning (xkos:ConceptAssociation) og klassen den refererer til.
 [link=images/KlassenKategorisammenligning.png]
 image::images/KlassenKategorisammenligning.png[]
@@ -30,7 +30,7 @@ Eksempel i RDF Turtle:
    skos:prefLabel "Produksjon av elektroniske komponenter og kretskort"@nb ;
    skos:inScheme <sn2007> ; .
 
-<1102n1129vs1108> a xkos:ConceptAssociation ; 
+<1102n1129vs1108> a xkos:ConceptAssociation ;
    xkos:targetConcept <1108> ;
    xkos:sourceConcept <1102> , <1129> ; .
 
