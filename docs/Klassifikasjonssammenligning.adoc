@@ -129,10 +129,10 @@ Eksempel i RDF Turtle:
 |===
 
 Eksempel i RDF Turtle:
-----
+```
 <https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111> a xkos:Correspondence ;  
    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ; . # Statistisk sentralbyrå 
-----
+```
  
 === Anbefalte egenskaper for klassen _Klassifikasjonssammenligning_ [[Klassifikasjonssammenligning-anbefalte-egenskaper]]
 
