@@ -584,7 +584,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Kontrollerte_vokabularer">Bruk av kontrollerte vokabularer</a>
+<li><a href="#BrukAVKontrollerteVokabularer">Bruk av kontrollerte vokabularer</a>
 <ul class="sectlevel3">
 <li><a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a></li>
 </ul>
@@ -4792,14 +4792,223 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Kontrollerte_vokabularer"><a class="link" href="#Kontrollerte_vokabularer">Bruk av kontrollerte vokabularer</a></h3>
+<h3 id="BrukAVKontrollerteVokabularer"><a class="link" href="#BrukAVKontrollerteVokabularer">Bruk av kontrollerte vokabularer</a></h3>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>For å øke semantisk interoperabilitet er det i dette dokumentet stilt krav til bruk av kontrollerte vokabularer (lagt inn som merknad til de aktuelle egenskapene).</p>
+</div>
+<div class="paragraph">
+<p>Kjernegruppen som utarbeidet denne versjonen av spesifikasjonen, valgte å samkjøre med bl.a. <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a> når det gjelder krav til bruk av kontrollerte vokabularer for egenskaper som overlapper med DCAT-AP-NO.</p>
 </div>
 <div class="sect3">
 <h4 id="ForslagTilEndringstyper"><a class="link" href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a></h4>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Under utarbeidelse av dette dokumentet ble det identifisert behov for å ha en kontrollert liste over lovlige typer av endringer mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie, endringer som vil ha betydning for bruken av klassifikasjonene. Ved å bruke verdier fra en kontrollert liste over endringstyper, kan endringene oppgis som strukturert data og dermed også maskinprosesserbart. Med egnet verktøystøtte vil dette gjøre det lettere for brukere av en klassifikasjon å fange opp endringer fra en versjon til en annen. Kjernegruppen foreslo å basere dette vokabularet på «A typology of Item Changes» (Appendix 3 i <a href="https://statswiki.unece.org/display/gsim/Background+Documents?preview=%2F65372409%2F65339469%2FPart+I+Neuchatel_version+2_1.pdf">Neuchâtel Terminology Model - Classification database object types and their attributes, v.2.1 (PDF)</a>).</p>
+</div>
+<div class="paragraph">
+<p><span class="yellow-background">I tillegg til tilbakemeldinger på om det foreslåtte vokabularet dekker behovene, ønsker kjernegruppen spesielt innspill på norske navn</span> (se forklaring til de ulike endringstypene, i Appendix 3 i <a href="https://statswiki.unece.org/display/gsim/Background+Documents?preview=%2F65372409%2F65339469%2FPart+I+Neuchatel_version+2_1.pdf">Neuchâtel Terminology Model - Classification database object types and their attributes, v.2.1 (PDF)</a>).</p>
+</div>
+<div class="paragraph">
+<p><strong>Forslag til vokabularet/klassifikasjonen</strong> (en instans av <code>skos:ConceptScheme</code>):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>antall nivå (<code>xkos:numberOfLevels</code>): 1</p>
+</li>
+<li>
+<p>navn (<code>dct:title</code>): "Kategoriendringstype"@nb / "Classification Items Change Types"@en</p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <a href="https://data.norge.no/vocabulary/xkosno#ItemChangeTypes" class="bare">https://data.norge.no/vocabulary/xkosno#ItemChangeTypes</a> (<code>xkosno:ItemChangeType</code>)</p>
+</li>
+<li>
+<p>utgiver (<code>dct:publisher</code>): Digdir</p>
+</li>
+<li>
+<p>inneholder følgende kategorier (<code>uneskos:contains</code>):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>“Endringstype 1” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 1</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "sletting"@nb , "deletion"@en</p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemDeletion</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>“Endringstype 2” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 2</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "oppretting"@nb , "creation"@en</p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemCreation</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>“Endringstype 3” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 3</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "sammenslåing"@nb , "merging"@en</p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemMerging</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>“Endringstype 4” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 4</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "overtakelse"@nb , "take-over"@en</p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemTakeOver</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>“Endringstype 5” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 5</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "oppsplitting"@nb , "breakdown"@en</p>
+</li>
+<li>
+<p>den inverse av (<code>owl:inverseOf</code>): <code>xkosno:ItemMerging</code></p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemBreakdown</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>“Endringstype 6” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 6</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "avspalting"@nb , "split off"@en</p>
+</li>
+<li>
+<p>den inverse av (<code>owl:inverseOf</code>): <code>xkosno:ItemTakeOver</code></p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemSplitOff</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>“Endringstype 7” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 7</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "overføring"@nb , "transfer"@en</p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:NotationTransfer</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>“Endringstype 8” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 8</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "kodeendring"@nb , "code change"@en</p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:CodeChange</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>“Endringstype 9” (en instans av <code>skos:Concept</code>)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kode (<code>skos:notation</code>): 9</p>
+</li>
+<li>
+<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
+</li>
+<li>
+<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "kodetekstendring"@nb , "name change"@en</p>
+</li>
+<li>
+<p>identifikator (<code>dct:identifier</code>): <code>xkosno:NameChange</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -4861,7 +5070,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-18 07:50:38 UTC
+Sist oppdatert 2021-11-18 08:17:12 UTC
 </div>
 </div>
 </body>
