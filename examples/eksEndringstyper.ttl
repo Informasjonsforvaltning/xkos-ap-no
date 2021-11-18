@@ -1,0 +1,90 @@
+# ---------------------
+# Kontrollert vokabular for Endringstyper, xkosno:ItemChangeType
+#  - både som et eksempel på bruk av XKOS-AP-NO, og også med selve vokabularet definert
+# ---------------------
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uneskos: <http://purl.org/umu/uneskos#> .
+@prefix : <https://data.norge.no/vocabulary/xkosno#> .
+
+# Vokabularet xkosno:ItemChangeType (instans av skos:ConceptScheme):
+
+:ItemChangeType a skos:ConceptScheme ;
+  dct:title "Kategoriendringstype"@nb , "Classification Items Change Types"@en ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemChangeType" ;
+  dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # Digdir
+  uneskos:contains :ItemDeletion, :ItemCreation , :ItemMerging , :ItemTakeOver , :ItemBreakdown , :ItemSplitOff , :NotationTransfer , :CodeChange , :NameChange ; # inneholder kategorier
+  dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ; # åpen lisens CCBY4
+  .
+
+# Kategoriene (instanser av skos:Concept):
+
+:ItemDeletion a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemDeletion" ;
+  skos:notation "1" ;
+  skos:prefLabel "sletting"@nb , "deletion"@en ;
+  skos:inScheme :ItemChangeType ;
+  .
+
+:ItemCreation a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemCreation" ;
+  skos:notation "2" ;
+  skos:prefLabel "oppretting"@nb , "creation"@en ;
+  skos:inScheme :ItemChangeType ;
+  .
+
+:ItemMerging a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemMerging" ;
+  skos:notation "3" ;
+  skos:prefLabel "sammenslåing"@nb , "merging"@en ;
+  skos:inScheme :ItemChangeType ;
+  .
+
+:ItemTakeOver a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemTakeOver" ;
+  skos:notation "4" ;
+  skos:prefLabel "overtakelse"@nb , "take-over"@en ;
+  skos:inScheme :ItemChangeType ;
+  .
+
+:ItemBreakdown a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemBreakdown" ;
+  skos:notation "5" ;
+  skos:prefLabel "oppsplitting"@nb , "breakdown"@en ;
+  owl:inverseOf :ItemMerging ;
+  skos:inScheme :ItemChangeType ;
+  .
+
+:ItemSplitOff a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemSplitOff" ;
+  skos:notation "6" ;
+  skos:prefLabel "avspalting"@nb , "split off"@en ;
+  owl:inverseOf :ItemTakeOver ;
+  skos:inScheme :ItemChangeType ;
+  .
+
+:NotationTransfer a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#NotationTransfer" ;
+  skos:notation "7" ;
+  skos:prefLabel "overføring"@nb , "transfer"@en ;
+  skos:inScheme :ItemChangeType ;
+  .
+
+:CodeChange a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#CodeChange" ;
+  skos:notation "8" ;
+  skos:prefLabel "kodeendring"@nb , "code change"@en ;
+  skos:inScheme :ItemChangeType ;
+  .
+
+:NameChange a skos:Concept ;
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#NameChange" ;
+  skos:notation "9" ;
+  skos:prefLabel "kodetekstendring"@nb , "name change"@en ;
+  skos:inScheme :ItemChangeType ;
+  .
