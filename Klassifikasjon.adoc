@@ -325,7 +325,7 @@ Eksempel i RDF Turtle:
           rdf:first <sn2007-3> ; # nivå 3
           rdf:rest [ a rdf:List ;
             rdf:first <sn2007-4> ; # nivå 4
-            rdf:rest [a rdf:List ;
+            rdf:rest [ a rdf:List ;
               rdf:first <sn2007-5>; # nivå 5
               rdf:rest rdf:nil ;
               ] ;

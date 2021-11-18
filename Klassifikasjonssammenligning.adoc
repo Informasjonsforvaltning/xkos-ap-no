@@ -134,7 +134,7 @@ Eksempel i RDF Turtle:
    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ; . # Statistisk sentralbyrå 
 ----
  
-=== Anbefalte egenskaper for klassen Klassifikasjonssammenligning [[Klassifikasjonssammenligning-anbefalte-egenskaper]]
+=== Anbefalte egenskaper for klassen _Klassifikasjonssammenligning_ [[Klassifikasjonssammenligning-anbefalte-egenskaper]]
 
 ==== Klassifikasjonssammenligning – beskrivelse (dct:description) [[Klassifikasjonssammenligning-beskrivelse]]
  
