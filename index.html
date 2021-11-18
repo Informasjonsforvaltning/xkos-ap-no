@@ -569,7 +569,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Kategorisammenligning">Klassen Kategorisammenligning (xkos:ConceptAssociation)</a></li>
+<li><a href="#Kategorisammenligning">Klassen Kategorisammenligning (xkos:ConceptAssociation)</a>
+<ul class="sectlevel3">
+<li><a href="#Kategorisammenligning-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Kategorisammenligning</em></a>
+<ul class="sectlevel4">
+<li><a href="#Kategorisammenligning-harKildekategori">Kategorisammenligning – har kildekategori (xkos:sourceConcept)</a></li>
+<li><a href="#Kategorisammenligning-harMålkategori">Kategorisammenligning – har målkategori (xkos:targetConcept)</a></li>
+</ul>
+</li>
+<li><a href="#Kategorisammenligning-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Kategorisammenligning</em></a>
+<ul class="sectlevel4">
+<li><a href="#Kategorisammenligning-typeEndring">Kategorisammenligning – type endring (dct:type)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Kontrollerte_vokabularer">Bruk av kontrollerte vokabularer</a>
 <ul class="sectlevel3">
 <li><a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a></li>
@@ -4529,8 +4543,252 @@ Eksempel i RDF Turtle: </p>
 </div>
 <div class="sect2">
 <h3 id="Kategorisammenligning"><a class="link" href="#Kategorisammenligning">Klassen Kategorisammenligning (xkos:ConceptAssociation)</a></h3>
+<div id="img-KlassenKlassifikasjon" class="imageblock">
+<div class="content">
+<a class="image" href="images/KlassenKategorisammenligning.png"><img src="images/KlassenKategorisammenligning.png" alt="KlassenKategorisammenligning"></a>
+</div>
+<div class="title">Figur 10. Klassen Kategorisammenligning (xkos:ConceptAssociation) og klassen den refererer til.</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Category correspondence</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere sammenligning mellom kategorier.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To represent correspondences between classification items.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:ConceptAssociation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sammenligning mellom kategorien «1.11 – Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007» (målkategori), og kategorien «26.1 – Produksjon av elektroniske komponenter og kretskort» i «Næringsgruppering 2007 (SN 2007)» (kildekategori).</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>&lt;tekst kommer&gt;</p>
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;261vs111&gt; a xkos:ConceptAssociation ;
+   xkos:sourceConcept &lt;sn2007-261&gt; ;
+   xkos:targetConcept &lt;snInfo2007-111&gt; ; .
+
+&lt;snInfo2007-111&gt; a skos:Concept ;
+   skos:prefLabel "Produksjon av elektroniske komponenter og kretskort"@nb ;
+   skos:inScheme &lt;snInfo2007&gt; ; .
+
+&lt;sn2007-261&gt; a skos:Concept ;
+   skos:prefLabel "Produksjon av elektroniske komponenter og kretskort"@nb ;
+   skos:inScheme &lt;sn2007&gt; ; .
+
+&lt;1102n1129vs1108&gt; a xkos:ConceptAssociation ;
+   xkos:targetConcept &lt;1108&gt; ;
+   xkos:sourceConcept &lt;1102&gt; , &lt;1129&gt; ; .
+
+&lt;1108&gt; a skos:Concept ;
+   skos:prefLabel "Sandnes"@nb ;
+   skos:notation "1108" ;
+   skos:inScheme &lt;kommuneinndeling2020&gt; ; .
+
+&lt;1102&gt; a skos:Concept ;
+   skos:prefLabel "Sandnes"@nb ;
+   skos:notation "1102" ;
+   skos:inScheme &lt;kommuneinndeling2019&gt; ; .
+
+&lt;1102&gt; a skos:Concept ;
+   skos:prefLabel "Forsand"@nb ;
+   skos:notation "1129" ;
+   skos:inScheme &lt;kommuneinndeling2019&gt; ; .</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Kategorisammenligning-anbefalte-egenskaper"><a class="link" href="#Kategorisammenligning-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Kategorisammenligning</em></a></h4>
+<div class="sect4">
+<h5 id="Kategorisammenligning-harKildekategori"><a class="link" href="#Kategorisammenligning-harKildekategori">Kategorisammenligning – har kildekategori (xkos:sourceConcept)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">source category</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:sourceConcept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en kildekategori i en kategorisammenligning.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To link to a source concept in the correspondence.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Kategorisammenligning-harMålkategori"><a class="link" href="#Kategorisammenligning-harMålkategori">Kategorisammenligning – har målkategori (xkos:targetConcept)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">target category</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:targetConcept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en målkategori i en kategorisammenligning.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To link to a target concept in the correspondence.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Kategorisammenligning-valgfrie-egenskaper"><a class="link" href="#Kategorisammenligning-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Kategorisammenligning</em></a></h4>
+<div class="sect4">
+<h5 id="Kategorisammenligning-typeEndring"><a class="link" href="#Kategorisammenligning-typeEndring">Kategorisammenligning – type endring (dct:type)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">change type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To specify the type of the change between two classifications in the same classification family/series.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra listen over lovlige endringstyper. Se <a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://www.ssb.no/klass/klassifikasjoner/6/endringer">https://www.ssb.no/klass/klassifikasjoner/6/endringer</a> fra SN2002 til SN2007</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;nil90035&gt; a xkos:ConceptAssociation ;
+ xkos:targetConcept &lt;sn2007-90035&gt; ; # en målkategori og ingen kildekategori
+  dct:type xkosno:itemCreation ; .
+
+&lt;01210vs01410n01420&gt; a xkos:ConceptAssociation ;
+   xkos:sourceConcept &lt;sn2002-01210&gt; ; # en kildekategori
+   xkos:tagetConcept &lt;sn2007-01410&gt; , &lt;sn2007-01420&gt; # to målkategorier
+  dct:type xkosno:ItemBreakdown ; .</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -4603,7 +4861,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-18 07:34:47 UTC
+Sist oppdatert 2021-11-18 07:50:38 UTC
 </div>
 </div>
 </body>
