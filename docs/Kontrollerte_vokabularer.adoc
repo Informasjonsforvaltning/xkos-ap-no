@@ -65,4 +65,4 @@ Under utarbeidelse av dette dokumentet ble det identifisert behov for å ha en k
 *** anbefalt kodetekst (`skos:prefLabel`): "kodetekstendring"@nb , "name change"@en
 *** identifikator (`dct:identifier`): `xkosno:NameChange`
 
-Det foreslåtte vokabularet for endringstyper er beskrevet i henhold til XKOS-AP-NO (denne spesifikasjonen), og gjort tilgjengelig i maskinprosesserbart format RDF Turtle, på https://github.com/Informasjonsforvaltning/xkos-ap-no/blob/develop/examples/eksEndringstyper.ttl[Github].
+Det foreslåtte vokabularet for endringstyper er beskrevet i henhold til XKOS-AP-NO (denne spesifikasjonen), og gjort tilgjengelig i maskinprosesserbart format RDF Turtle, på https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/examples/eksEndringstyper.ttl[Github].

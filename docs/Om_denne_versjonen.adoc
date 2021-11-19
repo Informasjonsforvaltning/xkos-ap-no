@@ -28,6 +28,9 @@ Kjernegruppen som har utarbeidet dette utkastet ønsker dine innspill på bl.a. 
 .. Eksempler:
 ... Generelt, gi oss tilbakemelding på hva (eksempler til hvilken klasse/egenskap) du mener er feil eller uklare, eller mangler etc., med konkrete forbedringsforslag, ev. forslag til (alternative) eksempler.
 .... Når det gjelder eksempler har kjernegruppen brukt følgende prioriteringsrekkefølge: obligatoriske – anbefalte – valgfrie egenskaper, og prosatekst (i tabellene) – eksempel i RDF Turtle (etter tabellene), og derfor ikke alt er eller vil være eksemplifisert.
+. RDF-tekniske innspill:
+.. Under utarbeidelse av denne versjonen av spesifikasjonen, ble det identifisert behov som ikke er dekket av XKOS. Vi har derfor utvidet XKOS med å tilføye egenskaper hentet fra andre RDF-vokabularer. Utvidelsene er kommentert som merknader til de aktuelle egenskapene, markert med "Norsk utvidelse".
+... Generelt: Vi ber om konkrete forslag til ev. andre egenskaper fra eksisterende RDF-vokabularer som du mener passer bedre enn de vi hittil har valgt.
 
 Hvordan gir du tilbakemeldinger?
 
