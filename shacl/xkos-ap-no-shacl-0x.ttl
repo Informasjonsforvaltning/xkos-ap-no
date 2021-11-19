@@ -8,17 +8,14 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rov: <http://www.w3.org/ns/regorg#> .
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix skosno: <https://data.norge.no/vocabulary/skosno#> .
-@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix uneskos: <http://purl.org/umu/uneskos#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix : <https://data.norge.no/vocabulary/skosno#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xkosno: <https://data.norge.no/vocabulary/xkosno#> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/> .
 
 # about this SHACL:
 <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-0x.ttl>
