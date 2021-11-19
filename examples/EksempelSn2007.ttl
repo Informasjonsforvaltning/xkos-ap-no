@@ -11,171 +11,172 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix : <https://examples.com/nace-no/> .
+@prefix ex: <https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/examples/EksempelSn2007.ttl/> .
 
 ### -------------------------------------------
 ### klassifikasjonen (skos:ConceptScheme)
 ### -------------------------------------------
 
-<sn2007> a skos:ConceptScheme ;
+ex:sn2007 a skos:ConceptScheme ;
   skos:prefLabel "Næringsgruppering 2007 (SN 2007)"@nb ;
   xkos:numberOfLevels "5"^^xsd:positiveInteger ;
   xkos:covers <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   xkos:coversExhaustively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   xkos:coversMutuallyExclusively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
-  xkos:belongsTo <sn> ;
-  xkos:supersedes <sn2002> ;
+  xkos:belongsTo ex:sn ;
+  xkos:supersedes ex:sn2002 ;
   xkos:levels [ a rdf:List ;
-    rdf:first <sn2007-1> ; # nivå 1
+    rdf:first ex:sn2007-1 ; # nivå 1
     rdf:rest [ a rdf:List ;
-        rdf:first <sn2007-2> ; # nivå 1
+        rdf:first ex:sn2007-2 ; # nivå 1
         rdf:rest [ a rdf:List ;
-          rdf:first <sn2007-3> ; # nivå 1
+          rdf:first ex:sn2007-3 ; # nivå 1
           rdf:rest [ a rdf:List ;
-            rdf:first <sn2007-4> ; # nivå 1
+            rdf:first ex:sn2007-4 ; # nivå 1
             rdf:rest [a rdf:List ;
-              rdf:first <sn2007-5>; # nivå 1
+              rdf:first ex:sn2007-5; # nivå 1
               rdf:rest rdf:nil ;
               ] ;
             ] ;
           ] ;
         ] ;
     ] ;
-  xkos:variant <fastlandsNorge2009> ;
+  xkos:variant ex:fastlandsNorge2009 ;
   .
 
-<sn2002> a skos:ConceptScheme ; . # for å illustrere bruk av xkos:supersedes
+ex:sn2002 a skos:ConceptScheme ; . # for å illustrere bruk av xkos:supersedes
 
-<fastlandsNorge2009> a skos:Concept ; . # for å illustrere bruk av xkos:variant
+ex:fastlandsNorge2009 a skos:ConceptScheme ; . # for å illustrere bruk av xkos:variant
 
 ### -------------------------------------------
 ### klassifikasjonsnivåer (xkos:ClassificationLevel som er subklasse av skos:Collection)
 ### -------------------------------------------
 
-<sn2007-1> a xkos:ClassificationLevel ;
+ex:sn2007-1 a xkos:ClassificationLevel ;
   skos:prefLabel "SN2007 - nivå 1 - Næringshovedområde"@nb ;
   xkos:depth "1"^^xsd:positiveInteger ;
-  xkos:organizedBy <næringsområde> ;
-  skos:member <A>, <B>, <C> ; # bare noen eksempler
+  xkos:organizedBy ex:næringsområde ;
+  skos:member ex:A, ex:B, ex:C ; # bare noen eksempler
   xkos:covers <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   xkos:coversExhaustively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   xkos:coversMutuallyExclusively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
   .
 
-<sn2007-2> a xkos:ClassificationLevel ;
+ex:sn2007-2 a xkos:ClassificationLevel ;
   skos:prefLabel "SN2007 - nivå 2 - Næring"@nb ;
   xkos:depth "2"^^xsd:positiveInteger ;
-  xkos:organizedBy <næring> ;
-  skos:member <01> , <05> ;
+  xkos:organizedBy ex:næring ;
+  skos:member ex:01 , ex:05 ;
   .
 
-<sn2007-3> a xkos:ClassificationLevel ;
+ex:sn2007-3 a xkos:ClassificationLevel ;
   skos:prefLabel "SN2007 - nivå 3 - Næringshovedgruppe"@nb ;
   xkos:depth "3"^^xsd:positiveInteger ;
-  xkos:organizedBy <næringshovedgruppe> ;
-  skos:member <01.1> , <05.1> ;
+  xkos:organizedBy ex:næringshovedgruppe ;
+  skos:member ex:011 , ex:051 ;
   .
 
-<sn2007-4> a xkos:ClassificationLevel ;
+ex:sn2007-4 a xkos:ClassificationLevel ;
   skos:prefLabel "SN2007 - nivå 4 - Næringsgruppe"@nb ;
   xkos:depth "4"^^xsd:positiveInteger ;
-  xkos:organizedBy <næringsgruppe> ;
-  skos:member <01.11> , <05.10> ;
+  xkos:organizedBy ex:næringsgruppe ;
+  skos:member ex:0111 , ex:0510 ;
   .
 
-<sn2007-5> a xkos:ClassificationLevel ;
+ex:sn2007-5 a xkos:ClassificationLevel ;
   skos:prefLabel "SN2007 - nivå 5 - Næringsundergruppe"@nb ;
   xkos:depth "5"^^xsd:positiveInteger ;
-  xkos:organizedBy <næringsundergruppe> ;
-  skos:member <01.110> , <05.100> ;
+  xkos:organizedBy ex:næringsundergruppe ;
+  skos:member ex:01110 , ex:05100 ;
   .
 
 ### -------------------------------------------
 ### et lite utvalg av kategorier (skos:Concept)
 ### -------------------------------------------
 
-<A> a skos:Concept ;
+ex:A a skos:Concept ;
   skos:prefLabel "Jordbruk, skogbruk og fiske"@nb ;
   skos:notation "A" ;
   xkos:coreContentNote "Inkluderer: Omfatter bruken av planteressursene og de animalske ressursene, inkludert aktiviteter i forbindelse med dyrking av vekster, husdyrhold og -avl, produksjon av tømmer og høsting/utnyttelse av andre planter, dyr og animalske produkter fra en gård eller fra naturen."@nb ;
-  skos:topConceptOf <sn2007> ;
+  skos:inScheme ex:sn2007 ;
+  skos:topConceptOf ex:sn2007 ;
   .
 
-<01> a skos:Concept ;
+ex:01 a skos:Concept ;
   skos:prefLabel "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell"@nb ;
   skos:notation "01" ;
   xkos:coreContentNote "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."@nb ;
   xkos:additionalContentNote "Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst."@nb ;
   xkos:exclusionNote "Ekskluderer: Grunnarbeid, f.eks. anlegg av jordterrasser, drenering o.l. grupperes under næringshovedområde: F Bygge- og anleggsvirksomhet. Kjøpere og andelslag engasjert i markedsføring av jordbruksprodukter grupperes under næringshovedområde: G Varehandel, reparasjon av motorvogner. Stell og vedlikehold av landskap grupperes under: 81.30 Beplantning av hager og parkanlegg."@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
-<05> a skos:Concept ;
+ex:05 a skos:Concept ;
 skos:notation "05" ;
 skos:prefLabel "Bryting av steinkull og brunkull"@nb ;
-skos:inScheme <sn2007> ;
+skos:inScheme ex:sn2007 ;
 .
 
-<01.1> a skos:Concept ;
+ex:011 a skos:Concept ;
   skos:notation "01.1" ;
   skos:prefLabel "Dyrking av ettårige vekster"@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
-<05.1> a skos:Concept ;
+ex:051 a skos:Concept ;
   skos:notation "05.1" ;
   skos:prefLabel "Bryting av steinkull"@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
-<01.11> a skos:Concept ;
+ex:0111 a skos:Concept ;
   skos:notation "01.11" ;
   skos:prefLabel "Dyrking av korn (unntatt ris), belgvekster og oljeholdige vekster"@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
-<05.10> a skos:Concept ;
+ex:0510 a skos:Concept ;
   skos:notation "05.10" ;
   skos:prefLabel "Bryting av steinkull"@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
-<01.110> a skos:Concept ;
+ex:01110 a skos:Concept ;
   skos:notation "01.110" ;
   skos:prefLabel "Dyrking av korrn (unntatt ris), belgvekster og oljeholdige vekster"@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
-<05.100> a skos:Concept ;
+ex:05100 a skos:Concept ;
   skos:notation "05.100" ;
   skos:prefLabel "Bryting av steinkull"@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
-<B> a skos:Concept ;
+ex:B a skos:Concept ;
   skos:notation "B" ;
   skos:prefLabel "Bergverksdrift og utvinning"@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
-<C> a skos:Concept ;
+ex:C a skos:Concept ;
   skos:notation "C" ;
   skos:prefLabel "Industri"@nb ;
-  skos:inScheme <sn2007> ;
+  skos:inScheme ex:sn2007 ;
   .
 
 ###
 ### begreper (skos:Concept) som ble referert til ovenfor, her under minimalt med egenskaper:
 ###
 
-<sn> a skos:Concept ; skos:prefLabel "Standard for næringsgruppering (SN)"@nb ; .
+ex:sn a skos:Concept ; skos:prefLabel "Standard for næringsgruppering (SN)"@nb ; .
 
-<næringshovedområde> a skos:Concept ; skos:prefLabel "næringshovedområde"@nb ; .
+ex:næringshovedområde a skos:Concept ; skos:prefLabel "næringshovedområde"@nb ; .
 
-<næring> a skos:Concept ; skos:prefLabel "næring"@nb ; .
+ex:næring a skos:Concept ; skos:prefLabel "næring"@nb ; .
 
-<næringshovedgruppe> a skos:Concept ; skos:prefLabel "næringshovedgruppe"@nb ; .
+ex:næringshovedgruppe a skos:Concept ; skos:prefLabel "næringshovedgruppe"@nb ; .
 
-<næringsgruppe> a skos:Concept ; skos:prefLabel "næringsgruppe"@nb ; .
+ex:næringsgruppe a skos:Concept ; skos:prefLabel "næringsgruppe"@nb ; .
 
-<næringsundergruppe> a skos:Concept ; skos:prefLabel "næringsundergruppe"@nb ; .
+ex:næringsundergruppe a skos:Concept ; skos:prefLabel "næringsundergruppe"@nb ; .

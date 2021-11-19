@@ -65,7 +65,7 @@
     sh:property [ # identifikator
       sh:name "identifikator"@nb , "identifier"@en ;
       sh:path dct:identifier ;
-      sh:nodeKind sh:IRI ;
+      sh:nodeKind sh:IRIOrLiteral ;
       sh:minCount 1 ;
       sh:maxCount 1 ;
       sh:severity sh:Violation ;
@@ -497,7 +497,7 @@
     sh:property [ # identifikator
       sh:name "identifikator"@nb , "identifier"@en ;
       sh:path dct:identifier ;
-      sh:nodeKind sh:IRI ;
+      sh:nodeKind sh:IRIOrLiteral ;
       sh:minCount 1 ;
       sh:maxCount 1 ;
       sh:severity sh:Violation ;

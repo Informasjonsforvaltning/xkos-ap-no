@@ -16,7 +16,7 @@
 
 :ItemChangeType a skos:ConceptScheme ;
   xkos:numberOfLevels "1"^^xsd:positiveInteger ; # antall nivå
-  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemChangeType" ; # identifikator
+  dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemChangeType"^^xsd:anyURI ; # identifikator
   dct:title "Kategoriendringstype"@nb , "Classification Items Change Types"@en ; # navn
   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver = Digdir
   uneskos:contains :ItemDeletion, :ItemCreation , :ItemMerging , :ItemTakeOver , :ItemBreakdown , :ItemSplitOff , :NotationTransfer , :CodeChange , :NameChange ; # inneholder kategorier
