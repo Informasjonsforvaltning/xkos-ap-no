@@ -475,8 +475,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Klassifikasjon-beskrivelse">Klassifikasjon – beskrivelse (dct:description)</a></li>
 <li><a href="#Klassifikasjon-dekker">Klassifikasjon – dekker (xkos:covers)</a></li>
-<li><a href="#Klassifikasjon-dekkerUttømmende">Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</a></li>
 <li><a href="#Klassifikasjon-dekkerGjensidigUtelukkende">Klassifikasjon – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</a></li>
+<li><a href="#Klassifikasjon-dekkerUttømmende">Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</a></li>
 <li><a href="#Klassifikasjon-erstatter">Klassifikasjon – erstatter (xkos:supersedes)</a></li>
 <li><a href="#_klassifikasjon_følger_xkosfollows">Klassifikasjon – følger (xkos:follows)</a></li>
 <li><a href="#Klassifikasjon-gyldigFraOgMed">Klassifikasjon – gyldig fra og med (schema:validFrom)</a></li>
@@ -508,8 +508,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Klassifikasjonsnivå-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Klassifikasjonsnivå</em></a>
 <ul class="sectlevel3">
 <li><a href="#Klassifikasjonsnivå-dekker">Klassifikasjonsnivå – dekker (xkos:covers)</a></li>
-<li><a href="#Klassifikasjonsnivå-dekkerUttømmende">Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively)</a></li>
 <li><a href="#Klassifikasjonsnivå-dekkerGjensidigUtelukkende">Klassifikasjonsnivå – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</a></li>
+<li><a href="#Klassifikasjonsnivå-dekkerUttømmende">Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively)</a></li>
 <li><a href="#Klassifikasjonsnivå-erKlassifisertInnen">Klassifikasjonsnivå – er klassifisert innen (xkos:organizedBy)</a></li>
 </ul>
 </li>
@@ -1502,74 +1502,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-dekkerUttømmende"><a class="link" href="#Klassifikasjon-dekkerUttømmende">Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">covers exhaustively</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:coversExhaustively</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å uttrykke at klassifikasjonen dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:covers</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l., og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. <a href="https://op.europa.eu/s/uBik">EuroVoc</a>, <a href="https://id.loc.gov/authorities/subjects.html">Library of Congress Subject Headings (LOCSH)</a> eller <a href="https://psi.norge.no/los/struktur.html">Los</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The field covered should be represented by a <code>skos:Concept</code>, for example a term from a well-known thesaurus like EuroVoc (<a href="https://op.europa.eu/s/uBik">EUROVOC</a>), the Library of Congress Subject Headings (<a href="https://id.loc.gov/authorities/subjects.html">LOCSH</a>), or <a href="https://psi.norge.no/los/struktur.html">Los</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Næringsgruppering dekker begrepet ‘økonomisk aktivitet’ uttømmende.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;sn2007&gt; a skos:Concept ;
-   xkos:coversExhaustively &lt;http://publications.europa.eu/resource/authority/eurovoc/5992&gt; . # ‘economic activity’</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
 <h4 id="Klassifikasjon-dekkerGjensidigUtelukkende"><a class="link" href="#Klassifikasjon-dekkerGjensidigUtelukkende">Klassifikasjon – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1644,6 +1576,74 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
    xkos:coversMutuallyExclusively &lt;http://publications.europa.eu/resource/authority/eurovoc/5992&gt; ; # ‘economic activity’
    xkos:coversExhaustively &lt;http://publications.europa.eu/resource/authority/eurovoc/5992&gt; ; # ‘economic activity’
    .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Klassifikasjon-dekkerUttømmende"><a class="link" href="#Klassifikasjon-dekkerUttømmende">Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">covers exhaustively</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:coversExhaustively</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å uttrykke at klassifikasjonen dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:covers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l., og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. <a href="https://op.europa.eu/s/uBik">EuroVoc</a>, <a href="https://id.loc.gov/authorities/subjects.html">Library of Congress Subject Headings (LOCSH)</a> eller <a href="https://psi.norge.no/los/struktur.html">Los</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The field covered should be represented by a <code>skos:Concept</code>, for example a term from a well-known thesaurus like EuroVoc (<a href="https://op.europa.eu/s/uBik">EUROVOC</a>), the Library of Congress Subject Headings (<a href="https://id.loc.gov/authorities/subjects.html">LOCSH</a>), or <a href="https://psi.norge.no/los/struktur.html">Los</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Næringsgruppering dekker begrepet ‘økonomisk aktivitet’ uttømmende.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;sn2007&gt; a skos:Concept ;
+   xkos:coversExhaustively &lt;http://publications.europa.eu/resource/authority/eurovoc/5992&gt; . # ‘economic activity’</pre>
 </div>
 </div>
 </div>
@@ -2598,68 +2598,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonsnivå-dekkerUttømmende"><a class="link" href="#Klassifikasjonsnivå-dekkerUttømmende">Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively)</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">covers exhaustively</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:coversExhaustively</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker. </p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:covers</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Et klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. <a href="https://op.europa.eu/s/uBik">EuroVoc</a>, <a href="https://id.loc.gov/authorities/subjects.html">Library of Congress Subject Headings (LOCSH)</a> eller <a href="https://psi.norge.no/los/struktur.html">Los</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The field covered should be represented by a <code>skos:Concept</code>, for example a term from a well-known thesaurus like EuroVoc (<a href="https://op.europa.eu/s/uBik">EUROVOC</a>), the Library of Congress Subject Headings (<a href="https://id.loc.gov/authorities/subjects.html">LOCSH</a>), or <a href="https://psi.norge.no/los/struktur.html">Los</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Næringsgruppering2007» nivå 1 dekker ‘næringsområde’ uttømmende.</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle: Se tilsvarende eksempel under <a href="#Klassifikasjon-dekkerUttømmende">Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</a>.</p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="Klassifikasjonsnivå-dekkerGjensidigUtelukkende"><a class="link" href="#Klassifikasjonsnivå-dekkerGjensidigUtelukkende">Klassifikasjonsnivå – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2727,6 +2665,68 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 <div class="paragraph">
 <p>Eksempel i RDF Turtle: Se tilsvarende eksempel under <a href="#Klassifikasjon-dekkerGjensidigUtelukkende">Klassifikasjon – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Klassifikasjonsnivå-dekkerUttømmende"><a class="link" href="#Klassifikasjonsnivå-dekkerUttømmende">Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">covers exhaustively</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:coversExhaustively</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker. </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:covers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. <a href="https://op.europa.eu/s/uBik">EuroVoc</a>, <a href="https://id.loc.gov/authorities/subjects.html">Library of Congress Subject Headings (LOCSH)</a> eller <a href="https://psi.norge.no/los/struktur.html">Los</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remarks</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The field covered should be represented by a <code>skos:Concept</code>, for example a term from a well-known thesaurus like EuroVoc (<a href="https://op.europa.eu/s/uBik">EUROVOC</a>), the Library of Congress Subject Headings (<a href="https://id.loc.gov/authorities/subjects.html">LOCSH</a>), or <a href="https://psi.norge.no/los/struktur.html">Los</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Næringsgruppering2007» nivå 1 dekker ‘næringsområde’ uttømmende.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle: Se tilsvarende eksempel under <a href="#Klassifikasjon-dekkerUttømmende">Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -5106,7 +5106,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-19 06:46:21 UTC
+Sist oppdatert 2021-11-19 12:04:43 UTC
 </div>
 </div>
 </body>

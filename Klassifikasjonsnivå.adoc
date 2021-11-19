@@ -37,7 +37,7 @@ Eksempel i RDF Turtle:
 |Multiplisitet|1..1
 |Kravsnivå|Obligatorisk/Mandatory
 |Merknad|Det ene nivået i en flat klassifikasjon har verdi 1 som sitt nivånummer.
-|Eksempel|Nivå 4 «Næringsgruppe» i Næringsgruppering har verdi 4 som nivånummer. 
+|Eksempel|Nivå 4 «Næringsgruppe» i Næringsgruppering har verdi 4 som nivånummer.
 |===
 
 Eksempel i RDF Turtle:
@@ -95,26 +95,6 @@ Eksempel i RDF Turtle:
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekker>>.
 
-==== Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively) [[Klassifikasjonsnivå-dekkerUttømmende]]
-
-[cols="30s,70d"]
-|===
-|English name|covers exhaustively
-|URI|xkos:coversExhaustively
-|Range|skos:Concept
-|Beskrivelse|På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker. 
-|Usage note|If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.
-|Subegenskap av|xkos:covers
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Et klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.
-|Merknad 2|Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
-|Remarks|The field covered should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
-|Eksempel|«Næringsgruppering2007» nivå 1 dekker ‘næringsområde’ uttømmende.
-|===
-
-Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekkerUttømmende>>.
-
 ==== Klassifikasjonsnivå – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively) [[Klassifikasjonsnivå-dekkerGjensidigUtelukkende]]
 
 [cols="30s,70d"]
@@ -136,6 +116,26 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekkerUtt�
 |===
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekkerGjensidigUtelukkende>>.
+
+==== Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively) [[Klassifikasjonsnivå-dekkerUttømmende]]
+
+[cols="30s,70d"]
+|===
+|English name|covers exhaustively
+|URI|xkos:coversExhaustively
+|Range|skos:Concept
+|Beskrivelse|På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker. 
+|Usage note|If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.
+|Subegenskap av|xkos:covers
+|Multiplisitet|0..n
+|Kravsnivå|Anbefalt/Recommended
+|Merknad 1|Et klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.
+|Merknad 2|Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
+|Remarks|The field covered should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
+|Eksempel|«Næringsgruppering2007» nivå 1 dekker ‘næringsområde’ uttømmende.
+|===
+
+Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekkerUttømmende>>.
 
 ==== Klassifikasjonsnivå – er klassifisert innen (xkos:organizedBy) [[Klassifikasjonsnivå-erKlassifisertInnen]]
 
