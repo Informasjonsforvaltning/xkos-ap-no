@@ -26,7 +26,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/xkos-ap-no/ +
 *Veileder*: <ingen> +
-*Valideringsverktøy*: https://data.norge.no/validator (ved å bruke https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-0x.ttl[denne shacl-filen] (p.t. under utvikling og testing))
+*Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-0x.ttl[denne shacl-filen] som "Regelsett lenke")
 
 include::Om_denne_versjonen.adoc[]
 
