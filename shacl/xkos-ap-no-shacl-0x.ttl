@@ -523,10 +523,13 @@
   sh:name "språk"@nb , "language"@en ;
   sh:path dct:language ;
   sh:nodeKind sh:IRI ;
-  sh:node :LanguageRestriction ;
+#  sh:node :LanguageRestriction ;
+  sh:or (
+    [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
+    [sh:pattern "^https://publications.europa.eu/resource/authority/language/"] )  ;
   sh:severity sh:Violation ;
-  sh:message "Språk (dct:language) skal ha URI som verdi og som refererer til en verdi på EU sin kontrollerte liste over språk"@nb ,
-    "Language (dct:language) shal be an URI which refers to a value from EUs controlled vocabulary of Language"@en ;
+  sh:message "Språk (dct:language) skal ha URI som verdi og som hentet fra http(s)://publications.europa.eu/resource/authority/language/"@nb ,
+    "Language (dct:language) shal be an URI which refers to a value from http(s)://publications.europa.eu/resource/authority/language/"@en ;
   .
 
 ### dct:modified
@@ -611,7 +614,9 @@
     rdfs:comment "Language Restriction" ;
     rdfs:label "Language Restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/language> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/language>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/language>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
