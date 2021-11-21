@@ -306,7 +306,7 @@ Eksempel i RDF Turtle:
 |English name|level list
 |URI|xkos:levels
 |Range|rdf:List
-|Beskrivelse|Brukes til å referere til de ulike nivåene i klassifikasjonen, som en nøstet liste (`rdf:List`).
+|Beskrivelse|Brukes til å referere til en liste av nivåene i klassifikasjonen (instanser av Klassifikasjonsnivå `xkos:ClassificationLevel`), representert som en sortert RDF-liste (instans av `rdf:List`).
 |Usage note|List of the classification levels represented as an RDF list of ordered levels (instances of ClassificationLevel).
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
