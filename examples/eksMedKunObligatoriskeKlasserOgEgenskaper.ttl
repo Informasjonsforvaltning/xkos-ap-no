@@ -1,0 +1,25 @@
+###
+# Eksempel på bruk av XKOS-AP-NO, kun obligatoriske klasser og deres obligatoriske egenskaper, med dummy data
+#
+# Status 2021-11-21: validert korrekt mot https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-0x.ttl
+###
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://example.org/> .
+
+ex:enKlassifikasjon a skos:ConceptScheme ;
+  xkos:numberOfLevels "1"^^xsd:positiveInteger ;
+  dct:identifier "https://example.org/enKlassifikasjon"^^xsd:anyURI ;
+  dct:title "En klassifikasjon"@nb ;
+  dct:publisher [ a foaf:Agent ] ;
+  .
+
+ex:enKategori a skos:Concept ;
+  skos:prefLabel "en kategori"@nb ;
+  skos:inScheme ex:enKlassifikasjon ;
+  .
