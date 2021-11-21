@@ -1,6 +1,6 @@
 # xkos-ap-no
 
-For forvaltning av "XKOS-AP-NO (Norsk applikasjonsprofil av XKOS)" (Spesifikasjon for beskrivelse av klassifikasjoner)
+For forvaltning av "XKOS-AP-NO (Norsk applikasjonsprofil av XKOS)" (Spesifikasjon for klassifikasjonsbeskrivelser)
 
 Redaktørens utkast blir publisert til: https://informasjonsforvaltning.github.io/xkos-ap-no/
 
