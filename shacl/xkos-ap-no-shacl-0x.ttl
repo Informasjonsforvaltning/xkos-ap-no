@@ -436,7 +436,7 @@
       sh:name "RDF første"@nb , "RDF first"@en ;
       sh:path rdf:first ;
       sh:class xkos:ClassificationLevel ;
-      sh:minCount 1;
+#      sh:minCount 1;
       sh:maxCount 1;
       sh:severity sh:Violation ;
       sh:message "RDF første (rdf:first) skal ha min. 1 og maks. 1 verdi som skal referere til en instans av xkos:ClassificationLevel"@nb ,
@@ -447,7 +447,7 @@
       sh:path rdf:rest ;
 #      sh:or ( [sh:class rdf:List ] [sh:hasValue rdf:nil] ) ;
       sh:class rdf:List ;
-      sh:minCount 1;
+#      sh:minCount 1;
       sh:maxCount 1;
       sh:severity sh:Violation ;
       sh:message "RDF rest (rdf:rest) skal ha min. 1 og maks. 1 verdi som skal referere til en instans av rdf:List eller rdf:nil"@nb ,

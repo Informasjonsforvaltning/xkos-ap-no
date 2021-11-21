@@ -1,6 +1,8 @@
 # ---------------------
 # Kontrollert vokabular for Endringstyper, xkosno:ItemChangeType
 #  - både som et eksempel på bruk av XKOS-AP-NO, og også med selve vokabularet definert
+#
+# Status 2021-11-21: validert korrekt mot https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-0x.ttl
 # ---------------------
 
 @prefix dct: <http://purl.org/dc/terms/> .
