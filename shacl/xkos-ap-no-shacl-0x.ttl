@@ -35,7 +35,7 @@
     dct:description "This document specifies the constraints on properties and classes expressed by XKOS-AP-NO"@en ;
     dct:title "The constraints of XKOS-AP-NO"@en ;
     owl:versionInfo "0.802" ;
-    owl:versionInfo "(hopefully) complete, tested OK against ttl-files under /examples."@en ;
+    owl:versionInfo "(hopefully) complete, tested OK using ttl-files under /examples."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
