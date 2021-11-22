@@ -8,6 +8,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -461,7 +462,9 @@
 :propertyShape_dctCreator a sh:PropertyShape ;
   sh:name "produsent"@nb , "creator"@en ;
   sh:path dct:creator ;
-  sh:class foaf:Agent ;
+  sh:or (
+    [ sh:class foaf:Agent ]
+    [ sh:class rov:RegisteredOrganization ] ) ; # føyet til som en workaround
   sh:severity sh:Violation ;
   sh:message "Produsent (dct:creator) skal referere til en instans av foaf:Agent"@nb ,
     "Creator (dct:creator) shall refer to an instance of foaf:Agent"@en ;
@@ -545,7 +548,9 @@
 :propertyShape_min1max1dctPublisher a sh:PropertyShape ;
   sh:name "utgiver"@nb , "publisher"@en ;
   sh:path dct:publisher ;
-  sh:class foaf:Agent ;
+  sh:or (
+    [ sh:class foaf:Agent ]
+    [ sh:class rov:RegisteredOrganization ] ) ; # føyet til som en workaround
   sh:minCount 1 ;
   sh:maxCount 1 ;
   sh:severity sh:Violation ;
