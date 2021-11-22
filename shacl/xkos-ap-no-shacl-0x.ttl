@@ -29,7 +29,7 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-11-21"^^xsd:date ;
+    dct:modified "2021-11-22"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by XKOS-AP-NO"@en ;
@@ -87,7 +87,7 @@
     sh:property [ # gyldig fra og med
       sh:name "gyldig fra og med"@nb , "valid from inclusive"@en ;
       sh:path schema:validFrom ;
-      sh:shape :DateOrDateTimeDataType_Shape ;
+      sh:node :DateOrDateTimeDataType_Shape ;
       sh:maxCount 1 ;
       sh:severity sh:Violation ;
       sh:message "Gyldig fra og med (schema:validFrom) kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb ,
@@ -96,7 +96,7 @@
     sh:property [ # gyldig til og med
       sh:name "gyldig til og med"@nb , "valid through inclusive"@en ;
       sh:path schema:validThrough ;
-      sh:shape :DateOrDateTimeDataType_Shape ;
+      sh:node :DateOrDateTimeDataType_Shape ;
       sh:maxCount 1 ;
       sh:severity sh:Violation ;
       sh:message "Gyldig til og med (schema:validThrough) kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb ,
@@ -506,7 +506,7 @@
 :propertyShape_max1dctIssued a sh:PropertyShape ;
   sh:name "tilgjengeliggjøringsdato"@nb , "issued"@en ;
   sh:path dct:issued ;
-  sh:shape :DateOrDateTimeDataType_Shape ;
+  sh:node :DateOrDateTimeDataType_Shape ;
   sh:maxCount 1 ;
   sh:severity sh:Violation ;
   sh:message "Tilgjengeliggjøringsdato (dct:issued) kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb ,
@@ -533,7 +533,7 @@
 :propertyShape_max1dctModified a sh:PropertyShape ;
   sh:name "sist oppdatert"@nb , "modified"@en ;
   sh:path dct:modified ;
-  sh:shape :DateOrDateTimeDataType_Shape ;
+  sh:node :DateOrDateTimeDataType_Shape ;
   sh:maxCount 1 ;
   sh:severity sh:Violation ;
   sh:message "Sist oppdatert (dct:modified) kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb ,
