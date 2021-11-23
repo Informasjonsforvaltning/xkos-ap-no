@@ -24,7 +24,7 @@ Spesifikasjonen supplerer XKOS med følgende hovedtyper norske utvidelser:
 
 2.       Administrative egenskaper som XKOS ikke dekker, ved å gjenbruke veletablerte internasjonale vokabularer, f.eks. «utgiver» av en klassifikasjon (`dct:publisher`), «sist oppdatert» (`dct:modified`) etc.
 
-Den enkelte utvidelsen er kommentert i kommentar-feltet til den aktuelle egenskapen.
+Den enkelte utvidelsen er kommentert i merknadsfeltet til den aktuelle egenskapen, merket med "Norsk utvidelse".
 
 === Målgrupper [[Målgrupper]]
 
