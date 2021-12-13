@@ -20,9 +20,11 @@ Spesifikasjonen er en norsk applikasjonsprofil og ikke en direkte oversettelse a
 
 Spesifikasjonen supplerer XKOS med følgende hovedtyper norske utvidelser:
 
-1.       Kravsnivå (obligatorisk, anbefalt eller valgfri) for både klasser og egenskaper og multiplisitet for egenskaper, som XKOS ikke spesifiserer.
+. Kravsnivå (obligatorisk, anbefalt eller valgfri) for både klasser og egenskaper og multiplisitet for egenskaper, som XKOS ikke spesifiserer.
 
-2.       Administrative egenskaper som XKOS ikke dekker, ved å gjenbruke veletablerte internasjonale vokabularer, f.eks. «utgiver» av en klassifikasjon (`dct:publisher`), «sist oppdatert» (`dct:modified`) etc.
+. Administrative egenskaper som XKOS ikke dekker, ved å gjenbruke veletablerte internasjonale vokabularer, f.eks. «utgiver» av en klassifikasjon (`dct:publisher`), «sist oppdatert» (`dct:modified`) etc.
+
+. Semantisk egenskap <<Klassifikasjon-inneholderKategori>> som XKOS ikke har, for å kunne inkludere de aktuelle kategoriene inn i en flat klassifikasjon uten å måtte bruke Klassifikasjonsnivå.
 
 Den enkelte utvidelsen er kommentert i merknadsfeltet til den aktuelle egenskapen, merket med "Norsk utvidelse".
 

@@ -30,12 +30,12 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-11-22"^^xsd:date ;
+    dct:modified "2021-12-13"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by XKOS-AP-NO"@en ;
     dct:title "The constraints of XKOS-AP-NO"@en ;
-    owl:versionInfo "0.802" ;
+    owl:versionInfo "0.803" ;
     owl:versionInfo "(hopefully) complete, tested OK using ttl-files under /examples."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/> ;
     foaf:maker [
@@ -76,14 +76,6 @@
       sh:severity sh:Violation ;
       sh:message "Erstatter (skos:ConceptScheme) kan ha maks. 1 verdi som skal referere til en instans av skos:ConceptScheme"@nb ,
         "Supersedes (skos:ConceptScheme) may have max. 1 value which shall refer to an instance of skos:ConceptScheme"@en ;
-      ] ;
-    sh:property [ # følger
-      sh:name "følger"@nb , "follows"@en ;
-      sh:path xkos:supersedes ;
-      sh:class skos:ConceptScheme ;
-      sh:severity sh:Violation ;
-      sh:message "Følger (xkos:follows) skal referere til en instans av skos:ConceptScheme"@nb ,
-        "Follows (xkos:follows) shall refer to an instance of skos:ConceptScheme"@en ;
       ] ;
     sh:property [ # gyldig fra og med
       sh:name "gyldig fra og med"@nb , "valid from inclusive"@en ;
@@ -262,14 +254,6 @@
           "Additional content note (xkos:additionalContentNote) shall be a Literal"@en ;
         ] ;
     ##### optional properties:
-      sh:property [ # case law
-        sh:name "case law"@nb , "case law"@en ;
-        sh:path xkos:caseLaw ;
-        sh:nodeKind sh:Literal ;
-        sh:severity sh:Violation ;
-        sh:message "Case law (xkos:caseLaw) skal være Literal"@nb ,
-          "Case law (xkos:caseLaw) shall be a Literal"@en ;
-        ] ;
       sh:property [ # definisjon
         sh:name "definisjon"@nb , "definition"@en ;
         sh:path skos:definition ;
