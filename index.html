@@ -444,7 +444,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
-<li><a href="#OmDenneVersjonen">Om denne versjonen</a></li>
 <li><a href="#OmSpesifikasjonen">Om spesifikasjonen</a>
 <ul class="sectlevel2">
 <li><a href="#Formål">Formål</a></li>
@@ -478,7 +477,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Klassifikasjon-dekkerGjensidigUtelukkende">Klassifikasjon – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</a></li>
 <li><a href="#Klassifikasjon-dekkerUttømmende">Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</a></li>
 <li><a href="#Klassifikasjon-erstatter">Klassifikasjon – erstatter (xkos:supersedes)</a></li>
-<li><a href="#_klassifikasjon_følger_xkosfollows">Klassifikasjon – følger (xkos:follows)</a></li>
 <li><a href="#Klassifikasjon-gyldigFraOgMed">Klassifikasjon – gyldig fra og med (schema:validFrom)</a></li>
 <li><a href="#Klassifikasjon-gyldigTilOgMed">Klassifikasjon – gyldig til og med (schema:validThrough)</a></li>
 <li><a href="#Klassifikasjon-harKlassifikasjonsnivå">Klassifikasjon – har klassifikasjonsnivå (xkos:levels)</a></li>
@@ -540,7 +538,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Kategori-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Kategori</em></a>
 <ul class="sectlevel3">
-<li><a href="#Kategori-caseLaw">Kategori – case law (xkos:caseLaw)</a></li>
 <li><a href="#Kategori-definisjon">Kategori – definisjon (skos:definition)</a></li>
 <li><a href="#Kategori-eksempel">Kategori – eksempel (skos:example)</a></li>
 <li><a href="#Kategori-eksklusjonsmerknad">Kategori – eksklusjonsmerknad (skos:exclusionNote)</a></li>
@@ -639,169 +636,15 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <span class="yellow-background">til kommentering, <strong>kommenteringsfrist 10. desember 2021</strong></span><br>
-<strong>Versjon</strong>: 0.8<br>
-<strong>Publisert</strong>: 2021-11-18<br>
-<strong>Oppdatert</strong>: 2021-11-23<br>
+<p><strong>Status</strong>: <mark>under publisering</mark><br>
+<strong>Versjon</strong>: 0.9 (<mark>under publisering</mark>)<br>
+<strong>Publisert</strong>: <mark>under publisering</mark><br>
+<strong>Oppdatert</strong>: 2021-12-13 <mark>under publisering</mark><br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/" class="bare">https://informasjonsforvaltning.github.io/xkos-ap-no/</a><br>
 <strong>Veileder</strong>: &lt;ingen&gt;<br>
 <strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-0x.ttl">denne shacl-filen</a> som "Regelsett lenke")</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="OmDenneVersjonen"><a class="link" href="#OmDenneVersjonen">Om denne versjonen</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Denne versjonen (v.0.8) er til åpen og uformell kommentering, med <strong><span class="yellow-background">kommenteringsfrist 10. desember 2021</span></strong>. Hvem som helst kan kommentere, og du trenger ikke å få dine innspill formelt forankret i din organisasjon.</p>
-</div>
-<div class="paragraph">
-<p>Etter denne kommenteringsrunden vil det bli ferdigstilt en versjon 0.9 (med status «til utprøving») av spesifikasjonen, tentativt før årsskiftet 2021/2022.</p>
-</div>
-<div class="paragraph">
-<p>Kjernegruppen som har utarbeidet dette utkastet ønsker dine innspill på bl.a. følgende:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Innledende kapitler <a href="#OmSpesifikasjonen">Om spesifikasjonen</a> og <a href="#Innledning">Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</a>:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Generelt, gi oss tilbakemelding på om vi treffer de aktuelle målgruppene med disse innledende kapitlene, med konkrete forbedringsforslag hvis ikke.</p>
-</li>
-<li>
-<p>Spesielt om <a href="#Målgrupper">Målgrupper</a>: Savner du flere/andre målgrupper som spesifikasjonen også kan være nyttig for, i så fall hvem, hvorfor og hvordan?</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Omfang:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Er det noen behov som ikke er dekket av spesifikasjonen?</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Generelt, gi oss tilbakemelding på hva du mener mangler, med konkrete eksempler på behov, samt forslag til kravsnivå (obligatorisk/anbefalt/valgfri) og norske navn og beskrivelser.</p>
-</li>
-<li>
-<p>Spesielt, vi har lagt inn spørsmål under noen av egenskapene, der vi eksplisitt spør om du ser behov for de aktuelle egenskapene.</p>
-</li>
-<li>
-<p>Spesielt, dekker de endringstypene som er foreslått under <a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a> de endringstypene du ser behov for?</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Er noen av kravene (obligatoriske/anbefalte/valgfrie) for strenge eller for svake?</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Generelt, gi oss tilbakemelding på hva du mener er for strengt eller for svakt og hvorfor, og forslag til det du mener er riktig kravsnivå.</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Forståelighet:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Norske klasse- og egenskapsnavn. Selv om i utvekslingen/tilgjengeliggjøringen er det URIene (f.eks. <code>skos:prefLabel</code>) som skal tas med og ikke de norske klasse- og egenskapsnavnene, er det viktig at norske navn (f.eks. «anbefalt kodetekst» for egenskapen <code>skos:prefLabel</code>) er forståelige og meningsfulle for målgruppene av spesifikasjonen.</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Generelt, gi oss tilbakemelding på hva du mener kan forbedres, med konkrete forbedringsforslag samt kort begrunnelse.</p>
-</li>
-<li>
-<p>Spesielt ber vi om innspill til norske navn for endringstypene i <a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a>.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Struktur:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Generelt: gi oss tilbakemelding på hva du konkret mener bør kunne forbedres strukturmessig, f.eks. rekkefølgen mellom (under)kapitlene, «mal» for tabellene som nå er brukt til å beskrive klasser og egenskaper, osv.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Beskrivelser av klasser og egenskaper:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Generelt, gi oss tilbakemelding på hva (beskrivelsen av hvilken klasse eller egenskap) du konkret mener bør kunne forbedres, med forslag til alternativ formulering.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Eksempler:</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Generelt, gi oss tilbakemelding på hva (eksempler til hvilken klasse/egenskap) du mener er feil eller uklare, eller mangler etc., med konkrete forbedringsforslag, ev. forslag til (alternative) eksempler.</p>
-<div class="olist upperalpha">
-<ol class="upperalpha" type="A">
-<li>
-<p>Når det gjelder eksempler har kjernegruppen brukt følgende prioriteringsrekkefølge: obligatoriske – anbefalte – valgfrie egenskaper, og prosatekst (i tabellene) – eksempel i RDF Turtle (etter tabellene), og derfor ikke alt er eller vil være eksemplifisert.</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>RDF-tekniske innspill:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Under utarbeidelse av denne versjonen av spesifikasjonen, ble det identifisert behov som ikke er dekket av XKOS. Vi har derfor utvidet XKOS med å tilføye egenskaper hentet fra andre RDF-vokabularer. Utvidelsene er kommentert som merknader til de aktuelle egenskapene, markert med "Norsk utvidelse".</p>
-<div class="olist lowerroman">
-<ol class="lowerroman" type="i">
-<li>
-<p>Generelt: Vi ber om konkrete forslag til ev. andre egenskaper fra eksisterende RDF-vokabularer som du mener passer bedre enn de vi hittil har valgt.</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Hvordan gir du tilbakemeldinger?</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Vi ber deg fortrinnsvis legge dine tilbakemeldinger inn som <a href="https://github.com/Informasjonsforvaltning/xkos-ap-no/issues">Issues på Github</a>. Dersom du ikke allerede har bruker på Github kan du opprette en bruker gratis.</p>
-</li>
-<li>
-<p>Du kan også sende oss dine tilbakemeldinger på e-post, til adressen <a href="mailto:informasjonsforvaltning@digdir.no?subject=XKOS-AP-NOv08">informasjonsforvaltning(at)digdir.no</a>.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Kjernegruppen har vært ledet av Digdir, med representanter fra Statistisk sentralbyrå, Skattedirektoratet, Arbeids- og velferdsdirektoratet, Brønnøysundregistrene og Statens kartverk.</p>
 </div>
 <!-- toc disabled -->
 </div>
@@ -845,6 +688,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </li>
 <li>
 <p>Administrative egenskaper som XKOS ikke dekker, ved å gjenbruke veletablerte internasjonale vokabularer, f.eks. «utgiver» av en klassifikasjon (<code>dct:publisher</code>), «sist oppdatert» (<code>dct:modified</code>) etc.</p>
+</li>
+<li>
+<p>Semantisk egenskap <a href="#Klassifikasjon-inneholderKategori">Klassifikasjon – inneholder kategori (uneskos:contains)</a> som XKOS ikke har, for å kunne inkludere de aktuelle kategoriene inn i en flat klassifikasjon uten å måtte bruke Klassifikasjonsnivå.</p>
 </li>
 </ol>
 </div>
@@ -1681,10 +1527,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">To link major versions of classifications.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:follows</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
@@ -1711,56 +1553,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
    xkos:supersedes &lt;sn2002&gt; ; .</pre>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_klassifikasjon_følger_xkosfollows"><a class="link" href="#_klassifikasjon_følger_xkosfollows">Klassifikasjon – følger (xkos:follows)</a></h4>
-<div class="paragraph">
-<p><span class="yellow-background">Spørsmål til kommenteringsrunden</span>: Har du konkret eksempel på at det er behov for denne egenskapen, dvs. behov for å kunne uttrykke et forhold mellom to klassifikasjoner/versjoner som er «følger <em>i tid</em>», men som ikke er «erstatter» eller «er variant av» (behov som dekket av to andre egenskaper)? Vi kommer til å fjerne denne egenskapen hvis det ikke er behov for den.</p>
-</div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">follows</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:follows</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til klassifikasjon(er) som denne klassifikasjonen i tid følger.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The succession in time of classifications and classification schemes is expressed by the <code>xkos:follows</code> property.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt/Recommended</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bruk egenskapen <a href="#Klassifikasjon-erstatter">Klassifikasjon – erstatter (xkos:supersedes)</a> isteden når man ønsker å uttrykke at den som pekes på skal erstattes av denne.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect3">
 <h4 id="Klassifikasjon-gyldigFraOgMed"><a class="link" href="#Klassifikasjon-gyldigFraOgMed">Klassifikasjon – gyldig fra og med (schema:validFrom)</a></h4>
@@ -3401,60 +3193,6 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 <div class="sect2">
 <h3 id="Kategori-valgfrie-egenskaper"><a class="link" href="#Kategori-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Kategori</em></a></h3>
-<div class="sect3">
-<h4 id="Kategori-caseLaw"><a class="link" href="#Kategori-caseLaw">Kategori – case law (xkos:caseLaw)</a></h4>
-<div class="paragraph">
-<p><span class="yellow-background">Spørsmål til kommenteringsrunden</span>: Har du konkret eksempel på at det er behov for denne egenskapen? Vi kommer til å fjerne denne egenskapen hvis det ikke er behov for den.</p>
-</div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">case law</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:caseLaw</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se den engelske Usage note under.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The actual classification of an item in one position or another of a statistical classification is often decided after a debate between experts. For example, when a new product appears, it is necessary to study its characteristics in respect to the design principles of the classification in order to determine where the product will be classified. Those decisions and the reasoning behind them are recorded and attached to the relevant items of the classification in order to be referred to later on. These special kinds of explanatory notes are called "case law" notes.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:note</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Blant de virksomhetene som deltok i utarbeidelsen av denne versjonen av spesifikasjonen, har vi ikke klart å finne konkrete eksempler på bruken av denne egenskapen. Vi har derfor ikke funnet det riktig ennå å sette på norsk navn og norsk beskrivelse for denne egenskapen. Send oss forslag til norsk navn og beskrivelse, fortrinnsvis med konkrete eksempler på bruken av denne egenskapen.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="sect3">
 <h4 id="Kategori-definisjon"><a class="link" href="#Kategori-definisjon">Kategori – definisjon (skos:definition)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -5111,7 +4849,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-23 17:12:13 UTC
+Sist oppdatert 2021-12-13 15:42:22 UTC
 </div>
 </div>
 </body>

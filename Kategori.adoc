@@ -222,24 +222,6 @@ Eksempel i RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 
 === Valgfrie egenskaper for klassen _Kategori_ [[Kategori-valgfrie-egenskaper]]
 
-==== Kategori – case law (xkos:caseLaw) [[Kategori-caseLaw]]
-
-[yellow-background]#Spørsmål til kommenteringsrunden#: Har du konkret eksempel på at det er behov for denne egenskapen? Vi kommer til å fjerne denne egenskapen hvis det ikke er behov for den.
-
-[cols="30s,70d"]
-|===
-|English name|case law
-|URI|xkos:caseLaw
-|Range|rdfs:Literal
-|Beskrivelse|Se den engelske Usage note under.
-|Usage note|The actual classification of an item in one position or another of a statistical classification is often decided after a debate between experts. For example, when a new product appears, it is necessary to study its characteristics in respect to the design principles of the classification in order to determine where the product will be classified. Those decisions and the reasoning behind them are recorded and attached to the relevant items of the classification in order to be referred to later on. These special kinds of explanatory notes are called "case law" notes.
-|Subegenskap av|skos:note
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|Blant de virksomhetene som deltok i utarbeidelsen av denne versjonen av spesifikasjonen, har vi ikke klart å finne konkrete eksempler på bruken av denne egenskapen. Vi har derfor ikke funnet det riktig ennå å sette på norsk navn og norsk beskrivelse for denne egenskapen. Send oss forslag til norsk navn og beskrivelse, fortrinnsvis med konkrete eksempler på bruken av denne egenskapen.
-|Eksempel|
-|===
-
 ==== Kategori – definisjon (skos:definition) [[Kategori-definisjon]]
 
 [cols="30s,70d"]

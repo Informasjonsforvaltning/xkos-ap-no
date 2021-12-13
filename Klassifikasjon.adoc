@@ -225,7 +225,6 @@ Eksempel i RDF Turtle:
 |Range|skos:ConceptScheme
 |Beskrivelse|Brukes til å referere til en versjon av klassifikasjonen som denne versjonen erstatter.
 |Usage note|To link major versions of classifications.
-|Subegenskap av|xkos:follows
 |Multiplisitet|0..1
 |Kravsnivå|Anbefalt/Recommended
 |Merknad|
@@ -237,25 +236,6 @@ Eksempel i RDF Turtle:
 <sn2007> a skos:ConceptScheme ;
    xkos:supersedes <sn2002> ; .
 ----
-
-==== Klassifikasjon – følger (xkos:follows)
-
-
-[yellow-background]#Spørsmål til kommenteringsrunden#: Har du konkret eksempel på at det er behov for denne egenskapen, dvs. behov for å kunne uttrykke et forhold mellom to klassifikasjoner/versjoner som er «følger _i tid_», men som ikke er «erstatter» eller «er variant av» (behov som dekket av to andre egenskaper)? Vi kommer til å fjerne denne egenskapen hvis det ikke er behov for den.
-
-[cols="30s,70d"]
-|===
-|English name|follows
-|URI|xkos:follows
-|Range|skos:ConceptScheme
-|Beskrivelse|Brukes til å referere til klassifikasjon(er) som denne klassifikasjonen i tid følger.
-|Usage note|The succession in time of classifications and classification schemes is expressed by the `xkos:follows` property.
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|Bruk egenskapen <<Klassifikasjon-erstatter>> isteden når man ønsker å uttrykke at den som pekes på skal erstattes av denne.
-|Eksempel|
-|===
-
 
 ==== Klassifikasjon – gyldig fra og med (schema:validFrom) [[Klassifikasjon-gyldigFraOgMed]]
 
