@@ -8,14 +8,14 @@ image::images/KlassenKlassifikasjonsnivå.png[]
 
 [cols="30s,70d"]
 |===
-|English name|Classification level
-|Beskrivelse|Brukes til å representere et nivå i en klassifikasjon.
-|Usage note|To represent a classification level.
-|URI|xkos:ClassificationLevel
-|Subklasse av|skos:Collection
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|Flate klassifikasjoner betraktes til å inneha ett nivå.
-|Eksempel|Nivå 4 «næringsgruppe» i Næringsgruppering 2007.
+|English name |Classification level
+|Beskrivelse |Brukes til å representere et nivå i en klassifikasjon.
+|Usage note |To represent a classification level.
+|URI |xkos:ClassificationLevel
+|Subklasse av |skos:Collection
+|Kravsnivå |Anbefalt/Recommended
+|Merknad |Flate klassifikasjoner betraktes til å inneha ett nivå.
+|Eksempel |Nivå 4 «næringsgruppe» i Næringsgruppering 2007.
 |===
 
 Eksempel i RDF Turtle:
@@ -29,15 +29,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|depth
-|URI|xkos:depth
-|Range|rdfs:Literal typed as xsd:positiveInteger
-|Beskrivelse|Brukes til å oppgi nivånummer av det aktuelle klassifikasjonsnivået, dvs. avstanden fra dette nivået til «roten» av klassifikasjonen. 1 for det høyeste nivået.
-|Usage note|Depth of a level inside a classification (1 for the highest level).
-|Multiplisitet|1..1
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|Det ene nivået i en flat klassifikasjon har verdi 1 som sitt nivånummer.
-|Eksempel|Nivå 4 «Næringsgruppe» i Næringsgruppering har verdi 4 som nivånummer.
+|English name |depth
+|URI |xkos:depth
+|Range |rdfs:Literal typed as xsd:positiveInteger
+|Beskrivelse |Brukes til å oppgi nivånummer av det aktuelle klassifikasjonsnivået, dvs. avstanden fra dette nivået til «roten» av klassifikasjonen. 1 for det høyeste nivået.
+|Usage note |Depth of a level inside a classification (1 for the highest level).
+|Multiplisitet |1..1
+|Kravsnivå |Obligatorisk/Mandatory
+|Merknad |Det ene nivået i en flat klassifikasjon har verdi 1 som sitt nivånummer.
+|Eksempel |Nivå 4 «Næringsgruppe» i Næringsgruppering har verdi 4 som nivånummer.
 |===
 
 Eksempel i RDF Turtle:
@@ -50,15 +50,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|member
-|URI|skos:member
-|Range|skos:Concept
-|Beskrivelse|Brukes til å referere til kategorier som klassifikasjonsnivået inneholder.
-|Usage note|To refer to the classification items that are in the classification level.
-|Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|
-|Eksempel|Nivå 1 i Næringsgruppering inneholder «A – Jordbruk, skogbruk og fiske», …, og «U – Internasjonale organisasjoner og organer».
+|English name |member
+|URI |skos:member
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til kategorier som klassifikasjonsnivået inneholder.
+|Usage note |To refer to the classification items that are in the classification level.
+|Multiplisitet |1..n
+|Kravsnivå |Obligatorisk/Mandatory
+|Merknad |
+|Eksempel |Nivå 1 i Næringsgruppering inneholder «A – Jordbruk, skogbruk og fiske», …, og «U – Internasjonale organisasjoner og organer».
 |===
 
 Eksempel i RDF Turtle:
@@ -79,18 +79,18 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|covers
-|URI|xkos:covers
-|Range|skos:Concept
-|Beskrivelse|Brukes til å uttrykke at klassifikasjonsnivået dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes.
-|Usage note|A classification covers a defined field: economic activity, occupations, living organisms, etc. XKOS specifies the `xkos:covers` property to express this relation. 
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Ethvert klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. 
-|Merknad 2|Bruk heller egenskapen <<Klassifikasjonsnivå-dekkerUttømmende>> når klassifikasjonen dekker domenet/fagområdet uttømmende, og/eller <<Klassifikasjonsnivå-dekkerGjensidigUtelukkende>> når klassifikasjonen dekker domenet/fagområdet gjensidig utelukkende.  
-|Merknad 3|Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
-|Remarks|The field covered should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
-|Eksempel|«Næringsgruppering 2007» nivå 1 dekker ‘næringsområde’.
+|English name |covers
+|URI |xkos:covers
+|Range |skos:Concept
+|Beskrivelse |Brukes til å uttrykke at klassifikasjonsnivået dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes.
+|Usage note |A classification covers a defined field: economic activity, occupations, living organisms, etc. XKOS specifies the `xkos:covers` property to express this relation. 
+|Multiplisitet |0..n
+|Kravsnivå |Anbefalt/Recommended
+|Merknad 1 |Ethvert klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. 
+|Merknad 2 |Bruk heller egenskapen <<Klassifikasjonsnivå-dekkerUttømmende>> når klassifikasjonen dekker domenet/fagområdet uttømmende, og/eller <<Klassifikasjonsnivå-dekkerGjensidigUtelukkende>> når klassifikasjonen dekker domenet/fagområdet gjensidig utelukkende.  
+|Merknad 3 |Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
+|Remarks |The field covered should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
+|Eksempel |«Næringsgruppering 2007» nivå 1 dekker ‘næringsområde’.
 |===
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekker>>.
@@ -99,20 +99,20 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekker>>.
 
 [cols="30s,70d"]
 |===
-|English name|covers mutually exclusively
-|URI|xkos:coversMutuallyExclusively
-|Range|skos:Concept
-|Beskrivelse|Brukes til å referere til et eller flere begreper som beskriver det domene/fagområde/el.l. som klassifikasjonsnivået dekker gjensidig utelukkende.   
-|Usage note|If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive. If there is no overlap between the classification items at a given level of the classification, we say that the skos:Concepts representing the items are mutually exclusive.
-|Subegenskap av|xkos:covers
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Et klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. og gjensidig utelukkende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.
-|Merknad 2|Et klassifikasjonsnivå i en veldefinert klassifikasjon dekker sitt domene/fagområde/el.l. både uttømmende og gjensidig utelukkende. I slike tilfeller bør både denne egenskapen og Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively) brukes.
-|Merknad 3|Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
-|Remarks|The field covered should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
-|Remarks|Well-defined classifications usually cover their field in a exhaustive and mutually exclusive way (they form a partition of the field): in this case, `xkos:coversExhaustively` and `xkos:coversMutuallyExclusively` will be used together.
-|Eksempel|«Næringsgruppering 2007» nivå 1 dekker ‘næringsområde’ med gjensidig utelukkende kategorier. |
+|English name |covers mutually exclusively
+|URI |xkos:coversMutuallyExclusively
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til et eller flere begreper som beskriver det domene/fagområde/el.l. som klassifikasjonsnivået dekker gjensidig utelukkende.   
+|Usage note |If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive. If there is no overlap between the classification items at a given level of the classification, we say that the skos:Concepts representing the items are mutually exclusive.
+|Subegenskap av / Subproperty of |xkos:covers
+|Multiplisitet |0..n
+|Kravsnivå |Anbefalt/Recommended
+|Merknad 1 |Et klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. og gjensidig utelukkende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.
+|Merknad 2 |Et klassifikasjonsnivå i en veldefinert klassifikasjon dekker sitt domene/fagområde/el.l. både uttømmende og gjensidig utelukkende. I slike tilfeller bør både denne egenskapen og Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively) brukes.
+|Merknad 3 |Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
+|Remarks |The field covered should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
+|Remarks |Well-defined classifications usually cover their field in a exhaustive and mutually exclusive way (they form a partition of the field): in this case, `xkos:coversExhaustively` and `xkos:coversMutuallyExclusively` will be used together.
+|Eksempel |«Næringsgruppering 2007» nivå 1 dekker ‘næringsområde’ med gjensidig utelukkende kategorier.
 |===
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekkerGjensidigUtelukkende>>.
@@ -121,18 +121,18 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekkerGjen
 
 [cols="30s,70d"]
 |===
-|English name|covers exhaustively
-|URI|xkos:coversExhaustively
-|Range|skos:Concept
-|Beskrivelse|På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker. 
-|Usage note|If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.
-|Subegenskap av|xkos:covers
+|English name |covers exhaustively
+|URI |xkos:coversExhaustively
+|Range |skos:Concept
+|Beskrivelse |På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker. 
+|Usage note |If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.
+|Subegenskap av / Subproperty of |xkos:covers
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad 1|Et klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.
-|Merknad 2|Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
-|Remarks|The field covered should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
-|Eksempel|«Næringsgruppering2007» nivå 1 dekker ‘næringsområde’ uttømmende.
+|Kravsnivå |Anbefalt/Recommended
+|Merknad 1 |Et klassifikasjonsnivå i en veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l. og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.
+|Merknad 2 |Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
+|Remarks |The field covered should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
+|Eksempel |«Næringsgruppering2007» nivå 1 dekker ‘næringsområde’ uttømmende.
 |===
 
 Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekkerUttømmende>>.
@@ -141,15 +141,15 @@ Eksempel i RDF Turtle: Se tilsvarende eksempel under <<Klassifikasjon-dekkerUtt�
 
 [cols="30s,70d"]
 |===
-|English name|organized by
-|URI|xkos:organizedBy
-|Range|skos:Concept
-|Beskrivelse|Brukes til å referere til begrep som kategoriene i klassifikasjonsnivået er klassifisert innen.
-|Usage note|Name (or nature, or type) of the items that constitute the level
-|Multiplisitet|0..1
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|
-|Eksempel|«Næringsgruppering 2007» er klassifisert innen: nivå 1 = Næringshovedområde, nivå 2 = Næring, nivå 3 = Næringshovedgruppe, nivå 4 = Næringsgruppe og nivå 5 = Næringsundergruppe.
+|English name |organized by
+|URI |xkos:organizedBy
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til begrep som kategoriene i klassifikasjonsnivået er klassifisert innen.
+|Usage note |Name (or nature, or type) of the items that constitute the level
+|Multiplisitet |0..1
+|Kravsnivå |Anbefalt/Recommended
+|Merknad |
+|Eksempel |«Næringsgruppering 2007» er klassifisert innen: nivå 1 = Næringshovedområde, nivå 2 = Næring, nivå 3 = Næringshovedgruppe, nivå 4 = Næringsgruppe og nivå 5 = Næringsundergruppe.
 |===
 
 Eksempel i RDF Turtle:
@@ -165,16 +165,16 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|notation pattern
-|URI|xkos:notationPattern
-|Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi mønsteret for kodene på et gitt klassifikasjonsnivå. Verdien bør inneholde et https://en.wikipedia.org/wiki/Regular_expression[regulært uttrykk].
-|Usage note|Classification items of a given levels usually have a code (expressed by the `skos:notation` property) that conforms to a specific structure. In order to capture this information, XKOS defines the `xkos:notationPattern` property. This property is attached to a classification level and should contain a https://en.wikipedia.org/wiki/Regular_expression[regular expression] reflecting the code structure of the items of this level.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|Kodene på nivå 1 i «Næringsgruppering 2007» er én stor bokstav (fra A til U).
-|Example|For example, the NACE sections are identified by a capital letter between A and U.
+|English name |notation pattern
+|URI |xkos:notationPattern
+|Range |rdfs:Literal
+|Beskrivelse |Brukes til å oppgi mønsteret for kodene på et gitt klassifikasjonsnivå. Verdien bør inneholde et https://en.wikipedia.org/wiki/Regular_expression[regulært uttrykk].
+|Usage note |Classification items of a given levels usually have a code (expressed by the `skos:notation` property) that conforms to a specific structure. In order to capture this information, XKOS defines the `xkos:notationPattern` property. This property is attached to a classification level and should contain a https://en.wikipedia.org/wiki/Regular_expression[regular expression] reflecting the code structure of the items of this level.
+|Multiplisitet |0..n
+|Kravsnivå |Valgfri/Optional
+|Merknad |
+|Eksempel |Kodene på nivå 1 i «Næringsgruppering 2007» er én stor bokstav (fra A til U).
+|Example |For example, the NACE sections are identified by a capital letter between A and U.
 |===
 
 Eksempel i RDF Turtle:

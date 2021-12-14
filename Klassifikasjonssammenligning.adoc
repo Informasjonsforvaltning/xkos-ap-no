@@ -7,13 +7,13 @@ image::images/KlassenKlassifikasjonssammenligning.png[]
 
 [cols="30s,70d"]
 |===
-|English name|Correspondence
-|Beskrivelse|Brukes til å representere sammenligning mellom to (varianter/versjoner av) klassifikasjoner, dvs. sammenstilling av sammenligninger mellom kategorier.
-|Usage note|To group concept associations between two classifications (concordances, correspondence tables ...).
-|URI|xkos:Correspondence
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»] er en sammenligning mellom «Klassifikasjon av informasjonssektor 2007» og «Næringsgruppering 2007 (SN2007)»
+|English name |Correspondence
+|Beskrivelse |Brukes til å representere sammenligning mellom to (varianter/versjoner av) klassifikasjoner, dvs. sammenstilling av sammenligninger mellom kategorier.
+|Usage note |To group concept associations between two classifications (concordances, correspondence tables ...).
+|URI |xkos:Correspondence
+|Kravsnivå |Valgfri/Optional
+|Merknad |
+|Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»] er en sammenligning mellom «Klassifikasjon av informasjonssektor 2007» og «Næringsgruppering 2007 (SN2007)»
 |===
 
 Eksempel i RDF Turtle:
@@ -27,15 +27,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|made of
-|URI|xkos:madeOf
-|Range|xkos:ConceptAssociation
-|Beskrivelse|Brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.
-|Usage note|To group category correspondences that this correspondence is made of.
-|Multiplisitet|1..n
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|
-|Eksempel| Klassifikasjonssammenligningen https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»] inneholder bl.a. sammenligning mellom kategoriene «26.1 - Produksjon av elektroniske komponenter og kretskort» i «Standard for næringsgruppering (SN2007)» og «1.11 - Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007».
+|English name |made of
+|URI |xkos:madeOf
+|Range |xkos:ConceptAssociation
+|Beskrivelse |Brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.
+|Usage note |To group category correspondences that this correspondence is made of.
+|Multiplisitet |1..n
+|Kravsnivå |Obligatorisk/Mandatory
+|Merknad |
+|Eksempel | Klassifikasjonssammenligningen https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»] inneholder bl.a. sammenligning mellom kategoriene «26.1 - Produksjon av elektroniske komponenter og kretskort» i «Standard for næringsgruppering (SN2007)» og «1.11 - Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007».
 |===
 
 Eksempel i RDF Turtle:
@@ -90,15 +90,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|compares
-|URI|xkos:compares
-|Range|skos:ConceptScheme
-|Beskrivelse|Brukes til å referere til klassifikasjonene (eller versjonene/variantene av samme klassifikasjon) som det sammenlignes mellom.
-|Usage note|To link directly the xkos:Correspondence to the classification schemes that it puts in relation.
-|Multiplisitet|2..2
-|Kravsnivå|Obligatorisk/Mandatory
-|Merknad|
-|Eksempel|«Klassifisering av informasjonssektoren 2007» sammenlignes med «Næringsgruppering 2007 (SN2007)».
+|English name |compares
+|URI |xkos:compares
+|Range |skos:ConceptScheme
+|Beskrivelse |Brukes til å referere til klassifikasjonene (eller versjonene/variantene av samme klassifikasjon) som det sammenlignes mellom.
+|Usage note |To link directly the xkos:Correspondence to the classification schemes that it puts in relation.
+|Multiplisitet |2..2
+|Kravsnivå |Obligatorisk/Mandatory
+|Merknad |
+|Eksempel |«Klassifisering av informasjonssektoren 2007» sammenlignes med «Næringsgruppering 2007 (SN2007)».
 |===
 
 Eksempel i RDF Turtle:

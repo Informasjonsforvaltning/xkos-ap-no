@@ -7,13 +7,13 @@ image::images/KlassenKategorisammenligning.png[]
 
 [cols="30s,70d"]
 |===
-|English name|Category correspondence
-|Beskrivelse|Brukes til å representere sammenligning mellom kategorier.
-|Usage note|To represent correspondences between classification items.
+|English name |Category correspondence
+|Beskrivelse |Brukes til å representere sammenligning mellom kategorier.
+|Usage note |To represent correspondences between classification items.
 |URI|xkos:ConceptAssociation
-|Kravsnivå|Valgfri/Optional
-|Merknad|
-|Eksempel|Sammenligning mellom kategorien «1.11 – Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007» (målkategori), og kategorien «26.1 – Produksjon av elektroniske komponenter og kretskort» i «Næringsgruppering 2007 (SN 2007)» (kildekategori).
+|Kravsnivå |Valgfri/Optional
+|Merknad |
+|Eksempel |Sammenligning mellom kategorien «1.11 – Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007» (målkategori), og kategorien «26.1 – Produksjon av elektroniske komponenter og kretskort» i «Næringsgruppering 2007 (SN 2007)» (kildekategori).
 |===
 
 Eksempel i RDF Turtle:
@@ -56,15 +56,15 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name|source category
-|URI|xkos:sourceConcept
-|Range|skos:Concept
-|Beskrivelse|Brukes til å referere til en kildekategori i en kategorisammenligning.
-|Usage note|To link to a source concept in the correspondence.
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|
-|Eksempel|Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
+|English name |source category
+|URI |xkos:sourceConcept
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til en kildekategori i en kategorisammenligning.
+|Usage note |To link to a source concept in the correspondence.
+|Multiplisitet |0..n
+|Kravsnivå |Anbefalt/Recommended
+|Merknad |
+|Eksempel |Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
 |===
 
 Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
@@ -73,15 +73,15 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 
 [cols="30s,70d"]
 |===
-|English name|target category
-|URI|xkos:targetConcept
-|Range|skos:Concept
-|Beskrivelse|Brukes til å referere til en målkategori i en kategorisammenligning.
-|Usage note|To link to a target concept in the correspondence.
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt/Recommended
-|Merknad|
-|Eksempel| Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
+|English name |target category
+|URI |xkos:targetConcept
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til en målkategori i en kategorisammenligning.
+|Usage note |To link to a target concept in the correspondence.
+|Multiplisitet |0..n
+|Kravsnivå |Anbefalt/Recommended
+|Merknad |
+|Eksempel | Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
 |===
 
 Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
@@ -92,15 +92,15 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 
 [cols="30s,70d"]
 |===
-|English name|change type
-|URI|dct:type
-|Range|skos:Concept
-|Beskrivelse|Brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.
-|Usage note|To specify the type of the change between two classifications in the same classification family/series.
-|Multiplisitet|0..1
-|Kravsnivå|Valgfri/Optional
-|Merknad|Verdien skal velges fra listen over lovlige endringstyper. Se <<ForslagTilEndringstyper>>.
-|Eksempel|Se https://www.ssb.no/klass/klassifikasjoner/6/endringer[https://www.ssb.no/klass/klassifikasjoner/6/endringer] fra SN2002 til SN2007
+|English name |change type
+|URI |dct:type
+|Range |skos:Concept
+|Beskrivelse |Brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.
+|Usage note |To specify the type of the change between two classifications in the same classification family/series.
+|Multiplisitet |0..1
+|Kravsnivå |Valgfri/Optional
+|Merknad |Verdien skal velges fra listen over lovlige endringstyper. Se <<ForslagTilEndringstyper>>.
+|Eksempel |Se https://www.ssb.no/klass/klassifikasjoner/6/endringer[https://www.ssb.no/klass/klassifikasjoner/6/endringer] fra SN2002 til SN2007
 |===
 
 Eksempel i RDF Turtle:

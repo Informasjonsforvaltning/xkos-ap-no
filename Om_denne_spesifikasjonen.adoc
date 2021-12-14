@@ -14,7 +14,7 @@ Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammever
 
 Kapitlet er ikke-normativt.
 
-Spesifikasjonen er anbefalt brukt til å beskrive strukturen av og innholdet i en klassifikasjon. Ettersom spesifikasjonen er basert på RDF (se «Introduksjon til RDF» ([yellow-background]#under utarbeidelse, kommer#)), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinlesbare. Som støtte til teknisk implementering av spesifikasjonen, er det i spesifikasjonen også tatt med en god del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
+Spesifikasjonen er anbefalt brukt til å beskrive strukturen av og innholdet i en klassifikasjon. Ettersom spesifikasjonen er basert på RDF (det er planlagt en «Introduksjon til RDF»), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinlesbare. Som støtte til teknisk implementering av spesifikasjonen, er det i spesifikasjonen også tatt med en god del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
 
 Spesifikasjonen er en norsk applikasjonsprofil og ikke en direkte oversettelse av https://rdf-vocabulary.ddialliance.org/xkos.html[XKOS]. Engelske navn og tekster som er tatt med i spesifikasjonen er ikke alle nødvendigvis ordrett sitat fra engelske kilder.  Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet på, med mindre vi eksplisitt sier at det er et avvik (dvs. også i meningsinnholdet).
 
@@ -34,7 +34,8 @@ Kapitlet er ikke-normativt.
 
 Spesifikasjonen er primært for
 
-* deg som skal beskrive klassifikasjoner på en strukturert måte, +
+* deg som skal beskrive klassifikasjoner på en strukturert måte,
+
 * deg som skal utvikle/tilpasse verktøystøtte for beskrivelser av klassifikasjoner og/eller for utveksling/tilgjengeliggjøring av klassifikasjoner som er beskrevet i henhold til spesifikasjonen.
 
 Spesifikasjonen kan sekundært også brukes av:
