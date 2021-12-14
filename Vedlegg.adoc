@@ -1,6 +1,6 @@
 == Vedlegg [[Vedlegg]]
 
-Vedlegget er ikke-normativt.
+_Vedlegget er ikke-normativt_.
 
 include::HvorforOrdetKlassifikasjon.adoc[]
 

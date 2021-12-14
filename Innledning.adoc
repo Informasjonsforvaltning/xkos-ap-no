@@ -1,6 +1,6 @@
 == Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori [[Innledning]]
 
-Kapitlet er ikke-normativt.
+_Kapitlet er ikke-normativt_.
 
 En *klassifikasjon* er som oftest hierarkisk oppbygd og består av **klassifikasjonsnivå**er, selv om det også finnes «flate» klassifikasjoner som har kun ett klassifikasjonsnivå. På hvert nivå (også det ene nivået i en «flat» klassifikasjon) blir «tingene» klassifisert inn i **kategori**er. De viktigste klassene for klassifikasjonsbeskrivelser er derfor Klassifikasjon, Klassifikasjonsnivå og Kategori.
 
