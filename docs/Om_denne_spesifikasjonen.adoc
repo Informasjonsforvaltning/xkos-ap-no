@@ -2,7 +2,7 @@
 
 === Formål [[Formål]]
 
-Kapitlet er ikke-normativt.
+_Kapitlet er ikke-normativt_.
 
 Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive og tilgjengeliggjøre klassifikasjoner. En felles måte å beskrive strukturen av og innholdet i en klassifikasjon, vil gjøre det enklere for brukere av en klassifikasjon å forstå og bruke klassifikasjonen korrekt. Dette vil også muliggjøre maskinell tilgang til innholdet i en klassifikasjon.
 
@@ -12,7 +12,7 @@ Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammever
 
 === Omfang og avgrensing [[OmfangOgAvgrensing]]
 
-Kapitlet er ikke-normativt.
+_Kapitlet er ikke-normativt_.
 
 Spesifikasjonen er anbefalt brukt til å beskrive strukturen av og innholdet i en klassifikasjon. Ettersom spesifikasjonen er basert på RDF (det er planlagt en «Introduksjon til RDF»), vil beskrivelsene i henhold til spesifikasjonen også være RDF-baserte og dermed maskinlesbare. Som støtte til teknisk implementering av spesifikasjonen, er det i spesifikasjonen også tatt med en god del eksempler i RDF Turtle. Eksemplene i RDF Turtle er kun veiledende, de er ikke komplette og kan også mangle verdier til obligatoriske egenskaper.
 
@@ -30,7 +30,7 @@ Den enkelte utvidelsen er kommentert i merknadsfeltet til den aktuelle egenskape
 
 === Målgrupper [[Målgrupper]]
 
-Kapitlet er ikke-normativt.
+_Kapitlet er ikke-normativt_.
 
 Spesifikasjonen er primært for
 
@@ -44,7 +44,7 @@ Spesifikasjonen kan sekundært også brukes av:
 
 === Forvaltningsregime [[Forvaltningsregime]]
 
-Kapitlet er ikke-normativt.
+_Kapitlet er ikke-normativt_.
 
 Spesifikasjonen forvaltes av https://digdir.no/[Digitaliseringsdirektoratet (Digdir)].
 
