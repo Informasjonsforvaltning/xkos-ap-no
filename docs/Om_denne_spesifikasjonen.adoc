@@ -56,7 +56,7 @@ Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri
 
 === Navnerom som er brukt i spesifikasjonen [[Navnerom]]
 
-Navnerom for spesifikasjonen er `https://data.norge.no/vocabulary/xkosno#`
+Navnerom for spesifikasjonen er `\https://data.norge.no/vocabulary/xkosno#`
 
 [cols="10s,45d,45d"]
 |===
@@ -64,12 +64,12 @@ Navnerom for spesifikasjonen er `https://data.norge.no/vocabulary/xkosno#`
 |dct |http://purl.org/dc/terms/ |https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
 |foaf |http://xmlns.com/foaf/0.1/ |http://xmlns.com/foaf/spec/[FOAF Vocabulary]
 |owl |http://www.w3.org/2002/07/owl# | https://www.w3.org/OWL/[Web Ontology Language (OWL)]
-|rdf |http://www.w3.org/1999/02/22-rdf-syntax-ns |https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
-|rdfs |http://www.w3.org/2000/01/rdf-schema |https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
+|rdf |http://www.w3.org/1999/02/22-rdf-syntax-ns# |https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
+|rdfs |http://www.w3.org/2000/01/rdf-schema# |https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
 |schema |http://schema.org/ | https://schema.org/[Schema.org]
-|skos |http://www.w3.org/2004/02/skos/core |https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
+|skos |http://www.w3.org/2004/02/skos/core# |https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
 |uneskos |http://purl.org/umu/uneskos# |https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
-|xkos |http://rdf-vocabulary.ddialliance.org/xkos |https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
-|xkosno |https://data.norge.no/vocabulary/xkosno# |Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.
-|xsd |http://www.w3.org/2001/XMLSchema |https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition]
+|xkos |http://rdf-vocabulary.ddialliance.org/xkos# |https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
+|xkosno | \https://data.norge.no/vocabulary/xkosno# |Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.
+|xsd |http://www.w3.org/2001/XMLSchema# |https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition]
 |===

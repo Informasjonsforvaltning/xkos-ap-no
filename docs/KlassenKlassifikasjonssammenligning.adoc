@@ -215,7 +215,7 @@ Eksempel i RDF Turtle: 
 |Usage note |To specific the date/time when the classification was made accessible. 
 |Multiplisitet |0..1 
 |Kravsnivå |Anbefalt/Recommended 
-|Merknad  | 
+|Merknad  | Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111 var tilgjengeliggjort 01.01.2009
 |===
  

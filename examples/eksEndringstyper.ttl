@@ -1,4 +1,4 @@
-# ---------------------
+kategorinavn# ---------------------
 # Kontrollert vokabular for Endringstyper, xkosno:ItemChangeType
 #  - både som et eksempel på bruk av XKOS-AP-NO, og også med selve vokabularet definert
 #
@@ -30,7 +30,7 @@
 <https://data.norge.no/vocabulary/xkosno#ItemDeletion> a skos:Concept ;
   dct:identifier "https://data.norge.no/vocabulary/xkosno#ItemDeletion" ; # identifikator
   skos:notation "1" ; # kode
-  skos:prefLabel "sletting"@nb , "deletion"@en ; # anbefalt kodetekst
+  skos:prefLabel "sletting"@nb , "deletion"@en ; # anbefalt kategorinavn
   skos:inScheme xkosno:ItemChangeType ; # er i klassifikasjon
   .
 
@@ -88,6 +88,6 @@
 <https://data.norge.no/vocabulary/xkosno#NameChange> a skos:Concept ;
   dct:identifier "https://data.norge.no/vocabulary/xkosno#NameChange" ;
   skos:notation "9" ;
-  skos:prefLabel "kodetekstendring"@nb , "name change"@en ;
+  skos:prefLabel "navneendring"@nb , "name change"@en ;
   skos:inScheme xkosno:ItemChangeType ;
   .

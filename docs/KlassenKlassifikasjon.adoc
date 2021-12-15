@@ -407,7 +407,7 @@ Eksempel i RDF Turtle:
 |Usage note |To specific the date/time when the classification was made accessible.
 |Multiplisitet |0..1
 |Kravsnivå |Anbefalt/Recommended
-|Merknad |
+|Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 |Eksempel |«Næringsgruppering 2007 (SN2007)» ble tilgjengeliggjort 1. jan. 2009.
 |===
 

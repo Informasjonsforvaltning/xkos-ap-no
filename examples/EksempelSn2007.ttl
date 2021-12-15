@@ -119,7 +119,7 @@ ex:sn2007-5 a xkos:ClassificationLevel ;
 
 ex:A a skos:Concept ;
   # mandatory properties:
-    skos:prefLabel "Jordbruk, skogbruk og fiske"@nb ; # anbefalt kodetekst
+    skos:prefLabel "Jordbruk, skogbruk og fiske"@nb ; # anbefalt kategorinavn
     skos:inScheme ex:sn2007 ; # er i klassifikasjon
   # recommended properties:
     skos:topConceptOf ex:sn2007 ; # er første kategori i

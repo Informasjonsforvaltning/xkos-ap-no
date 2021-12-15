@@ -26,19 +26,19 @@ Eksempel i RDF Turtle:
 
 === Obligatoriske egenskaper for klassen _Kategori_ [[Kategori-obligatoriske-egenskaper]]
 
-==== Kategori – anbefalt kodetekst (skos:prefLabel) [[Kategori-anbefaltKodetekst]]
+==== Kategori – anbefalt kategorinavn (skos:prefLabel) [[Kategori-anbefaltKategorinavn]]
 
 [cols="30s,70d"]
 |===
 |English name |official label
 |URI |skos:prefLabel
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi den anbefalte kodeteksten for kategorien. Gjentas når kodeteksten finnes i flere språk.
+|Beskrivelse |Brukes til å oppgi det anbefalte kategorinavnet for kategorien. Gjentas når navnet finnes i flere språk.
 |Usage note |To specify the official label for the classification item, repeated when the label is in different languages.
 |Multiplisitet |1..n
 |Kravsnivå |Obligatorisk/Mandatory
 |Merknad|
-|Eksempel |«Jordbruk, skogbruk og fiske» er anbefalt kodetekst på norsk for kategorien med koden «A», på nivå 1 i «Næringsgruppering 2007».
+|Eksempel |«Jordbruk, skogbruk og fiske» er anbefalt kategorinavn på norsk for kategorien med koden «A», på nivå 1 i «Næringsgruppering 2007».
 |===
 
 Eksempel i RDF Turtle:
@@ -120,7 +120,7 @@ Eksempel i RDF Turtle:
 Eksempel I RDF Turtle:
 ----
 <01> a skos:Concept ;
-  skos:prefLabel "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell"@nb ; # kodetekst
+  skos:prefLabel "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell"@nb ; # kategorinavn
   skos:notation "01" ; # kode
   xkos:coreContentNote "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."@nb ; # hovedinnhold
   xkos:additionalContentNote "Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst."@nb ; # tilleggsinnhold
@@ -158,7 +158,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
 |Merknad |Samme kategori kan inngå i ulike varianter/klassifikasjoner og da også med ulike koder.
-|Eksempel |«A» er koden for kategorien med kodetekst «Jordbruk, skogbruk og fiske», på nivå 1 i «Næringsgruppering 2007 (SN2007)».
+|Eksempel |«A» er koden for kategorien med kategorinavn «Jordbruk, skogbruk og fiske», på nivå 1 i «Næringsgruppering 2007 (SN2007)».
 |===
 
 Eksempel i RDF Turtle:
@@ -299,14 +299,14 @@ Eksempel i RDF Turtle:
    xkos:previus <A> ; .
 ----
 
-==== Kategori – frarådet kodetekst (skos:hiddenLabel) [[Kategori-frarådetKodetekst]]
+==== Kategori – frarådet kategorinavn (skos:hiddenLabel) [[Kategori-frarådetKategorinavn]]
 
 [cols="30s,70d"]
 |===
 |English name |hidden label
 |URI |skos:hiddenLabel
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi kodetekst som anses som uegnet for kategorien. Gjentas når kodeteksten finnes i flere ulike språk.
+|Beskrivelse |Brukes til å oppgi kategorinavn som anses som uegnet for kategorien. Gjentas når navnet finnes i flere ulike språk.
 |Usage note |To specify the label that is considered as not suitable for the classification item, repeated when the label is in different languages.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -381,19 +381,19 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |Eksempel |Den neste kategori for «A» er «B» i Nivå 1 av «Næringsgruppering 2007 (SN 2007)»
 |===
 
-==== Kategori – tillatt kodetekst (skos:altLabel) [[Kategori-tillattKodetekst]]
+==== Kategori – tillatt kategorinavn (skos:altLabel) [[Kategori-tillattKategorinavn]]
 
 [cols="30s,70d"]
 |===
 |English name |alternative label
 |URI |skos:altLabel
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi alternativ kodetekst (som kan brukes ved siden av den anbefalte kodeteksten). Gjentas når kodeteksten finnes i flere ulike språk.
+|Beskrivelse |Brukes til å oppgi alternativt kategorinavn (som kan brukes ved siden av det anbefalte kategorinavnet). Gjentas når navnet finnes i flere ulike språk.
 |Usage note |To specify alternative label of the category, repeated when the label is in different languages.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
 |Merknad |
-|Eksempel |Kategorien med kode «D» og anbefalt tekst «Elektrisitets-, gass-, damp- og varmtvannsforsyning» i «Næringsgruppering 2007» har tillatt kodetekst «Kraftforsyning».
+|Eksempel |Kategorien med kode «D» og anbefalt tekst «Elektrisitets-, gass-, damp- og varmtvannsforsyning» i «Næringsgruppering 2007» har tillatt kategorinavn «Kraftforsyning».
 |===
 
 Eksempel i RDF Turtle:

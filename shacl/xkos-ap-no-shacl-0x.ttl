@@ -192,13 +192,13 @@
 
 :Concept_Shape a sh:NodeShape ; # klassen Kategori (skos:Concept)
   ##### mandatory properties:
-    sh:property [ # anbefalt kodetekst
-      sh:name "anbefalt kodetekst"@nb , "official label"@en ;
+    sh:property [ # anbefalt kategorinavn
+      sh:name "anbefalt kategorinavn"@nb , "official label"@en ;
       sh:path skos:prefLabel ;
       sh:nodeKind sh:Literal ;
       sh:minCount 1 ;
       sh:severity sh:Violation ;
-      sh:message "Anbefalt kodetekst (skos:prefLabel) skal ha min. 1 verdi som skal være Literal"@nb ,
+      sh:message "Anbefalt kategorinavn (skos:prefLabel) skal ha min. 1 verdi som skal være Literal"@nb ,
         "Official label (skos:prefLabel) shall have min. 1 value which shall be a Literal"@en ;
       ] ;
     sh:property [ # er i klassifikasjon
@@ -287,12 +287,12 @@
         sh:message "Forrige kategori (xkos:previous) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
           "Previous (xkos:previous) may have max. 1 value which shall refer to an instance of skos:Concept"@en ;
         ] ;
-      sh:property [ # frarådet kodetekst
-        sh:name "frarådet kodetekst"@nb , "hidden label"@en ;
+      sh:property [ # frarådet kategorinavn
+        sh:name "frarådet kategorinavn"@nb , "hidden label"@en ;
         sh:path skos:hiddenLabel ;
         sh:nodeKind sh:Literal ;
         sh:severity sh:Violation ;
-        sh:message "Frarådet kodetekst (skos:hiddenLabel) skal være Literal"@nb ,
+        sh:message "Frarådet kategorinavn (skos:hiddenLabel) skal være Literal"@nb ,
           "Hidden label (skos:hiddenLabel) shall be a Literal"@en ;
         ] ;
       sh:property [ # inklusjonsmerknad
@@ -328,12 +328,12 @@
         sh:message "Neste kategori (xkos:next) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
           "Next (xkos:next) may have max. 1 value which shall refer to an instance of skos:Concept"@en ;
         ] ;
-      sh:property [ # tillatt kodetekst
-        sh:name "tillatt kodetekst"@nb , "alternative label"@en ;
+      sh:property [ # tillatt kategorinavn
+        sh:name "tillatt kategorinavn"@nb , "alternative label"@en ;
         sh:path skos:altLabel ;
         sh:nodeKind sh:Literal ;
         sh:severity sh:Violation ;
-        sh:message "Tillatt kodetekst (skos:altLabel) skal være Literal"@nb ,
+        sh:message "Tillatt kategorinavn (skos:altLabel) skal være Literal"@nb ,
           "Alternative label (skos:altLabel) shall be a Literal"@en ;
         ] ;
   sh:targetClass skos:Concept ;

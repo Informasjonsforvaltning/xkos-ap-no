@@ -99,7 +99,8 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 |Usage note |To specify the type of the change between two classifications in the same classification family/series.
 |Multiplisitet |0..1
 |Kravsnivå |Valgfri/Optional
-|Merknad |Verdien skal velges fra listen over lovlige endringstyper. Se <<ForslagTilEndringstyper>>.
+|Merknad 1 |Verdien skal velges fra listen over lovlige endringstyper. Se <<ForslagTilEndringstyper>>.
+|Merknad 2 |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 |Eksempel |Se https://www.ssb.no/klass/klassifikasjoner/6/endringer[https://www.ssb.no/klass/klassifikasjoner/6/endringer] fra SN2002 til SN2007
 |===
 
