@@ -46,7 +46,8 @@ Eksempel i RDF Turtle:
 <261vs111> a xkos:ConceptAssociation ; .
 ----
 
-==== Klassifikasjonssammenligning – identifikator (dct:identifier) [[Klassifikasjonssammenligning-identifikator]]
+[[Klassifikasjonssammenligning-identifikator]]
+==== Klassifikasjonssammenligning – identifikator (dct:identifier) 
 
 [cols="30s,70d"]
 |===
@@ -64,8 +65,8 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111 er identifikator for klassifikasjonssammenligningen mellom «Klassifisering av informasjonssektoren 2007» og «Næringsgruppering 2007 (SN 2007)»
 |===
 
-
-==== Klassifikasjonssammenligning – navn (dct:title) [[Klassifikasjonssammenligning-navn]]
+[[Klassifikasjonssammenligning-navn]]
+==== Klassifikasjonssammenligning – navn (dct:title) 
 
 [cols="30s,70d"]
 |===
@@ -86,7 +87,8 @@ Eksempel i RDF Turtle:
    dct:title "Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)"@nb ; .  
 ----
 
-==== Klassifikasjonssammenligning – sammenligner (xkos:compares) [[Klassifikasjonssammenligning-sammenligner]]
+[[Klassifikasjonssammenligning-sammenligner]]
+==== Klassifikasjonssammenligning – sammenligner (xkos:compares)
 
 [cols="30s,70d"]
 |===
@@ -113,7 +115,8 @@ Eksempel i RDF Turtle:
    skos:prefLabel "Klassifisering av informasjonssektoren 2007"@nb ; .
 ----
 
-==== Klassifikasjonssammenligning – utgiver (dct:publisher) [[Klassifikasjonssammenligning-utgiver]]
+[[Klassifikasjonssammenligning-utgiver]]
+==== Klassifikasjonssammenligning – utgiver (dct:publisher) 
 
 [cols="30s,70d"]
 |===
@@ -136,7 +139,8 @@ Eksempel i RDF Turtle:
 
 === Anbefalte egenskaper for klassen _Klassifikasjonssammenligning_ [[Klassifikasjonssammenligning-anbefalte-egenskaper]]
 
-==== Klassifikasjonssammenligning – beskrivelse (dct:description) [[Klassifikasjonssammenligning-beskrivelse]]
+[[Klassifikasjonssammenligning-beskrivelse]]
+==== Klassifikasjonssammenligning – beskrivelse (dct:description) 
 
 [cols="30s,70d"]
 |===
@@ -157,7 +161,8 @@ Eksempel i RDF Turtle: 
   dct:description "Denne korrespondansetabellen viser korrespondansene på nivå 2 av miljøregnskapet (tilsvarer koden xx.xx)"@nb ; . 
 ----
 
-==== Klassifikasjonssammenligning – sist oppdatert (dct:modified) [[Klassifikasjonssammenligning-sistOppdatert]]
+[[Klassifikasjonssammenligning-sistOppdatert]]
+==== Klassifikasjonssammenligning – sist oppdatert (dct:modified) 
 
 [cols="30s,70d"]
 |===
@@ -178,7 +183,8 @@ Eksempel i RDF Turtle: 
    dct:modified "2009-01-01"^^xsd:dateTime ; . 
 ----
 
-==== Klassifikasjonssammenligning – språk (dct:language) [[Klassifikasjonssammenligning-språk]]
+[[Klassifikasjonssammenligning-språk]]
+==== Klassifikasjonssammenligning – språk (dct:language) 
 
 [cols="30s,70d"]
 |===
@@ -204,7 +210,8 @@ Eksempel i RDF Turtle: 
    . 
 ----
 
-==== Klassifikasjonssammenligning – tilgjengeliggjøringsdato (dct:issued) [[Klassifikasjonssammenligning-tilgjengeliggjøringsdato]]
+[[Klassifikasjonssammenligning-tilgjengeliggjøringsdato]]
+==== Klassifikasjonssammenligning – tilgjengeliggjøringsdato (dct:issued) 
 
 [cols="30s,70d"]
 |===
