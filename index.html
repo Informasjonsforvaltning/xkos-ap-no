@@ -455,11 +455,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#Innledning">Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</a></li>
-<li><a href="#ForenkletModell">Forenklet modell for XKOS-AP-NO</a>
-<ul class="sectlevel2">
+<li><a href="#ForenkletModell">Forenklet modell for XKOS-AP-NO</a></li>
 <li><a href="#Klasseoversikt">Oversikt over klasser i XKOS-AP-NO</a></li>
-</ul>
-</li>
 <li><a href="#Klassifikasjon">Klassen Klassifikasjon (skos:ConceptScheme)</a>
 <ul class="sectlevel2">
 <li><a href="#Klassifikasjon-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Klassifikasjon</em></a>
@@ -522,7 +519,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#Kategori-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Kategori</em></a>
 <ul class="sectlevel3">
-<li><a href="#Kategori-anbefaltKodetekst">Kategori – anbefalt kodetekst (skos:prefLabel)</a></li>
+<li><a href="#Kategori-anbefaltKategorinavn">Kategori – anbefalt kategorinavn (skos:prefLabel)</a></li>
 <li><a href="#Kategori-erIKlassifikasjon">Kategori – er i klassifikasjon (skos:inScheme)</a></li>
 </ul>
 </li>
@@ -542,12 +539,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Kategori-eksempel">Kategori – eksempel (skos:example)</a></li>
 <li><a href="#Kategori-eksklusjonsmerknad">Kategori – eksklusjonsmerknad (skos:exclusionNote)</a></li>
 <li><a href="#Kategori-forrigeKategori">Kategori – forrige kategori (xkos:previous)</a></li>
-<li><a href="#Kategori-frarådetKodetekst">Kategori – frarådet kodetekst (skos:hiddenLabel)</a></li>
+<li><a href="#Kategori-frarådetKategorinavn">Kategori – frarådet kategorinavn (skos:hiddenLabel)</a></li>
 <li><a href="#Kategori-inklusjonsmerknad">Kategori – inklusjonsmerknad (xkos:inclusionNote)</a></li>
 <li><a href="#Kategori-maksimumKodelengde">Kategori – maksimum kodelengde (xkos:maxLength)</a></li>
 <li><a href="#Kategori-merknad">Kategori – merknad (skos:note)</a></li>
 <li><a href="#Kategori-nesteKategori">Kategori – neste kategori (xkos:next)</a></li>
-<li><a href="#Kategori-tillattKodetekst">Kategori – tillatt kodetekst (skos:altLabel)</a></li>
+<li><a href="#Kategori-tillattKategorinavn">Kategori – tillatt kategorinavn (skos:altLabel)</a></li>
 </ul>
 </li>
 </ul>
@@ -607,7 +604,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="images/digitaliseringsdirektoratet.png" alt="digitaliseringsdirektoratet" width="50%">
+<a class="image" href="https://digdir.no/"><img src="images/Digdir.png" alt="Digdir" width="30%"></a>
 </div>
 </div>
 <div class="admonitionblock tip">
@@ -636,10 +633,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <mark>under publisering</mark><br>
-<strong>Versjon</strong>: 0.9 (<mark>under publisering</mark>)<br>
-<strong>Publisert</strong>: <mark>under publisering</mark><br>
-<strong>Oppdatert</strong>: 2021-12-14 <mark>under publisering</mark><br>
+<p><strong>Status</strong>: <mark>til utprøving</mark><br>
+<strong>Versjon</strong>: 0.9<br>
+<strong>Publisert</strong>: 2021-12-15<br>
+<strong>Oppdatert</strong>: 2021-12-15<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/" class="bare">https://informasjonsforvaltning.github.io/xkos-ap-no/</a><br>
@@ -748,7 +745,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="sect2">
 <h3 id="Navnerom"><a class="link" href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a></h3>
 <div class="paragraph">
-<p>Navnerom for spesifikasjonen er <code><a href="https://data.norge.no/vocabulary/xkosno#" class="bare">https://data.norge.no/vocabulary/xkosno#</a></code></p>
+<p>Navnerom for spesifikasjonen er <code>https://data.norge.no/vocabulary/xkosno#</code></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -779,12 +776,12 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdf</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns" class="bare">http://www.w3.org/1999/02/22-rdf-syntax-ns</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" class="bare">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-syntax-grammar/">RDF 1.1 XML Syntax</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdfs</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2000/01/rdf-schema" class="bare">http://www.w3.org/2000/01/rdf-schema</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2000/01/rdf-schema#" class="bare">http://www.w3.org/2000/01/rdf-schema#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-schema/">RDF Schema 1.1</a></p></td>
 </tr>
 <tr>
@@ -794,7 +791,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>skos</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2004/02/skos/core" class="bare">http://www.w3.org/2004/02/skos/core</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2004/02/skos/core#" class="bare">http://www.w3.org/2004/02/skos/core#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/skos-reference/">SKOS Simple Knowledge Organization System</a></p></td>
 </tr>
 <tr>
@@ -804,17 +801,17 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xkos</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://rdf-vocabulary.ddialliance.org/xkos" class="bare">http://rdf-vocabulary.ddialliance.org/xkos</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://rdf-vocabulary.ddialliance.org/xkos#" class="bare">http://rdf-vocabulary.ddialliance.org/xkos#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://rdf-vocabulary.ddialliance.org/xkos.html">An SKOS extension for representing statistical classifications</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xkosno</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/xkosno#" class="bare">https://data.norge.no/vocabulary/xkosno#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://data.norge.no/vocabulary/xkosno#</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema" class="bare">http://www.w3.org/2001/XMLSchema</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema#" class="bare">http://www.w3.org/2001/XMLSchema#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/xmlschema-2/">XML Schema Part 2: Datatypes Second Edition</a></p></td>
 </tr>
 </tbody>
@@ -878,8 +875,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="paragraph">
 <p>Figurene ovenfor viser forenklet modell for XKOS-AP-NO. Diagrammene i figurene er ikke ment som en formell representasjon av XKOS-AP-NO, men kun for å gi en visuell oversikt over klassene og relasjoner mellom klassene. Inntil eventuell overensstemmelse blir rettet opp, har de tekstlige beskrivelsene av klasser og egenskaper forrang. Tilsvarende forrang gjelder også forholdet mellom diagrammene og de tekstlige beskrivelsene i kapitlene der klassene blir nærmere beskrevet.</p>
 </div>
-<div class="sect2">
-<h3 id="Klasseoversikt"><a class="link" href="#Klasseoversikt">Oversikt over klasser i XKOS-AP-NO</a></h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Klasseoversikt"><a class="link" href="#Klasseoversikt">Oversikt over klasser i XKOS-AP-NO</a></h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Følgende klasser er obligatoriske:</p>
 </div>
@@ -931,7 +931,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 <div class="paragraph">
 <p>I kapitelene som beskriver den enkelte klassen, er egenskapene gruppert inn i obligatoriske (skal), anbefalte (bør) og valgfrie (kan) egenskaper og deretter sortert alfabetisk etter norske navn.</p>
-</div>
 </div>
 </div>
 </div>
@@ -1967,7 +1966,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: ikke eksplisitt tatt med i XKOS.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -2707,7 +2706,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="sect2">
 <h3 id="Kategori-obligatoriske-egenskaper"><a class="link" href="#Kategori-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Kategori</em></a></h3>
 <div class="sect3">
-<h4 id="Kategori-anbefaltKodetekst"><a class="link" href="#Kategori-anbefaltKodetekst">Kategori – anbefalt kodetekst (skos:prefLabel)</a></h4>
+<h4 id="Kategori-anbefaltKategorinavn"><a class="link" href="#Kategori-anbefaltKategorinavn">Kategori – anbefalt kategorinavn (skos:prefLabel)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2728,7 +2727,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi den anbefalte kodeteksten for kategorien. Gjentas når kodeteksten finnes i flere språk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi det anbefalte kategorinavnet for kategorien. Gjentas når navnet finnes i flere språk.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -2748,7 +2747,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«Jordbruk, skogbruk og fiske» er anbefalt kodetekst på norsk for kategorien med koden «A», på nivå 1 i «Næringsgruppering 2007».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Jordbruk, skogbruk og fiske» er anbefalt kategorinavn på norsk for kategorien med koden «A», på nivå 1 i «Næringsgruppering 2007».</p></td>
 </tr>
 </tbody>
 </table>
@@ -2946,7 +2945,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="listingblock">
 <div class="content">
 <pre>&lt;01&gt; a skos:Concept ;
-  skos:prefLabel "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell"@nb ; # kodetekst
+  skos:prefLabel "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell"@nb ; # kategorinavn
   skos:notation "01" ; # kode
   xkos:coreContentNote "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."@nb ; # hovedinnhold
   xkos:additionalContentNote "Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst."@nb ; # tilleggsinnhold
@@ -3049,7 +3048,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«A» er koden for kategorien med kodetekst «Jordbruk, skogbruk og fiske», på nivå 1 i «Næringsgruppering 2007 (SN2007)».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«A» er koden for kategorien med kategorinavn «Jordbruk, skogbruk og fiske», på nivå 1 i «Næringsgruppering 2007 (SN2007)».</p></td>
 </tr>
 </tbody>
 </table>
@@ -3409,7 +3408,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-frarådetKodetekst"><a class="link" href="#Kategori-frarådetKodetekst">Kategori – frarådet kodetekst (skos:hiddenLabel)</a></h4>
+<h4 id="Kategori-frarådetKategorinavn"><a class="link" href="#Kategori-frarådetKategorinavn">Kategori – frarådet kategorinavn (skos:hiddenLabel)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3430,7 +3429,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi kodetekst som anses som uegnet for kategorien. Gjentas når kodeteksten finnes i flere ulike språk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi kategorinavn som anses som uegnet for kategorien. Gjentas når navnet finnes i flere ulike språk.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -3667,7 +3666,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kategori-tillattKodetekst"><a class="link" href="#Kategori-tillattKodetekst">Kategori – tillatt kodetekst (skos:altLabel)</a></h4>
+<h4 id="Kategori-tillattKategorinavn"><a class="link" href="#Kategori-tillattKategorinavn">Kategori – tillatt kategorinavn (skos:altLabel)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3688,7 +3687,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi alternativ kodetekst (som kan brukes ved siden av den anbefalte kodeteksten). Gjentas når kodeteksten finnes i flere ulike språk.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi alternativt kategorinavn (som kan brukes ved siden av det anbefalte kategorinavnet). Gjentas når navnet finnes i flere ulike språk.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
@@ -3708,7 +3707,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kategorien med kode «D» og anbefalt tekst «Elektrisitets-, gass-, damp- og varmtvannsforsyning» i «Næringsgruppering 2007» har tillatt kodetekst «Kraftforsyning».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kategorien med kode «D» og anbefalt tekst «Elektrisitets-, gass-, damp- og varmtvannsforsyning» i «Næringsgruppering 2007» har tillatt kategorinavn «Kraftforsyning».</p></td>
 </tr>
 </tbody>
 </table>
@@ -4286,7 +4285,7 @@ Eksempel i RDF Turtle: </p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad  </strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"> </p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"> Norsk utvidelse: ikke eksplisitt tatt med i XKOS.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel </strong></p></td>
@@ -4535,8 +4534,12 @@ Eksempel i RDF Turtle: </p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra listen over lovlige endringstyper. Se <a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: ikke eksplisitt tatt med i XKOS. </p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -4609,7 +4612,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "sletting"@nb , "deletion"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "sletting"@nb , "deletion"@en</p>
 </li>
 <li>
 <p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemDeletion</code></p>
@@ -4628,7 +4631,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "oppretting"@nb , "creation"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "oppretting"@nb , "creation"@en</p>
 </li>
 <li>
 <p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemCreation</code></p>
@@ -4647,7 +4650,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "sammenslåing"@nb , "merging"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "sammenslåing"@nb , "merging"@en</p>
 </li>
 <li>
 <p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemMerging</code></p>
@@ -4666,7 +4669,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "overtakelse"@nb , "take-over"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "overtakelse"@nb , "take-over"@en</p>
 </li>
 <li>
 <p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemTakeOver</code></p>
@@ -4685,7 +4688,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "oppsplitting"@nb , "breakdown"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "oppsplitting"@nb , "breakdown"@en</p>
 </li>
 <li>
 <p>den inverse av (<code>owl:inverseOf</code>): <code>xkosno:ItemMerging</code></p>
@@ -4707,7 +4710,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "avspalting"@nb , "split off"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "avspalting"@nb , "split off"@en</p>
 </li>
 <li>
 <p>den inverse av (<code>owl:inverseOf</code>): <code>xkosno:ItemTakeOver</code></p>
@@ -4729,7 +4732,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "overføring"@nb , "transfer"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "overføring"@nb , "transfer"@en</p>
 </li>
 <li>
 <p>identifikator (<code>dct:identifier</code>): <code>xkosno:NotationTransfer</code></p>
@@ -4748,7 +4751,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "kodeendring"@nb , "code change"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "kodeendring"@nb , "code change"@en</p>
 </li>
 <li>
 <p>identifikator (<code>dct:identifier</code>): <code>xkosno:CodeChange</code></p>
@@ -4767,7 +4770,7 @@ Eksempel i RDF Turtle: </p>
 <p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
 </li>
 <li>
-<p>anbefalt kodetekst (<code>skos:prefLabel</code>): "kodetekstendring"@nb , "name change"@en</p>
+<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "navneendring"@nb , "name change"@en</p>
 </li>
 <li>
 <p>identifikator (<code>dct:identifier</code>): <code>xkosno:NameChange</code></p>
@@ -4846,7 +4849,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-12-14 11:50:04 UTC
+Sist oppdatert 2021-12-15 05:12:38 UTC
 </div>
 </div>
 </body>
