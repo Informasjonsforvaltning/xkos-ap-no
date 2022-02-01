@@ -243,7 +243,7 @@
         sh:maxCount 1 ;
         sh:severity sh:Violation ;
         sh:message "Refererer til begrep (dct:subject) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
-          "Concept (dct:subjectn) may have max. 1 value which shal refer to an instance of skos:Concept"@en ;
+          "Concept (dct:subject) may have max. 1 value which shal refer to an instance of skos:Concept"@en ;
         ] ;
       sh:property [ # tilleggsinnhold
         sh:name "tilleggsinnhold"@nb , "additional content note"@en ;
