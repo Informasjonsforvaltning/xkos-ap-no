@@ -1,0 +1,5 @@
+== Endringslogg [[Endringslogg]]
+
+I tillegg til redaksjonelle justeringer som ikke loggføres her, er følgende kravsmessige endringer foretatt siden utgivelsen av v.0.9:
+
+* *v.0.91*: Etter at det felles kontrollerte vokabularet https://data.norge.no/vocabulary/classification-item-change-type[Kategoriendringstyper] er blitt publisert, er "Merknad 1" og "Eksempel i RDF Turtle" til egenskapen https://informasjonsforvaltning.github.io/xkos-ap-no/#Kategorisammenligning-typeEndring[Kategorisammenligning – type endring (dct:type)] oppdatert ved å referere til det publiserte vokabularet. Kapitlet med forslag til et kontrollert vokabular for endringstyper er også fjernet.

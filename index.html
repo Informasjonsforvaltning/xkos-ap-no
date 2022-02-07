@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.16">
+<meta name="generator" content="Asciidoctor 2.0.17">
 <title>Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -193,7 +193,8 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
 details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
 details{margin-left:1.25rem}
-details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;-webkit-tap-highlight-color:transparent}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
 details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
 details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
 details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
@@ -235,9 +236,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{border-right:1px solid;opacity:.35;padding-right:.5em}
-pre.pygments .lineno{border-right:1px solid;opacity:.35;display:inline-block;margin-right:.75em}
-pre.pygments .lineno::before{content:"";margin-right:-.125em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
@@ -274,7 +274,7 @@ table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-c
 table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
 table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
 table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
-table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
 th.halign-center,td.halign-center{text-align:center}
@@ -290,10 +290,11 @@ ol{margin-left:1.75em}
 ul li ol{margin-left:1.5em}
 dl dd{margin-left:1.125em}
 dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
-ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
 ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
 ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
 ul.checklist>li>p:first-child{margin-left:-1em}
 ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
 ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
@@ -336,8 +337,6 @@ sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
 #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
 #footnotes .footnote:last-of-type{margin-bottom:0}
 #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
-.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
-.gist .file-data>table td.line-data{width:99%}
 div.unbreakable{page-break-inside:avoid}
 .big{font-size:larger}
 .small{font-size:smaller}
@@ -585,17 +584,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#BrukAVKontrollerteVokabularer">Bruk av kontrollerte vokabularer</a>
-<ul class="sectlevel2">
-<li><a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a></li>
-</ul>
-</li>
 <li><a href="#Vedlegg">Vedlegg</a>
 <ul class="sectlevel2">
 <li><a href="#HvorforOrdetKlassifikasjon">Hvorfor bruker dette dokumentet ordet «klassifikasjon»?</a></li>
 <li><a href="#ReferereTilEnKategori">Å referere til en gitt kategori (i en gitt klassifikasjon)</a></li>
 </ul>
 </li>
+<li><a href="#Endringslogg">Endringslogg</a></li>
 </ul>
 </div>
 </div>
@@ -634,9 +629,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>til utprøving</mark><br>
-<strong>Versjon</strong>: 0.9<br>
-<strong>Publisert</strong>: 2021-12-15<br>
-<strong>Oppdatert</strong>: 2021-12-15<br>
+<strong>Versjon</strong>: 0.91 (se <a href="#Endringslogg">Endringslogg</a>)<br>
+<strong>Publisert</strong>: 2021-12-15 (v.0.9)<br>
+<strong>Oppdatert</strong>: 2021-12-15 (v.0.91)<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/" class="bare">https://informasjonsforvaltning.github.io/xkos-ap-no/</a><br>
@@ -647,10 +642,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="OmSpesifikasjonen"><a class="link" href="#OmSpesifikasjonen">Om spesifikasjonen</a></h2>
+<h2 id="OmSpesifikasjonen"><a class="anchor" href="#OmSpesifikasjonen"></a>Om spesifikasjonen</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="Formål"><a class="link" href="#Formål">Formål</a></h3>
+<h3 id="Formål"><a class="anchor" href="#Formål"></a>Formål</h3>
 <div class="paragraph">
 <p><em>Kapitlet er ikke-normativt</em>.</p>
 </div>
@@ -665,7 +660,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="OmfangOgAvgrensing"><a class="link" href="#OmfangOgAvgrensing">Omfang og avgrensing</a></h3>
+<h3 id="OmfangOgAvgrensing"><a class="anchor" href="#OmfangOgAvgrensing"></a>Omfang og avgrensing</h3>
 <div class="paragraph">
 <p><em>Kapitlet er ikke-normativt</em>.</p>
 </div>
@@ -696,7 +691,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Målgrupper"><a class="link" href="#Målgrupper">Målgrupper</a></h3>
+<h3 id="Målgrupper"><a class="anchor" href="#Målgrupper"></a>Målgrupper</h3>
 <div class="paragraph">
 <p><em>Kapitlet er ikke-normativt</em>.</p>
 </div>
@@ -725,7 +720,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Forvaltningsregime"><a class="link" href="#Forvaltningsregime">Forvaltningsregime</a></h3>
+<h3 id="Forvaltningsregime"><a class="anchor" href="#Forvaltningsregime"></a>Forvaltningsregime</h3>
 <div class="paragraph">
 <p><em>Kapitlet er ikke-normativt</em>.</p>
 </div>
@@ -737,13 +732,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="OmKravene"><a class="link" href="#OmKravene">Om kravene i spesifikasjonen</a></h3>
+<h3 id="OmKravene"><a class="anchor" href="#OmKravene"></a>Om kravene i spesifikasjonen</h3>
 <div class="paragraph">
 <p>Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene">DCAT-AP-NO</a> og gjentas derfor ikke her.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Navnerom"><a class="link" href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a></h3>
+<h3 id="Navnerom"><a class="anchor" href="#Navnerom"></a>Navnerom som er brukt i spesifikasjonen</h3>
 <div class="paragraph">
 <p>Navnerom for spesifikasjonen er <code>https://data.norge.no/vocabulary/xkosno#</code></p>
 </div>
@@ -820,7 +815,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Innledning"><a class="link" href="#Innledning">Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</a></h2>
+<h2 id="Innledning"><a class="anchor" href="#Innledning"></a>Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Kapitlet er ikke-normativt</em>.</p>
@@ -852,7 +847,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="ForenkletModell"><a class="link" href="#ForenkletModell">Forenklet modell for XKOS-AP-NO</a></h2>
+<h2 id="ForenkletModell"><a class="anchor" href="#ForenkletModell"></a>Forenklet modell for XKOS-AP-NO</h2>
 <div class="sectionbody">
 <div id="img-ForenkletModellObligatoriske" class="imageblock">
 <div class="content">
@@ -878,7 +873,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Klasseoversikt"><a class="link" href="#Klasseoversikt">Oversikt over klasser i XKOS-AP-NO</a></h2>
+<h2 id="Klasseoversikt"><a class="anchor" href="#Klasseoversikt"></a>Oversikt over klasser i XKOS-AP-NO</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Følgende klasser er obligatoriske:</p>
@@ -935,7 +930,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Klassifikasjon"><a class="link" href="#Klassifikasjon">Klassen Klassifikasjon (skos:ConceptScheme)</a></h2>
+<h2 id="Klassifikasjon"><a class="anchor" href="#Klassifikasjon"></a>Klassen Klassifikasjon (skos:ConceptScheme)</h2>
 <div class="sectionbody">
 <div id="img-KlassenKlassifikasjon" class="imageblock">
 <div class="content">
@@ -993,9 +988,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Klassifikasjon-obligatoriske-egenskaper"><a class="link" href="#Klassifikasjon-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Klassifikasjon</em></a></h3>
+<h3 id="Klassifikasjon-obligatoriske-egenskaper"><a class="anchor" href="#Klassifikasjon-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Klassifikasjon</em></h3>
 <div class="sect3">
-<h4 id="Klassifikasjon-antallNivåer"><a class="link" href="#Klassifikasjon-antallNivåer">Klassifikasjon – antall nivåer (xkos:numberOfLevels)</a></h4>
+<h4 id="Klassifikasjon-antallNivåer"><a class="anchor" href="#Klassifikasjon-antallNivåer"></a>Klassifikasjon – antall nivåer (xkos:numberOfLevels)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1051,7 +1046,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-identifikator"><a class="link" href="#Klassifikasjon-identifikator">Klassifikasjon – identifikator (dct:identifier)</a></h4>
+<h4 id="Klassifikasjon-identifikator"><a class="anchor" href="#Klassifikasjon-identifikator"></a>Klassifikasjon – identifikator (dct:identifier)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1112,7 +1107,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-navn"><a class="link" href="#Klassifikasjon-navn">Klassifikasjon – navn (dct:title)</a></h4>
+<h4 id="Klassifikasjon-navn"><a class="anchor" href="#Klassifikasjon-navn"></a>Klassifikasjon – navn (dct:title)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1169,7 +1164,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-utgiver"><a class="link" href="#Klassifikasjon-utgiver">Klassifikasjon – utgiver (dct:publisher)</a></h4>
+<h4 id="Klassifikasjon-utgiver"><a class="anchor" href="#Klassifikasjon-utgiver"></a>Klassifikasjon – utgiver (dct:publisher)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1226,9 +1221,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Klassifikasjon-anbefalte-egenskaper"><a class="link" href="#Klassifikasjon-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Klassifikasjon</em></a></h3>
+<h3 id="Klassifikasjon-anbefalte-egenskaper"><a class="anchor" href="#Klassifikasjon-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Klassifikasjon</em></h3>
 <div class="sect3">
-<h4 id="Klassifikasjon-beskrivelse"><a class="link" href="#Klassifikasjon-beskrivelse">Klassifikasjon – beskrivelse (dct:description)</a></h4>
+<h4 id="Klassifikasjon-beskrivelse"><a class="anchor" href="#Klassifikasjon-beskrivelse"></a>Klassifikasjon – beskrivelse (dct:description)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1284,7 +1279,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-dekker"><a class="link" href="#Klassifikasjon-dekker">Klassifikasjon – dekker (xkos:covers)</a></h4>
+<h4 id="Klassifikasjon-dekker"><a class="anchor" href="#Klassifikasjon-dekker"></a>Klassifikasjon – dekker (xkos:covers)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1352,7 +1347,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-dekkerGjensidigUtelukkende"><a class="link" href="#Klassifikasjon-dekkerGjensidigUtelukkende">Klassifikasjon – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</a></h4>
+<h4 id="Klassifikasjon-dekkerGjensidigUtelukkende"><a class="anchor" href="#Klassifikasjon-dekkerGjensidigUtelukkende"></a>Klassifikasjon – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1430,7 +1425,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-dekkerUttømmende"><a class="link" href="#Klassifikasjon-dekkerUttømmende">Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</a></h4>
+<h4 id="Klassifikasjon-dekkerUttømmende"><a class="anchor" href="#Klassifikasjon-dekkerUttømmende"></a>Klassifikasjon – dekker uttømmende (xkos:coversExhaustively)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1498,7 +1493,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-erstatter"><a class="link" href="#Klassifikasjon-erstatter">Klassifikasjon – erstatter (xkos:supersedes)</a></h4>
+<h4 id="Klassifikasjon-erstatter"><a class="anchor" href="#Klassifikasjon-erstatter"></a>Klassifikasjon – erstatter (xkos:supersedes)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1554,7 +1549,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-gyldigFraOgMed"><a class="link" href="#Klassifikasjon-gyldigFraOgMed">Klassifikasjon – gyldig fra og med (schema:validFrom)</a></h4>
+<h4 id="Klassifikasjon-gyldigFraOgMed"><a class="anchor" href="#Klassifikasjon-gyldigFraOgMed"></a>Klassifikasjon – gyldig fra og med (schema:validFrom)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1610,7 +1605,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-gyldigTilOgMed"><a class="link" href="#Klassifikasjon-gyldigTilOgMed">Klassifikasjon – gyldig til og med (schema:validThrough)</a></h4>
+<h4 id="Klassifikasjon-gyldigTilOgMed"><a class="anchor" href="#Klassifikasjon-gyldigTilOgMed"></a>Klassifikasjon – gyldig til og med (schema:validThrough)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1666,7 +1661,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-harKlassifikasjonsnivå"><a class="link" href="#Klassifikasjon-harKlassifikasjonsnivå">Klassifikasjon – har klassifikasjonsnivå (xkos:levels)</a></h4>
+<h4 id="Klassifikasjon-harKlassifikasjonsnivå"><a class="anchor" href="#Klassifikasjon-harKlassifikasjonsnivå"></a>Klassifikasjon – har klassifikasjonsnivå (xkos:levels)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1742,7 +1737,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-inneholderKategori"><a class="link" href="#Klassifikasjon-inneholderKategori">Klassifikasjon – inneholder kategori (uneskos:contains)</a></h4>
+<h4 id="Klassifikasjon-inneholderKategori"><a class="anchor" href="#Klassifikasjon-inneholderKategori"></a>Klassifikasjon – inneholder kategori (uneskos:contains)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1810,7 +1805,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-sistOppdatert"><a class="link" href="#Klassifikasjon-sistOppdatert">Klassifikasjon – sist oppdatert (dct:modified)</a></h4>
+<h4 id="Klassifikasjon-sistOppdatert"><a class="anchor" href="#Klassifikasjon-sistOppdatert"></a>Klassifikasjon – sist oppdatert (dct:modified)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1866,7 +1861,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-språk"><a class="link" href="#Klassifikasjon-språk">Klassifikasjon – språk (dct:language)</a></h4>
+<h4 id="Klassifikasjon-språk"><a class="anchor" href="#Klassifikasjon-språk"></a>Klassifikasjon – språk (dct:language)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1929,7 +1924,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-tilgjengeliggjøringsdato"><a class="link" href="#Klassifikasjon-tilgjengeliggjøringsdato">Klassifikasjon – tilgjengeliggjøringsdato (dct:issued)</a></h4>
+<h4 id="Klassifikasjon-tilgjengeliggjøringsdato"><a class="anchor" href="#Klassifikasjon-tilgjengeliggjøringsdato"></a>Klassifikasjon – tilgjengeliggjøringsdato (dct:issued)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1986,9 +1981,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Klassifikasjon-valgfrie-egenskaper"><a class="link" href="#Klassifikasjon-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Klassifikasjon</em></a></h3>
+<h3 id="Klassifikasjon-valgfrie-egenskaper"><a class="anchor" href="#Klassifikasjon-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Klassifikasjon</em></h3>
 <div class="sect3">
-<h4 id="Klassifikasjon-harVariant"><a class="link" href="#Klassifikasjon-harVariant">Klassifikasjon – har variant (xkos:variant)</a></h4>
+<h4 id="Klassifikasjon-harVariant"><a class="anchor" href="#Klassifikasjon-harVariant"></a>Klassifikasjon – har variant (xkos:variant)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2044,7 +2039,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-produsent"><a class="link" href="#Klassifikasjon-produsent">Klassifikasjon – produsent (dct:creator)</a></h4>
+<h4 id="Klassifikasjon-produsent"><a class="anchor" href="#Klassifikasjon-produsent"></a>Klassifikasjon – produsent (dct:creator)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2095,7 +2090,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjon-tilhører"><a class="link" href="#Klassifikasjon-tilhører">Klassifikasjon – tilhører (xkos:belongsTo)</a></h4>
+<h4 id="Klassifikasjon-tilhører"><a class="anchor" href="#Klassifikasjon-tilhører"></a>Klassifikasjon – tilhører (xkos:belongsTo)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2152,7 +2147,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Klassifikasjonsnivå"><a class="link" href="#Klassifikasjonsnivå">Klassen Klassifikasjonsnivå (xkos:ClassificationLevel)</a></h2>
+<h2 id="Klassifikasjonsnivå"><a class="anchor" href="#Klassifikasjonsnivå"></a>Klassen Klassifikasjonsnivå (xkos:ClassificationLevel)</h2>
 <div class="sectionbody">
 <div id="img-KlassenKlassifikasjonsnivå" class="imageblock">
 <div class="content">
@@ -2209,9 +2204,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Klassifikasjonsnivå-obligatoriske-egenskaper"><a class="link" href="#Klassifikasjonsnivå-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Klassifikasjonsnivå</em></a></h3>
+<h3 id="Klassifikasjonsnivå-obligatoriske-egenskaper"><a class="anchor" href="#Klassifikasjonsnivå-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Klassifikasjonsnivå</em></h3>
 <div class="sect3">
-<h4 id="Klassifikasjonsnivå-nivånummer"><a class="link" href="#Klassifikasjonsnivå-nivånummer">Klassifikasjonsnivå – nivånummer (xkos:depth)</a></h4>
+<h4 id="Klassifikasjonsnivå-nivånummer"><a class="anchor" href="#Klassifikasjonsnivå-nivånummer"></a>Klassifikasjonsnivå – nivånummer (xkos:depth)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2267,7 +2262,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonsnivå-inneholderKtegori"><a class="link" href="#Klassifikasjonsnivå-inneholderKtegori">Klassifikasjonsnivå – inneholder kategori (skos:member)</a></h4>
+<h4 id="Klassifikasjonsnivå-inneholderKtegori"><a class="anchor" href="#Klassifikasjonsnivå-inneholderKtegori"></a>Klassifikasjonsnivå – inneholder kategori (skos:member)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2330,9 +2325,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Klassifikasjonsnivå-anbefalte-egenskaper"><a class="link" href="#Klassifikasjonsnivå-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Klassifikasjonsnivå</em></a></h3>
+<h3 id="Klassifikasjonsnivå-anbefalte-egenskaper"><a class="anchor" href="#Klassifikasjonsnivå-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Klassifikasjonsnivå</em></h3>
 <div class="sect3">
-<h4 id="Klassifikasjonsnivå-dekker"><a class="link" href="#Klassifikasjonsnivå-dekker">Klassifikasjonsnivå – dekker (xkos:covers)</a></h4>
+<h4 id="Klassifikasjonsnivå-dekker"><a class="anchor" href="#Klassifikasjonsnivå-dekker"></a>Klassifikasjonsnivå – dekker (xkos:covers)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2394,7 +2389,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonsnivå-dekkerGjensidigUtelukkende"><a class="link" href="#Klassifikasjonsnivå-dekkerGjensidigUtelukkende">Klassifikasjonsnivå – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</a></h4>
+<h4 id="Klassifikasjonsnivå-dekkerGjensidigUtelukkende"><a class="anchor" href="#Klassifikasjonsnivå-dekkerGjensidigUtelukkende"></a>Klassifikasjonsnivå – dekker gjensidig utelukkende (xkos:coversMutuallyExclusively)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2464,7 +2459,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonsnivå-dekkerUttømmende"><a class="link" href="#Klassifikasjonsnivå-dekkerUttømmende">Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively)</a></h4>
+<h4 id="Klassifikasjonsnivå-dekkerUttømmende"><a class="anchor" href="#Klassifikasjonsnivå-dekkerUttømmende"></a>Klassifikasjonsnivå – dekker uttømmende (xkos:coversExhaustively)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2526,7 +2521,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonsnivå-erKlassifisertInnen"><a class="link" href="#Klassifikasjonsnivå-erKlassifisertInnen">Klassifikasjonsnivå – er klassifisert innen (xkos:organizedBy)</a></h4>
+<h4 id="Klassifikasjonsnivå-erKlassifisertInnen"><a class="anchor" href="#Klassifikasjonsnivå-erKlassifisertInnen"></a>Klassifikasjonsnivå – er klassifisert innen (xkos:organizedBy)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2584,9 +2579,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Klassifikasjonsnivå-valgfrie-egenskaper"><a class="link" href="#Klassifikasjonsnivå-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Klassifikasjonsnivå</em></a></h3>
+<h3 id="Klassifikasjonsnivå-valgfrie-egenskaper"><a class="anchor" href="#Klassifikasjonsnivå-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Klassifikasjonsnivå</em></h3>
 <div class="sect3">
-<h4 id="Klassifikasjonsnivå-kodemønster"><a class="link" href="#Klassifikasjonsnivå-kodemønster">Klassifikasjonsnivå – kodemønster (xkos:notationPattern)</a></h4>
+<h4 id="Klassifikasjonsnivå-kodemønster"><a class="anchor" href="#Klassifikasjonsnivå-kodemønster"></a>Klassifikasjonsnivå – kodemønster (xkos:notationPattern)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2649,7 +2644,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect1">
-<h2 id="Kategori"><a class="link" href="#Kategori">Klassen Kategori (skos:Concept)</a></h2>
+<h2 id="Kategori"><a class="anchor" href="#Kategori"></a>Klassen Kategori (skos:Concept)</h2>
 <div class="sectionbody">
 <div id="img-KlassenKategori" class="imageblock">
 <div class="content">
@@ -2704,9 +2699,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Kategori-obligatoriske-egenskaper"><a class="link" href="#Kategori-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Kategori</em></a></h3>
+<h3 id="Kategori-obligatoriske-egenskaper"><a class="anchor" href="#Kategori-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Kategori</em></h3>
 <div class="sect3">
-<h4 id="Kategori-anbefaltKategorinavn"><a class="link" href="#Kategori-anbefaltKategorinavn">Kategori – anbefalt kategorinavn (skos:prefLabel)</a></h4>
+<h4 id="Kategori-anbefaltKategorinavn"><a class="anchor" href="#Kategori-anbefaltKategorinavn"></a>Kategori – anbefalt kategorinavn (skos:prefLabel)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2763,7 +2758,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-erIKlassifikasjon"><a class="link" href="#Kategori-erIKlassifikasjon">Kategori – er i klassifikasjon (skos:inScheme)</a></h4>
+<h4 id="Kategori-erIKlassifikasjon"><a class="anchor" href="#Kategori-erIKlassifikasjon"></a>Kategori – er i klassifikasjon (skos:inScheme)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2824,9 +2819,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect2">
-<h3 id="Kategori-anbefalte-egenskaper"><a class="link" href="#Kategori-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Kategori</em></a></h3>
+<h3 id="Kategori-anbefalte-egenskaper"><a class="anchor" href="#Kategori-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Kategori</em></h3>
 <div class="sect3">
-<h4 id="Kategori-erFørsteKategoriI"><a class="link" href="#Kategori-erFørsteKategoriI">Kategori – er første kategori i (skos:topConceptOf)</a></h4>
+<h4 id="Kategori-erFørsteKategoriI"><a class="anchor" href="#Kategori-erFørsteKategoriI"></a>Kategori – er første kategori i (skos:topConceptOf)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2886,7 +2881,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-hovedinnhold"><a class="link" href="#Kategori-hovedinnhold">Kategori – hovedinnhold (xkos:coreContentNote)</a></h4>
+<h4 id="Kategori-hovedinnhold"><a class="anchor" href="#Kategori-hovedinnhold"></a>Kategori – hovedinnhold (xkos:coreContentNote)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2955,7 +2950,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-identifikator"><a class="link" href="#Kategori-identifikator">Kategori – identifikator (dct:identifier)</a></h4>
+<h4 id="Kategori-identifikator"><a class="anchor" href="#Kategori-identifikator"></a>Kategori – identifikator (dct:identifier)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3007,7 +3002,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kategori-kode"><a class="link" href="#Kategori-kode">Kategori – kode (skos:notation)</a></h4>
+<h4 id="Kategori-kode"><a class="anchor" href="#Kategori-kode"></a>Kategori – kode (skos:notation)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3072,7 +3067,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-referererTilBegrep"><a class="link" href="#Kategori-referererTilBegrep">Kategori – refererer til begrep (dct:subject)</a></h4>
+<h4 id="Kategori-referererTilBegrep"><a class="anchor" href="#Kategori-referererTilBegrep"></a>Kategori – refererer til begrep (dct:subject)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3132,7 +3127,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-tilleggsinnhold"><a class="link" href="#Kategori-tilleggsinnhold">Kategori – tilleggsinnhold (xkos:additionalContentNote)</a></h4>
+<h4 id="Kategori-tilleggsinnhold"><a class="anchor" href="#Kategori-tilleggsinnhold"></a>Kategori – tilleggsinnhold (xkos:additionalContentNote)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3191,9 +3186,9 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Kategori-valgfrie-egenskaper"><a class="link" href="#Kategori-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Kategori</em></a></h3>
+<h3 id="Kategori-valgfrie-egenskaper"><a class="anchor" href="#Kategori-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Kategori</em></h3>
 <div class="sect3">
-<h4 id="Kategori-definisjon"><a class="link" href="#Kategori-definisjon">Kategori – definisjon (skos:definition)</a></h4>
+<h4 id="Kategori-definisjon"><a class="anchor" href="#Kategori-definisjon"></a>Kategori – definisjon (skos:definition)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3240,7 +3235,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kategori-eksempel"><a class="link" href="#Kategori-eksempel">Kategori – eksempel (skos:example)</a></h4>
+<h4 id="Kategori-eksempel"><a class="anchor" href="#Kategori-eksempel"></a>Kategori – eksempel (skos:example)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3298,7 +3293,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-eksklusjonsmerknad"><a class="link" href="#Kategori-eksklusjonsmerknad">Kategori – eksklusjonsmerknad (skos:exclusionNote)</a></h4>
+<h4 id="Kategori-eksklusjonsmerknad"><a class="anchor" href="#Kategori-eksklusjonsmerknad"></a>Kategori – eksklusjonsmerknad (skos:exclusionNote)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3352,7 +3347,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-forrigeKategori"><a class="link" href="#Kategori-forrigeKategori">Kategori – forrige kategori (xkos:previous)</a></h4>
+<h4 id="Kategori-forrigeKategori"><a class="anchor" href="#Kategori-forrigeKategori"></a>Kategori – forrige kategori (xkos:previous)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3408,7 +3403,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategori-frarådetKategorinavn"><a class="link" href="#Kategori-frarådetKategorinavn">Kategori – frarådet kategorinavn (skos:hiddenLabel)</a></h4>
+<h4 id="Kategori-frarådetKategorinavn"><a class="anchor" href="#Kategori-frarådetKategorinavn"></a>Kategori – frarådet kategorinavn (skos:hiddenLabel)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3455,7 +3450,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kategori-inklusjonsmerknad"><a class="link" href="#Kategori-inklusjonsmerknad">Kategori – inklusjonsmerknad (xkos:inclusionNote)</a></h4>
+<h4 id="Kategori-inklusjonsmerknad"><a class="anchor" href="#Kategori-inklusjonsmerknad"></a>Kategori – inklusjonsmerknad (xkos:inclusionNote)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3506,7 +3501,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kategori-maksimumKodelengde"><a class="link" href="#Kategori-maksimumKodelengde">Kategori – maksimum kodelengde (xkos:maxLength)</a></h4>
+<h4 id="Kategori-maksimumKodelengde"><a class="anchor" href="#Kategori-maksimumKodelengde"></a>Kategori – maksimum kodelengde (xkos:maxLength)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3572,7 +3567,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kategori-merknad"><a class="link" href="#Kategori-merknad">Kategori – merknad (skos:note)</a></h4>
+<h4 id="Kategori-merknad"><a class="anchor" href="#Kategori-merknad"></a>Kategori – merknad (skos:note)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3619,7 +3614,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kategori-nesteKategori"><a class="link" href="#Kategori-nesteKategori">Kategori – neste kategori (xkos:next)</a></h4>
+<h4 id="Kategori-nesteKategori"><a class="anchor" href="#Kategori-nesteKategori"></a>Kategori – neste kategori (xkos:next)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3666,7 +3661,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Kategori-tillattKategorinavn"><a class="link" href="#Kategori-tillattKategorinavn">Kategori – tillatt kategorinavn (skos:altLabel)</a></h4>
+<h4 id="Kategori-tillattKategorinavn"><a class="anchor" href="#Kategori-tillattKategorinavn"></a>Kategori – tillatt kategorinavn (skos:altLabel)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3727,7 +3722,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Klassifikasjonssammenligning"><a class="link" href="#Klassifikasjonssammenligning">Klassen Klassifikasjonssammenligning (xkos:Correspondence)</a></h2>
+<h2 id="Klassifikasjonssammenligning"><a class="anchor" href="#Klassifikasjonssammenligning"></a>Klassen Klassifikasjonssammenligning (xkos:Correspondence)</h2>
 <div class="sectionbody">
 <div id="img-KlassenKlassifikasjonssammenligning" class="imageblock">
 <div class="content">
@@ -3780,9 +3775,9 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Klassifikasjonssammenligning-obligatoriske-egenskaper"><a class="link" href="#Klassifikasjonssammenligning-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Klassifikasjonssammenligning</em></a></h3>
+<h3 id="Klassifikasjonssammenligning-obligatoriske-egenskaper"><a class="anchor" href="#Klassifikasjonssammenligning-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Klassifikasjonssammenligning</em></h3>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-harKategorisammenligning"><a class="link" href="#Klassifikasjonssammenligning-harKategorisammenligning">Klassifikasjonssammenligning – har kategorisammenligning (xkos:madeOf)</a></h4>
+<h4 id="Klassifikasjonssammenligning-harKategorisammenligning"><a class="anchor" href="#Klassifikasjonssammenligning-harKategorisammenligning"></a>Klassifikasjonssammenligning – har kategorisammenligning (xkos:madeOf)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3840,7 +3835,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-identifikator"><a class="link" href="#Klassifikasjonssammenligning-identifikator">Klassifikasjonssammenligning – identifikator (dct:identifier) </a></h4>
+<h4 id="Klassifikasjonssammenligning-identifikator"><a class="anchor" href="#Klassifikasjonssammenligning-identifikator"></a>Klassifikasjonssammenligning – identifikator (dct:identifier) </h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3892,7 +3887,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-navn"><a class="link" href="#Klassifikasjonssammenligning-navn">Klassifikasjonssammenligning – navn (dct:title) </a></h4>
+<h4 id="Klassifikasjonssammenligning-navn"><a class="anchor" href="#Klassifikasjonssammenligning-navn"></a>Klassifikasjonssammenligning – navn (dct:title) </h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3948,7 +3943,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-sammenligner"><a class="link" href="#Klassifikasjonssammenligning-sammenligner">Klassifikasjonssammenligning – sammenligner (xkos:compares)</a></h4>
+<h4 id="Klassifikasjonssammenligning-sammenligner"><a class="anchor" href="#Klassifikasjonssammenligning-sammenligner"></a>Klassifikasjonssammenligning – sammenligner (xkos:compares)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4010,7 +4005,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-utgiver"><a class="link" href="#Klassifikasjonssammenligning-utgiver">Klassifikasjonssammenligning – utgiver (dct:publisher) </a></h4>
+<h4 id="Klassifikasjonssammenligning-utgiver"><a class="anchor" href="#Klassifikasjonssammenligning-utgiver"></a>Klassifikasjonssammenligning – utgiver (dct:publisher) </h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4067,9 +4062,9 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Klassifikasjonssammenligning-anbefalte-egenskaper"><a class="link" href="#Klassifikasjonssammenligning-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Klassifikasjonssammenligning</em></a></h3>
+<h3 id="Klassifikasjonssammenligning-anbefalte-egenskaper"><a class="anchor" href="#Klassifikasjonssammenligning-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Klassifikasjonssammenligning</em></h3>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-beskrivelse"><a class="link" href="#Klassifikasjonssammenligning-beskrivelse">Klassifikasjonssammenligning – beskrivelse (dct:description) </a></h4>
+<h4 id="Klassifikasjonssammenligning-beskrivelse"><a class="anchor" href="#Klassifikasjonssammenligning-beskrivelse"></a>Klassifikasjonssammenligning – beskrivelse (dct:description) </h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4126,7 +4121,7 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-sistOppdatert"><a class="link" href="#Klassifikasjonssammenligning-sistOppdatert">Klassifikasjonssammenligning – sist oppdatert (dct:modified) </a></h4>
+<h4 id="Klassifikasjonssammenligning-sistOppdatert"><a class="anchor" href="#Klassifikasjonssammenligning-sistOppdatert"></a>Klassifikasjonssammenligning – sist oppdatert (dct:modified) </h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4183,7 +4178,7 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-språk"><a class="link" href="#Klassifikasjonssammenligning-språk">Klassifikasjonssammenligning – språk (dct:language) </a></h4>
+<h4 id="Klassifikasjonssammenligning-språk"><a class="anchor" href="#Klassifikasjonssammenligning-språk"></a>Klassifikasjonssammenligning – språk (dct:language) </h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4248,7 +4243,7 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Klassifikasjonssammenligning-tilgjengeliggjøringsdato"><a class="link" href="#Klassifikasjonssammenligning-tilgjengeliggjøringsdato">Klassifikasjonssammenligning – tilgjengeliggjøringsdato (dct:issued) </a></h4>
+<h4 id="Klassifikasjonssammenligning-tilgjengeliggjøringsdato"><a class="anchor" href="#Klassifikasjonssammenligning-tilgjengeliggjøringsdato"></a>Klassifikasjonssammenligning – tilgjengeliggjøringsdato (dct:issued) </h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4311,7 +4306,7 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="Kategorisammenligning"><a class="link" href="#Kategorisammenligning">Klassen Kategorisammenligning (xkos:ConceptAssociation)</a></h2>
+<h2 id="Kategorisammenligning"><a class="anchor" href="#Kategorisammenligning"></a>Klassen Kategorisammenligning (xkos:ConceptAssociation)</h2>
 <div class="sectionbody">
 <div id="img-KlassenKategorisammenligning" class="imageblock">
 <div class="content">
@@ -4393,9 +4388,9 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Kategorisammenligning-anbefalte-egenskaper"><a class="link" href="#Kategorisammenligning-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Kategorisammenligning</em></a></h3>
+<h3 id="Kategorisammenligning-anbefalte-egenskaper"><a class="anchor" href="#Kategorisammenligning-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Kategorisammenligning</em></h3>
 <div class="sect3">
-<h4 id="Kategorisammenligning-harKildekategori"><a class="link" href="#Kategorisammenligning-harKildekategori">Kategorisammenligning – har kildekategori (xkos:sourceConcept)</a></h4>
+<h4 id="Kategorisammenligning-harKildekategori"><a class="anchor" href="#Kategorisammenligning-harKildekategori"></a>Kategorisammenligning – har kildekategori (xkos:sourceConcept)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4445,7 +4440,7 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="Kategorisammenligning-harMålkategori"><a class="link" href="#Kategorisammenligning-harMålkategori">Kategorisammenligning – har målkategori (xkos:targetConcept)</a></h4>
+<h4 id="Kategorisammenligning-harMålkategori"><a class="anchor" href="#Kategorisammenligning-harMålkategori"></a>Kategorisammenligning – har målkategori (xkos:targetConcept)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4496,9 +4491,9 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Kategorisammenligning-valgfrie-egenskaper"><a class="link" href="#Kategorisammenligning-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Kategorisammenligning</em></a></h3>
+<h3 id="Kategorisammenligning-valgfrie-egenskaper"><a class="anchor" href="#Kategorisammenligning-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Kategorisammenligning</em></h3>
 <div class="sect3">
-<h4 id="Kategorisammenligning-typeEndring"><a class="link" href="#Kategorisammenligning-typeEndring">Kategorisammenligning – type endring (dct:type)</a></h4>
+<h4 id="Kategorisammenligning-typeEndring"><a class="anchor" href="#Kategorisammenligning-typeEndring"></a>Kategorisammenligning – type endring (dct:type)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4535,11 +4530,19 @@ Eksempel i RDF Turtle: </p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra listen over lovlige endringstyper. Se <a href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/classification-item-change-type">Kategoriendringstyper</a>, når verdien finnes i vokabularet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 1</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/classification-item-change-type">Classification item change types</a>, when the value is in the vocabulary.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: ikke eksplisitt tatt med i XKOS. </p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark 2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian extension: Not explicitly specified in XKOS.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -4554,12 +4557,14 @@ Eksempel i RDF Turtle: </p>
 <div class="content">
 <pre>&lt;nil90035&gt; a xkos:ConceptAssociation ;
  xkos:targetConcept &lt;sn2007-90035&gt; ; # en målkategori og ingen kildekategori
-  dct:type xkosno:itemCreation ; .
+  dct:type &lt;https://data.norge.no/vocabulary/classification-item-change-type#item-creation&gt; ; # oppretting
+  .
 
 &lt;01210vs01410n01420&gt; a xkos:ConceptAssociation ;
    xkos:sourceConcept &lt;sn2002-01210&gt; ; # en kildekategori
    xkos:tagetConcept &lt;sn2007-01410&gt; , &lt;sn2007-01420&gt; # to målkategorier
-  dct:type xkosno:ItemBreakdown ; .</pre>
+  dct:type &lt;https://data.norge.no/vocabulary/classification-item-change-type#item-breakdown&gt; ; # oppsplitting
+  .</pre>
 </div>
 </div>
 </div>
@@ -4567,236 +4572,13 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="BrukAVKontrollerteVokabularer"><a class="link" href="#BrukAVKontrollerteVokabularer">Bruk av kontrollerte vokabularer</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>For å øke semantisk interoperabilitet er det i dette dokumentet stilt krav til bruk av kontrollerte vokabularer (lagt inn som merknad til de aktuelle egenskapene).</p>
-</div>
-<div class="paragraph">
-<p>Kjernegruppen som utarbeidet denne versjonen av spesifikasjonen, valgte å samkjøre med bl.a. <a href="https://data.norge.no/specification/dcat-ap-no/">DCAT-AP-NO</a> når det gjelder krav til bruk av kontrollerte vokabularer for egenskaper som overlapper med DCAT-AP-NO.</p>
-</div>
-<div class="sect2">
-<h3 id="ForslagTilEndringstyper"><a class="link" href="#ForslagTilEndringstyper">Forslag til et kontrollert vokabular for endringstyper</a></h3>
-<div class="paragraph">
-<p>Under utarbeidelse av dette dokumentet ble det identifisert behov for å ha en kontrollert liste over lovlige typer av endringer mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie, endringer som vil ha betydning for bruken av klassifikasjonene. Ved å bruke verdier fra en kontrollert liste over endringstyper, kan endringene oppgis som strukturert data og dermed også maskinprosesserbart. Med egnet verktøystøtte vil dette gjøre det lettere for brukere av en klassifikasjon å fange opp endringer fra en versjon til en annen. Kjernegruppen foreslo å basere dette vokabularet på «A typology of Item Changes» (Appendix 3 i <a href="https://statswiki.unece.org/display/gsim/Background+Documents?preview=%2F65372409%2F65339469%2FPart+I+Neuchatel_version+2_1.pdf">Neuchâtel Terminology Model - Classification database object types and their attributes, v.2.1 (PDF)</a>).</p>
-</div>
-<div class="paragraph">
-<p><strong>Forslag til vokabularet/klassifikasjonen</strong> (en instans av <code>skos:ConceptScheme</code>):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>antall nivå (<code>xkos:numberOfLevels</code>): 1</p>
-</li>
-<li>
-<p>navn (<code>dct:title</code>): "Kategoriendringstype"@nb / "Classification Items Change Types"@en</p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <a href="https://data.norge.no/vocabulary/xkosno#ItemChangeTypes" class="bare">https://data.norge.no/vocabulary/xkosno#ItemChangeTypes</a> (<code>xkosno:ItemChangeType</code>)</p>
-</li>
-<li>
-<p>utgiver (<code>dct:publisher</code>): Digdir</p>
-</li>
-<li>
-<p>inneholder følgende kategorier (<code>uneskos:contains</code>):</p>
-<div class="ulist">
-<ul>
-<li>
-<p>“Endringstype 1” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 1</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "sletting"@nb , "deletion"@en</p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemDeletion</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>“Endringstype 2” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 2</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "oppretting"@nb , "creation"@en</p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemCreation</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>“Endringstype 3” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 3</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "sammenslåing"@nb , "merging"@en</p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemMerging</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>“Endringstype 4” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 4</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "overtakelse"@nb , "take-over"@en</p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemTakeOver</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>“Endringstype 5” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 5</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "oppsplitting"@nb , "breakdown"@en</p>
-</li>
-<li>
-<p>den inverse av (<code>owl:inverseOf</code>): <code>xkosno:ItemMerging</code></p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemBreakdown</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>“Endringstype 6” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 6</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "avspalting"@nb , "split off"@en</p>
-</li>
-<li>
-<p>den inverse av (<code>owl:inverseOf</code>): <code>xkosno:ItemTakeOver</code></p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:ItemSplitOff</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>“Endringstype 7” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 7</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "overføring"@nb , "transfer"@en</p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:NotationTransfer</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>“Endringstype 8” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 8</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "kodeendring"@nb , "code change"@en</p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:CodeChange</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>“Endringstype 9” (en instans av <code>skos:Concept</code>)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>kode (<code>skos:notation</code>): 9</p>
-</li>
-<li>
-<p>er i klassifikasjon (<code>skos:inScheme</code>): <code>xkosno:ItemChangeType</code></p>
-</li>
-<li>
-<p>anbefalt kategorinavn (<code>skos:prefLabel</code>): "navneendring"@nb , "name change"@en</p>
-</li>
-<li>
-<p>identifikator (<code>dct:identifier</code>): <code>xkosno:NameChange</code></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Det foreslåtte vokabularet for endringstyper er beskrevet i henhold til XKOS-AP-NO (denne spesifikasjonen), og gjort tilgjengelig i maskinprosesserbart format RDF Turtle, på <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/examples/eksEndringstyper.ttl">Github</a>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Vedlegg"><a class="link" href="#Vedlegg">Vedlegg</a></h2>
+<h2 id="Vedlegg"><a class="anchor" href="#Vedlegg"></a>Vedlegg</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><em>Vedlegget er ikke-normativt</em>.</p>
 </div>
 <div class="sect2">
-<h3 id="HvorforOrdetKlassifikasjon"><a class="link" href="#HvorforOrdetKlassifikasjon">Hvorfor bruker dette dokumentet ordet «klassifikasjon»?</a></h3>
+<h3 id="HvorforOrdetKlassifikasjon"><a class="anchor" href="#HvorforOrdetKlassifikasjon"></a>Hvorfor bruker dette dokumentet ordet «klassifikasjon»?</h3>
 <div class="paragraph">
 <p><strong>Klassifikasjon vs. kodeverk</strong>: Ettersom noen etater bruker ordet «kodeverk» som samlebetegnelsen for «klassifikasjon» og «kodeliste», bruker dette dokumentet ordet «klassifikasjon» og ikke «kodeverk». Klassifikasjon, dvs. å klassifisere «ting», impliserer også noen typiske egenskaper, bl.a. at en klassifikasjon som oftest er hierarkisk oppbygd (selv om det også finnes «flate klassifikasjoner» som har kun ett nivå), og at en veldefinert klassifikasjon er uttømmende og at kategoriene på ethvert nivå i klassifikasjonen er gjensidig utelukkende.</p>
 </div>
@@ -4808,7 +4590,7 @@ Eksempel i RDF Turtle: </p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="ReferereTilEnKategori"><a class="link" href="#ReferereTilEnKategori">Å referere til en gitt kategori (i en gitt klassifikasjon)</a></h3>
+<h3 id="ReferereTilEnKategori"><a class="anchor" href="#ReferereTilEnKategori"></a>Å referere til en gitt kategori (i en gitt klassifikasjon)</h3>
 <div class="paragraph">
 <p>Hovedhensikten med å ha en klassifikasjon er å kunne klassifisere «ting» som hører til eller opererer innen det aktuelle domenet som klassifikasjonen dekker, ved å gruppere «tingene» inn i uttømmende og gjensidige utelukkende kategorier. Det vil derfor være behov for å kunne referere fra en konkret «ting» til en gitt kategori i en gitt klassifikasjon som den aktuelle «tingen» er klassifisert under. I XKOS er det en generisk egenskap <code>xkos:classifiedUnder</code> («er klassifisert under») som kan brukes til å referere fra en konkret «ting» (<code>rdfs:Resource</code>) til en gitt kategori (en instans av <code>skos:Concept</code>) i en gitt klassifikasjon (en instans av <code>skos:ConceptScheme</code>). Dette er som sagt en generisk egenskap, av hvilken det kan lages spesialiseringer (subegenskaper) i konkrete anvendelser.</p>
 </div>
@@ -4832,6 +4614,22 @@ Eksempel i RDF Turtle: </p>
    skos:prefLabel "Næringsgruppering 2007 (SN2007)"@nb ; .</code></pre>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Endringslogg</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I tillegg til redaksjonelle justeringer som ikke loggføres her, er følgende kravsmessige endringer foretatt siden utgivelsen av v.0.9:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>v.0.91</strong>: Etter at det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/classification-item-change-type">Kategoriendringstyper</a> er blitt publisert, er "Merknad 1" og "Eksempel i RDF Turtle" til egenskapen <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/#Kategorisammenligning-typeEndring">Kategorisammenligning – type endring (dct:type)</a> oppdatert ved å referere til det publiserte vokabularet. Kapitlet med forslag til et kontrollert vokabular for endringstyper er også fjernet.</p>
+</li>
+</ul>
+</div>
 <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -4846,10 +4644,9 @@ ga('send', 'pageview');
 </div>
 </div>
 </div>
-</div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-12-15 05:22:05 UTC
+Sist oppdatert 2022-02-07 13:34:40 UTC
 </div>
 </div>
 </body>
