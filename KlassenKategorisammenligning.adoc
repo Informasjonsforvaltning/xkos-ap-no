@@ -110,12 +110,12 @@ Eksempel i RDF Turtle:
 ----
 <nil90035> a xkos:ConceptAssociation ;
  xkos:targetConcept <sn2007-90035> ; # en målkategori og ingen kildekategori
-  dct:type <https://data.norge.no/vocabulary/classification-item-change-type#item-creation> ; # oppretting
+  dct:type <https://data.norge.no/vocabulary/classification-item-change-type#creation> ; # oppretting
   .
 
 <01210vs01410n01420> a xkos:ConceptAssociation ;
    xkos:sourceConcept <sn2002-01210> ; # en kildekategori
    xkos:tagetConcept <sn2007-01410> , <sn2007-01420> # to målkategorier
-  dct:type <https://data.norge.no/vocabulary/classification-item-change-type#item-breakdown> ; # oppsplitting
+  dct:type <https://data.norge.no/vocabulary/classification-item-change-type#breakdown> ; # oppsplitting
   .
 ----
