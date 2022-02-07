@@ -7,7 +7,8 @@ include::locale/attributes.adoc[]
 ifdef::backend-pdf[:toc: macro]
 :toc-title: Innholdsfortegnelse
 :toclevels: 4
-:sectlinks:
+// :sectlinks:
+:sectanchors:
 :table-stripes: even
 :title-logo-image: image:images/Digdir.png[pdfwidth=30vw]
 
@@ -19,9 +20,9 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/xkos-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 *Status*: #til utprøving# +
-*Versjon*: 0.9 +
-*Publisert*: 2021-12-15 +
-*Oppdatert*: 2021-12-15 +
+*Versjon*: 0.91 (se <<Endringslogg>>) +
+*Publisert*: 2021-12-15 (v.0.9) +
+*Oppdatert*: 2021-12-15 (v.0.91) +
 *Gjeldende versjon*: <ingen> +
 *Forrige versjon*: <ingen> +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/xkos-ap-no/ +
@@ -50,10 +51,10 @@ include::KlassenKlassifikasjonssammenligning.adoc[]
 
 include::KlassenKategorisammenligning.adoc[]
 
-include::Kontrollerte_vokabularer.adoc[]
+// include::Kontrollerte_vokabularer.adoc[]
 
 include::Vedlegg.adoc[]
 
-
+include::Endringslogg.adoc[]
 
 include::shared/stats.adoc[]
