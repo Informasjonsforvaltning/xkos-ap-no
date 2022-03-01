@@ -30,7 +30,7 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2021-12-13"^^xsd:date ;
+    dct:modified "2022-03-01"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by XKOS-AP-NO"@en ;
@@ -310,7 +310,7 @@
         sh:maxCount 1 ;
         sh:severity sh:Violation ;
         sh:message "Maksimum kodelengde (xkos:maxLength) kan ha maks. 1 verdi, som skal være positiv integer"@nb ,
-          "Max lengt (xkos:maxLength) may have max. 1 value which shall be a positive integer"@en ;
+          "Max length (xkos:maxLength) may have max. 1 value which shall be a positive integer"@en ;
         ] ;
       sh:property [ # merknad
         sh:name "merknad"@nb , "note"@en ;
