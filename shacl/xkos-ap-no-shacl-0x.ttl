@@ -30,13 +30,13 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2022-03-01"^^xsd:date ;
+    dct:modified "2022-03-02"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by XKOS-AP-NO"@en ;
     dct:title "The constraints of XKOS-AP-NO"@en ;
-    owl:versionInfo "0.803" ;
-    owl:versionInfo "(hopefully) complete, tested OK using ttl-files under /examples."@en ;
+    owl:versionInfo "0.902" ;
+    owl:versionInfo "(hopefully) complete, aligned with XKOS-AP-NO v.0.902."@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -72,7 +72,6 @@
       sh:name "erstatter"@nb , "supersedes"@en ;
       sh:path xkos:supersedes ;
       sh:class skos:ConceptScheme ;
-      sh:maxCount 1 ;
       sh:severity sh:Violation ;
       sh:message "Erstatter (skos:ConceptScheme) kan ha maks. 1 verdi som skal referere til en instans av skos:ConceptScheme"@nb ,
         "Supersedes (skos:ConceptScheme) may have max. 1 value which shall refer to an instance of skos:ConceptScheme"@en ;
@@ -254,6 +253,14 @@
           "Additional content note (xkos:additionalContentNote) shall be a Literal"@en ;
         ] ;
     ##### optional properties:
+      sh:property [ # består av
+        sh:name "består av"@nb , "has part"@en ;
+        sh:path xkos:hasPart ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "Består av (xkos:hasPart) skal referere til en instans av skos:Concept"@nb ,
+          "Has part (xkos:hasPart) shall refer to an instance of skos:Concept"@en ;
+        ] ;
       sh:property [ # definisjon
         sh:name "definisjon"@nb , "definition"@en ;
         sh:path skos:definition ;
@@ -278,6 +285,14 @@
         sh:message "Eksklusjonsmerknad (skos:exclusionNote) skal være Literal"@nb ,
           "Exclusion note (skos:exclusionNote) shall be a Literal"@en ;
         ] ;
+      sh:property [ # er del av
+        sh:name "er del av"@nb , "is part of"@en ;
+        sh:path xkos:isPartOf ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "Er del av (xkos:isPartOf) skal referere til en instans av skos:Concept"@nb ,
+          "Is part of (xkos:isPartOf) shall refer to an instance of skos:Concept"@en ;
+        ] ;
       sh:property [ # forrige kategori
         sh:name "forrige kategori"@nb , "previous"@en ;
         sh:path xkos:previous ;
@@ -294,6 +309,14 @@
         sh:severity sh:Violation ;
         sh:message "Frarådet kategorinavn (skos:hiddenLabel) skal være Literal"@nb ,
           "Hidden label (skos:hiddenLabel) shall be a Literal"@en ;
+        ] ;
+      sh:property [ # generaliserer
+        sh:name "generaliserer"@nb , "generalizes"@en ;
+        sh:path xkos:generalizes ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "Generaliserer (xkos:generalizes) skal referere til en instans av skos:Concept"@nb ,
+          "Generalizes (xkos:generalizes) shall refer to an instance of skos:Concept"@en ;
         ] ;
       sh:property [ # inklusjonsmerknad
         sh:name "inklusjonsmerknad"@nb , "inclusion note"@en ;
@@ -327,6 +350,14 @@
         sh:severity sh:Violation ;
         sh:message "Neste kategori (xkos:next) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
           "Next (xkos:next) may have max. 1 value which shall refer to an instance of skos:Concept"@en ;
+        ] ;
+      sh:property [ # spesialiserer
+        sh:name "spesialiserer"@nb , "specializes"@en ;
+        sh:path xkos:specializes ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "Spesialiserer (xkos:specializes) skal referere til en instans av skos:Concept"@nb ,
+          "Specializes (xkos:specializes) shall refer to an instance of skos:Concept"@en ;
         ] ;
       sh:property [ # tillatt kategorinavn
         sh:name "tillatt kategorinavn"@nb , "alternative label"@en ;
