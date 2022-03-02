@@ -4,6 +4,6 @@ For forvaltning av "XKOS-AP-NO (Norsk applikasjonsprofil av XKOS)" (Spesifikasjo
 
 Redaktørens utkast blir publisert til: https://informasjonsforvaltning.github.io/xkos-ap-no/
 
-Gjeldende versjon blir publisert til: https://data.norge.no/specification/xkos-ap-no/
+Gjeldende versjon blir publisert til: p.t. ingen
 
 \ [_Digitaliseringsdirektoratet / Norwegian Digitalisation Agency_](https://digdir.no)
