@@ -225,7 +225,7 @@ Eksempel i RDF Turtle:
 |Range |skos:ConceptScheme
 |Beskrivelse |Brukes til å referere til en versjon av klassifikasjonen som denne versjonen erstatter.
 |Usage note |To link major versions of classifications.
-|Multiplisitet |0..1
+|Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
 |Merknad |
 |Eksempel |«Næringsgruppering 2007 (SN2007)» erstatter «Næringsgruppering 2002 (SN2002)».
@@ -407,7 +407,7 @@ Eksempel i RDF Turtle:
 |Usage note |To specific the date/time when the classification was made accessible.
 |Multiplisitet |0..1
 |Kravsnivå |Anbefalt/Recommended
-|Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
+|Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 |Eksempel |«Næringsgruppering 2007 (SN2007)» ble tilgjengeliggjort 1. jan. 2009.
 |===
 

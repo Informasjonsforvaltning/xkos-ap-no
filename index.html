@@ -534,15 +534,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Kategori-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Kategori</em></a>
 <ul class="sectlevel3">
+<li><a href="#Kategori-bestårAv">Kategori – består av (xkos:hasPart)</a></li>
 <li><a href="#Kategori-definisjon">Kategori – definisjon (skos:definition)</a></li>
 <li><a href="#Kategori-eksempel">Kategori – eksempel (skos:example)</a></li>
 <li><a href="#Kategori-eksklusjonsmerknad">Kategori – eksklusjonsmerknad (skos:exclusionNote)</a></li>
+<li><a href="#Kategori-erDelAv">Kategori – er del av (xkos:isPartOf)</a></li>
 <li><a href="#Kategori-forrigeKategori">Kategori – forrige kategori (xkos:previous)</a></li>
 <li><a href="#Kategori-frarådetKategorinavn">Kategori – frarådet kategorinavn (skos:hiddenLabel)</a></li>
+<li><a href="#Kategori-generaliserer">Kategori – generaliserer (xkos:generalizes)</a></li>
 <li><a href="#Kategori-inklusjonsmerknad">Kategori – inklusjonsmerknad (xkos:inclusionNote)</a></li>
 <li><a href="#Kategori-maksimumKodelengde">Kategori – maksimum kodelengde (xkos:maxLength)</a></li>
 <li><a href="#Kategori-merknad">Kategori – merknad (skos:note)</a></li>
 <li><a href="#Kategori-nesteKategori">Kategori – neste kategori (xkos:next)</a></li>
+<li><a href="#Kategori-spesialiserer">Kategori – spesialiserer (xkos:specializes)</a></li>
 <li><a href="#Kategori-tillattKategorinavn">Kategori – tillatt kategorinavn (skos:altLabel)</a></li>
 </ul>
 </li>
@@ -629,9 +633,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>til utprøving</mark><br>
-<strong>Versjon</strong>: 0.91 (se <a href="#Endringslogg">Endringslogg</a>)<br>
+<strong>Versjon</strong>: 0.902 (se <a href="#Endringslogg">Endringslogg</a>)<br>
 <strong>Publisert</strong>: 2021-12-15 (v.0.9)<br>
-<strong>Oppdatert</strong>: 2021-12-15 (v.0.91)<br>
+<strong>Oppdatert</strong>: 2022-03-02 (v.0.9xx)<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/" class="bare">https://informasjonsforvaltning.github.io/xkos-ap-no/</a><br>
@@ -1522,7 +1526,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
@@ -3188,6 +3192,62 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <div class="sect2">
 <h3 id="Kategori-valgfrie-egenskaper"><a class="anchor" href="#Kategori-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Kategori</em></h3>
 <div class="sect3">
+<h4 id="Kategori-bestårAv"><a class="anchor" href="#Kategori-bestårAv"></a>Kategori – består av (xkos:hasPart)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has part</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:hasPart</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som den aktuelle kategorien består av, i en partitiv relasjon mellom kategoriene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to categories which the category in question consists of, in a partitive relationship between the categories.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'ukedag' består av 'mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag' og 'søndag'.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;ukedag&gt; a skos:Concept ;
+   xkos:hasPart &lt;mandag&gt;, &lt;tirsdag&gt;, &lt;onsdag&gt;, &lt;torsdag&gt;, &lt;fredag&gt;, &lt;lørdag&gt;, &lt;søndag&gt; ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="Kategori-definisjon"><a class="anchor" href="#Kategori-definisjon"></a>Kategori – definisjon (skos:definition)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3347,6 +3407,62 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </div>
 </div>
 <div class="sect3">
+<h4 id="Kategori-erDelAv"><a class="anchor" href="#Kategori-erDelAv"></a>Kategori – er del av (xkos:isPartOf)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is part of</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:isPartOf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som den aktuelle kategorien er del av, i en partitiv relasjon mellom kategoriene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to categories which the category in question is part of, in a partitive relationship between the categories.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">'mandag' er del av 'ukedag'.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;mandag&gt; a skos:Concept ;
+   xkos:isPartOf &lt;ukedag&gt; ; .</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="Kategori-forrigeKategori"><a class="anchor" href="#Kategori-forrigeKategori"></a>Kategori – forrige kategori (xkos:previous)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3448,6 +3564,62 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="Kategori-generaliserer"><a class="anchor" href="#Kategori-generaliserer"></a>Kategori – generaliserer (xkos:generalizes)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">generalizes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:generalizes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som den aktuelle kategorien generaliserer, i en generisk relasjon mellom kategoriene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to categories which the category in question generalizes, in a generic relationship between the categories.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kategorien med kode «A» på nivå 1 i klassifikasjonen «Næringsgruppering 2007» generaliserer kategoriene med kode «01», «02» og «03» på nivå 2.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;A&gt; a skos:Concept ;
+   xkos:generalizes &lt;01&gt;, &lt;02&gt;, &lt;03&gt; ; .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Kategori-inklusjonsmerknad"><a class="anchor" href="#Kategori-inklusjonsmerknad"></a>Kategori – inklusjonsmerknad (xkos:inclusionNote)</h4>
@@ -3659,6 +3831,62 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="Kategori-spesialiserer"><a class="anchor" href="#Kategori-spesialiserer"></a>Kategori – spesialiserer (xkos:specializes)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">specializes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xkos:specializes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som den aktuelle kategorien spesialiserer, i en generisk relasjon mellom kategoriene.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To refer to categories which the category in question specializes, in a generic relationship between the categories.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri/Optional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kategorien med kode «01» på nivå 2 i klassifikasjonen «Næringsgruppering 2007» spesialiserer kategorien med kode «A» på nivå 1.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;01&gt; a skos:Concept ;
+   xkos:specializes &lt;A&gt; ; .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Kategori-tillattKategorinavn"><a class="anchor" href="#Kategori-tillattKategorinavn"></a>Kategori – tillatt kategorinavn (skos:altLabel)</h4>
@@ -4626,7 +4854,20 @@ Eksempel i RDF Turtle: </p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>v.0.91</strong>: Etter at det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/classification-item-change-type">Kategoriendringstyper</a> er blitt publisert, er "Merknad 1" og "Eksempel i RDF Turtle" til egenskapen <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/#Kategorisammenligning-typeEndring">Kategorisammenligning – type endring (dct:type)</a> oppdatert ved å referere til det publiserte vokabularet. Kapitlet med forslag til et kontrollert vokabular for endringstyper er også fjernet.</p>
+<p><strong>v.0.902</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Multiplisitet til egenskapen <a href="#Klassifikasjon-erstatter">Klassifikasjon – erstatter (xkos:supersedes)</a> endret fra 0..1 til 0..n, for å dekke behov for tilfeller der en klassifikasjon/versjon erstatter to eller flere klassifikasjoner/versjoner.</p>
+</li>
+<li>
+<p>Nye valgfrie egenskaper føyet til i <a href="#Kategori">Klassen Kategori (skos:Concept)</a>, for å dekke behov for beskrivelse av hierarkiske relasjoner mellom kategorier: <a href="#Kategori-bestårAv">Kategori – består av (xkos:hasPart)</a>, <a href="#Kategori-erDelAv">Kategori – er del av (xkos:isPartOf)</a>, <a href="#Kategori-generaliserer">Kategori – generaliserer (xkos:generalizes)</a> og <a href="#Kategori-spesialiserer">Kategori – spesialiserer (xkos:specializes)</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>v.0.901</strong>: Etter at det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/classification-item-change-type">Kategoriendringstyper</a> er blitt publisert, er "Merknad 1" og "Eksempel i RDF Turtle" til egenskapen <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/#Kategorisammenligning-typeEndring">Kategorisammenligning – type endring (dct:type)</a> oppdatert ved å referere til det publiserte vokabularet. Kapitlet med forslag til et kontrollert vokabular for endringstyper er også fjernet.</p>
 </li>
 </ul>
 </div>
@@ -4646,7 +4887,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-02-07 16:51:58 UTC
+Sist oppdatert 2022-03-02 10:48:44 UTC
 </div>
 </div>
 </body>
