@@ -222,6 +222,27 @@ Eksempel i RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 
 === Valgfrie egenskaper for klassen _Kategori_ [[Kategori-valgfrie-egenskaper]]
 
+==== Kategori – består av (xkos:hasPart) [[Kategori-bestårAv]]
+
+[cols="30s,70d"]
+|===
+|English name | has part
+|URI |xkos:hasPart
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til kategorier som den aktuelle kategorien består av, i en partitiv relasjon mellom kategoriene.
+|Usage note |To refer to categories which the category in question consists of, in a partitive relationship between the categories.
+|Multiplisitet |0..n
+|Kravsnivå |Valgfri/Optional
+|Merknad |
+|Eksempel | 'ukedag' består av 'mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag' og 'søndag'.
+|===
+
+Eksempel i RDF Turtle:
+----
+<ukedag> a skos:Concept ;
+   xkos:hasPart <mandag>, <tirsdag>, <onsdag>, <torsdag>, <fredag>, <lørdag>, <søndag> ; .
+----
+
 ==== Kategori – definisjon (skos:definition) [[Kategori-definisjon]]
 
 [cols="30s,70d"]
@@ -278,6 +299,27 @@ Eksempel i RDF Turtle:
 
 Eksempel I RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 
+==== Kategori – er del av (xkos:isPartOf) [[Kategori-erDelAv]]
+
+[cols="30s,70d"]
+|===
+|English name | is part of
+|URI |xkos:isPartOf
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til kategorier som den aktuelle kategorien er del av, i en partitiv relasjon mellom kategoriene.
+|Usage note |To refer to categories which the category in question is part of, in a partitive relationship between the categories.
+|Multiplisitet |0..n
+|Kravsnivå |Valgfri/Optional
+|Merknad |
+|Eksempel | 'mandag' er del av 'ukedag'.
+|===
+
+Eksempel i RDF Turtle:
+----
+<mandag> a skos:Concept ;
+   xkos:isPartOf <ukedag> ; .
+----
+
 ==== Kategori – forrige kategori (xkos:previous) [[Kategori-forrigeKategori]]
 
 [cols="30s,70d"]
@@ -313,6 +355,27 @@ Eksempel i RDF Turtle:
 |Merknad |
 |Eksempel |
 |===
+
+==== Kategori – generaliserer (xkos:generalizes) [[Kategori-generaliserer]]
+
+[cols="30s,70d"]
+|===
+|English name | generalizes
+|URI |xkos:generalizes
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til kategorier som den aktuelle kategorien generaliserer, i en generisk relasjon mellom kategoriene.
+|Usage note |To refer to categories which the category in question generalizes, in a generic relationship between the categories.
+|Multiplisitet |0..n
+|Kravsnivå |Valgfri/Optional
+|Merknad |
+|Eksempel | Kategorien med kode «A» på nivå 1 i klassifikasjonen «Næringsgruppering 2007» generaliserer kategoriene med kode «01», «02» og «03» på nivå 2.
+|===
+
+Eksempel i RDF Turtle:
+----
+<A> a skos:Concept ;
+   xkos:generalizes <01>, <02>, <03> ; .
+----
 
 ==== Kategori – inklusjonsmerknad (xkos:inclusionNote) [[Kategori-inklusjonsmerknad]]
 
@@ -380,6 +443,27 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |Merknad |Ordene «neste» og «bak» bør forståes innenfor konteksten av det aktuelle klassifikasjonsnivået i den aktuelle klassifikasjonen.
 |Eksempel |Den neste kategori for «A» er «B» i Nivå 1 av «Næringsgruppering 2007 (SN 2007)»
 |===
+
+==== Kategori – spesialiserer (xkos:specializes) [[Kategori-spesialiserer]]
+
+[cols="30s,70d"]
+|===
+|English name | specializes
+|URI |xkos:specializes
+|Range |skos:Concept
+|Beskrivelse |Brukes til å referere til kategorier som den aktuelle kategorien spesialiserer, i en generisk relasjon mellom kategoriene.
+|Usage note |To refer to categories which the category in question specializes, in a generic relationship between the categories.
+|Multiplisitet |0..n
+|Kravsnivå |Valgfri/Optional
+|Merknad |
+|Eksempel | Kategorien med kode «01» på nivå 2 i klassifikasjonen «Næringsgruppering 2007» spesialiserer kategorien med kode «A» på nivå 1.
+|===
+
+Eksempel i RDF Turtle:
+----
+<01> a skos:Concept ;
+   xkos:specializes <A> ; .
+----
 
 ==== Kategori – tillatt kategorinavn (skos:altLabel) [[Kategori-tillattKategorinavn]]
 
