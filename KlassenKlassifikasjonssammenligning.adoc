@@ -8,7 +8,7 @@ image::images/KlassenKlassifikasjonssammenligning.png[]
 [cols="30s,70d"]
 |===
 |English name |Correspondence
-|Beskrivelse |Brukes til å representere sammenligning mellom to (varianter/versjoner av) klassifikasjoner, dvs. sammenstilling av sammenligninger mellom kategorier.
+|Anvendelse |Brukes til å representere sammenligning mellom to (varianter/versjoner av) klassifikasjoner, dvs. sammenstilling av sammenligninger mellom kategorier.
 |Usage note |To group concept associations between two classifications (concordances, correspondence tables ...).
 |URI |xkos:Correspondence
 |Kravsnivå |Valgfri/Optional
@@ -30,7 +30,7 @@ Eksempel i RDF Turtle:
 |English name |made of
 |URI |xkos:madeOf
 |Range |xkos:ConceptAssociation
-|Beskrivelse |Brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.
+|Anvendelse |Brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.
 |Usage note |To group category correspondences that this correspondence is made of.
 |Multiplisitet |1..n
 |Kravsnivå |Obligatorisk/Mandatory
@@ -54,7 +54,7 @@ Eksempel i RDF Turtle:
 |English name |identifier 
 |URI |dct:identifier 
 |Range |rdfs:Literal typed as xsd:anyURI 
-|Beskrivelse |Brukes til å oppgi identifikatoren til sammenligningen. 
+|Anvendelse |Brukes til å oppgi identifikatoren til sammenligningen. 
 |Usage note |To refer to the identifier of the correspondence.
 |Multiplisitet |1..1 
 |Kravsnivå |Obligatorisk/Mandatory 
@@ -73,7 +73,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |name 
 |URI |dct:title 
 |Range |rdfs:Literal 
-|Beskrivelse |Brukes til å oppgi navnet til sammenligningen. Gjentas når navnet finnes i flere språk.  
+|Anvendelse |Brukes til å oppgi navnet til sammenligningen. Gjentas når navnet finnes i flere språk.  
 |Usage note |To specify the name of the correspondence, repeated when the name is in different languages. 
 |Multiplisitet |1..n 
 |Kravsnivå |Obligatorisk/Mandatory 
@@ -95,7 +95,7 @@ Eksempel i RDF Turtle:
 |English name |compares
 |URI |xkos:compares
 |Range |skos:ConceptScheme
-|Beskrivelse |Brukes til å referere til klassifikasjonene (eller versjonene/variantene av samme klassifikasjon) som det sammenlignes mellom.
+|Anvendelse |Brukes til å referere til klassifikasjonene (eller versjonene/variantene av samme klassifikasjon) som det sammenlignes mellom.
 |Usage note |To link directly the xkos:Correspondence to the classification schemes that it puts in relation.
 |Multiplisitet |2..2
 |Kravsnivå |Obligatorisk/Mandatory
@@ -123,7 +123,7 @@ Eksempel i RDF Turtle:
 |English name |publisher 
 |URI |dct:publisher 
 |Range |foaf:Agent 
-|Beskrivelse |Brukes til å referere til utgiver av sammenligningen.  
+|Anvendelse |Brukes til å referere til utgiver av sammenligningen.  
 |Usage note |To refer to the publisher of the corespondence. 
 |Multiplisitet |1..1 
 |Kravsnivå |Obligatorisk/Mandatory 
@@ -147,7 +147,7 @@ Eksempel i RDF Turtle:
 |English name |description 
 |URI |dct:description 
 |Range |rdfs:Literal 
-|Beskrivelse |Brukes til å oppgi en kortfattet beskrivelse av sammenligningen. Gjentas når beskrivelsen er i flere språk.  
+|Anvendelse |Brukes til å oppgi en kortfattet beskrivelse av sammenligningen. Gjentas når beskrivelsen er i flere språk.  
 |Usage note |To give a short description of the correspondence, repeated when the description is in different languages.  
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
@@ -169,7 +169,7 @@ Eksempel i RDF Turtle: 
 |English name |modified 
 |URI |dct:modified 
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime 
-|Beskrivelse |Brukes til å oppgi dato/tidspunkt når sammenligningen sist ble oppdatert.  
+|Anvendelse |Brukes til å oppgi dato/tidspunkt når sammenligningen sist ble oppdatert.  
 |Usage note |To specific the date or time when the correspondence was last modified.  
 |Multiplisitet |0..1 
 |Kravsnivå |Anbefalt/Recommended 
@@ -191,7 +191,7 @@ Eksempel i RDF Turtle: 
 |English name |language 
 |URI |dct:language 
 |Range |URI 
-|Beskrivelse |Brukes til å oppgi språk som sammenligningen er utgitt i. 
+|Anvendelse |Brukes til å oppgi språk som sammenligningen er utgitt i. 
 |Usage note |To specific the language(s) that the correspondence is in.  
 |Multiplisitet |0..n 
 |Kravsnivå |Anbefalt/Recommended 
@@ -218,7 +218,7 @@ Eksempel i RDF Turtle: 
 |English name |issued 
 |URI |dct:issued 
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime 
-|Beskrivelse |Brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.  
+|Anvendelse |Brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.  
 |Usage note |To specific the date/time when the classification was made accessible. 
 |Multiplisitet |0..1 
 |Kravsnivå |Anbefalt/Recommended 

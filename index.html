@@ -451,6 +451,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Forvaltningsregime">Forvaltningsregime</a></li>
 <li><a href="#OmKravene">Om kravene i spesifikasjonen</a></li>
 <li><a href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a></li>
+<li><a href="#Leseveiledning">Hvordan leser du tabellene brukt i spesifikasjonen?</a></li>
 </ul>
 </li>
 <li><a href="#Innledning">Innledning - Klassifikasjon, Klassifikasjonsnivå og Kategori</a></li>
@@ -633,9 +634,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: <mark>til utprøving</mark><br>
-<strong>Versjon</strong>: 0.902 (se <a href="#Endringslogg">Endringslogg</a>)<br>
+<strong>Versjon</strong>: 0.903 (se <a href="#Endringslogg">Endringslogg</a>)<br>
 <strong>Publisert</strong>: 2021-12-15 (v.0.9)<br>
-<strong>Oppdatert</strong>: 2022-03-02 (v.0.9xx)<br>
+<strong>Oppdatert</strong>: 2022-03-17 (v.0.9xx)<br>
 <strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/" class="bare">https://informasjonsforvaltning.github.io/xkos-ap-no/</a><br>
@@ -816,6 +817,75 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="Leseveiledning"><a class="anchor" href="#Leseveiledning"></a>Hvordan leser du tabellene brukt i spesifikasjonen?</h3>
+<div class="paragraph">
+<p>Følgende rader (ikke nødvendigvis i den rekkefølgen) er brukt i tabellene der krav til og bruk av klasser og egenskaper i XKOS-AP-NO er spesifisert:</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ledetekst i tabellen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Hensikt med raden i tabellen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>English name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi klasse- eller egenskapsnavn på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <a href="#OmfangOgAvgrensing">Omfang og avgrensing</a> for forklaring på engelske navn og tekster i denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi en unik identifikator til klassen eller egenskapen. Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne spesifikasjonen.</p>
+<p class="tableblock">Eksempel: <code>skos:ConceptScheme</code> er identifikatoren til klassen <code>Klassifikasjon (Concept Scheme)</code>, slik klassen er spesifisert i <code>skos</code> (se under <a href="#Navnerom">Navnerom som er brukt i spesifikasjonen</a> for hva <code>skos</code> står for).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / Subclass of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en klasse, til å spesifisere hvilken klasse den aktuelle klasse eventuelt er subklasse av.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av / Subproperty of</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere hvilken egenskap den aktuelle egenskap eventuelt er subegenskap av.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlig verdi til egenskapen, i form av klasse eller datatype.</p>
+<p class="tableblock">Eksempel: <code>Range skos:Concept</code> betyr at verdien til egenskapen skal være en instans av klassen <code>skos:Concept</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Usage note</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilsvarende «Anvendelse», men på engelsk (primært ment for engelsktalende utviklere for verktøystøtte). Se under <a href="#OmfangOgAvgrensing">Omfang og avgrensing</a> for forklaring på engelske navn og tekster i denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/kan ha.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#OmKravene">Om kravene i spesifikasjonen</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å gi merknader knyttet til bruk av klassen eller egenskapen, bl.a. om eventuell norsk utvidelse sammenlignet med original XKOS, om det er krav til bruk av kontrollerte vokabularer, osv.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Remark</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilsvarende «Merknad», men på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <a href="#OmfangOgAvgrensing">Omfang og avgrensing</a> for forklaring på engelske navn og tekster i denne spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å gi eksempel på bruken av klassen eller egenskapen, i prosatekst.</p>
+<p class="tableblock">Eksempel på hvordan eksemplene vist i prosatekst ser ut i RDF Turtle, er tatt med under den aktuelle tabellen.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -953,7 +1023,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Classification</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en klassifikasjon, en variant eller en versjon av en klassifikasjon.</p></td>
 </tr>
 <tr>
@@ -1014,7 +1084,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:positiveInteger</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi antall nivåer i klassifikasjonen; 1 for en flat klassifikasjon.</p></td>
 </tr>
 <tr>
@@ -1070,7 +1140,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:anyURI</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi identifikatoren til klassifikasjonen</p></td>
 </tr>
 <tr>
@@ -1131,7 +1201,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi navnet til klassifikasjonen. Gjentas når navnet finnes i flere språk.</p></td>
 </tr>
 <tr>
@@ -1188,7 +1258,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til utgiver av klassifikasjonen.</p></td>
 </tr>
 <tr>
@@ -1247,7 +1317,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en kortfattet beskrivelse av klassifikasjonen. Gjentas når beskrivelsen er i flere språk.</p></td>
 </tr>
 <tr>
@@ -1303,7 +1373,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til begrep som beskriver det domene/fagområde/el.l. som klassifikasjonen dekker.</p></td>
 </tr>
 <tr>
@@ -1371,7 +1441,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker.</p></td>
 </tr>
 <tr>
@@ -1449,7 +1519,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å uttrykke at klassifikasjonen dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes</p></td>
 </tr>
 <tr>
@@ -1517,7 +1587,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en versjon av klassifikasjonen som denne versjonen erstatter.</p></td>
 </tr>
 <tr>
@@ -1573,7 +1643,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:date or xsd:dateTime</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi fra og med når klassifikasjonen er gyldig.</p></td>
 </tr>
 <tr>
@@ -1629,7 +1699,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:date or xsd:dateTime</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi fra og med når klassifikasjonen er gyldig.</p></td>
 </tr>
 <tr>
@@ -1685,7 +1755,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdf:List</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en liste av nivåene i klassifikasjonen (instanser av Klassifikasjonsnivå <code>xkos:ClassificationLevel</code>), representert som en sortert RDF-liste (instans av <code>rdf:List</code>).</p></td>
 </tr>
 <tr>
@@ -1761,7 +1831,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategori(er) som en klassifikasjon inneholder.</p></td>
 </tr>
 <tr>
@@ -1829,7 +1899,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:date or xsd:dateTime</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi dato/tidspunkt når klassifikasjonen ble sist oppdatert.</p></td>
 </tr>
 <tr>
@@ -1885,7 +1955,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi språk som klassifikasjonen er utgitt i.</p></td>
 </tr>
 <tr>
@@ -1948,7 +2018,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:date or xsd:dateTime</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.</p></td>
 </tr>
 <tr>
@@ -2007,7 +2077,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en variant av klassifikasjonen, dvs. klassifikasjonen tilpasset for et spesifikt bruksbehov, ved f.eks. å begrense dekningen, slå sammen eller splitte noen kategorier på et gitt klassifikasjonsnivå.</p></td>
 </tr>
 <tr>
@@ -2063,7 +2133,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til aktør(er) som har laget klassifikasjonen.</p></td>
 </tr>
 <tr>
@@ -2114,7 +2184,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å knytte en hovedversjon av klassifikasjonen til f.eks. en «klassifikasjonsfamilie» eller en «klassifikasjonsserie».</p></td>
 </tr>
 <tr>
@@ -2170,7 +2240,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Classification level</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere et nivå i en klassifikasjon.</p></td>
 </tr>
 <tr>
@@ -2230,7 +2300,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:positiveInteger</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi nivånummer av det aktuelle klassifikasjonsnivået, dvs. avstanden fra dette nivået til «roten» av klassifikasjonen. 1 for det høyeste nivået.</p></td>
 </tr>
 <tr>
@@ -2286,7 +2356,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som klassifikasjonsnivået inneholder.</p></td>
 </tr>
 <tr>
@@ -2351,7 +2421,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å uttrykke at klassifikasjonsnivået dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes.</p></td>
 </tr>
 <tr>
@@ -2413,7 +2483,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til et eller flere begreper som beskriver det domene/fagområde/el.l. som klassifikasjonsnivået dekker gjensidig utelukkende.   </p></td>
 </tr>
 <tr>
@@ -2483,7 +2553,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker. </p></td>
 </tr>
 <tr>
@@ -2545,7 +2615,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til begrep som kategoriene i klassifikasjonsnivået er klassifisert innen.</p></td>
 </tr>
 <tr>
@@ -2605,7 +2675,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi mønsteret for kodene på et gitt klassifikasjonsnivå. Verdien bør inneholde et <a href="https://en.wikipedia.org/wiki/Regular_expression">regulært uttrykk</a>.</p></td>
 </tr>
 <tr>
@@ -2667,7 +2737,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">category, classification item</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en kategori i en klassifikasjon/klassifikasjonsnivå.</p></td>
 </tr>
 <tr>
@@ -2725,7 +2795,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi det anbefalte kategorinavnet for kategorien. Gjentas når navnet finnes i flere språk.</p></td>
 </tr>
 <tr>
@@ -2782,7 +2852,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å knytte kategorien til en eller flere klassifikasjoner.</p></td>
 </tr>
 <tr>
@@ -2845,7 +2915,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en klassifikasjon hvor denne kategorien er den første.</p></td>
 </tr>
 <tr>
@@ -2905,7 +2975,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi hva som er hovedinnholdet i kategorien. Gjentas når teksten er i flere ulike språk.</p></td>
 </tr>
 <tr>
@@ -2974,7 +3044,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en unik og persistent identifikator til kategorien.</p></td>
 </tr>
 <tr>
@@ -3026,7 +3096,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi koden for kategorien.</p></td>
 </tr>
 <tr>
@@ -3091,7 +3161,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til sentralt begrep som er viktig for å forstå og tolke kategorien.</p></td>
 </tr>
 <tr>
@@ -3151,7 +3221,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi tilleggsinnholdet i kategorien. Gjentas når teksten er i flere ulike språk.</p></td>
 </tr>
 <tr>
@@ -3212,7 +3282,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som den aktuelle kategorien består av, i en partitiv relasjon mellom kategoriene.</p></td>
 </tr>
 <tr>
@@ -3268,7 +3338,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi definisjonen av begrepet som kategorien representerer. Gjentas når definisjonen finnes i flere ulike språk.</p></td>
 </tr>
 <tr>
@@ -3315,7 +3385,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi i fritekst eksempler på hva er kategorisert under kategorien. Gjentas når teksten er i flere ulike språk.</p></td>
 </tr>
 <tr>
@@ -3373,7 +3443,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi hva som ikke er inkludert i kategorien. Gjentas når merknaden finnes i flere ulike språk.</p></td>
 </tr>
 <tr>
@@ -3427,7 +3497,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som den aktuelle kategorien er del av, i en partitiv relasjon mellom kategoriene.</p></td>
 </tr>
 <tr>
@@ -3483,7 +3553,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorien som er foran den aktuelle kategorien, i en sekvensiell relasjon mellom kategoriene.</p></td>
 </tr>
 <tr>
@@ -3539,7 +3609,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi kategorinavn som anses som uegnet for kategorien. Gjentas når navnet finnes i flere ulike språk.</p></td>
 </tr>
 <tr>
@@ -3586,7 +3656,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som den aktuelle kategorien generaliserer, i en generisk relasjon mellom kategoriene.</p></td>
 </tr>
 <tr>
@@ -3642,7 +3712,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi merknad om hva som er inkludert i kodeelementet. Gjentas når merknaden finnes i flere ulike språk.</p></td>
 </tr>
 <tr>
@@ -3693,7 +3763,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:positveInteger</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi maksimum kodelengde.</p></td>
 </tr>
 <tr>
@@ -3759,7 +3829,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi merknad om kategorien. Gjentas når merknaden finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
@@ -3806,7 +3876,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorien som er bak den aktuelle kategorien, i en sekvensiell relasjon mellom kategoriene.</p></td>
 </tr>
 <tr>
@@ -3853,7 +3923,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorier som den aktuelle kategorien spesialiserer, i en generisk relasjon mellom kategoriene.</p></td>
 </tr>
 <tr>
@@ -3909,7 +3979,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi alternativt kategorinavn (som kan brukes ved siden av det anbefalte kategorinavnet). Gjentas når navnet finnes i flere ulike språk.</p></td>
 </tr>
 <tr>
@@ -3969,7 +4039,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Correspondence</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere sammenligning mellom to (varianter/versjoner av) klassifikasjoner, dvs. sammenstilling av sammenligninger mellom kategorier.</p></td>
 </tr>
 <tr>
@@ -4025,7 +4095,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">xkos:ConceptAssociation</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.</p></td>
 </tr>
 <tr>
@@ -4083,7 +4153,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:anyURI </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi identifikatoren til sammenligningen. </p></td>
 </tr>
 <tr>
@@ -4135,7 +4205,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi navnet til sammenligningen. Gjentas når navnet finnes i flere språk.  </p></td>
 </tr>
 <tr>
@@ -4191,7 +4261,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til klassifikasjonene (eller versjonene/variantene av samme klassifikasjon) som det sammenlignes mellom.</p></td>
 </tr>
 <tr>
@@ -4253,7 +4323,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til utgiver av sammenligningen.  </p></td>
 </tr>
 <tr>
@@ -4312,7 +4382,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .</pre>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi en kortfattet beskrivelse av sammenligningen. Gjentas når beskrivelsen er i flere språk.  </p></td>
 </tr>
 <tr>
@@ -4369,7 +4439,7 @@ Eksempel i RDF Turtle: </p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:date or xsd:dateTime </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi dato/tidspunkt når sammenligningen sist ble oppdatert.  </p></td>
 </tr>
 <tr>
@@ -4426,7 +4496,7 @@ Eksempel i RDF Turtle: </p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URI </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi språk som sammenligningen er utgitt i. </p></td>
 </tr>
 <tr>
@@ -4491,7 +4561,7 @@ Eksempel i RDF Turtle: </p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal typed as xsd:date or xsd:dateTime </p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse </strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse </strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.  </p></td>
 </tr>
 <tr>
@@ -4553,7 +4623,7 @@ Eksempel i RDF Turtle: </p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Category correspondence</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere sammenligning mellom kategorier.</p></td>
 </tr>
 <tr>
@@ -4638,7 +4708,7 @@ Eksempel i RDF Turtle: </p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en kildekategori i en kategorisammenligning.</p></td>
 </tr>
 <tr>
@@ -4688,7 +4758,7 @@ Eksempel i RDF Turtle: </p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en målkategori i en kategorisammenligning.</p></td>
 </tr>
 <tr>
@@ -4741,7 +4811,7 @@ Eksempel i RDF Turtle: </p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.</p></td>
 </tr>
 <tr>
@@ -4854,6 +4924,9 @@ Eksempel i RDF Turtle: </p>
 <div class="ulist">
 <ul>
 <li>
+<p><strong>v.0.903</strong>: Redaksjonell endring av tabellmalen for klasser og egenskaper, der radnavnet "Beskrivelse" er endret til "Anvendelse" som gjenspeiler direkte hensikten med den aktuelle raden i tabellene.</p>
+</li>
+<li>
 <p><strong>v.0.902</strong>:</p>
 <div class="ulist">
 <ul>
@@ -4887,7 +4960,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-03-02 11:03:00 UTC
+Sist oppdatert 2022-03-17 14:57:31 UTC
 </div>
 </div>
 </body>
