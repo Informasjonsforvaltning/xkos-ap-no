@@ -8,7 +8,7 @@ image::images/KlassenKlassifikasjon.png[]
 [cols="30s,70d"]
 |===
 |English name |Classification
-|Beskrivelse |Brukes til å representere en klassifikasjon, en variant eller en versjon av en klassifikasjon.
+|Anvendelse |Brukes til å representere en klassifikasjon, en variant eller en versjon av en klassifikasjon.
 |Usage note |To represent a classification, a variant of a version of a classification.
 |URI |skos:ConceptScheme
 |Kravsnivå |Obligatorisk/Mandatory
@@ -35,7 +35,7 @@ Eksempel i RDF Turtle:
 |English name |number of levels
 |URI |xkos:numberOfLevels
 |Range |rdfs:Literal typed as xsd:positiveInteger
-|Beskrivelse |Brukes til å oppgi antall nivåer i klassifikasjonen; 1 for en flat klassifikasjon.
+|Anvendelse |Brukes til å oppgi antall nivåer i klassifikasjonen; 1 for en flat klassifikasjon.
 |Usage note |To document number of levels the classification includes; 1 for a flat classification.
 |Multiplisitet |1..1
 |Kravsnivå |Obligatorisk/Mandatory
@@ -57,7 +57,7 @@ Eksempel i RDF Turtle:
 |English name |identifier
 |URI |dct:identifier
 |Range |rdfs:Literal typed as xsd:anyURI
-|Beskrivelse |Brukes til å oppgi identifikatoren til klassifikasjonen
+|Anvendelse |Brukes til å oppgi identifikatoren til klassifikasjonen
 |Usage note |To refer to the identifier of the classification.
 |Multiplisitet |1..1
 |Kravsnivå |Obligatorisk/Mandatory
@@ -81,7 +81,7 @@ Eksempel i RDF Turtle:
 |English name |name
 |URI |dct:title
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi navnet til klassifikasjonen. Gjentas når navnet finnes i flere språk.
+|Anvendelse |Brukes til å oppgi navnet til klassifikasjonen. Gjentas når navnet finnes i flere språk.
 |Usage note |To specify the name of the classification, repeated when the name is in different languages.
 |Multiplisitet |1..n
 |Kravsnivå |Obligatorisk/Mandatory
@@ -103,7 +103,7 @@ Eksempel i RDF Turtle:
 |English name |publisher
 |URI |dct:publisher
 |Range |foaf:Agent
-|Beskrivelse |Brukes til å referere til utgiver av klassifikasjonen.
+|Anvendelse |Brukes til å referere til utgiver av klassifikasjonen.
 |Usage note |To refer to the publisher of the classification.
 |Multiplisitet |1..1
 |Kravsnivå |Obligatorisk/Mandatory
@@ -126,7 +126,7 @@ Eksempel i RDF Turtle:
 |English name |description
 |URI |dct:description
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi en kortfattet beskrivelse av klassifikasjonen. Gjentas når beskrivelsen er i flere språk.
+|Anvendelse |Brukes til å oppgi en kortfattet beskrivelse av klassifikasjonen. Gjentas når beskrivelsen er i flere språk.
 |Usage note |To give a short description of the classification, repeated when the description is in different languages.
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -147,7 +147,7 @@ Eksempel i RDF Turtle:
 |English name |covers
 |URI |xkos:covers
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til begrep som beskriver det domene/fagområde/el.l. som klassifikasjonen dekker.
+|Anvendelse |Brukes til å referere til begrep som beskriver det domene/fagområde/el.l. som klassifikasjonen dekker.
 |Usage note |A classification covers a defined field: economic activity, occupations, living organisms, etc. XKOS specifies the `xkos:covers` property to express this relation.
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -171,7 +171,7 @@ Eksempel i RDF Turtle:
 |English name |covers mutually exclusively
 |URI |xkos:coversMutuallyExclusively
 |Range |skos:Concept
-|Beskrivelse |På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker.
+|Anvendelse |På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker.
 |Usage note |If there is no overlap between the classification items at a given level of the classification, we say that the concepts (`skos:Concept`) representing the items are mutually exclusive.
 |Subegenskap av / Subproperty of |xkos:covers
 |Multiplisitet |0..n
@@ -199,7 +199,7 @@ Eksempel i RDF Turtle:
 |English name |covers exhaustively
 |URI |xkos:coversExhaustively
 |Range |skos:Concept
-|Beskrivelse |Brukes til å uttrykke at klassifikasjonen dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes
+|Anvendelse |Brukes til å uttrykke at klassifikasjonen dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes
 |Usage note |If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.
 |Subegenskap av / Subproperty of |xkos:covers
 |Multiplisitet |0..n
@@ -223,7 +223,7 @@ Eksempel i RDF Turtle:
 |English name |supersedes
 |URI |xkos:supersedes
 |Range |skos:ConceptScheme
-|Beskrivelse |Brukes til å referere til en versjon av klassifikasjonen som denne versjonen erstatter.
+|Anvendelse |Brukes til å referere til en versjon av klassifikasjonen som denne versjonen erstatter.
 |Usage note |To link major versions of classifications.
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -244,7 +244,7 @@ Eksempel i RDF Turtle:
 |English name |valid from inclusive
 |URI |schema:validFrom
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse |Brukes til å oppgi fra og med når klassifikasjonen er gyldig.
+|Anvendelse |Brukes til å oppgi fra og med når klassifikasjonen er gyldig.
 |Usage note |To specific the date or time from (inclusive) which the classification is valid.
 |Multiplisitet |0..1
 |Kravsnivå |Anbefalt/Recommended
@@ -265,7 +265,7 @@ Eksempel i RDF Turtle:
 |English name |valid through inclusive
 |URI |schema:validThrough
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse |Brukes til å oppgi fra og med når klassifikasjonen er gyldig.
+|Anvendelse |Brukes til å oppgi fra og med når klassifikasjonen er gyldig.
 |Usage note |To specific the date or time from (inclusive) which the classification is valid.
 |Multiplisitet |0..1
 |Kravsnivå |Anbefalt/Recommended
@@ -286,7 +286,7 @@ Eksempel i RDF Turtle:
 |English name |level list
 |URI |xkos:levels
 |Range |rdf:List
-|Beskrivelse |Brukes til å referere til en liste av nivåene i klassifikasjonen (instanser av Klassifikasjonsnivå `xkos:ClassificationLevel`), representert som en sortert RDF-liste (instans av `rdf:List`).
+|Anvendelse |Brukes til å referere til en liste av nivåene i klassifikasjonen (instanser av Klassifikasjonsnivå `xkos:ClassificationLevel`), representert som en sortert RDF-liste (instans av `rdf:List`).
 |Usage note |List of the classification levels represented as an RDF list of ordered levels (instances of ClassificationLevel).
 |Multiplisitet |0..1
 |Kravsnivå |Anbefalt/Recommended
@@ -327,7 +327,7 @@ Eksempel i RDF Turtle:
 |English name |contains classification items
 |URI |uneskos:contains
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til kategori(er) som en klassifikasjon inneholder.
+|Anvendelse |Brukes til å referere til kategori(er) som en klassifikasjon inneholder.
 |Usage note |To refer to the classification items that the classification contains.
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -357,7 +357,7 @@ Eksempel i RDF Turtle:
 |English name |modified
 |URI |dct:modified
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse |Brukes til å oppgi dato/tidspunkt når klassifikasjonen ble sist oppdatert.
+|Anvendelse |Brukes til å oppgi dato/tidspunkt når klassifikasjonen ble sist oppdatert.
 |Usage note |To specific the date or time when the classification was last modified.
 |Multiplisitet |0..1
 |Kravsnivå |Anbefalt/Recommended
@@ -378,7 +378,7 @@ Eksempel i RDF Turtle:
 |English name |language
 |URI |dct:language
 |Range |URI
-|Beskrivelse |Brukes til å oppgi språk som klassifikasjonen er utgitt i.
+|Anvendelse |Brukes til å oppgi språk som klassifikasjonen er utgitt i.
 |Usage note |To specific the language(s) that the classification is in.
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -403,7 +403,7 @@ Eksempel i RDF Turtle:
 |English name |issued
 |URI |dct:issued
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse |Brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.
+|Anvendelse |Brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.
 |Usage note |To specific the date/time when the classification was made accessible.
 |Multiplisitet |0..1
 |Kravsnivå |Anbefalt/Recommended
@@ -426,7 +426,7 @@ Eksempel i RDF Turtle:
 |English name |variant
 |URI |xkos:variant
 |Range |skos:ConceptScheme
-|Beskrivelse |Brukes til å referere til en variant av klassifikasjonen, dvs. klassifikasjonen tilpasset for et spesifikt bruksbehov, ved f.eks. å begrense dekningen, slå sammen eller splitte noen kategorier på et gitt klassifikasjonsnivå.
+|Anvendelse |Brukes til å referere til en variant av klassifikasjonen, dvs. klassifikasjonen tilpasset for et spesifikt bruksbehov, ved f.eks. å begrense dekningen, slå sammen eller splitte noen kategorier på et gitt klassifikasjonsnivå.
 |Usage note |In certain circumstances, statisticians need to "customize" a classification scheme for a specific use, by restricting the coverage, merging or splitting certain items at a given level, etc. The `xkos:variant` property can be used to represent the relation between the base classification scheme and its variant(s). 
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -447,7 +447,7 @@ Eksempel i RDF Turtle:
 |English name |creator
 |URI |dct:creator
 |Range |foaf:Agent
-|Beskrivelse |Brukes til å referere til aktør(er) som har laget klassifikasjonen.
+|Anvendelse |Brukes til å referere til aktør(er) som har laget klassifikasjonen.
 |Usage note |To refer to the one or more Agents who made the classification and who are not the publisher (`dct:publisher`) of the classification.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -463,7 +463,7 @@ Eksempel i RDF Turtle:
 |English name |belongs to
 |URI |xkos:belongsTo
 |Range |skos:Concept
-|Beskrivelse |Brukes til å knytte en hovedversjon av klassifikasjonen til f.eks. en «klassifikasjonsfamilie» eller en «klassifikasjonsserie».
+|Anvendelse |Brukes til å knytte en hovedversjon av klassifikasjonen til f.eks. en «klassifikasjonsfamilie» eller en «klassifikasjonsserie».
 |Usage note |Connecting a major version of a classification to a concept representing the overall classification.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional

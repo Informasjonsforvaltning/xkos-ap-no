@@ -8,7 +8,7 @@ image::images/KlassenKategorisammenligning.png[]
 [cols="30s,70d"]
 |===
 |English name |Category correspondence
-|Beskrivelse |Brukes til å representere sammenligning mellom kategorier.
+|Anvendelse |Brukes til å representere sammenligning mellom kategorier.
 |Usage note |To represent correspondences between classification items.
 |URI|xkos:ConceptAssociation
 |Kravsnivå |Valgfri/Optional
@@ -59,7 +59,7 @@ Eksempel i RDF Turtle:
 |English name |source category
 |URI |xkos:sourceConcept
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til en kildekategori i en kategorisammenligning.
+|Anvendelse |Brukes til å referere til en kildekategori i en kategorisammenligning.
 |Usage note |To link to a source concept in the correspondence.
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -76,7 +76,7 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 |English name |target category
 |URI |xkos:targetConcept
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til en målkategori i en kategorisammenligning.
+|Anvendelse |Brukes til å referere til en målkategori i en kategorisammenligning.
 |Usage note |To link to a target concept in the correspondence.
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -95,7 +95,7 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 |English name |change type
 |URI |dct:type
 |Range |skos:Concept
-|Beskrivelse |Brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.
+|Anvendelse |Brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.
 |Usage note |To specify the type of the change between two classifications in the same classification family/series.
 |Multiplisitet |0..1
 |Kravsnivå |Valgfri/Optional

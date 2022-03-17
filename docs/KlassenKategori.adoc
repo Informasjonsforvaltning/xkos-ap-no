@@ -8,7 +8,7 @@ image::images/KlassenKategori.png[]
 [cols="30s,70d"]
 |===
 |English name |category, classification item
-|Beskrivelse |Brukes til å representere en kategori i en klassifikasjon/klassifikasjonsnivå.
+|Anvendelse |Brukes til å representere en kategori i en klassifikasjon/klassifikasjonsnivå.
 |Usage note |To represent a category in a classification or classification level.
 |URI |skos:Concept
 |Kravsnivå |Obligatorisk/Mandatory
@@ -33,7 +33,7 @@ Eksempel i RDF Turtle:
 |English name |official label
 |URI |skos:prefLabel
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi det anbefalte kategorinavnet for kategorien. Gjentas når navnet finnes i flere språk.
+|Anvendelse |Brukes til å oppgi det anbefalte kategorinavnet for kategorien. Gjentas når navnet finnes i flere språk.
 |Usage note |To specify the official label for the classification item, repeated when the label is in different languages.
 |Multiplisitet |1..n
 |Kravsnivå |Obligatorisk/Mandatory
@@ -55,7 +55,7 @@ Eksempel i RDF Turtle:
 |English name |in classification
 |URI |skos:inScheme
 |Range |skos:ConceptScheme
-|Beskrivelse |Brukes til å knytte kategorien til en eller flere klassifikasjoner.
+|Anvendelse |Brukes til å knytte kategorien til en eller flere klassifikasjoner.
 |Usage note |To connect the category to a classification of classification level.
 |Multiplisitet |1..n
 |Kravsnivå |Obligatorisk/Mandatory
@@ -82,7 +82,7 @@ Eksempel i RDF Turtle:
 |English name |first category
 |URI |skos:topConceptOf
 |Range |skos:ConceptScheme
-|Beskrivelse |Brukes til å referere til en klassifikasjon hvor denne kategorien er den første.
+|Anvendelse |Brukes til å referere til en klassifikasjon hvor denne kategorien er den første.
 |Usage note |To refer to the classification in which the category is the first one.
 |Multiplisitet|0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -107,7 +107,7 @@ Eksempel i RDF Turtle:
 |English name |core content note
 |URI |xkos:coreContentNote
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi hva som er hovedinnholdet i kategorien. Gjentas når teksten er i flere ulike språk.
+|Anvendelse |Brukes til å oppgi hva som er hovedinnholdet i kategorien. Gjentas når teksten er i flere ulike språk.
 |Usage note |To specify the core content of the classification item, repeated when the note is in different languages.
 |Subegenskap av / Subproperty of |xkos:inclusionNote
 |Multiplisitet |0..n
@@ -135,7 +135,7 @@ Eksempel I RDF Turtle:
 |English name |identifier
 |URI |dct:identifier
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi en unik og persistent identifikator til kategorien.
+|Anvendelse |Brukes til å oppgi en unik og persistent identifikator til kategorien.
 |Usage note |To specify a unique and persistent identifier to the category.
 |Multiplisitet|0..1
 |Kravsnivå |Anbefalt/Recommended
@@ -153,7 +153,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |English name |code
 |URI |skos:notation
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi koden for kategorien.
+|Anvendelse |Brukes til å oppgi koden for kategorien.
 |Usage note |To specify the code for the classification item.
 |Multiplisitet |0..n
 |Kravsnivå |Anbefalt/Recommended
@@ -183,7 +183,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .
 |English name |concept
 |URI |dct:subject
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til sentralt begrep som er viktig for å forstå og tolke kategorien.
+|Anvendelse |Brukes til å referere til sentralt begrep som er viktig for å forstå og tolke kategorien.
 |Usage note |To refer to the concept which is important in order to understand the category.
 |Multiplisitet |0..1
 |Kravsnivå |Anbefalt/Recommended
@@ -208,7 +208,7 @@ Eksempel i RDF Turtle:
 |English name |additional content note
 |URI |xkos:additionalContentNote
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi tilleggsinnholdet i kategorien. Gjentas når teksten er i flere ulike språk.
+|Anvendelse |Brukes til å oppgi tilleggsinnholdet i kategorien. Gjentas når teksten er i flere ulike språk.
 |Usage note |To specific additional content to the classification item, repeated when the note is in different languages.
 |Subegenskap av / Subproperty of |xkos:inclusionNote
 |Multiplisitet |0..n
@@ -229,7 +229,7 @@ Eksempel i RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 |English name | has part
 |URI |xkos:hasPart
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til kategorier som den aktuelle kategorien består av, i en partitiv relasjon mellom kategoriene.
+|Anvendelse |Brukes til å referere til kategorier som den aktuelle kategorien består av, i en partitiv relasjon mellom kategoriene.
 |Usage note |To refer to categories which the category in question consists of, in a partitive relationship between the categories.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -250,7 +250,7 @@ Eksempel i RDF Turtle:
 |English name |definition
 |URI |skos:definition
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi definisjonen av begrepet som kategorien representerer. Gjentas når definisjonen finnes i flere ulike språk.
+|Anvendelse |Brukes til å oppgi definisjonen av begrepet som kategorien representerer. Gjentas når definisjonen finnes i flere ulike språk.
 |Usage note |To specify the definition of the concept that the category represents, repeated when the definition is in different languages.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri
@@ -265,7 +265,7 @@ Eksempel i RDF Turtle:
 |English name |example
 |URI |skos:example
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi i fritekst eksempler på hva er kategorisert under kategorien. Gjentas når teksten er i flere ulike språk.
+|Anvendelse |Brukes til å oppgi i fritekst eksempler på hva er kategorisert under kategorien. Gjentas når teksten er i flere ulike språk.
 |Usage note |To specify examples of the content of the category, repeated when the text is in different languages.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -288,7 +288,7 @@ Eksempel i RDF Turtle:
 |English name |exclusion note
 |URI |xkos:exclusionNote
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi hva som ikke er inkludert i kategorien. Gjentas når merknaden finnes i flere ulike språk.
+|Anvendelse |Brukes til å oppgi hva som ikke er inkludert i kategorien. Gjentas når merknaden finnes i flere ulike språk.
 |Usage note |To specify what is not included in the category, repeated when the note is in different languages.
 |Subegenskap av / Subproperty of |skos:scopeNote
 |Multiplisitet |0..n
@@ -306,7 +306,7 @@ Eksempel I RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 |English name | is part of
 |URI |xkos:isPartOf
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til kategorier som den aktuelle kategorien er del av, i en partitiv relasjon mellom kategoriene.
+|Anvendelse |Brukes til å referere til kategorier som den aktuelle kategorien er del av, i en partitiv relasjon mellom kategoriene.
 |Usage note |To refer to categories which the category in question is part of, in a partitive relationship between the categories.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -327,7 +327,7 @@ Eksempel i RDF Turtle:
 |English name |previous
 |URI |xkos:previous
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til kategorien som er foran den aktuelle kategorien, i en sekvensiell relasjon mellom kategoriene.
+|Anvendelse |Brukes til å referere til kategorien som er foran den aktuelle kategorien, i en sekvensiell relasjon mellom kategoriene.
 |Usage note |To refer to the category that is before the category in question, in a sequential relation between the categories.
 |Multiplisitet |0..1
 |Kravsnivå |Valgfri/Optional
@@ -348,7 +348,7 @@ Eksempel i RDF Turtle:
 |English name |hidden label
 |URI |skos:hiddenLabel
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi kategorinavn som anses som uegnet for kategorien. Gjentas når navnet finnes i flere ulike språk.
+|Anvendelse |Brukes til å oppgi kategorinavn som anses som uegnet for kategorien. Gjentas når navnet finnes i flere ulike språk.
 |Usage note |To specify the label that is considered as not suitable for the classification item, repeated when the label is in different languages.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -363,7 +363,7 @@ Eksempel i RDF Turtle:
 |English name | generalizes
 |URI |xkos:generalizes
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til kategorier som den aktuelle kategorien generaliserer, i en generisk relasjon mellom kategoriene.
+|Anvendelse |Brukes til å referere til kategorier som den aktuelle kategorien generaliserer, i en generisk relasjon mellom kategoriene.
 |Usage note |To refer to categories which the category in question generalizes, in a generic relationship between the categories.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -384,7 +384,7 @@ Eksempel i RDF Turtle:
 |English name |inclusion note
 |URI |xkos:inclusionNote
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi merknad om hva som er inkludert i kodeelementet. Gjentas når merknaden finnes i flere ulike språk.
+|Anvendelse |Brukes til å oppgi merknad om hva som er inkludert i kodeelementet. Gjentas når merknaden finnes i flere ulike språk.
 |Usage note |To specify what is included in the category, repeated when the note is in different languages.
 |Subegenskap av / Subproperty of |skos:scopeNote
 |Multiplisitet |0..n
@@ -400,7 +400,7 @@ Eksempel i RDF Turtle:
 |English name |max length
 |URI |xkos:maxLength
 |Range |rdfs:Literal typed as xsd:positveInteger
-|Beskrivelse |Brukes til å oppgi maksimum kodelengde.
+|Anvendelse |Brukes til å oppgi maksimum kodelengde.
 |Usage note |To specify the maximum number of characters for a label that is constrained in length.
 |Multiplisitet |0..1
 |Kravsnivå |Valgfri/Optional
@@ -421,7 +421,7 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |English name |note
 |URI |skos:note
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi merknad om kategorien. Gjentas når merknaden finnes i flere ulike språk/målformer.
+|Anvendelse |Brukes til å oppgi merknad om kategorien. Gjentas når merknaden finnes i flere ulike språk/målformer.
 |Usage note |To specify any note about the classification item, repeated when the note is in different languages.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -436,7 +436,7 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |English name |next
 |URI |xkos:next
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til kategorien som er bak den aktuelle kategorien, i en sekvensiell relasjon mellom kategoriene.
+|Anvendelse |Brukes til å referere til kategorien som er bak den aktuelle kategorien, i en sekvensiell relasjon mellom kategoriene.
 |Usage note |To refer to the category that is after the category in question, in a sequential relation between the categories.
 |Multiplisitet |0..1
 |Kravsnivå |Valgfri/Optional
@@ -451,7 +451,7 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |English name | specializes
 |URI |xkos:specializes
 |Range |skos:Concept
-|Beskrivelse |Brukes til å referere til kategorier som den aktuelle kategorien spesialiserer, i en generisk relasjon mellom kategoriene.
+|Anvendelse |Brukes til å referere til kategorier som den aktuelle kategorien spesialiserer, i en generisk relasjon mellom kategoriene.
 |Usage note |To refer to categories which the category in question specializes, in a generic relationship between the categories.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
@@ -472,7 +472,7 @@ Eksempel i RDF Turtle:
 |English name |alternative label
 |URI |skos:altLabel
 |Range |rdfs:Literal
-|Beskrivelse |Brukes til å oppgi alternativt kategorinavn (som kan brukes ved siden av det anbefalte kategorinavnet). Gjentas når navnet finnes i flere ulike språk.
+|Anvendelse |Brukes til å oppgi alternativt kategorinavn (som kan brukes ved siden av det anbefalte kategorinavnet). Gjentas når navnet finnes i flere ulike språk.
 |Usage note |To specify alternative label of the category, repeated when the label is in different languages.
 |Multiplisitet |0..n
 |Kravsnivå |Valgfri/Optional
