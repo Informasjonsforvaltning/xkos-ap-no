@@ -11,7 +11,7 @@ image::images/KlassenKlassifikasjonssammenligning.png[]
 |Anvendelse |Brukes til å representere sammenligning mellom to (varianter/versjoner av) klassifikasjoner, dvs. sammenstilling av sammenligninger mellom kategorier.
 |Usage note |To group concept associations between two classifications (concordances, correspondence tables ...).
 |URI |xkos:Correspondence
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»] er en sammenligning mellom «Klassifikasjon av informasjonssektor 2007» og «Næringsgruppering 2007 (SN2007)»
 |===
@@ -33,7 +33,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.
 |Usage note |To group category correspondences that this correspondence is made of.
 |Multiplisitet |1..n
-|Kravsnivå |Obligatorisk/Mandatory
+|Kravnivå |Obligatorisk/Mandatory
 |Merknad |
 |Eksempel | Klassifikasjonssammenligningen https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»] inneholder bl.a. sammenligning mellom kategoriene «26.1 - Produksjon av elektroniske komponenter og kretskort» i «Standard for næringsgruppering (SN2007)» og «1.11 - Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007».
 |===
@@ -57,7 +57,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å oppgi identifikatoren til sammenligningen. 
 |Usage note |To refer to the identifier of the correspondence.
 |Multiplisitet |1..1 
-|Kravsnivå |Obligatorisk/Mandatory 
+|Kravnivå |Obligatorisk/Mandatory 
 |Merknad 1 |Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
@@ -76,7 +76,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Anvendelse |Brukes til å oppgi navnet til sammenligningen. Gjentas når navnet finnes i flere språk.  
 |Usage note |To specify the name of the correspondence, repeated when the name is in different languages. 
 |Multiplisitet |1..n 
-|Kravsnivå |Obligatorisk/Mandatory 
+|Kravnivå |Obligatorisk/Mandatory 
 |Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 |Eksempel |«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)» er navn på klassifikasjonssammenligningen https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111
 |===
@@ -98,7 +98,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å referere til klassifikasjonene (eller versjonene/variantene av samme klassifikasjon) som det sammenlignes mellom.
 |Usage note |To link directly the xkos:Correspondence to the classification schemes that it puts in relation.
 |Multiplisitet |2..2
-|Kravsnivå |Obligatorisk/Mandatory
+|Kravnivå |Obligatorisk/Mandatory
 |Merknad |
 |Eksempel |«Klassifisering av informasjonssektoren 2007» sammenlignes med «Næringsgruppering 2007 (SN2007)».
 |===
@@ -126,7 +126,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å referere til utgiver av sammenligningen.  
 |Usage note |To refer to the publisher of the corespondence. 
 |Multiplisitet |1..1 
-|Kravsnivå |Obligatorisk/Mandatory 
+|Kravnivå |Obligatorisk/Mandatory 
 |Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 |Eksempel |Statistisk sentralbyrå (med org.nr. 971526920) er utgiver av klassifikasjonssammenligningen https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»]. 
 |===
@@ -150,7 +150,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å oppgi en kortfattet beskrivelse av sammenligningen. Gjentas når beskrivelsen er i flere språk.  
 |Usage note |To give a short description of the correspondence, repeated when the description is in different languages.  
 |Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå |Anbefalt/Recommended 
 |Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/109 med navn “Variant av SN - Miljøregnskap 2012 - Næringsgruppering 2007 (SN 2007)” har beskrivelse “Denne korrespondansetabellen viser korrespondansene på nivå 2 av miljøregnskapet (tilsvarer koden xx.xx)”
 |===
@@ -172,7 +172,7 @@ Eksempel i RDF Turtle: 
 |Anvendelse |Brukes til å oppgi dato/tidspunkt når sammenligningen sist ble oppdatert.  
 |Usage note |To specific the date or time when the correspondence was last modified.  
 |Multiplisitet |0..1 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå |Anbefalt/Recommended 
 |Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111] var sist oppdatert 01.01.2009
 |===
@@ -194,7 +194,7 @@ Eksempel i RDF Turtle: 
 |Anvendelse |Brukes til å oppgi språk som sammenligningen er utgitt i. 
 |Usage note |To specific the language(s) that the correspondence is in.  
 |Multiplisitet |0..n 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå |Anbefalt/Recommended 
 |Merknad 1 |Verdien skal hentes fra EUs kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language]. 
 |Merknad 2 |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111 finnes i NOB (bokmål), NNN (nynorsk) og ENG (engelsk)
@@ -221,7 +221,7 @@ Eksempel i RDF Turtle: 
 |Anvendelse |Brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.  
 |Usage note |To specific the date/time when the classification was made accessible. 
 |Multiplisitet |0..1 
-|Kravsnivå |Anbefalt/Recommended 
+|Kravnivå |Anbefalt/Recommended 
 |Merknad  | Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111 var tilgjengeliggjort 01.01.2009
 |===
