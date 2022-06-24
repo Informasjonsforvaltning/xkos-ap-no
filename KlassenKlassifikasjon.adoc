@@ -248,7 +248,8 @@ Eksempel i RDF Turtle:
 |Usage note |To specific the date or time from (inclusive) which the classification is valid.
 |Multiplisitet |0..1
 |Kravnivå |Anbefalt/Recommended
-|Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Merknad 1 | For å kunne bruke en klassifikasjon/versjon riktig, er det viktig at denne verdien oppgis.
+|Merknad 2 |Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 |Eksempel |«Næringsgruppering 2007» er gyldig fra og med 1.1.2019.
 |===
 
@@ -269,7 +270,8 @@ Eksempel i RDF Turtle:
 |Usage note |To specific the date or time from (inclusive) which the classification is valid.
 |Multiplisitet |0..1
 |Kravnivå |Anbefalt/Recommended
-|Merknad |Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Merknad 1 | For å kunne bruke en klassifikasjon/versjon riktig, er det viktig at denne verdien oppgis.
+|Merknad 2 |Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 |Eksempel |«Næringsgruppering 2002» var gyldig til og med 31.12.2018.
 |===
 
