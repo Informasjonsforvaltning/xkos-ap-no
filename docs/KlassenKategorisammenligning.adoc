@@ -11,7 +11,7 @@ image::images/KlassenKategorisammenligning.png[]
 |Anvendelse |Brukes til å representere sammenligning mellom kategorier.
 |Usage note |To represent correspondences between classification items.
 |URI|xkos:ConceptAssociation
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel |Sammenligning mellom kategorien «1.11 – Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007» (målkategori), og kategorien «26.1 – Produksjon av elektroniske komponenter og kretskort» i «Næringsgruppering 2007 (SN 2007)» (kildekategori).
 |===
@@ -62,7 +62,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å referere til en kildekategori i en kategorisammenligning.
 |Usage note |To link to a source concept in the correspondence.
 |Multiplisitet |0..n
-|Kravsnivå |Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad |
 |Eksempel |Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
 |===
@@ -79,7 +79,7 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 |Anvendelse |Brukes til å referere til en målkategori i en kategorisammenligning.
 |Usage note |To link to a target concept in the correspondence.
 |Multiplisitet |0..n
-|Kravsnivå |Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad |
 |Eksempel | Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
 |===
@@ -98,7 +98,7 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 |Anvendelse |Brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.
 |Usage note |To specify the type of the change between two classifications in the same classification family/series.
 |Multiplisitet |0..1
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad 1 |Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/classification-item-change-type[Kategoriendringstyper], når verdien finnes i vokabularet.
 |Remark 1 | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/classification-item-change-type[Classification item change types], when the value is in the vocabulary.
 |Merknad 2 |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 

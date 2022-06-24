@@ -11,7 +11,7 @@ image::images/KlassenKategori.png[]
 |Anvendelse |Brukes til å representere en kategori i en klassifikasjon/klassifikasjonsnivå.
 |Usage note |To represent a category in a classification or classification level.
 |URI |skos:Concept
-|Kravsnivå |Obligatorisk/Mandatory
+|Kravnivå |Obligatorisk/Mandatory
 |Merknad|
 |Eksempel |Kategorien med kode «A» på nivå 1 i klassifikasjonen «Næringsgruppering 2007».
 |===
@@ -36,7 +36,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å oppgi det anbefalte kategorinavnet for kategorien. Gjentas når navnet finnes i flere språk.
 |Usage note |To specify the official label for the classification item, repeated when the label is in different languages.
 |Multiplisitet |1..n
-|Kravsnivå |Obligatorisk/Mandatory
+|Kravnivå |Obligatorisk/Mandatory
 |Merknad|
 |Eksempel |«Jordbruk, skogbruk og fiske» er anbefalt kategorinavn på norsk for kategorien med koden «A», på nivå 1 i «Næringsgruppering 2007».
 |===
@@ -58,7 +58,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å knytte kategorien til en eller flere klassifikasjoner.
 |Usage note |To connect the category to a classification of classification level.
 |Multiplisitet |1..n
-|Kravsnivå |Obligatorisk/Mandatory
+|Kravnivå |Obligatorisk/Mandatory
 |Merknad|
 |Eksempel |Kategorien med kode «A» er i klassifikasjonen «Næringsgruppering 2007».
 |===
@@ -85,7 +85,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å referere til en klassifikasjon hvor denne kategorien er den første.
 |Usage note |To refer to the classification in which the category is the first one.
 |Multiplisitet|0..n
-|Kravsnivå |Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad |Ordet «første» bør forståes innenfor konteksten av den aktuelle klassifikasjonen. I en veldefinert klassifikasjon skal derfor kun én kategori ha denne egenskapen.
 |Eksempel |«A – Jordbruk, skogbruk og fiske» er den første kategorien i «Næringsgruppering 2007 (SN2007)»
 |===
@@ -111,7 +111,7 @@ Eksempel i RDF Turtle:
 |Usage note |To specify the core content of the classification item, repeated when the note is in different languages.
 |Subegenskap av / Subproperty of |xkos:inclusionNote
 |Multiplisitet |0..n
-|Kravsnivå |Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad|
 |Eksempel |Kategori med koden «01» i «Næringsgruppering 2007 (SN 2007)» har følgende note om hovedinnhold: "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."
 |Example |`xkos:coreContentNote` is generally labelled "This category includes", "This item includes", "This division includes", "Includes" or similar.
@@ -138,7 +138,7 @@ Eksempel I RDF Turtle:
 |Anvendelse |Brukes til å oppgi en unik og persistent identifikator til kategorien.
 |Usage note |To specify a unique and persistent identifier to the category.
 |Multiplisitet|0..1
-|Kravsnivå |Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad 1 |Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
 For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
@@ -156,7 +156,7 @@ For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guid
 |Anvendelse |Brukes til å oppgi koden for kategorien.
 |Usage note |To specify the code for the classification item.
 |Multiplisitet |0..n
-|Kravsnivå |Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad |Samme kategori kan inngå i ulike varianter/klassifikasjoner og da også med ulike koder.
 |Eksempel |«A» er koden for kategorien med kategorinavn «Jordbruk, skogbruk og fiske», på nivå 1 i «Næringsgruppering 2007 (SN2007)».
 |===
@@ -186,7 +186,7 @@ ssb:miljøregnskap2012 a skos:ConceptScheme ; .
 |Anvendelse |Brukes til å referere til sentralt begrep som er viktig for å forstå og tolke kategorien.
 |Usage note |To refer to the concept which is important in order to understand the category.
 |Multiplisitet |0..1
-|Kravsnivå |Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad |
 |Eksempel |Kategorien med koden «A» i «Næringsgruppering 2007» refererer til begrepet ‘primærnæring’.
 |===
@@ -212,7 +212,7 @@ Eksempel i RDF Turtle:
 |Usage note |To specific additional content to the classification item, repeated when the note is in different languages.
 |Subegenskap av / Subproperty of |xkos:inclusionNote
 |Multiplisitet |0..n
-|Kravsnivå |Anbefalt/Recommended
+|Kravnivå |Anbefalt/Recommended
 |Merknad |
 |Eksempel |Kategori med koden «01» i «Næringsgruppering 2007 (SN 2007)» har følgende note om tilleggsinnhold: «Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst.»
 |Example |`xkos:additionalContentNote` is generally labelled "This category includes also", "This item includes also", "This division includes also", "Includes also", or similar.
@@ -232,7 +232,7 @@ Eksempel i RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 |Anvendelse |Brukes til å referere til kategorier som den aktuelle kategorien består av, i en partitiv relasjon mellom kategoriene.
 |Usage note |To refer to categories which the category in question consists of, in a partitive relationship between the categories.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel | 'ukedag' består av 'mandag', 'tirsdag', 'onsdag', 'torsdag', 'fredag', 'lørdag' og 'søndag'.
 |===
@@ -253,7 +253,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å oppgi definisjonen av begrepet som kategorien representerer. Gjentas når definisjonen finnes i flere ulike språk.
 |Usage note |To specify the definition of the concept that the category represents, repeated when the definition is in different languages.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri
+|Kravnivå |Valgfri
 |Merknad |Bruk heller egenskapen <<Kategori-referererTilBegrep>> til å referere til en begrepsbeskrivelse som er tilgjengeliggjort f.eks. i begrepsdelen av https://data.norge.no/concepts/[Felles datakatalog] og som inneholder definisjonen av begrepet, istedenfor å duplisere/«gjemme» definisjonen i en klassifikasjon.
 |Eksempel |
 |===
@@ -268,7 +268,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å oppgi i fritekst eksempler på hva er kategorisert under kategorien. Gjentas når teksten er i flere ulike språk.
 |Usage note |To specify examples of the content of the category, repeated when the text is in different languages.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel |For kategori med koden «A» i «Næringsgruppering 2007 (SN 2007)»: Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell, skogbruk og tjenester tilknyttet skogbruk, fiske, fangst og akvakultur.
 |===
@@ -292,7 +292,7 @@ Eksempel i RDF Turtle:
 |Usage note |To specify what is not included in the category, repeated when the note is in different languages.
 |Subegenskap av / Subproperty of |skos:scopeNote
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel |Kategori med koden «01» i «Næringsgruppering 2007 (SN 2007)» har følgende eksklusjonsnote: «Ekskluderer: Grunnarbeid, f.eks. anlegg av jordterrasser, drenering o.l. grupperes under næringshovedområde: F Bygge- og anleggsvirksomhet. Kjøpere og andelslag engasjert i markedsføring av jordbruksprodukter grupperes under næringshovedområde: G Varehandel, reparasjon av motorvogner. Stell og vedlikehold av landskap grupperes under: 81.30 Beplantning av hager og parkanlegg.»
 |===
@@ -309,7 +309,7 @@ Eksempel I RDF Turtle: Se under <<Kategori-hovedinnhold>>.
 |Anvendelse |Brukes til å referere til kategorier som den aktuelle kategorien er del av, i en partitiv relasjon mellom kategoriene.
 |Usage note |To refer to categories which the category in question is part of, in a partitive relationship between the categories.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel | 'mandag' er del av 'ukedag'.
 |===
@@ -330,7 +330,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å referere til kategorien som er foran den aktuelle kategorien, i en sekvensiell relasjon mellom kategoriene.
 |Usage note |To refer to the category that is before the category in question, in a sequential relation between the categories.
 |Multiplisitet |0..1
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |Ordene «forrige» og «foran» bør forståes innenfor konteksten av det aktuelle klassifikasjonsnivået i den aktuelle klassifikasjonen.
 |Eksempel |Den forrige kategori til «B» er «A» i Nivå 1 av «Næringsgruppering 2007 (SN 2007)»
 |===
@@ -351,7 +351,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å oppgi kategorinavn som anses som uegnet for kategorien. Gjentas når navnet finnes i flere ulike språk.
 |Usage note |To specify the label that is considered as not suitable for the classification item, repeated when the label is in different languages.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel |
 |===
@@ -366,7 +366,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å referere til kategorier som den aktuelle kategorien generaliserer, i en generisk relasjon mellom kategoriene.
 |Usage note |To refer to categories which the category in question generalizes, in a generic relationship between the categories.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel | Kategorien med kode «A» på nivå 1 i klassifikasjonen «Næringsgruppering 2007» generaliserer kategoriene med kode «01», «02» og «03» på nivå 2.
 |===
@@ -388,7 +388,7 @@ Eksempel i RDF Turtle:
 |Usage note |To specify what is included in the category, repeated when the note is in different languages.
 |Subegenskap av / Subproperty of |skos:scopeNote
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |Bruk heller den semantisk sett mer presise egenskapen <<Kategori-hovedinnhold>>, ev. kombinert med egenskapen <<Kategori-tilleggsinnhold>>.
 |Eksempel |
 |===
@@ -403,7 +403,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å oppgi maksimum kodelengde.
 |Usage note |To specify the maximum number of characters for a label that is constrained in length.
 |Multiplisitet |0..1
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |For deg som skal utvikle/tilpasse verktøystøtte, se Remarks under.
 |Remarks a|According to https://rdf-vocabulary.ddialliance.org/xkos.html#add-labels[XKOS]:
 
@@ -424,7 +424,7 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |Anvendelse |Brukes til å oppgi merknad om kategorien. Gjentas når merknaden finnes i flere ulike språk/målformer.
 |Usage note |To specify any note about the classification item, repeated when the note is in different languages.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |Brukes kun til merknader som ikke kan tas med i en av de andre semantisk sett mer presise egenskapene som <<Kategori-eksklusjonsmerknad>>, <<Kategori-hovedinnhold>> og <<Kategori-tilleggsinnhold>>.
 |Eksempel |
 |===
@@ -439,7 +439,7 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |Anvendelse |Brukes til å referere til kategorien som er bak den aktuelle kategorien, i en sekvensiell relasjon mellom kategoriene.
 |Usage note |To refer to the category that is after the category in question, in a sequential relation between the categories.
 |Multiplisitet |0..1
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |Ordene «neste» og «bak» bør forståes innenfor konteksten av det aktuelle klassifikasjonsnivået i den aktuelle klassifikasjonen.
 |Eksempel |Den neste kategori for «A» er «B» i Nivå 1 av «Næringsgruppering 2007 (SN 2007)»
 |===
@@ -454,7 +454,7 @@ In all cases the `skos:prefLabel` property is used to express the full (official
 |Anvendelse |Brukes til å referere til kategorier som den aktuelle kategorien spesialiserer, i en generisk relasjon mellom kategoriene.
 |Usage note |To refer to categories which the category in question specializes, in a generic relationship between the categories.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel | Kategorien med kode «01» på nivå 2 i klassifikasjonen «Næringsgruppering 2007» spesialiserer kategorien med kode «A» på nivå 1.
 |===
@@ -475,7 +475,7 @@ Eksempel i RDF Turtle:
 |Anvendelse |Brukes til å oppgi alternativt kategorinavn (som kan brukes ved siden av det anbefalte kategorinavnet). Gjentas når navnet finnes i flere ulike språk.
 |Usage note |To specify alternative label of the category, repeated when the label is in different languages.
 |Multiplisitet |0..n
-|Kravsnivå |Valgfri/Optional
+|Kravnivå |Valgfri/Optional
 |Merknad |
 |Eksempel |Kategorien med kode «D» og anbefalt tekst «Elektrisitets-, gass-, damp- og varmtvannsforsyning» i «Næringsgruppering 2007» har tillatt kategorinavn «Kraftforsyning».
 |===

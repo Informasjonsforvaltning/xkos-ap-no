@@ -20,7 +20,7 @@ Spesifikasjonen er en norsk applikasjonsprofil og ikke en direkte oversettelse a
 
 Spesifikasjonen supplerer XKOS med følgende hovedtyper norske utvidelser:
 
-. Kravsnivå (obligatorisk, anbefalt eller valgfri) for både klasser og egenskaper og multiplisitet for egenskaper, som XKOS ikke spesifiserer.
+. Kravnivå (obligatorisk, anbefalt eller valgfri) for både klasser og egenskaper og multiplisitet for egenskaper, som XKOS ikke spesifiserer.
 
 . Administrative egenskaper som XKOS ikke dekker, ved å gjenbruke veletablerte internasjonale vokabularer, f.eks. «utgiver» av en klassifikasjon (`dct:publisher`), «sist oppdatert» (`dct:modified`) etc.
 
@@ -52,7 +52,7 @@ Utarbeidelse av nye versjoner av denne spesifikasjon initieres av Digdir. Mindre
 
 === Om kravene i spesifikasjonen [[OmKravene]]
 
-Spesifikasjonen bruker kravsnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
+Spesifikasjonen bruker kravnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
 
 === Navnerom som er brukt i spesifikasjonen [[Navnerom]]
 
