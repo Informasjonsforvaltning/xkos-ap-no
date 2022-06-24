@@ -2,6 +2,8 @@
 
 I tillegg til redaksjonelle justeringer som ikke loggføres her, er følgende kravsmessige endringer foretatt siden utgivelsen av v.0.9:
 
+* *v.0.904*: Kun redaksjonelle oppdateringer.
+
 * *v.0.903*: Redaksjonell endring av tabellmalen for klasser og egenskaper, der radnavnet "Beskrivelse" er endret til "Anvendelse" som gjenspeiler direkte hensikten med den aktuelle raden i tabellene.
 
 * *v.0.902*:

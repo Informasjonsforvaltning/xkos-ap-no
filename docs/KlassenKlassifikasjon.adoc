@@ -114,7 +114,7 @@ Eksempel i RDF Turtle:
 Eksempel i RDF Turtle:
 ----
 <sn2017> a skos:ConceptScheme ;
-   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> . # Statistisk sentralbyrå
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971526920> . # Statistisk sentralbyrå
 ----
 
 === Anbefalte egenskaper for klassen _Klassifikasjon_ [[Klassifikasjon-anbefalte-egenskaper]]
