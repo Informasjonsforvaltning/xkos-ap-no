@@ -8,11 +8,11 @@ image::images/KlassenKategorisammenligning.png[]
 [cols="30s,70d"]
 |===
 |English name |Category correspondence
-|Anvendelse |Brukes til å representere sammenligning mellom kategorier.
-|Usage note |To represent correspondences between classification items.
+|Anvendelse / Usage note | (norsk) Klassen brukes til å representere sammenligning mellom kategorier.
+
+(English) This class is used to represent correspondences between classification items.
 |URI|xkos:ConceptAssociation
-|Kravnivå |Valgfri/Optional
-|Merknad |
+|Kravnivå / Requirement level |Valgfri / Optional
 |Eksempel |Sammenligning mellom kategorien «1.11 – Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007» (målkategori), og kategorien «26.1 – Produksjon av elektroniske komponenter og kretskort» i «Næringsgruppering 2007 (SN 2007)» (kildekategori).
 |===
 
@@ -59,11 +59,11 @@ Eksempel i RDF Turtle:
 |English name |source category
 |URI |xkos:sourceConcept
 |Range |skos:Concept
-|Anvendelse |Brukes til å referere til en kildekategori i en kategorisammenligning.
-|Usage note |To link to a source concept in the correspondence.
+|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til en kildekategori i en kategorisammenligning.
+
+(English) This property is used to link to a source concept in the correspondence.
 |Multiplisitet |0..n
-|Kravnivå |Anbefalt/Recommended
-|Merknad |
+|Kravnivå / Requirement level |Anbefalt / Recommended
 |Eksempel |Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
 |===
 
@@ -76,11 +76,11 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 |English name |target category
 |URI |xkos:targetConcept
 |Range |skos:Concept
-|Anvendelse |Brukes til å referere til en målkategori i en kategorisammenligning.
-|Usage note |To link to a target concept in the correspondence.
+|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til en målkategori i en kategorisammenligning.
+
+(English) This property is used to link to a target concept in the correspondence.
 |Multiplisitet |0..n
-|Kravnivå |Anbefalt/Recommended
-|Merknad |
+|Kravnivå / Requirement level |Anbefalt / Recommended
 |Eksempel | Se eksemplet under beskrivelsen av denne klassen i begynnelsen av dette kapittelet.
 |===
 
@@ -95,14 +95,17 @@ Eksempel i RDF Turtle: Se eksemplet under beskrivelsen av denne klassen i begynn
 |English name |change type
 |URI |dct:type
 |Range |skos:Concept
-|Anvendelse |Brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.
-|Usage note |To specify the type of the change between two classifications in the same classification family/series.
+|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi type endring mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie.
+
+(English) This property is used to specify the type of the change between two classifications in the same classification family/series.
 |Multiplisitet |0..1
-|Kravnivå |Valgfri/Optional
-|Merknad 1 |Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/classification-item-change-type[Kategoriendringstyper], når verdien finnes i vokabularet.
-|Remark 1 | The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/classification-item-change-type[Classification item change types], when the value is in the vocabulary.
-|Merknad 2 |Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
-|Remark 2 | Norwegian extension: Not explicitly specified in XKOS.
+|Kravnivå / Requirement level |Valgfri / Optional
+|Merknad / Note 1 | (norsk) Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/classification-item-change-type[Kategoriendringstyper], når verdien finnes i vokabularet.
+
+(English) The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/classification-item-change-type[Classification item change types], when the value is in the vocabulary.
+|Merknad / Note 2 | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
+
+(English) Norwegian extension: Not explicitly specified in XKOS.
 |Eksempel |Se https://www.ssb.no/klass/klassifikasjoner/6/endringer[https://www.ssb.no/klass/klassifikasjoner/6/endringer] fra SN2002 til SN2007
 |===
 
