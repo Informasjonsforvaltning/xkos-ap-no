@@ -5,7 +5,7 @@ Følgende rader (ikke nødvendigvis i den rekkefølgen) er brukt i tabellene der
 [cols="30s,70d"]
 |===
 |Ledetekst i tabellen | *Hensikt med raden i tabellen*
-|English name|Brukes til å angi klasse- eller egenskapsnavn på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <<OmfangOgAvgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
+|English name | Brukes til å angi klasse- eller egenskapsnavn på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <<OmfangOgAvgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
 |URI |Brukes til å angi en unik identifikator til klassen eller egenskapen. Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne spesifikasjonen.
 
 Eksempel: `skos:ConceptScheme` er identifikatoren til klassen `Klassifikasjon (Concept Scheme)`, slik klassen er spesifisert i `skos` (se under <<Navnerom>> for hva `skos` står for).
@@ -14,12 +14,10 @@ Eksempel: `skos:ConceptScheme` er identifikatoren til klassen `Klassifikasjon (C
 |Range |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlig verdi til egenskapen, i form av klasse eller datatype.
 
 Eksempel: `Range skos:Concept` betyr at verdien til egenskapen skal være en instans av klassen `skos:Concept`.
-|Anvendelse |Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen.
-|Usage note |Tilsvarende «Anvendelse», men på engelsk (primært ment for engelsktalende utviklere for verktøystøtte). Se under <<OmfangOgAvgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
-|Multiplisitet |Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/kan ha.
-|Kravnivå |Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<OmKravene>>.
-|Merknad |Brukes til å gi merknader knyttet til bruk av klassen eller egenskapen, bl.a. om eventuell norsk utvidelse sammenlignet med original XKOS, om det er krav til bruk av kontrollerte vokabularer, osv.
-|Remark |Tilsvarende «Merknad», men på engelsk (primært ment for engelsktalende utviklere av verktøystøtte). Se under <<OmfangOgAvgrensing>> for forklaring på engelske navn og tekster i denne spesifikasjonen.
+|Anvendelse / Usage note | Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne spesifikasjonen. Forklaringen er også skrevet i engelsk (Usage note), primært ment for engelsktalende utviklere for verktøystøtte.
+|Multiplisitet | Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/kan ha.
+|Kravnivå / Requirement level | Brukes til å spesifisere om klassen eller egenskapen er obligatorisk, anbefalt eller valgfri. Se også <<OmKravene>>.
+|Merknad / Note | Brukes til merknader knyttet til bruk av klassen eller egenskapen, bl.a. om eventuell norsk utvidelse sammenlignet med original XKOS, om det er krav til bruk av kontrollerte vokabularer, osv. Merknadene er også skrevet i engelsk (Note), primært ment for engelsktalende utviklere for verktøystøtte.
 |Eksempel |Brukes til å gi eksempel på bruken av klassen eller egenskapen, i prosatekst.
 
 Eksempel på hvordan eksemplene vist i prosatekst ser ut i RDF Turtle, er tatt med under den aktuelle tabellen.
