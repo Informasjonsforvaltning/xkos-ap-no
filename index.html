@@ -595,7 +595,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#ReferereTilEnKategori">Å referere til en gitt kategori (i en gitt klassifikasjon)</a></li>
 </ul>
 </li>
-<li><a href="#Endringslogg">Endringslogg</a></li>
 </ul>
 </div>
 </div>
@@ -633,15 +632,15 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <mark>til utprøving</mark><br>
-<strong>Versjon</strong>: 0.904 (se <a href="#Endringslogg">Endringslogg</a>)<br>
-<strong>Publisert</strong>: 2021-12-15 (v.0.9)<br>
-<strong>Oppdatert</strong>: 2022-06-24 (v.0.9xx)<br>
-<strong>Gjeldende versjon</strong>: &lt;ingen&gt;<br>
+<p><strong>Status</strong>: Gjeldende<br>
+<strong>Versjon</strong>: 1.0 <br>
+<strong>Publisert</strong>: 2022-06-28 (v.1.0)<br>
+<strong>Oppdatert</strong>: 2022-06-28 (v.1.0)<br>
+<strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/xkos-ap-no/" class="bare">https://data.norge.no/specification/xkos-ap-no/</a><br>
 <strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/" class="bare">https://informasjonsforvaltning.github.io/xkos-ap-no/</a><br>
 <strong>Veileder</strong>: &lt;ingen&gt;<br>
-<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-0x.ttl">denne shacl-filen</a> som "Regelsett lenke")</p>
+<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-v1.ttl">denne shacl-filen</a> som "Regelsett lenke")</p>
 </div>
 <!-- toc disabled -->
 </div>
@@ -4604,41 +4603,6 @@ Eksempel i RDF Turtle: </p>
    skos:prefLabel "Næringsgruppering 2007 (SN2007)"@nb ; .</code></pre>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Endringslogg</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>I tillegg til redaksjonelle justeringer som ikke loggføres her, er følgende kravsmessige endringer foretatt siden utgivelsen av v.0.9:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>v.0.904</strong>: Kun redaksjonelle oppdateringer.</p>
-</li>
-<li>
-<p><strong>v.0.903</strong>: Redaksjonell endring av tabellmalen for klasser og egenskaper, der radnavnet "Beskrivelse" er endret til "Anvendelse" som gjenspeiler direkte hensikten med den aktuelle raden i tabellene.</p>
-</li>
-<li>
-<p><strong>v.0.902</strong>:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Multiplisitet til egenskapen <a href="#Klassifikasjon-erstatter">Klassifikasjon – erstatter (xkos:supersedes)</a> endret fra 0..1 til 0..n, for å dekke behov for tilfeller der en klassifikasjon/versjon erstatter to eller flere klassifikasjoner/versjoner.</p>
-</li>
-<li>
-<p>Nye valgfrie egenskaper føyet til i <a href="#Kategori">Klassen Kategori (skos:Concept)</a>, for å dekke behov for beskrivelse av hierarkiske relasjoner mellom kategorier: <a href="#Kategori-bestårAv">Kategori – består av (xkos:hasPart)</a>, <a href="#Kategori-erDelAv">Kategori – er del av (xkos:isPartOf)</a>, <a href="#Kategori-generaliserer">Kategori – generaliserer (xkos:generalizes)</a> og <a href="#Kategori-spesialiserer">Kategori – spesialiserer (xkos:specializes)</a>.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><strong>v.0.901</strong>: Etter at det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/classification-item-change-type">Kategoriendringstyper</a> er blitt publisert, er "Merknad 1" og "Eksempel i RDF Turtle" til egenskapen <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/#Kategorisammenligning-typeEndring">Kategorisammenligning – type endring (dct:type)</a> oppdatert ved å referere til det publiserte vokabularet. Kapitlet med forslag til et kontrollert vokabular for endringstyper er også fjernet.</p>
-</li>
-</ul>
-</div>
 <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -4653,9 +4617,10 @@ ga('send', 'pageview');
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-06-24 11:02:20 UTC
+Sist oppdatert 2022-06-28 11:21:10 UTC
 </div>
 </div>
 </body>
