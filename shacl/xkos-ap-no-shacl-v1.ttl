@@ -19,10 +19,10 @@
 @prefix : <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/> .
 
 # about this SHACL:
-<https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-0x.ttl>
+<https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-v1.ttl>
     dcat:accessURL <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/>;
-    dcat:downloadURL <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-0x.ttl> ;
-    adms:status <http://purl.org/adms/status/UnderDevelopment> ;
+    dcat:downloadURL <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-v1.ttl> ;
+    adms:status <http://purl.org/adms/status/Completed> ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dct:conformsTo <https://www.w3.org/TR/shacl> ;
     dct:creator [
@@ -30,13 +30,13 @@
         foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
     ];
     dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
-    dct:modified "2022-03-02"^^xsd:date ;
+    dct:modified "2022-06-28"^^xsd:date ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
-    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:description "This document specifies the constraints on properties and classes expressed by XKOS-AP-NO"@en ;
     dct:title "The constraints of XKOS-AP-NO"@en ;
-    owl:versionInfo "0.902" ;
-    owl:versionInfo "(hopefully) complete, aligned with XKOS-AP-NO v.0.902."@en ;
+    owl:versionInfo "1.0" ;
+    owl:versionInfo "Completed, for v.1.0 of XKOS-AP-NO"@en ;
     foaf:homepage <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
