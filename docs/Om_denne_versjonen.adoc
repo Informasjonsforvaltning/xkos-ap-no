@@ -1,0 +1,3 @@
+== Om denne versjonen [[OmDenneVersjonen]]
+
+Denne versjonen (v.0.9) er til utprøving.

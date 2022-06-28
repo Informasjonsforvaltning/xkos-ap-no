@@ -1,0 +1,639 @@
+######
+# shacl for XKOS-AP-NO
+######
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix uneskos: <http://purl.org/umu/uneskos#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xkosno: <https://data.norge.no/vocabulary/xkosno#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/> .
+
+# about this SHACL:
+<https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-v1.ttl>
+    dcat:accessURL <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/>;
+    dcat:downloadURL <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-v1.ttl> ;
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:conformsTo <https://www.w3.org/TR/shacl> ;
+    dct:creator [
+        foaf:homepage <https://www.digdir.no/> ;
+        foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
+    ];
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
+    dct:modified "2022-06-28"^^xsd:date ;
+    rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
+    dct:description "This document specifies the constraints on properties and classes expressed by XKOS-AP-NO"@en ;
+    dct:title "The constraints of XKOS-AP-NO"@en ;
+    owl:versionInfo "1.0" ;
+    owl:versionInfo "Completed, for v.1.0 of XKOS-AP-NO"@en ;
+    foaf:homepage <https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/> ;
+    foaf:maker [
+        foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
+        foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet"@nb ;
+        foaf:page <https://www.digdir.no> ;
+    ] .
+
+####
+# klassen Klassifikasjon (skos:ConceptScheme)
+###
+
+:ConceptScheme_Shape a sh:NodeShape ; # klassen Klassifikasjon (skos:ConceptScheme)
+  ##### mandatory properties:
+    sh:property [ # antall nivå
+      sh:name "antall nivå"@nb , "number of levels"@en ;
+      sh:path xkos:numberOfLevels ;
+      sh:datatype xsd:positiveInteger ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Antall nivå (xkos:numberOfLevels) skal ha min. 1 og maks. 1 verdi, som skal være positiv integer"@nb ,
+        "Number of levels (xkos:numberOfLevels) shall have min. 1 and max. 1 value which shall be a positive integer"@en ;
+      ] ;
+    sh:property :propertyShape_min1max1dctIdentfier ; # identifikator
+    sh:property :propertyShape_min1dctTitle ; # navn
+    sh:property :propertyShape_min1max1dctPublisher ; # utgiver
+  ##### recommended properties:
+    sh:property :propertyShape_dctDescription ; # beskrivelse
+    sh:property :propertyShape_xkosCovers ; # dekker
+    sh:property :propertyShape_xkosCoversMutuallyExclusively ; # dekker gjensidig utelukkende
+    sh:property :propertyShape_xkosCoversExhaustively ; # dekker uttømmende
+    sh:property [ # erstatter
+      sh:name "erstatter"@nb , "supersedes"@en ;
+      sh:path xkos:supersedes ;
+      sh:class skos:ConceptScheme ;
+      sh:severity sh:Violation ;
+      sh:message "Erstatter (skos:ConceptScheme) kan ha maks. 1 verdi som skal referere til en instans av skos:ConceptScheme"@nb ,
+        "Supersedes (skos:ConceptScheme) may have max. 1 value which shall refer to an instance of skos:ConceptScheme"@en ;
+      ] ;
+    sh:property [ # gyldig fra og med
+      sh:name "gyldig fra og med"@nb , "valid from inclusive"@en ;
+      sh:path schema:validFrom ;
+      sh:node :DateOrDateTimeDataType_Shape ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Gyldig fra og med (schema:validFrom) kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb ,
+        "Valid from inclusive (schema:validFrom) may have max. 1 value which shall be either xsd:date or xsd:dateTime"@en ;
+      ] ;
+    sh:property [ # gyldig til og med
+      sh:name "gyldig til og med"@nb , "valid through inclusive"@en ;
+      sh:path schema:validThrough ;
+      sh:node :DateOrDateTimeDataType_Shape ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Gyldig til og med (schema:validThrough) kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb ,
+        "Valid through inclusive (schema:validThrough) may have max. 1 value which shall be either xsd:date or xsd:dateTime"@en ;
+      ] ;
+    sh:property [ # har klassifikasjonsnivå
+      sh:name "har klassifikasjonsnivå"@nb , "level list"@en ;
+      sh:path xkos:levels ;
+      sh:class rdf:List ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Har klassifikasjonsnivå (xkos:levels) kan ha maks. 1 verdi som skal referere til en instans av rdf:List"@nb ,
+        "Level list (xkos:levels) may have max. 1 value which shall refer to an instance of rdf:List"@en ;
+      ] ;
+    sh:property [ # inneholder kategori
+      sh:name "inneholder kategori"@nb , "contains classification items"@en ;
+      sh:path uneskos:contains ;
+      sh:class skos:Concept ;
+      sh:severity sh:Violation ;
+      sh:message "Inneholder kategori (uneskos:contains) skal referere til en instans av skos:Concept"@nb ,
+        "Contains classification items (uneskos:contains) shall refer to an instance of skos:Concept"@en ;
+      ] ;
+    sh:property :propertyShape_max1dctModified ; # sist oppdatert
+    sh:property :propertyShape_dctLanguage ; # språk
+    sh:property :propertyShape_max1dctIssued ; # tilgjengeliggjøringsdato
+  ##### optional properties:
+    sh:property [ # har variant
+      sh:name "har variant"@nb , "variant"@en ;
+      sh:path xkos:variant ;
+      sh:class skos:ConceptScheme ;
+      sh:severity sh:Violation ;
+      sh:message "Har variant (xkos:variants) skal referere til en instans av skos:ConceptScheme"@nb ,
+        "Variant (xkos:variant) shall refer to an instance of skos:ConceptScheme"@en ;
+      ] ;
+    sh:property :propertyShape_dctCreator ; # produsent
+    sh:property [ # tilhører
+      sh:name "tilhører"@nb , "belongs to"@en ;
+      sh:path xkos:belongsTo ;
+      sh:nodeKind sh:IRI ; # ikke skos:Concept som da blir validert mot skos:Concept her
+      sh:severity sh:Violation ;
+      sh:message "Tilhøre (xkos:belongsTo) skal referere til en instans av skos:Concept"@nb ,
+        "Belongs to (xkos:belongsTo) shall refer to an instance of skos:Concept"@en ;
+      ] ;
+  sh:targetClass skos:ConceptScheme ;
+  .
+
+###
+# Klassifikasjonsnivå (xkos:ClassificationLevel)
+###
+
+:ClassificationLevel_Shape a sh:NodeShape ; # klassen Klassifikasjonsnivå (xkos:ClassificationLevel)
+  ##### mandatory properties:
+    sh:property [ # nivånummer
+      sh:name "nivånummer"@nb , "depth"@en ;
+      sh:path xkos:depth ;
+      sh:datatype xsd:positiveInteger ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Nivånummere (xkos:depth) skal ha min. 1 og maks. 1 verdi som skal være positiv integer"@nb ,
+        "Depth (xkos:depth) shall have min. 1 and max. 1 value which shall be a positive intetger"@en ;
+      ] ;
+    sh:property [ # inneholder kategori
+      sh:name "inneholder kategori"@nb , "member"@en ;
+      sh:path skos:member ;
+      sh:class skos:Concept ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "inneholder kategori (skos:member) skal ha min. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
+        "Member (skos:member) shall have min. 1 value which shall refer to an instance of skos:Concept"@en ;
+      ] ;
+  ##### recommended properties:
+    sh:property :propertyShape_xkosCovers ; # dekker
+    sh:property :propertyShape_xkosCoversMutuallyExclusively ; # dekker gjensidig utelukkende
+    sh:property :propertyShape_xkosCoversExhaustively ; # dekker uttømmende
+    sh:property [ # er klassifisert innen
+      sh:name "er klassifisert innen"@nb , "organized by"@en ;
+      sh:path xkos:organizedBy ;
+      sh:maxCount 1 ;
+      sh:nodeKind sh:IRI ; # ikke skos:Concept som da blir validert mot skos:Concept her
+      sh:severity sh:Violation ;
+      sh:message "Er klassifisert innen (xkos:organizedBy) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
+        "Organized by (xkos:organizedBy) may have max. 1 value which shall refer to an instance of skos:Concept"@en ;
+      ] ;
+  ##### optional properties:
+    sh:property [ # kodemønster
+      sh:name "kodemønster"@nb , "notation pattern"@en ;
+      sh:path xkos:notationPattern ;
+      sh:nodeKind sh:Literal ;
+      sh:severity sh:Violation ;
+      sh:message "Kodemønster (xkos:notationPattern) skal være Literal"@nb ,
+        "Notation pattern (xkos:notationPattern) shall be a Literal"@en ;
+      ] ;
+  sh:targetClass xkos:ClassificationLevel ;
+  .
+
+###
+# Klassen Kategori (skos:Concept)
+###
+
+:Concept_Shape a sh:NodeShape ; # klassen Kategori (skos:Concept)
+  ##### mandatory properties:
+    sh:property [ # anbefalt kategorinavn
+      sh:name "anbefalt kategorinavn"@nb , "official label"@en ;
+      sh:path skos:prefLabel ;
+      sh:nodeKind sh:Literal ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Anbefalt kategorinavn (skos:prefLabel) skal ha min. 1 verdi som skal være Literal"@nb ,
+        "Official label (skos:prefLabel) shall have min. 1 value which shall be a Literal"@en ;
+      ] ;
+    sh:property [ # er i klassifikasjon
+      sh:name "er i klassifikasjon"@nb , "in classification"@en ;
+      sh:path skos:inScheme ;
+      sh:class skos:ConceptScheme ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Er i klassifikasjon (skos:inScheme) skal ha min. 1 verdi som skal referere til en instans av skos:ConceptScheme"@nb ,
+        "In classification (skos:inScheme) shall have min. 1 value which shall refer to an instance of skos:ConceptScheme"@en ;
+      ] ;
+    ##### recommended properties:
+      sh:property [ # er første kategori i
+        sh:name "er første kategori i"@nb , "first category"@en ;
+        sh:path skos:topConceptOf ;
+        sh:class skos:ConceptScheme ;
+        sh:severity sh:Violation ;
+        sh:message "Er første kategori i (skos:topConceptOf) skal referere til en instans av skos:ConceptScheme"@nb ,
+          "First category (skos:topConceptOf) shall refer to an instance of skos:ConceptScheme"@en ;
+        ] ;
+      sh:property [ # hovedinnhold
+        sh:name "hovedinnhold"@nb , "first category"@en ;
+        sh:path xkos:coreContentNote ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Hovedinnhold (xkos:coreContentNote) skal være Literal"@nb ,
+          "Core content note (xkos:coreContentNote) shall be a Literal"@en ;
+        ] ;
+      sh:property :propertyShape_max1dctIdentfier ; # identifikator
+      sh:property [ # kode
+        sh:name "kode"@nb , "code"@en ;
+        sh:path skos:notationr ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Kode (skos:notation) skal være Literal"@nb ,
+          "Code (skos:notation) shall be a Literal"@en ;
+        ] ;
+      sh:property [ # refererer til begrep
+        sh:name "Refererer til begrep"@nb , "concept"@en ;
+        sh:path dct:subject ;
+        sh:nodeKind sh:IRI ; # bruker ikke "sh:class skos:Concept" som er denne klassen selv
+        sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Refererer til begrep (dct:subject) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
+          "Concept (dct:subject) may have max. 1 value which shal refer to an instance of skos:Concept"@en ;
+        ] ;
+      sh:property [ # tilleggsinnhold
+        sh:name "tilleggsinnhold"@nb , "additional content note"@en ;
+        sh:path xkos:additionalContentNote ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Tilleggsinnhold (xkos:additionalContentNote) skal være Literal"@nb ,
+          "Additional content note (xkos:additionalContentNote) shall be a Literal"@en ;
+        ] ;
+    ##### optional properties:
+      sh:property [ # består av
+        sh:name "består av"@nb , "has part"@en ;
+        sh:path xkos:hasPart ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "Består av (xkos:hasPart) skal referere til en instans av skos:Concept"@nb ,
+          "Has part (xkos:hasPart) shall refer to an instance of skos:Concept"@en ;
+        ] ;
+      sh:property [ # definisjon
+        sh:name "definisjon"@nb , "definition"@en ;
+        sh:path skos:definition ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Definisjon (skos:definition) skal være Literal"@nb ,
+          "Definition (skos:definition) shall be a Literal"@en ;
+        ] ;
+      sh:property [ # eksempel
+        sh:name "eksempel"@nb , "definition"@en ;
+        sh:path skos:example ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Eksempel (skos:example) skal være Literal"@nb ,
+          "Example (skos:example) shall be a Literal"@en ;
+        ] ;
+      sh:property [ # eksklusjonsmerknad
+        sh:name "eksklusjonsmerknad"@nb , "exclusion note"@en ;
+        sh:path skos:exclusionNote ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Eksklusjonsmerknad (skos:exclusionNote) skal være Literal"@nb ,
+          "Exclusion note (skos:exclusionNote) shall be a Literal"@en ;
+        ] ;
+      sh:property [ # er del av
+        sh:name "er del av"@nb , "is part of"@en ;
+        sh:path xkos:isPartOf ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "Er del av (xkos:isPartOf) skal referere til en instans av skos:Concept"@nb ,
+          "Is part of (xkos:isPartOf) shall refer to an instance of skos:Concept"@en ;
+        ] ;
+      sh:property [ # forrige kategori
+        sh:name "forrige kategori"@nb , "previous"@en ;
+        sh:path xkos:previous ;
+        sh:class skos:Concept ;
+        sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Forrige kategori (xkos:previous) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
+          "Previous (xkos:previous) may have max. 1 value which shall refer to an instance of skos:Concept"@en ;
+        ] ;
+      sh:property [ # frarådet kategorinavn
+        sh:name "frarådet kategorinavn"@nb , "hidden label"@en ;
+        sh:path skos:hiddenLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Frarådet kategorinavn (skos:hiddenLabel) skal være Literal"@nb ,
+          "Hidden label (skos:hiddenLabel) shall be a Literal"@en ;
+        ] ;
+      sh:property [ # generaliserer
+        sh:name "generaliserer"@nb , "generalizes"@en ;
+        sh:path xkos:generalizes ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "Generaliserer (xkos:generalizes) skal referere til en instans av skos:Concept"@nb ,
+          "Generalizes (xkos:generalizes) shall refer to an instance of skos:Concept"@en ;
+        ] ;
+      sh:property [ # inklusjonsmerknad
+        sh:name "inklusjonsmerknad"@nb , "inclusion note"@en ;
+        sh:path xkos:inclusionNote ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Inklusjonsmerknad (xkos:inclusionNote) skal være Literal"@nb ,
+          "Inclusion note (xkos:inclusionNote) shall be a Literal"@en ;
+        ] ;
+      sh:property [ # maksimum kodelengde
+        sh:name "maksimum kodelengde"@nb , "max length"@en ;
+        sh:path xkos:maxLength ;
+        sh:datatype xsd:positiveInteger ;
+        sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Maksimum kodelengde (xkos:maxLength) kan ha maks. 1 verdi, som skal være positiv integer"@nb ,
+          "Max length (xkos:maxLength) may have max. 1 value which shall be a positive integer"@en ;
+        ] ;
+      sh:property [ # merknad
+        sh:name "merknad"@nb , "note"@en ;
+        sh:path skos:note ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Merknad (skos:note) skal være Literal"@nb , "Note (skos:note) shall be a Literal"@en ;
+        ] ;
+      sh:property [ # neste kategori
+        sh:name "neste kategori"@nb , "next"@en ;
+        sh:path xkos:next ;
+        sh:class skos:Concept ;
+        sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Neste kategori (xkos:next) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
+          "Next (xkos:next) may have max. 1 value which shall refer to an instance of skos:Concept"@en ;
+        ] ;
+      sh:property [ # spesialiserer
+        sh:name "spesialiserer"@nb , "specializes"@en ;
+        sh:path xkos:specializes ;
+        sh:class skos:Concept ;
+        sh:severity sh:Violation ;
+        sh:message "Spesialiserer (xkos:specializes) skal referere til en instans av skos:Concept"@nb ,
+          "Specializes (xkos:specializes) shall refer to an instance of skos:Concept"@en ;
+        ] ;
+      sh:property [ # tillatt kategorinavn
+        sh:name "tillatt kategorinavn"@nb , "alternative label"@en ;
+        sh:path skos:altLabel ;
+        sh:nodeKind sh:Literal ;
+        sh:severity sh:Violation ;
+        sh:message "Tillatt kategorinavn (skos:altLabel) skal være Literal"@nb ,
+          "Alternative label (skos:altLabel) shall be a Literal"@en ;
+        ] ;
+  sh:targetClass skos:Concept ;
+  .
+
+###
+# Klassen Klassifikasjonssammenligning (xkos:Correspondence)
+###
+
+:Correspondence_Shape a sh:NodeShape ; # Klassen Klassifikasjonssammenligning (xkos:Correspondence)
+  ##### mandatory properties:
+    sh:property [ # har kategorisammenligning
+      sh:name "har kategorisammenligning"@nb , "official label"@en ;
+      sh:path xkos:madeOf ;
+      sh:class xkos:ConceptAssociation ;
+      sh:minCount 1 ;
+      sh:severity sh:Violation ;
+      sh:message "Har kategorisammenligning (xkos:madeOf) skal ha min. 1 verdi som skal referere til en instans av xkos:ConceptAssociation"@nb ,
+        "Made of (xkos:madeOf) shall have min. 1 value which shall refer to an instance of xkos:ConceptAssociation"@en ;
+      ] ;
+    sh:property :propertyShape_min1max1dctIdentfier ; # identifikator
+    sh:property :propertyShape_min1dctTitle ; # navn
+    sh:property [ # sammenligner
+      sh:name "sammenligner"@nb , "compares"@en ;
+      sh:path xkos:compares ;
+      sh:class skos:ConceptScheme ;
+      sh:minCount 2 ;
+      sh:maxCount 2 ;
+      sh:severity sh:Violation ;
+      sh:message "Sammenligner (xkos:compares) skal ha min. 2 og maks. 2 verdi, som begge skal referere til en instans av skos:ConceptScheme"@nb ,
+        "Compares (xkos:compares) shall have min. 2 and max. 2 value which both shall refere to an intance of skos:ConceptScheme"@en ;
+      ] ;
+    sh:property :propertyShape_min1max1dctPublisher ; # utgiver
+    ##### recommended properties:
+      sh:property :propertyShape_dctDescription ; # beskrivelse
+      sh:property :propertyShape_max1dctModified ; # sist oppdatert
+      sh:property :propertyShape_dctLanguage ; # språk
+      sh:property :propertyShape_max1dctIssued ; # tilgjengeliggjøringsdato
+  sh:targetClass xkos:Correspondence ;
+  .
+
+###
+# Klassen Kategorisammenligning (xkos:ConceptAssociation)
+###
+:ConceptAssociation_Shape a sh:NodeShape ; # Klassen Kategorisammenligning (xkos:ConceptAssociation)
+  ##### recommended properties:
+    sh:property [ # har kildekategori
+      sh:name "har kildekategori"@nb , "source category"@en ;
+      sh:path xkos:sourceConcept ;
+      sh:class skos:Concept ;
+      sh:severity sh:Violation ;
+      sh:message "Har kildekategori (xkos:sourceConcept) skal referere til en instans av skos:Concept"@nb ,
+        "Source category (xkos:sourceConcept) shall refer to an instance of skos:Concept"@en ;
+      ] ;
+    sh:property [ # har målkategori
+      sh:name "har målkategori"@nb , "target category"@en ;
+      sh:path xkos:targetConcept ;
+      sh:class skos:Concept ;
+      sh:severity sh:Violation ;
+      sh:message "Har målkategori (xkos:targetConcept) skal referere til en instans av skos:Concept"@nb ,
+        "Target category (xkos:targetConcept) shall refer to an instance of skos:Concept"@en ;
+      ] ;
+    ##### optional properties:
+      sh:property [ # type endring
+        sh:name "type endring"@nb , "change type"@en ;
+        sh:path dct:type ;
+        sh:nodeKind sh:IRI ; # ikke skos:Concept som da blir validert mot skos:Concept her
+        sh:maxCount 1 ;
+        sh:severity sh:Violation ;
+        sh:message "Type endring (dct:type) kan ha maks. 1 verdi som skal referere til en instans av skos:Concept"@nb ,
+          "Change type (dct:type) may have max. 1 value which shall refer to an instance of skos:Concept"@en ;
+        ] ;
+  sh:targetClass xkos:ConceptAssociation ;
+  .
+
+###
+# Nøstet og sortert liste, ved å bruke rdf:List
+###
+:List_Shape a sh:NodeShape ; # rdf:List, for å uttrykke en nøstet og sortert liste
+  ##### recommended properties:
+    sh:property [ # rdf:first
+      sh:name "RDF første"@nb , "RDF first"@en ;
+      sh:path rdf:first ;
+      sh:class xkos:ClassificationLevel ;
+#      sh:minCount 1;
+      sh:maxCount 1;
+      sh:severity sh:Violation ;
+      sh:message "RDF første (rdf:first) skal ha min. 1 og maks. 1 verdi som skal referere til en instans av xkos:ClassificationLevel"@nb ,
+        "RDF first (rdf:first) shall have min. 1 and max. 1 value which shall refer to an instance of xkos:ClassificationLevel"@en ;
+      ] ;
+    sh:property [ # rdf:rest
+      sh:name "RDF rest"@nb , "RDF rest"@en ;
+      sh:path rdf:rest ;
+      sh:class rdf:List ;
+#      sh:minCount 1;
+      sh:maxCount 1;
+      sh:severity sh:Violation ;
+      sh:message "RDF rest (rdf:rest) skal ha min. 1 og maks. 1 verdi som skal referere til en instans av rdf:List eller rdf:nil"@nb ,
+        "RDF rest (rdf:rest) shall have min. 1 and max. 1 value which shall refer to an instance of rdf:List or rdf:nil"@en ;
+      ] ;
+  sh:targetClass rdf:List ;
+  .
+
+###
+# Common and/or reusable property shapes
+###
+
+### dct:creator
+
+:propertyShape_dctCreator a sh:PropertyShape ;
+  sh:name "produsent"@nb , "creator"@en ;
+  sh:path dct:creator ;
+  sh:or (
+    [ sh:class foaf:Agent ]
+    [ sh:class rov:RegisteredOrganization ] ) ; # føyet til som en workaround
+  sh:severity sh:Violation ;
+  sh:message "Produsent (dct:creator) skal referere til en instans av foaf:Agent"@nb ,
+    "Creator (dct:creator) shall refer to an instance of foaf:Agent"@en ;
+  .
+
+### dct:description
+
+:propertyShape_dctDescription a sh:PropertyShape ;
+  sh:name "beskrivelse"@nb , "description"@en ;
+  sh:path dct:description ;
+  sh:nodeKind sh:Literal ;
+  sh:severity sh:Violation ;
+  sh:message "Beskrivelse (dct:description) skal være en Literal"@nb ,
+    "Description (dct:description) shall be a Literal"@en ;
+    .
+
+### dct:identifier
+
+:propertyShape_min1max1dctIdentfier a sh:PropertyShape ;
+  sh:name "identifikator"@nb , "identifier"@en ;
+  sh:path dct:identifier ;
+  sh:nodeKind sh:IRIOrLiteral ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:severity sh:Violation ;
+  sh:message "Identifikator (dct:identifier) skal ha min. 1 og maks. 1 verdi, som skal være en URI"@nb ,
+    "Identifier  (dct:identifier) shall have min. 1 and max. 1 value which shall be an URI"@en ;
+  .
+
+:propertyShape_max1dctIdentfier a sh:PropertyShape ;
+  sh:name "identifikator"@nb , "identifier"@en ;
+  sh:path dct:identifier ;
+  sh:nodeKind sh:IRIOrLiteral ;
+  sh:maxCount 1 ;
+  sh:severity sh:Violation ;
+  sh:message "Identifikator (dct:identifier) kan ha maks. 1 verdi som skal være en URI"@nb ,
+    "Identifier  (dct:identifier) may have max. 1 value which shall be an URI"@en ;
+  .
+
+### dct:issued
+
+:propertyShape_max1dctIssued a sh:PropertyShape ;
+  sh:name "tilgjengeliggjøringsdato"@nb , "issued"@en ;
+  sh:path dct:issued ;
+  sh:node :DateOrDateTimeDataType_Shape ;
+  sh:maxCount 1 ;
+  sh:severity sh:Violation ;
+  sh:message "Tilgjengeliggjøringsdato (dct:issued) kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb ,
+    "Issued (dct:issued) may have max. 1 value which shall be either xsd:date or xsd:dateTime"@en ;
+  .
+
+### dct:language
+
+:propertyShape_dctLanguage a sh:PropertyShape ;
+  sh:name "språk"@nb , "language"@en ;
+  sh:path dct:language ;
+  sh:nodeKind sh:IRI ;
+#  sh:node :LanguageRestriction ;
+  sh:or (
+    [sh:pattern "^http://publications.europa.eu/resource/authority/language/"]
+    [sh:pattern "^https://publications.europa.eu/resource/authority/language/"] )  ;
+  sh:severity sh:Violation ;
+  sh:message "Språk (dct:language) skal ha URI som verdi og som hentet fra http(s)://publications.europa.eu/resource/authority/language/"@nb ,
+    "Language (dct:language) shal be an URI which refers to a value from http(s)://publications.europa.eu/resource/authority/language/"@en ;
+  .
+
+### dct:modified
+
+:propertyShape_max1dctModified a sh:PropertyShape ;
+  sh:name "sist oppdatert"@nb , "modified"@en ;
+  sh:path dct:modified ;
+  sh:node :DateOrDateTimeDataType_Shape ;
+  sh:maxCount 1 ;
+  sh:severity sh:Violation ;
+  sh:message "Sist oppdatert (dct:modified) kan ha maks. 1 verdi som skal være enten xsd:date eller xsd:dateTime"@nb ,
+    "Modified (dct:modified) may have max. 1 value which shall be either xsd:date or xsd:dateTime"@en ;
+  .
+
+### dct:publisher
+
+:propertyShape_min1max1dctPublisher a sh:PropertyShape ;
+  sh:name "utgiver"@nb , "publisher"@en ;
+  sh:path dct:publisher ;
+  sh:or (
+    [ sh:class foaf:Agent ]
+    [ sh:class rov:RegisteredOrganization ] ) ; # føyet til som en workaround
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:severity sh:Violation ;
+  sh:message "Utgiver (dct:publisher) skal ha min. 1 og maks. 1 verdi, som skal referere til en instans av foaf:Agent"@nb ,
+    "Publisher (dct:publisher) shall have min. 1 and max. 1 value which shall refer to an instance of foaf:Agent"@en ;
+  .
+
+### dct:title
+
+:propertyShape_min1dctTitle a sh:PropertyShape ;
+  sh:name "navn"@nb , "name"@en ;
+  sh:path dct:title ;
+  sh:nodeKind sh:Literal ;
+  sh:minCount 1 ;
+  sh:severity sh:Violation ;
+  sh:message "Navn (dct:title) skal ha min. 1 verdi som skal være en Literal"@nb ,
+    "Name (dct:title) shall have min. 1 value which shall be a Literal"@en ;
+  .
+
+### xkos:covers, xkos:coversMutuallyExclusively, xkos:coversExhaustively
+
+:propertyShape_xkosCovers a sh:PropertyShape ;
+  sh:name "dekker"@nb , "covers"@en ;
+  sh:path xkos:covers ;
+  sh:nodeKind sh:IRI ;
+  sh:severity sh:Violation ;
+  sh:message "Dekker (xkos:covers) skal referere til en instans av skos:Concept"@nb ,
+    "Covers (xkos:covers) shall refer to an instance of skos:Concept"@en ;
+  .
+
+:propertyShape_xkosCoversMutuallyExclusively a sh:PropertyShape ;
+  sh:name "dekker gjensidig utelukkende"@nb , "covers mutually exclusively"@en ;
+  sh:path xkos:coversMutuallyExclusively ;
+  sh:nodeKind sh:IRI ;
+  sh:severity sh:Violation ;
+  sh:message "Dekker gjensidig utelukkende (xkos:coversMutuallyExclusively) skal referere til en instans av skos:Concept"@nb ,
+    "Covers mutually exclusively (xkos:coversMutuallyExclusively) shall refer to an instance of skos:Concept"@en ;
+  .
+
+:propertyShape_xkosCoversExhaustively a sh:PropertyShape ;
+  sh:name "dekker uttømmende"@nb , "covers exhaustively"@en ;
+  sh:path xkos:coversExhaustively ;
+  sh:nodeKind sh:IRI ;
+  sh:severity sh:Violation ;
+  sh:message "Dekker uttømmende (xkos:coversExhaustively) skal referere til en instans av skos:Concept"@nb ,
+    "Covers exhaustively (xkos:coversExhaustively) shall refer to an instance of skos:Concept"@en ;
+  .
+
+### date or dateTime
+:DateOrDateTimeDataType_Shape a sh:NodeShape ;
+    rdfs:comment "Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal" ;
+    sh:name "Date time date disjunction" ;
+    sh:message "The values must be typed as either xsd:date or xsd:dateTime" ;
+    sh:severity sh:Violation ;
+    sh:xone ([ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ]
+    ) ;
+    .
+
+### language
+:LanguageRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Language Restriction" ;
+    rdfs:label "Language Restriction" ;
+    sh:property [
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/language>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/language>] ) ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .

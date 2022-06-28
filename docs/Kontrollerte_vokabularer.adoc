@@ -1,0 +1,66 @@
+== Bruk av kontrollerte vokabularer [[BrukAVKontrollerteVokabularer]]
+
+For å øke semantisk interoperabilitet er det i dette dokumentet stilt krav til bruk av kontrollerte vokabularer (lagt inn som merknad til de aktuelle egenskapene).
+
+Kjernegruppen som utarbeidet denne versjonen av spesifikasjonen, valgte å samkjøre med bl.a. https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO] når det gjelder krav til bruk av kontrollerte vokabularer for egenskaper som overlapper med DCAT-AP-NO.
+
+=== Forslag til et kontrollert vokabular for endringstyper [[ForslagTilEndringstyper]]
+
+Under utarbeidelse av dette dokumentet ble det identifisert behov for å ha en kontrollert liste over lovlige typer av endringer mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie, endringer som vil ha betydning for bruken av klassifikasjonene. Ved å bruke verdier fra en kontrollert liste over endringstyper, kan endringene oppgis som strukturert data og dermed også maskinprosesserbart. Med egnet verktøystøtte vil dette gjøre det lettere for brukere av en klassifikasjon å fange opp endringer fra en versjon til en annen. Kjernegruppen foreslo å basere dette vokabularet på «A typology of Item Changes» (Appendix 3 i https://statswiki.unece.org/display/gsim/Background+Documents?preview=%2F65372409%2F65339469%2FPart+I+Neuchatel_version+2_1.pdf[Neuchâtel Terminology Model - Classification database object types and their attributes, v.2.1 (PDF)]).
+
+*Forslag til vokabularet/klassifikasjonen* (en instans av `skos:ConceptScheme`):
+
+* antall nivå (`xkos:numberOfLevels`): 1
+* navn (`dct:title`): "Kategoriendringstype"@nb / "Classification Items Change Types"@en
+* identifikator (`dct:identifier`): https://data.norge.no/vocabulary/xkosno#ItemChangeTypes (`xkosno:ItemChangeType`)
+* utgiver (`dct:publisher`): Digdir
+* inneholder følgende kategorier (`uneskos:contains`):
+** “Endringstype 1” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 1
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "sletting"@nb , "deletion"@en
+*** identifikator (`dct:identifier`): `xkosno:ItemDeletion`
+** “Endringstype 2” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 2
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "oppretting"@nb , "creation"@en
+*** identifikator (`dct:identifier`): `xkosno:ItemCreation`
+** “Endringstype 3” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 3
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "sammenslåing"@nb , "merging"@en
+*** identifikator (`dct:identifier`): `xkosno:ItemMerging`
+** “Endringstype 4” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 4
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "overtakelse"@nb , "take-over"@en
+*** identifikator (`dct:identifier`): `xkosno:ItemTakeOver`
+** “Endringstype 5” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 5
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "oppsplitting"@nb , "breakdown"@en
+*** den inverse av (`owl:inverseOf`): `xkosno:ItemMerging`
+*** identifikator (`dct:identifier`): `xkosno:ItemBreakdown`
+** “Endringstype 6” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 6
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "avspalting"@nb , "split off"@en
+*** den inverse av (`owl:inverseOf`): `xkosno:ItemTakeOver`
+*** identifikator (`dct:identifier`): `xkosno:ItemSplitOff`
+** “Endringstype 7” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 7
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "overføring"@nb , "transfer"@en
+*** identifikator (`dct:identifier`): `xkosno:NotationTransfer`
+** “Endringstype 8” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 8
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "kodeendring"@nb , "code change"@en
+*** identifikator (`dct:identifier`): `xkosno:CodeChange`
+** “Endringstype 9” (en instans av `skos:Concept`)
+*** kode (`skos:notation`): 9
+*** er i klassifikasjon (`skos:inScheme`): `xkosno:ItemChangeType`
+*** anbefalt kategorinavn (`skos:prefLabel`): "navneendring"@nb , "name change"@en
+*** identifikator (`dct:identifier`): `xkosno:NameChange`
+
+Det foreslåtte vokabularet for endringstyper er beskrevet i henhold til XKOS-AP-NO (denne spesifikasjonen), og gjort tilgjengelig i maskinprosesserbart format RDF Turtle, på https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/examples/eksEndringstyper.ttl[Github].

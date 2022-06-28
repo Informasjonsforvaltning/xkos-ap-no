@@ -1,0 +1,198 @@
+#####
+# Eksempler på bruk av XKOS-AP-NO, med "Næringsgruppering 2007" (https://www.ssb.no/klass/klassifikasjoner/6/) som eksempel
+# Kun de første par eksemplene i hver bolk er forholdsvis komplette, resten minimalt med egenskaper
+#
+# Status 2021-11-21: validert korrekt mot https://github.com/Informasjonsforvaltning/xkos-ap-no/shacl/xkos-ap-no-shacl-0x.ttl.
+#####
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/examples/EksempelSn2007.ttl/> .
+
+### -------------------------------------------
+### klassifikasjonen (skos:ConceptScheme)
+### -------------------------------------------
+
+ex:sn2007 a skos:ConceptScheme ;
+  # mandatory properties:
+      xkos:numberOfLevels "5"^^xsd:positiveInteger ;
+      dct:identifier "https://www.ssb.no/klass/klassifikasjoner/6"^^xsd:anyURI ;
+      dct:title "Næringsgruppering 2007 (SN 2007)"@nb ;
+      dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ; # Statistisk sentralbyrå
+  # recommended properties:
+      dct:description "Grunnlaget for SN2007 er EUs standard NACE Rev.2 (Nomenclature générale des Activités economiques dans les Communautés Européenes) og FNs standard ISIC Rev.4 (International Standard Industrial Classification of all Economic Activities. NACE Rev.2 og SN2007 bygger på ISIC Rev.4 som ble godkjent i 2006. NACE Rev.2 har samme struktur som ISIC Rev.4, men NACE Rev.2 er mer detaljert enn ISIC Rev.4 på 3- og 4-siffernivå. Gjennom å aggregere NACE-grupper vil en komme fram til ISICs 3- og 4- siffergrupper. Ned til 4-sifret nivå (næringsgruppe) er SN2007 identisk med NACE Rev.2. Ut fra behovet for en mer detaljert næringsinndeling tilpasset norske forhold, er det innført et nasjonalt nivå, dvs. næringsundergruppene på 5-siffernivå. Øvrige land har også innført et tilsvarende nasjonalt nivå, tilpasset næringsvirksomheten i de respektive landene."@nb ;
+      xkos:covers <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
+      xkos:coversExhaustively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
+      xkos:coversMutuallyExclusively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
+      xkos:supersedes ex:sn2002 ;
+      schema:validFrom "2019-01-01"^^xsd:date ;
+      xkos:levels [ a rdf:List ;
+        rdf:first ex:sn2007-1 ; # nivå 1
+        rdf:rest [ a rdf:List ;
+            rdf:first ex:sn2007-2 ; # nivå 2
+            rdf:rest [ a rdf:List ;
+              rdf:first ex:sn2007-3 ; # nivå 3
+              rdf:rest [ a rdf:List ;
+                rdf:first ex:sn2007-4 ; # nivå 4
+                rdf:rest [a rdf:List ;
+                  rdf:first ex:sn2007-5 ; # nivå 5
+                  rdf:rest rdf:nil ;
+                  ] ;
+                ] ;
+              ] ;
+            ] ;
+        ] ;
+      dct:modified "2016-10-11T14:06:44"^^xsd:dateTime ;
+      dct:language <https://publications.europa.eu/resource/authority/language/NOB> , # norsk bokmål
+        <https://publications.europa.eu/resource/authority/language/NNN>, # nynorsk
+        <https://publications.europa.eu/resource/authority/language/ENG>; # engelsk
+        dct:issued "2009-01-01"^^xsd:date ;
+  # optional properties:
+      xkos:variant ex:fastlandsNorge2009 ;
+      xkos:belongsTo ex:sn ;
+  .
+
+ex:sn2002 a skos:ConceptScheme ; # for å illustrere bruk av xkos:supersedes
+  # mandatory properties:
+      xkos:numberOfLevels "5"^^xsd:positiveInteger ;
+      dct:identifier "https://www.ssb.no/klass/klassifikasjoner/6/versjon/31/"^^xsd:anyURI ;
+      dct:title "Næringsgruppering (SN) 2002"@nb ;
+      dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ; # Statistisk sentralbyrå
+  .
+
+ex:fastlandsNorge2009 a skos:ConceptScheme ; # for å illustrere bruk av xkos:variant
+  # mandatory properties:
+    xkos:numberOfLevels "5"^^xsd:positiveInteger ;
+    dct:identifier "https://www.ssb.no/klass/klassifikasjoner/6/varianter/601"^^xsd:anyURI ;
+    dct:title "Fastlands-Norge 2009 - variant av Næringsgruppering 2007 (SN 2007)"@nb ;
+    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/971526920> ; # Statistisk sentralbyrå
+  .
+
+### -------------------------------------------
+### klassifikasjonsnivåer (xkos:ClassificationLevel som er subklasse av skos:Collection)
+### -------------------------------------------
+
+ex:sn2007-1 a xkos:ClassificationLevel ;
+  # mandatory properties:
+    xkos:depth "1"^^xsd:positiveInteger ;
+    skos:member ex:A, ex:B, ex:C ; # bare noen eksempler
+  # recommended properties:
+    xkos:covers <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
+    xkos:coversExhaustively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
+    xkos:coversMutuallyExclusively <http://publications.europa.eu/resource/authority/eurovoc/5992> ; # economic activity
+    xkos:organizedBy ex:næringsområde ; # er klassifisert innen
+  # optional propeties:
+    xkos:notationPattern "[A-U]" ; # kodemønster
+  .
+
+ex:sn2007-2 a xkos:ClassificationLevel ;
+  xkos:depth "2"^^xsd:positiveInteger ;
+  skos:member ex:01 , ex:05 ;
+  xkos:organizedBy ex:næring ;
+  .
+
+ex:sn2007-3 a xkos:ClassificationLevel ;
+  xkos:depth "3"^^xsd:positiveInteger ;
+  skos:member ex:011 , ex:051 ;
+  xkos:organizedBy ex:næringshovedgruppe ;
+  .
+
+ex:sn2007-4 a xkos:ClassificationLevel ;
+  xkos:depth "4"^^xsd:positiveInteger ;
+  skos:member ex:0111 , ex:0510 ;
+  xkos:organizedBy ex:næringsgruppe ;
+  .
+
+ex:sn2007-5 a xkos:ClassificationLevel ;
+  xkos:depth "5"^^xsd:positiveInteger ;
+  skos:member ex:01110 , ex:05100 ;
+  xkos:organizedBy ex:næringsundergruppe ;
+  .
+
+### -------------------------------------------
+### et lite utvalg av kategorier (skos:Concept)
+### -------------------------------------------
+
+ex:A a skos:Concept ;
+  # mandatory properties:
+    skos:prefLabel "Jordbruk, skogbruk og fiske"@nb ; # anbefalt kategorinavn
+    skos:inScheme ex:sn2007 ; # er i klassifikasjon
+  # recommended properties:
+    skos:topConceptOf ex:sn2007 ; # er første kategori i
+    xkos:coreContentNote "Inkluderer: Omfatter bruken av planteressursene og de animalske ressursene, inkludert aktiviteter i forbindelse med dyrking av vekster, husdyrhold og -avl, produksjon av tømmer og høsting/utnyttelse av andre planter, dyr og animalske produkter fra en gård eller fra naturen."@nb ; # hovedinnhold
+    dct:identifier "https://www.ssb.no/klass/klassifikasjoner/6/A"^^xsd:anyURI ; # identifikator
+    skos:notation "A" ;
+    dct:subject ex:primærnæring ; # refererer til begrep
+    xkos:additionalContentNote "Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst."@nb ; # tilleggsinnhold
+  # optional propertie:
+      skos:example "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell, skogbruk og tjenester tilknyttet skogbruk, fiske, fangst og akvakultur"@nb ; # eksempel
+      xkos:exclusionNote "Ekskluderer: Grunnarbeid, f.eks. anlegg av jordterrasser, drenering o.l. grupperes under næringshovedområde: F Bygge- og anleggsvirksomhet. Kjøpere og andelslag engasjert i markedsføring av jordbruksprodukter grupperes under næringshovedområde: G Varehandel, reparasjon av motorvogner. Stell og vedlikehold av landskap grupperes under: 81.30 Beplantning av hager og parkanlegg."@nb ; # eksklusjon
+      xkos:next ex:B ; # neste kategori
+  .
+
+ex:01 a skos:Concept ;
+  skos:prefLabel "Jordbruk og tjenester tilknyttet jordbruk, jakt og viltstell"@nb ;
+  skos:notation "01" ;
+  xkos:coreContentNote "Inkluderer: Denne næringen omfatter to basisaktiviteter: produksjon av vegetabilske og animalske produkter, jordbruk, dyrking av genetisk modifiserte vekster og oppdrett av genetisk modifiserte dyr. Både dyrking av vekster på friland og i veksthus inngår."@nb ;
+  xkos:additionalContentNote "Inkluderer også: Omfatter også tjenester tilknyttet jordbruk, jakt og fangst."@nb ;
+  xkos:exclusionNote "Ekskluderer: Grunnarbeid, f.eks. anlegg av jordterrasser, drenering o.l. grupperes under næringshovedområde: F Bygge- og anleggsvirksomhet. Kjøpere og andelslag engasjert i markedsføring av jordbruksprodukter grupperes under næringshovedområde: G Varehandel, reparasjon av motorvogner. Stell og vedlikehold av landskap grupperes under: 81.30 Beplantning av hager og parkanlegg."@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
+
+ex:05 a skos:Concept ;
+skos:notation "05" ;
+skos:prefLabel "Bryting av steinkull og brunkull"@nb ;
+skos:inScheme ex:sn2007 ;
+.
+
+ex:011 a skos:Concept ;
+  skos:notation "01.1" ;
+  skos:prefLabel "Dyrking av ettårige vekster"@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
+
+ex:051 a skos:Concept ;
+  skos:notation "05.1" ;
+  skos:prefLabel "Bryting av steinkull"@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
+
+ex:0111 a skos:Concept ;
+  skos:notation "01.11" ;
+  skos:prefLabel "Dyrking av korn (unntatt ris), belgvekster og oljeholdige vekster"@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
+
+ex:0510 a skos:Concept ;
+  skos:notation "05.10" ;
+  skos:prefLabel "Bryting av steinkull"@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
+
+ex:01110 a skos:Concept ;
+  skos:notation "01.110" ;
+  skos:prefLabel "Dyrking av korrn (unntatt ris), belgvekster og oljeholdige vekster"@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
+
+ex:05100 a skos:Concept ;
+  skos:notation "05.100" ;
+  skos:prefLabel "Bryting av steinkull"@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
+
+ex:B a skos:Concept ;
+  skos:notation "B" ;
+  skos:prefLabel "Bergverksdrift og utvinning"@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
+
+ex:C a skos:Concept ;
+  skos:notation "C" ;
+  skos:prefLabel "Industri"@nb ;
+  skos:inScheme ex:sn2007 ;
+  .
