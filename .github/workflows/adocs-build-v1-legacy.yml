@@ -1,4 +1,4 @@
-name: build adocs v1
+name: build adocs and publish v1 to production (legacy)
 
 on:
   push:
@@ -6,25 +6,31 @@ on:
       - v1
     paths:
       - docs/**
+  workflow_dispatch:
 
 jobs:
   adoc_build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     name: asciidoctor build
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          ref: v1
+
       - name: Build html
         id: adocbuild
         uses: avattathil/asciidoctor-action@master
         with:
           program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+
       - name: Build pdf
         id: adocbuild_pdf
         uses: avattathil/asciidoctor-action@master
         with:
-          program: "asciidoctor-pdf -D docs -o xkos-ap-no.pdf -a lang=nb docs/main.adoc"
+          program: "asciidoctor-pdf -D docs -o files/xkos-ap-no.pdf -a lang=nb docs/main.adoc"
         continue-on-error: true
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

@@ -1,0 +1,56 @@
+name: build adocs and publish v1 to production
+
+on:
+  push:
+    branches:
+      - v1
+    paths:
+      - docs/**
+  workflow_dispatch:
+
+jobs:
+  adoc_build:
+    runs-on: ubuntu-latest
+    name: asciidoctor build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: v1
+
+      - name: Build html
+        id: adocbuild
+        uses: avattathil/asciidoctor-action@master
+        with:
+          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+
+      - name: Build pdf
+        id: adocbuild_pdf
+        uses: avattathil/asciidoctor-action@master
+        with:
+          program: "asciidoctor-pdf -D docs -o files/xkos-ap-no.pdf -a lang=nb docs/main.adoc"
+        continue-on-error: true
+
+      - name: Upload rdf to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.1.0
+        id: upload-rdf
+        with:
+          ontology-type: "specification"
+          ontology: "xkos-ap-no"
+          host: "https://fellesdatakatalog.digdir.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+          files: |
+            docs/index.html text/html nb
+            docs/files/xkos-ap-no.pdf application/pdf nb files/xkos-ap-no.pdf
+            docs/images/Digdir.png image/png nb images/Digdir.png
+            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
+            docs/images/Eksempel1Næringsgruppering.png  image/png nb images/Eksempel1Næringsgruppering.png
+            docs/images/Eksempel2NæringsgrupperingHovedversjoner.png image/png nb images/Eksempel2NæringsgrupperingHovedversjoner.png
+            docs/images/ForenkletModell-XKOS-AP-NO-Obligatoriske.png image/png nb images/ForenkletModell-XKOS-AP-NO-Obligatoriske.png
+            docs/images/ForenkletModell-XKOS-AP-NO-ObligatoriskeOgAnbefalte.png image/png nb images/ForenkletModell-XKOS-AP-NO-ObligatoriskeOgAnbefalte.png
+            docs/images/ForenkletModell-XKOS-AP-NO.png image/png nb images/ForenkletModell-XKOS-AP-NO.png
+            docs/images/KlassenKategori.png image/png nb images/KlassenKategori.png
+            docs/images/KlassenKategorisammenligning.png image/png nb images/KlassenKategorisammenligning.png
+            docs/images/KlassenKlassifikasjon.png image/png nb images/KlassenKlassifikasjon.png
+            docs/images/KlassenKlassifikasjonsnivå.png image/png nb images/KlassenKlassifikasjonsnivå.png
+            docs/images/KlassenKlassifikasjonssammenligning.png image/png nb images/KlassenKlassifikasjonssammenligning.png
