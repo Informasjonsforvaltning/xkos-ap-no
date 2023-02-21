@@ -6,9 +6,9 @@ _Kapitlet er ikke-normativt_.
 
 Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive og tilgjengeliggjøre klassifikasjoner. En felles måte å beskrive strukturen av og innholdet i en klassifikasjon, vil gjøre det enklere for brukere av en klassifikasjon å forstå og bruke klassifikasjonen korrekt. Dette vil også muliggjøre maskinell tilgang til innholdet i en klassifikasjon.
 
-Et eksempel på en klassifikasjon er https://www.ssb.no/klass/klassifikasjoner/6/[«Standard for næringsgruppering (SN)»] forvaltet og publisert av Statistisk sentralbyrå (SSB), som vi bruker som et gjennomgående eksempel i spesifikasjonen. Andre eksempler er https://www.ehelse.no/kodeverk/kodeverket-icd-10-og-icd-11[«Den internasjonale klassifikasjon av sykdommer og beslektede helseproblemer (ICD-10 og ICD-11)»] og https://www.ehelse.no/kodeverk/icpc-2.den-internasjonale-klassifikasjonen-for-primaerhelsetjenesten[«Den internasjonale klassifikasjonen for primærhelsetjenesten (ICPC-2)»], forvaltet og publisert av Direktoratet for e-helse.
+Et eksempel på en klassifikasjon er https://www.ssb.no/klass/klassifikasjoner/6/[«Standard for næringsgruppering (SN)»] forvaltet og publisert av Statistisk sentralbyrå (SSB), som vi bruker som et gjennomgående eksempel i spesifikasjonen. Andre eksempler er https://www.ehelse.no/kodeverk-terminologi/kodeverket-icd-10-og-icd-11[«Den internasjonale klassifikasjon av sykdommer og beslektede helseproblemer (ICD-10 og ICD-11)»] og https://www.ehelse.no/kodeverk-terminologi/icpc-2.den-internasjonale-klassifikasjonen-for-primaerhelsetjenesten[«Den internasjonale klassifikasjonen for primærhelsetjenesten (ICPC-2)»], forvaltet og publisert av Direktoratet for e-helse.
 
-Spesifikasjonen inngår i https://www.digdir.no/informasjonsforvaltning/rammeverk-informasjonsforvaltning/2118[Rammeverk for informasjonsforvaltning].
+Spesifikasjonen inngår i https://www.digdir.no/3626[Rammeverk for informasjonsforvaltning].
 
 === Omfang og avgrensing [[OmfangOgAvgrensing]]
 
@@ -52,17 +52,16 @@ Utarbeidelse av nye versjoner av denne spesifikasjon initieres av Digdir. Mindre
 
 === Om kravene i spesifikasjonen [[OmKravene]]
 
-Spesifikasjonen bruker kravnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO] og gjentas derfor ikke her.
+Spesifikasjonen bruker kravnivåene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i https://data.norge.no/specification/dcat-ap-no/#Om-kravene[DCAT-AP-NO], og forklaringene gjentas ikke her.
 
 === Navnerom som er brukt i spesifikasjonen [[Navnerom]]
 
-Navnerom for spesifikasjonen er `\https://data.norge.no/vocabulary/xkosno#`
 
 [cols="10s,45d,45d"]
 |===
 |Prefiks |*Navnerom* |*Forklaring/navn*
 |dct |http://purl.org/dc/terms/ |https://www.dublincore.org/specifications/dublin-core/dcmi-terms/[DCMI Metadata Terms]
-|foaf |http://xmlns.com/foaf/0.1/ |http://xmlns.com/foaf/spec/[FOAF Vocabulary]
+|foaf |http://xmlns.com/foaf/0.1/ |http://xmlns.com/foaf/0.1/[FOAF Vocabulary]
 |owl |http://www.w3.org/2002/07/owl# | https://www.w3.org/OWL/[Web Ontology Language (OWL)]
 |rdf |http://www.w3.org/1999/02/22-rdf-syntax-ns# |https://www.w3.org/TR/rdf-syntax-grammar/[RDF 1.1 XML Syntax]
 |rdfs |http://www.w3.org/2000/01/rdf-schema# |https://www.w3.org/TR/rdf-schema/[RDF Schema 1.1]
@@ -70,7 +69,6 @@ Navnerom for spesifikasjonen er `\https://data.norge.no/vocabulary/xkosno#`
 |skos |http://www.w3.org/2004/02/skos/core# |https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System]
 |uneskos |http://purl.org/umu/uneskos# |https://skos.um.es/TR/uneskos/[UNESKOS Vocabulary]
 |xkos |http://rdf-vocabulary.ddialliance.org/xkos# |https://rdf-vocabulary.ddialliance.org/xkos.html[An SKOS extension for representing statistical classifications]
-|xkosno | \https://data.norge.no/vocabulary/xkosno# |Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.
 |xsd |http://www.w3.org/2001/XMLSchema# |https://www.w3.org/TR/xmlschema-2/[XML Schema Part 2: Datatypes Second Edition]
 |===
 

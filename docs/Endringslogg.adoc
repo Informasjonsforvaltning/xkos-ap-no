@@ -1,5 +1,11 @@
 == Endringslogg [[Endringslogg]]
 
+=== Endringer fra v.1.0 til 1.0.x
+
+Kun redaksjonelle justeringer. 
+
+=== Endringer fra v.0.9 til v.1.0
+
 I tillegg til redaksjonelle justeringer som ikke loggføres her, er følgende kravsmessige endringer foretatt siden utgivelsen av v.0.9:
 
 * *v.0.904*: Kun redaksjonelle oppdateringer.
