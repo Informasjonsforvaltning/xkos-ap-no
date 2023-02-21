@@ -11,9 +11,9 @@ Som et eksempel som vi også kommer til å bruke i resten av dette dokumentet: h
 [link=images/Eksempel1Næringsgruppering.png]
 image::images/Eksempel1Næringsgruppering.png[]
 
-Figuren over illustrerer hvordan deler av «Næringsgruppering 2007 (SN2007)» beskrives i henhold til XKOS-AP-NO. En RDF Turtle representasjon av deler av «Næringsgruppering 2007 (SN 2007)» tilsvarende figuren overfor, finnes på https://github.com/Informasjonsforvaltning/xkos-ap-no/blob/develop/examples/EksempelSn2007.ttl[Github].
+Figuren ovenfor illustrerer hvordan deler av «Næringsgruppering 2007 (SN2007)» beskrives i henhold til XKOS-AP-NO. En RDF Turtle representasjon av deler av «Næringsgruppering 2007 (SN 2007)» tilsvarende figuren ovenfor, finnes på https://github.com/Informasjonsforvaltning/xkos-ap-no/blob/develop/examples/EksempelSn2007.ttl[Github].
 
-Hver versjon av en klassifikasjon er i seg selv en klassifikasjon. Versjoner av en klassifikasjon kan grupperes under f.eks. et begrep, ved hjelp av egenskapen «tilhører (`xkos:belongsTo`)». Figuren under illustrerer at versjonene «Næringsgruppering 1994 (SN1994)», «Næringsgruppering 2002 (SN2007)» og «Næringsgruppering 2007 (SN2007)» tilhører «Standard for næringsgruppering (SN)».
+Hver versjon av en klassifikasjon er i seg selv en klassifikasjon. Versjoner av en klassifikasjon kan grupperes under f.eks. et begrep, ved hjelp av egenskapen «tilhører (`xkos:belongsTo`)». Figuren nedenfor illustrerer at versjonene «Næringsgruppering 1994 (SN1994)», «Næringsgruppering 2002 (SN2007)» og «Næringsgruppering 2007 (SN2007)» tilhører «Standard for næringsgruppering (SN)».
 
 [[img-EKsempel2]]
 .Eksempel – Standard for næringsgruppering, med de ulike versjonene.
