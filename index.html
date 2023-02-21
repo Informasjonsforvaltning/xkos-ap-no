@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.18">
 <title>Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -84,10 +84,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -606,6 +606,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a class="image" href="https://digdir.no/"><img src="images/Digdir.png" alt="Digdir" width="30%"></a>
 </div>
 </div>
+<div class="paragraph">
+<p><strong>Status</strong>: Gjeldende<br>
+<strong>Versjon</strong>: 1.0.1<br>
+<strong>Publisert</strong>: 2022-06-28 (v.1.0)<br>
+<strong>Oppdatert</strong>: 2023-02-21 (v.1.0.1, se <a href="#Endringslogg">endringslogg</a>)<br>
+<strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/xkos-ap-no/" class="bare">https://data.norge.no/specification/xkos-ap-no/</a><br>
+<strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/" class="bare">https://informasjonsforvaltning.github.io/xkos-ap-no/</a><br>
+<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-v1.ttl">denne shacl-filen</a> som "Regelsett lenke")</p>
+</div>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -631,17 +640,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p><strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 1.0 <br>
-<strong>Publisert</strong>: 2022-06-28 (v.1.0)<br>
-<strong>Oppdatert</strong>: 2022-06-28 (v.1.0)<br>
-<strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/xkos-ap-no/" class="bare">https://data.norge.no/specification/xkos-ap-no/</a><br>
-<strong>Forrige versjon</strong>: &lt;ingen&gt;<br>
-<strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/xkos-ap-no/" class="bare">https://informasjonsforvaltning.github.io/xkos-ap-no/</a><br>
-<strong>Veileder</strong>: &lt;ingen&gt;<br>
-<strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a> (ved å oppgi URLen til <a href="https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-v1.ttl">denne shacl-filen</a> som "Regelsett lenke")</p>
-</div>
 <!-- toc disabled -->
 </div>
 </div>
@@ -657,10 +655,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p>Formålet med spesifikasjonen er å legge til rette for en felles måte å beskrive og tilgjengeliggjøre klassifikasjoner. En felles måte å beskrive strukturen av og innholdet i en klassifikasjon, vil gjøre det enklere for brukere av en klassifikasjon å forstå og bruke klassifikasjonen korrekt. Dette vil også muliggjøre maskinell tilgang til innholdet i en klassifikasjon.</p>
 </div>
 <div class="paragraph">
-<p>Et eksempel på en klassifikasjon er <a href="https://www.ssb.no/klass/klassifikasjoner/6/">«Standard for næringsgruppering (SN)»</a> forvaltet og publisert av Statistisk sentralbyrå (SSB), som vi bruker som et gjennomgående eksempel i spesifikasjonen. Andre eksempler er <a href="https://www.ehelse.no/kodeverk/kodeverket-icd-10-og-icd-11">«Den internasjonale klassifikasjon av sykdommer og beslektede helseproblemer (ICD-10 og ICD-11)»</a> og <a href="https://www.ehelse.no/kodeverk/icpc-2.den-internasjonale-klassifikasjonen-for-primaerhelsetjenesten">«Den internasjonale klassifikasjonen for primærhelsetjenesten (ICPC-2)»</a>, forvaltet og publisert av Direktoratet for e-helse.</p>
+<p>Et eksempel på en klassifikasjon er <a href="https://www.ssb.no/klass/klassifikasjoner/6/">«Standard for næringsgruppering (SN)»</a> forvaltet og publisert av Statistisk sentralbyrå (SSB), som vi bruker som et gjennomgående eksempel i spesifikasjonen. Andre eksempler er <a href="https://www.ehelse.no/kodeverk-terminologi/kodeverket-icd-10-og-icd-11">«Den internasjonale klassifikasjon av sykdommer og beslektede helseproblemer (ICD-10 og ICD-11)»</a> og <a href="https://www.ehelse.no/kodeverk-terminologi/icpc-2.den-internasjonale-klassifikasjonen-for-primaerhelsetjenesten">«Den internasjonale klassifikasjonen for primærhelsetjenesten (ICPC-2)»</a>, forvaltet og publisert av Direktoratet for e-helse.</p>
 </div>
 <div class="paragraph">
-<p>Spesifikasjonen inngår i <a href="https://www.digdir.no/informasjonsforvaltning/rammeverk-informasjonsforvaltning/2118">Rammeverk for informasjonsforvaltning</a>.</p>
+<p>Spesifikasjonen inngår i <a href="https://www.digdir.no/3626">Rammeverk for informasjonsforvaltning</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -738,14 +736,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="sect2">
 <h3 id="OmKravene"><a class="anchor" href="#OmKravene"></a>Om kravene i spesifikasjonen</h3>
 <div class="paragraph">
-<p>Spesifikasjonen bruker kravnivåene «obligatorisk», «anbefalt» og «valgfri». Disse har tilsvarende betydning som i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene">DCAT-AP-NO</a> og gjentas derfor ikke her.</p>
+<p>Spesifikasjonen bruker kravnivåene «obligatorisk», «anbefalt» og «valgfri». Disse er forklart i <a href="https://data.norge.no/specification/dcat-ap-no/#Om-kravene">DCAT-AP-NO</a>, og forklaringene gjentas ikke her.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="Navnerom"><a class="anchor" href="#Navnerom"></a>Navnerom som er brukt i spesifikasjonen</h3>
-<div class="paragraph">
-<p>Navnerom for spesifikasjonen er <code>https://data.norge.no/vocabulary/xkosno#</code></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 10%;">
@@ -766,7 +761,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>foaf</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/0.1/" class="bare">http://xmlns.com/foaf/0.1/</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/spec/">FOAF Vocabulary</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/0.1/">FOAF Vocabulary</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>owl</strong></p></td>
@@ -802,11 +797,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xkos</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://rdf-vocabulary.ddialliance.org/xkos#" class="bare">http://rdf-vocabulary.ddialliance.org/xkos#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://rdf-vocabulary.ddialliance.org/xkos.html">An SKOS extension for representing statistical classifications</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xkosno</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://data.norge.no/vocabulary/xkosno#</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spesifikasjon for klassifikasjonsbeskrivelser, denne spesifikasjonen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
@@ -898,10 +888,10 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="title">Figur 1. Klassifikasjon, Klassifikasjonsnivå og Kategori, uttrykt med XKOS-AP-NO og illustrert med et utsnitt av «Næringsgruppering 2007».</div>
 </div>
 <div class="paragraph">
-<p>Figuren over illustrerer hvordan deler av «Næringsgruppering 2007 (SN2007)» beskrives i henhold til XKOS-AP-NO. En RDF Turtle representasjon av deler av «Næringsgruppering 2007 (SN 2007)» tilsvarende figuren overfor, finnes på <a href="https://github.com/Informasjonsforvaltning/xkos-ap-no/blob/develop/examples/EksempelSn2007.ttl">Github</a>.</p>
+<p>Figuren ovenfor illustrerer hvordan deler av «Næringsgruppering 2007 (SN2007)» beskrives i henhold til XKOS-AP-NO. En RDF Turtle representasjon av deler av «Næringsgruppering 2007 (SN 2007)» tilsvarende figuren ovenfor, finnes på <a href="https://github.com/Informasjonsforvaltning/xkos-ap-no/blob/develop/examples/EksempelSn2007.ttl">Github</a>.</p>
 </div>
 <div class="paragraph">
-<p>Hver versjon av en klassifikasjon er i seg selv en klassifikasjon. Versjoner av en klassifikasjon kan grupperes under f.eks. et begrep, ved hjelp av egenskapen «tilhører (<code>xkos:belongsTo</code>)». Figuren under illustrerer at versjonene «Næringsgruppering 1994 (SN1994)», «Næringsgruppering 2002 (SN2007)» og «Næringsgruppering 2007 (SN2007)» tilhører «Standard for næringsgruppering (SN)».</p>
+<p>Hver versjon av en klassifikasjon er i seg selv en klassifikasjon. Versjoner av en klassifikasjon kan grupperes under f.eks. et begrep, ved hjelp av egenskapen «tilhører (<code>xkos:belongsTo</code>)». Figuren nedenfor illustrerer at versjonene «Næringsgruppering 1994 (SN1994)», «Næringsgruppering 2002 (SN2007)» og «Næringsgruppering 2007 (SN2007)» tilhører «Standard for næringsgruppering (SN)».</p>
 </div>
 <div id="img-EKsempel2" class="imageblock">
 <div class="content">
@@ -982,7 +972,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="ulist">
 <ul>
 <li>
-<p>Klassene Begrep (<code>skos:Concept</code>) og Klassifikasjonsfamilie (<code>skos:Concept</code>): Disse er klasser som representerer begreper som er utenfor selve klassifikasjonen. Se <em><a href="https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/">Forvaltningsstandard for begrepsbeskrivelser</a></em> for hvordan begreper (<code>skos:Concept</code>) og begrepssamlinger (<code>skos:Collection</code>) beskrives, og <em><a href="https://data.norge.no/specification/skos-ap-no-begrep/">SKOS-AP-NO-Begrep</a></em> for hvordan SKOS brukes til å uttrykke begreps- og begrepssamlingsbeskrivelser som er utformet i henhold til Forvaltningsstandard for begrepsbeskrivelser.</p>
+<p>Klassene Begrep (<code>skos:Concept</code>) og Klassifikasjonsfamilie (<code>skos:Concept</code>): Disse er klasser som representerer begreper som er utenfor selve klassifikasjonen. Se <em><a href="https://data.norge.no/specification/skos-ap-no-begrep">Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)</a></em> for hvordan begreper (<code>skos:Concept</code>) og begrepssamlinger (<code>skos:Collection</code>) beskrives.</p>
 </li>
 <li>
 <p>Liste (<code>rdf:List</code>): Dette er en RDF-teknisk konstruksjon som er brukt til å ha en «sortert liste», og som den vanlige brukeren ikke trenger å forholde seg til.</p>
@@ -4620,7 +4610,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-23 13:45:02 UTC
+Sist oppdatert 2023-02-21 09:01:56 UTC
 </div>
 </div>
 </body>
