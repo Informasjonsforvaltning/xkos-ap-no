@@ -17,7 +17,7 @@ Følgende klasser er valgfrie:
 
 Følgende klasser i den forenklede modellen er utenfor omfanget til dette dokumentet å spesifisere:
 
-* Klassene Begrep (`skos:Concept`) og Klassifikasjonsfamilie (`skos:Concept`): Disse er klasser som representerer begreper som er utenfor selve klassifikasjonen. Se _https://data.norge.no/specification/forvaltningsstandard-begrepsbeskrivelser/[Forvaltningsstandard for begrepsbeskrivelser]_ for hvordan begreper (`skos:Concept`) og begrepssamlinger (`skos:Collection`) beskrives, og _https://data.norge.no/specification/skos-ap-no-begrep/[SKOS-AP-NO-Begrep]_ for hvordan SKOS brukes til å uttrykke begreps- og begrepssamlingsbeskrivelser som er utformet i henhold til Forvaltningsstandard for begrepsbeskrivelser.
+* Klassene Begrep (`skos:Concept`) og Klassifikasjonsfamilie (`skos:Concept`): Disse er klasser som representerer begreper som er utenfor selve klassifikasjonen. Se _https://data.norge.no/specification/skos-ap-no-begrep[Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep)]_ for hvordan begreper (`skos:Concept`) og begrepssamlinger (`skos:Collection`) beskrives.
 
 *	Liste (`rdf:List`): Dette er en RDF-teknisk konstruksjon som er brukt til å ha en «sortert liste», og som den vanlige brukeren ikke trenger å forholde seg til.
 
