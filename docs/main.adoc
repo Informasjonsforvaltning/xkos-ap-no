@@ -17,7 +17,7 @@ image::images/Digdir.png[width=30%, pdfwidth=30vw, link=https://digdir.no/]
 *Status*: Gjeldende +
 *Versjon*: 1.0.1 +
 *Publisert*: 2022-06-28 (v.1.0) +
-*Oppdatert*: 2023-02-21 (v.1.0.1, se <<Endringslogg, endringslogg>>) +
+*Oppdatert*: 2023-02-23 (v.1.0.1, se <<Endringslogg, endringslogg>>) +
 *Gjeldende versjon*: https://data.norge.no/specification/xkos-ap-no/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/xkos-ap-no/ +
 *Valideringsverktøy*: https://data.norge.no/validator (ved å oppgi URLen til https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/shacl/xkos-ap-no-shacl-v1.ttl[denne shacl-filen] som "Regelsett lenke")
@@ -54,6 +54,6 @@ include::KlassenKategorisammenligning.adoc[]
 
 include::Vedlegg.adoc[]
 
-// include::Endringslogg.adoc[]
+include::Endringslogg.adoc[]
 
 include::shared/stats.adoc[]
