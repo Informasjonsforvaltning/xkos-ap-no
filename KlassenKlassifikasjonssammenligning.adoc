@@ -182,6 +182,7 @@ Eksempel i RDF Turtle: 
 |URI |dct:modified 
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime 
 |Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi dato/tidspunkt når sammenligningen sist ble oppdatert.  
+
 (English) This property is used to specify the date or time when the correspondence was last modified. 
 |Multiplisitet |0..1 
 |Kravnivå / Requirement level | Anbefalt / Recommended 
