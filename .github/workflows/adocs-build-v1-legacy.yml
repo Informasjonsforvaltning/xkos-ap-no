@@ -1,5 +1,9 @@
 name: build adocs and publish v1 to production (legacy)
 
+permissions:
+  contents: read
+  pages: write
+
 on:
   push:
     branches:
