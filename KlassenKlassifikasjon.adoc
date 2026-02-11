@@ -7,15 +7,15 @@ image::images/KlassenKlassifikasjon.png[]
 
 [cols="30s,70d"]
 |===
-|English name |Classification
-|Anvendelse / Usage note | (norsk) Klassen brukes til å representere en klassifikasjon, en variant eller en versjon av en klassifikasjon.
+|__English name__ |__Classification__
+|Anvendelse / __Usage note__ | (norsk) Klassen brukes til å representere en klassifikasjon, en variant eller en versjon av en klassifikasjon.
 
-(English) This class is used to represent a classification, a variant of a version of a classification.
+__(English) This class is used to represent a classification, a variant of a version of a classification.__
 |URI |skos:ConceptScheme
-|Kravnivå / Requirement level | Obligatorisk / Mandatory
-|Merknad / Note | (norsk) I konteksten av dette dokumentet er en gitt variant/versjon av en klassifikasjon også en klassifikasjon.
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory__
+|Merknad / __Note__ | (norsk) I konteksten av dette dokumentet er en gitt variant/versjon av en klassifikasjon også en klassifikasjon.
 
-(English) In the context of this document, a given variant/version of a classification is also a classification.
+__(English) In the context of this document, a given variant/version of a classification is also a classification.__
 |Eksempel |Næringsgruppering 2007 (SN 2007)
 |===
 
@@ -35,14 +35,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |number of levels
+|__English name__ |__number of levels__
 |URI |xkos:numberOfLevels
 |Range |rdfs:Literal typed as xsd:positiveInteger
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi antall nivåer i klassifikasjonen; 1 for en flat klassifikasjon.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi antall nivåer i klassifikasjonen; 1 for en flat klassifikasjon.
 
-(English) This property is used to document number of levels the classification includes; 1 for a flat classification.
+__(English) This property is used to document number of levels the classification includes; 1 for a flat classification.__
 |Multiplisitet |1..1
-|Kravnivå / Requirement level | Obligatorisk / Mandatory
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory__
 |Eksempel |«Næringsgruppering 2007» har totalt fem nivåer.
 |===
 
@@ -57,23 +57,23 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |identifier
+|__English name__ |__identifier__
 |URI |dct:identifier
 |Range |rdfs:Literal typed as xsd:anyURI
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi identifikatoren til klassifikasjonen.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi identifikatoren til klassifikasjonen.
 
-(English) This property is used to refer to the identifier of the classification.
+__(English) This property is used to refer to the identifier of the classification.__
 |Multiplisitet |1..1
-|Kravnivå / Requirement level | Obligatorisk / Mandatory
-|Merknad / Note 1 | (norsk) Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory__
+|Merknad / __Note 1__ | (norsk) Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
-(norsk) For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
+(norsk) For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv. &#x29C9;, window="_blank", role="ext-link"]
 
-(English) Se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
-|Merknad / Note 2 | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+__(English) See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv. &#x29C9;, window="_blank", role="ext-link"]__
+|Merknad / __Note 2__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) (English) Norwegian extension: not explicitly specified in XKOS.
-|Eksempel |https://www.ssb.no/klass/klassifikasjoner/6[https://www.ssb.no/klass/klassifikasjoner/6] for «Næringsgruppering 2007 (SN 2007)»
+__(English) (English) Norwegian extension: not explicitly specified in XKOS.__
+|Eksempel |https://www.ssb.no/klass/klassifikasjoner/6[https://www.ssb.no/klass/klassifikasjoner/6 &#x29C9;, window="_blank", role="ext-link"] for «Næringsgruppering 2007 (SN 2007)»
 |===
 
 Eksempel i RDF Turtle:
@@ -86,17 +86,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |name
+|__English name__ |__name__
 |URI |dct:title
 |Range |rdfs:Literal
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi navnet til klassifikasjonen. Gjentas når navnet finnes i flere språk.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi navnet til klassifikasjonen. Gjentas når navnet finnes i flere språk.
 
-(English) This property is used to specify the name of the classification, repeated when the name is in different languages.
+__(English) This property is used to specify the name of the classification, repeated when the name is in different languages.__
 |Multiplisitet |1..n
-|Kravnivå / Requirement level | Obligatorisk / Mandatory
-|Merknad / Note | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory__
+|Merknad / __Note__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |«Næringsgruppering 2007 (SN2007)» på norsk, og "Standard Industrial Classification 2007 (SIC 2007)" på engelsk.
 |===
 
@@ -111,17 +111,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |publisher
+|__English name__ |__publisher__
 |URI |dct:publisher
 |Range |foaf:Agent
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til utgiver av klassifikasjonen.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til utgiver av klassifikasjonen.
 
-(English) This property is used to refer to the publisher of the classification.
+__(English) This property is used to refer to the publisher of the classification.__
 |Multiplisitet |1..1
-|Kravnivå / Requirement level | Obligatorisk / Mandatory
-|Merknad / Note | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory__
+|Merknad / __Note__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |Statistisk sentralbyrå (med org.nr. 971526920) er utgiver av «Næringsgruppering 2007 (SN2007)».
 |===
 
@@ -137,47 +137,47 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |description
+|__English name__ |__description__
 |URI |dct:description
 |Range |rdfs:Literal
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi en kortfattet beskrivelse av klassifikasjonen. Egenskapen bør gjentas når beskrivelsen er i flere språk.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi en kortfattet beskrivelse av klassifikasjonen. Egenskapen bør gjentas når beskrivelsen er i flere språk.
 
-(English) This property is used to give a short description of the classification, repeated when the description is in different languages.
+__(English) This property is used to give a short description of the classification, repeated when the description is in different languages.__
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |Se teksten i RDF Turtle eksempel under.
 |===
 
 Eksempel i RDF Turtle:
 ----
 <sn2007> a skos:ConceptScheme ;
-  dct:description "Grunnlaget for SN2007 er EUs standard NACE Rev.2 (Nomenclature générale des Activités economiques dans les Communautés Européenes) og FNs standard ISIC Rev.4 (International Standard Industrial Classification of all Economic Activities. NACE Rev.2 og SN2007 bygger på ISIC Rev.4 som ble godkjent i 2006. NACE Rev.2 har samme struktur som ISIC Rev.4, men NACE Rev.2 er mer detaljert enn ISIC Rev.4 på 3- og 4-siffernivå. Gjennom å aggregere NACE-grupper vil en komme fram til ISICs 3- og 4- siffergrupper. Ned til 4-sifret nivå (næringsgruppe) er SN2007 identisk med NACE Rev.2. Ut fra behovet for en mer detaljert næringsinndeling tilpasset norske forhold, er det innført et nasjonalt nivå, dvs. næringsundergruppene på 5-siffernivå. Øvrige land har også innført et tilsvarende nasjonalt nivå, tilpasset næringsvirksomheten i de respektive landene."@nb ; .
+  dct:description "Grunnlaget for SN2007 er EUs standard NACE Rev.2 (Nomenclature générale des Activités economiques dans les Communautés Européenes) og FNs standard ISIC Rev.4 (International Standard Industrial Classification of all Economic Activities). NACE Rev.2 og SN2007 bygger på ISIC Rev.4 som ble godkjent i 2006. NACE Rev.2 har samme struktur som ISIC Rev.4, men NACE Rev.2 er mer detaljert enn ISIC Rev.4 på 3- og 4-siffernivå. Gjennom å aggregere NACE-grupper vil en komme fram til ISICs 3- og 4- siffergrupper. Ned til 4-sifret nivå (næringsgruppe) er SN2007 identisk med NACE Rev.2. Ut fra behovet for en mer detaljert næringsinndeling tilpasset norske forhold, er det innført et nasjonalt nivå, dvs. næringsundergruppene på 5-siffernivå. Øvrige land har også innført et tilsvarende nasjonalt nivå, tilpasset næringsvirksomheten i de respektive landene."@nb ; .
 ----
 
 ==== Klassifikasjon – dekker (xkos:covers) [[Klassifikasjon-dekker]]
 
 [cols="30s,70d"]
 |===
-|English name |covers
+|__English name__ |__covers__
 |URI |xkos:covers
 |Range |skos:Concept
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til begrep som beskriver det domene/fagområde/el.l. som klassifikasjonen dekker.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til begrep som beskriver det domene/fagområde/el.l. som klassifikasjonen dekker.
 
-(English) A classification covers a defined field: economic activity, occupations, living organisms, etc. XKOS specifies the `xkos:covers` property to express this relation.
+__(English) A classification covers a defined field: economic activity, occupations, living organisms, etc. XKOS specifies the `xkos:covers` property to express this relation.__
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note 1 | (norsk) En veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note 1__ | (norsk) En veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l.
 
-(English) A well-defined classification should cover max. one domain, subject field or such like.
-|Merknad / Note 2 | (norsk) Bruk heller egenskapen <<Klassifikasjon-dekkerUttømmende>> når klassifikasjonen dekker domenet/fagområdet uttømmende, og/eller <<Klassifikasjon-dekkerGjensidigUtelukkende>> når klassifikasjonen dekker domenet/fagområdet gjensidig utelukkende.
+__(English) A well-defined classification should cover max. one domain, subject field or such like.__
+|Merknad / __Note 2__ | (norsk) Bruk heller egenskapen <<Klassifikasjon-dekkerUttømmende>> når klassifikasjonen dekker domenet/fagområdet uttømmende, og/eller <<Klassifikasjon-dekkerGjensidigUtelukkende>> når klassifikasjonen dekker domenet/fagområdet gjensidig utelukkende.
 
-(English) Use rather the property <<Klassifikasjon-dekkerUttømmende>> when the classification covers the domain / subject field exhaustively, and/or <<Klassifikasjon-dekkerGjensidigUtelukkende>> when the classification covers the domain / subject field mutually exclusively.
-|Merknad / Note 3 | (norsk) Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
+__(English) Use rather the property <<Klassifikasjon-dekkerUttømmende>> when the classification covers the domain / subject field exhaustively, and/or <<Klassifikasjon-dekkerGjensidigUtelukkende>> when the classification covers the domain / subject field mutually exclusively.__
+|Merknad / __Note 3__ | (norsk) Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc &#x29C9;, window="_blank", role="ext-link"], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH) &#x29C9;, window="_blank", role="ext-link"] eller https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"].
 
-(English) The value should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
+__(English) The value should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC &#x29C9;, window="_blank", role="ext-link"]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH &#x29C9;, window="_blank", role="ext-link"]), or https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"].__
 |Eksempel |«Næringsgruppering 2007» dekker begrepet ‘økonomisk aktivitet’ (‘economic activity’).
 |===
 
@@ -191,24 +191,24 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |covers mutually exclusively
+|__English name__ |__covers mutually exclusively__
 |URI |xkos:coversMutuallyExclusively
 |Range |skos:Concept
-|Anvendelse / Usage note | (norsk) På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker.
+|Anvendelse / __Usage note__ | (norsk) På ethvert nivå i en veldefinert klassifikasjon er kategoriene gjensidig utelukkende. Denne egenskapen brukes til å uttrykke dette, samt å referere til begrep som kategoriene dekker.
 
-(English) If there is no overlap between the classification items at a given level of the classification, we say that the concepts (`skos:Concept`) representing the items are mutually exclusive.
-|Subegenskap av / Subproperty of |xkos:covers
+__(English) If there is no overlap between the classification items at a given level of the classification, we say that the concepts (`skos:Concept`) representing the items are mutually exclusive.__
+|Subegenskap av / __Subproperty of__ |xkos:covers
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note 1 | (norsk) En veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l., og med gjensidig utelukkende kategorier.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note 1__ | (norsk) En veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l., og med gjensidig utelukkende kategorier.
 
-(English) A well-defined classification should cover max. one domain, subject field or such like, and with mutually exclusive categories.
-|Merknad / Note 2 | (norsk) En veldefinert klassifikasjon dekker sitt domene/område/begrep både uttømmende og gjensidig utelukkende. I slike tilfeller bør både denne egenskapen og egenskapen <<Klassifikasjon-dekkerUttømmende>> brukes.
+__(English) A well-defined classification should cover max. one domain, subject field or such like, and with mutually exclusive categories.__
+|Merknad / __Note 2__ | (norsk) En veldefinert klassifikasjon dekker sitt domene/område/begrep både uttømmende og gjensidig utelukkende. I slike tilfeller bør både denne egenskapen og egenskapen <<Klassifikasjon-dekkerUttømmende>> brukes.
 
-(English) A well-defined classification usually covers its domain, subject field or such like both exhaustively and mutually exclusively. In such cases this property and the property <<Klassifikasjon-dekkerUttømmende>> should be used.
-|Merknad / Note 3 | (norsk) Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
+__(English) A well-defined classification usually covers its domain, subject field or such like both exhaustively and mutually exclusively. In such cases this property and the property <<Klassifikasjon-dekkerUttømmende>> should be used.__
+|Merknad / __Note 3__ | (norsk) Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc &#x29C9;, window="_blank", role="ext-link"], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH) &#x29C9;, window="_blank", role="ext-link"] eller https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"].
 
-(English) The value should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
+__(English) The value should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC &#x29C9;, window="_blank", role="ext-link"]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH &#x29C9;, window="_blank", role="ext-link"]), or https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"].__
 |Eksempel |Næringsgruppering 2007 dekker begrepet ‘økonomisk aktivitet’ med gjensidig utelukkende kategorier (og uttømmende).
 |===
 
@@ -224,21 +224,21 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |covers exhaustively
+|__English name__ |__covers exhaustively__
 |URI |xkos:coversExhaustively
 |Range |skos:Concept
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å uttrykke at klassifikasjonen dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å uttrykke at klassifikasjonen dekker et domene/fagområde/el.l. uttømmende, samt å referere til det som dekkes.
 
-(English) If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.
-|Subegenskap av / Subproperty of |xkos:covers
+__(English) If the coverage of the given field is complete (i.e. all notions in the field can potentially be classified under the classification), we say that the coverage is exhaustive.__
+|Subegenskap av / __Subproperty of__ |xkos:covers
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note 1 | (norsk) En veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l., og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note 1__ | (norsk) En veldefinert klassifikasjon bør dekke maks. ett domene/fagområde/el.l., og uttømmende. Denne egenskapen bør derfor alltid brukes for en veldefinert klassifikasjon.
 
-(English) A well-defined classification should cover max. one domain, subject field or such like, and exhaustively. This property should derfor be used for a well-defined classification.
-|Merknad / Note 2 | (norsk) Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH)] eller https://psi.norge.no/los/struktur.html[Los].
+__(English) A well-defined classification should cover max. one domain, subject field or such like, and exhaustively. This property should derfor be used for a well-defined classification.__
+|Merknad / __Note 2__ | (norsk) Verdien bør hentes fra veldefinerte kontrollerte vokabularer som f.eks. https://op.europa.eu/s/uBik[EuroVoc &#x29C9;, window="_blank", role="ext-link"], https://id.loc.gov/authorities/subjects.html[Library of Congress Subject Headings (LOCSH) &#x29C9;, window="_blank", role="ext-link"] eller https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"].
 
-(English) The value should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH]), or https://psi.norge.no/los/struktur.html[Los].
+__(English) The value should be represented by a `skos:Concept`, for example a term from a well-known thesaurus like EuroVoc (https://op.europa.eu/s/uBik[EUROVOC &#x29C9;, window="_blank", role="ext-link"]), the Library of Congress Subject Headings (https://id.loc.gov/authorities/subjects.html[LOCSH &#x29C9;, window="_blank", role="ext-link"]), or https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"].__
 |Eksempel |Næringsgruppering dekker begrepet ‘økonomisk aktivitet’ uttømmende.
 |===
 
@@ -252,14 +252,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |supersedes
+|__English name__ |__supersedes__
 |URI |xkos:supersedes
 |Range |skos:ConceptScheme
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til en versjon av klassifikasjonen som denne versjonen erstatter.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til en versjon av klassifikasjonen som denne versjonen erstatter.
 
-(English) This property is used to refer to a classification/version that this classification/version supersedes.
+__(English) This property is used to refer to a classification/version that this classification/version supersedes.__
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Anbefalt / Recommended
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
 |Eksempel |«Næringsgruppering 2007 (SN2007)» erstatter «Næringsgruppering 2002 (SN2002)».
 |===
 
@@ -273,20 +273,20 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |valid from inclusive
+|__English name__ |__valid from inclusive__
 |URI |schema:validFrom
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi fra og med når klassifikasjonen er gyldig.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi fra og med når klassifikasjonen er gyldig.
 
-(English) This property is used to specify the date or time from (inclusive) which the classification is valid.
+__(English) This property is used to specify the date or time from (inclusive) which the classification is valid.__
 |Multiplisitet |0..1
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note 1 | (norsk) For å kunne bruke en klassifikasjon/versjon riktig, er det viktig at denne verdien oppgi når datoen/tidspunktet er kjent.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note 1__ | (norsk) For å kunne bruke en klassifikasjon/versjon riktig, er det viktig at denne verdien oppgi når datoen/tidspunktet er kjent.
 
-(English) In order to use a classification/version correctly, it is important that this property is given value when the date/time is known.
-|Merknad / Note 2 | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+__(English) In order to use a classification/version correctly, it is important that this property is given value when the date/time is known.__
+|Merknad / __Note 2__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |«Næringsgruppering 2007» er gyldig fra og med 1.1.2019.
 |===
 
@@ -300,20 +300,20 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |valid through inclusive
+|__English name__ |__valid through inclusive__
 |URI |schema:validThrough
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi fra og med når klassifikasjonen er gyldig.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi fra og med når klassifikasjonen er gyldig.
 
-(English) This property is used to specify the date or time from (inclusive) which the classification is valid.
+__(English) This property is used to specify the date or time from (inclusive) which the classification is valid.__
 |Multiplisitet |0..1
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note 1 | (norsk) For å kunne bruke en klassifikasjon/versjon riktig, er det viktig at denne verdien oppgi når datoen/tidspunktet er kjent.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note 1__ | (norsk) For å kunne bruke en klassifikasjon/versjon riktig, er det viktig at denne verdien oppgi når datoen/tidspunktet er kjent.
 
-(English) In order to use a classification/version correctly, it is important that this property is given value when the date/time is known.
-|Merknad / Note 2 | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+__(English) In order to use a classification/version correctly, it is important that this property is given value when the date/time is known.__
+|Merknad / __Note 2__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |«Næringsgruppering 2002» var gyldig til og med 31.12.2018.
 |===
 
@@ -327,14 +327,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |level list
+|__English name__ |__level list__
 |URI |xkos:levels
 |Range |rdf:List
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til en liste av nivåene i klassifikasjonen (instanser av Klassifikasjonsnivå `xkos:ClassificationLevel`), representert som en sortert RDF-liste (instans av `rdf:List`).
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til en liste av nivåene i klassifikasjonen (instanser av Klassifikasjonsnivå `xkos:ClassificationLevel`), representert som en sortert RDF-liste (instans av `rdf:List`).
 
-(English) This property is used to refer to the list of the classification levels represented as an RDF list of ordered levels (instances of ClassificationLevel).
+__(English) This property is used to refer to the list of the classification levels represented as an RDF list of ordered levels (instances of ClassificationLevel).__
 |Multiplisitet |0..1
-|Kravnivå / Requirement level | Anbefalt / Recommended
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
 |Eksempel |Innholdet i «Næringsgruppering 2007» som en (nøstet) liste, med klassifikasjonsnivåene 1 til 5.
 |===
 
@@ -368,21 +368,21 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |contains classification items
+|__English name__ |__contains classification items__
 |URI |uneskos:contains
 |Range |skos:Concept
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til kategori(er) som en klassifikasjon inneholder.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til kategori(er) som en klassifikasjon inneholder.
 
-(English) This property is used to refer to the classification items that the classification contains.
+__(English) This property is used to refer to the classification items that the classification contains.__
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note 1 | (norsk) Når en flat klassifikasjon ikke tar med det ene klassifikasjonsnivået, er denne egenskapen den eneste måte å si hvilke kategorier en klassifikasjon inneholder.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note 1__ | (norsk) Når en flat klassifikasjon ikke tar med det ene klassifikasjonsnivået, er denne egenskapen den eneste måte å si hvilke kategorier en klassifikasjon inneholder.
 
-(English) When the one classifcation level in a flat classification is not specified, this property is the only way to speficiy which categories that are in the classification.
-|Merknad / Note 2 | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+__(English) When the one classifcation level in a flat classification is not specified, this property is the only way to speficiy which categories that are in the classification.__
+|Merknad / __Note 2__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
-|Eksempel |https://www.ssb.no/klass/klassifikasjoner/19/versjon/50[«Standard for sivilstand 1993»] inneholder kategoriene «1 – Ugift», ..., «9 – Gjenlevende partner»
+__(English) Norwegian extension: not explicitly specified in XKOS.__
+|Eksempel |https://www.ssb.no/klass/klassifikasjoner/19/versjon/50[«Standard for sivilstand 1993» &#x29C9;, window="_blank", role="ext-link"] inneholder kategoriene «1 – Ugift», ..., «9 – Gjenlevende partner»
 |===
 
 Eksempel i RDF Turtle:
@@ -403,17 +403,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |modified
+|__English name__ |__modified__
 |URI |dct:modified
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi dato/tidspunkt når klassifikasjonen ble sist oppdatert.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi dato/tidspunkt når klassifikasjonen ble sist oppdatert.
 
-(English) This property is used to specify the date or time when the classification was last modified.
+__(English) This property is used to specify the date or time when the classification was last modified.__
 |Multiplisitet |0..1
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |«Næringsgruppering 2007» ble sist oppdatert 11.10.2016 14:06:44.
 |===
 
@@ -427,20 +427,20 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |language
+|__English name__ |__language__
 |URI |dct:language
 |Range |URI
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi språk som klassifikasjonen er utgitt i.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi språk som klassifikasjonen er utgitt i.
 
-(English) This property is used to specify the language(s) that the classification is in.
+__(English) This property is used to specify the language(s) that the classification is in.__
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note 1 | (norsk) Verdien skal hentes fra EUs kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note 1__ | (norsk) Verdien skal hentes fra EUs kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].
 
-(English) The value shall be chosen from EU's controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language].
-|Merknad / Note 2 |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+__(English) The value shall be chosen from EU's controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].__
+|Merknad / __Note 2__ |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |«Næringsgruppering 2007» finnes i norsk bokmål, nynorsk og engelsk.
 |===
 
@@ -457,17 +457,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |issued
+|__English name__ |__issued__
 |URI |dct:issued
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.
 
-(English) This property is used to specify the date/time when the classification was made accessible.
+__(English) This property is used to specify the date/time when the classification was made accessible.__
 |Multiplisitet |0..1
-|Kravnivå / Requirement level | Anbefalt / Recommended
-|Merknad / Note |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__
+|Merknad / __Note__ |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |«Næringsgruppering 2007 (SN2007)» ble tilgjengeliggjort 1. jan. 2009.
 |===
 
@@ -483,14 +483,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |variant
+|__English name__ |__variant__
 |URI |xkos:variant
 |Range |skos:ConceptScheme
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til en variant av klassifikasjonen, dvs. klassifikasjonen tilpasset for et spesifikt bruksbehov, ved f.eks. å begrense dekningen, slå sammen eller splitte noen kategorier på et gitt klassifikasjonsnivå.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til en variant av klassifikasjonen, dvs. klassifikasjonen tilpasset for et spesifikt bruksbehov, ved f.eks. å begrense dekningen, slå sammen eller splitte noen kategorier på et gitt klassifikasjonsnivå.
 
-(English) In certain circumstances, statisticians need to "customize" a classification scheme for a specific use, by restricting the coverage, merging or splitting certain items at a given level, etc. The `xkos:variant` property can be used to represent the relation between the base classification scheme and its variant(s). 
+__(English) In certain circumstances, statisticians need to "customize" a classification scheme for a specific use, by restricting the coverage, merging or splitting certain items at a given level, etc. The `xkos:variant` property can be used to represent the relation between the base classification scheme and its variant(s). __
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Valgfri / Optional
+|Kravnivå / __Requirement level__ | Valgfri / __Optional__
 |Eksempel | «Næringsgruppering 2007» har bl.a. variant «Fastlands-Norge 2009».
 |===
 
@@ -504,38 +504,37 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |creator
+|__English name__ |__creator__
 |URI |dct:creator
 |Range |foaf:Agent
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til aktør(er) som har laget klassifikasjonen.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til aktør(er) som har laget klassifikasjonen.
 
-(English) This property is used to refer to the one or more Agents who made the classification and who are not the publisher (`dct:publisher`) of the classification.
+__(English) This property is used to refer to the one or more Agents who made the classification and who are not the publisher (`dct:publisher`) of the classification.__
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Valgfri / Optional
-|Merknad / Note 1 | (norsk) Egenskapen brukes når produsenten ikke er samme som <<Klassifikasjon-utgiver>>.
+|Kravnivå / __Requirement level__ | Valgfri / __Optional__
+|Merknad / __Note 1__ | (norsk) Egenskapen brukes når produsenten ikke er samme som <<Klassifikasjon-utgiver>>.
 
-(English) Use this property when the creator is not the same as <<Klassifikasjon-utgiver>>.
-|Merknad / Note 2 | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+__(English) Use this property when the creator is not the same as <<Klassifikasjon-utgiver>>.__
+|Merknad / __Note 2__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
-|Eksempel |
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |===
 
 ==== Klassifikasjon – tilhører (xkos:belongsTo) [[Klassifikasjon-tilhører]]
 
 [cols="30s,70d"]
 |===
-|English name |belongs to
+|__English name__ |__belongs to__
 |URI |xkos:belongsTo
 |Range |skos:Concept
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å knytte en hovedversjon av klassifikasjonen til f.eks. en «klassifikasjonsfamilie» eller en «klassifikasjonsserie».
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å knytte en hovedversjon av klassifikasjonen til f.eks. en «klassifikasjonsfamilie» eller en «klassifikasjonsserie».
 
-(English) This property is used to connect a major version of a classification to a concept representing the overall classification.
+__(English) This property is used to connect a major version of a classification to a concept representing the overall classification.__
 |Multiplisitet |0..n
-|Kravnivå / Requirement level | Valgfri / Optional
-|Merknad / Note | (norsk) I XKOS er `rdfs:Resource` (en hvilken som helst type ressurs) brukt som range, og det er samtidig anbefalt å referere et begrep (en instans av `skos:Concept`). Det er derfor i dette dokumentet brukt `skos:Concept` som range.
+|Kravnivå / __Requirement level__ | Valgfri / __Optional__
+|Merknad / __Note__ | (norsk) I XKOS er `rdfs:Resource` (en hvilken som helst type ressurs) brukt som range, og det er samtidig anbefalt å referere et begrep (en instans av `skos:Concept`). Det er derfor i dette dokumentet brukt `skos:Concept` som range.
 
-(English) XKOS does not declare a formal range for `xkos:belongsTo`, and does not define a class to represent the classification itself; it is recommended to model it as an instance of `skos:Concept` that will serve as an entry in statistical classification registries, but another class could be used as well.
+__(English) XKOS does not declare a formal range for `xkos:belongsTo`, and does not define a class to represent the classification itself; it is recommended to model it as an instance of `skos:Concept` that will serve as an entry in statistical classification registries, but another class could be used as well.__
 |Eksempel|«Næringsgruppering 2007 (SN2007)» tilhører klassifikasjonsfamilien «Standard for næringsgruppering (SN)»
 |===
 

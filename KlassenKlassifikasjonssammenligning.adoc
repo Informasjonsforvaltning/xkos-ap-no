@@ -7,12 +7,12 @@ image::images/KlassenKlassifikasjonssammenligning.png[]
 
 [cols="30s,70d"]
 |===
-|English name |Correspondence
-|Anvendelse / Usage note | (norsk) Klassen brukes til å representere sammenligning mellom to (varianter/versjoner av) klassifikasjoner, dvs. sammenstilling av sammenligninger mellom kategorier.
+|__English name__ |__Correspondence__
+|Anvendelse / __Usage note__ | (norsk) Klassen brukes til å representere sammenligning mellom to (varianter/versjoner av) klassifikasjoner, dvs. sammenstilling av sammenligninger mellom kategorier.
 
-(English) This class is used to group concept associations between two classifications (concordances, correspondence tables ...).
+__(English) This class is used to group concept associations between two classifications (concordances, correspondence tables ...).__
 |URI |xkos:Correspondence
-|Kravnivå / Requirement level | Valgfri / Optional
+|Kravnivå / __Requirement level__ | Valgfri / __Optional__
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»] er en sammenligning mellom «Klassifikasjon av informasjonssektor 2007» og «Næringsgruppering 2007 (SN2007)»
 |===
 
@@ -27,13 +27,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |made of
+|__English name__ |__made of__
 |URI |xkos:madeOf
 |Range |xkos:ConceptAssociation
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.
-|Usage note | (English) This property is used to group category correspondences that this correspondence is made of.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til kategorisammenligning, dvs. sammenligning på kategorinivå.
+
+__(English) This property is used to group category correspondences that this correspondence is made of.__
 |Multiplisitet |1..n
-|Kravnivå / Requirement level | Obligatorisk / Mandatory
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory__
 |Eksempel | Klassifikasjonssammenligningen https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»] inneholder bl.a. sammenligning mellom kategoriene «26.1 - Produksjon av elektroniske komponenter og kretskort» i «Standard for næringsgruppering (SN2007)» og «1.11 - Produksjon av elektroniske komponenter og kretskort» i «Klassifisering av informasjonssektoren 2007».
 |===
 
@@ -50,22 +51,22 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |identifier 
+|__English name__ |__identifier__
 |URI |dct:identifier 
 |Range |rdfs:Literal typed as xsd:anyURI 
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi identifikatoren til sammenligningen. 
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi identifikatoren til sammenligningen. 
 
-(English) This property is used to refer to the identifier of the correspondence.
+__(English) This property is used to refer to the identifier of the correspondence.__
 |Multiplisitet |1..1 
-|Kravnivå / Requirement level | Obligatorisk / Mandatory 
-|Merknad / Note  1 | (norsk) Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory __
+|Merknad / __Note  1__ | (norsk) Identifikator er som regel systemgenerert av verktøystøtte, slik at du som vanlig bruker ikke trenger å fylle ut verdien til denne egenskapen manuelt.
 
-(norsk) For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
+(norsk) For deg som skal utvikle/tilpasse verktøystøtte, se https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv. &#x29C9;, window="_blank", role="ext-link"]
 
-(Enligsh) See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv.]
-|Merknad / Note  2 | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
+__(Enligsh) See https://data.norge.no/guide/veileder-beskrivelse-av-datasett/#om-identifikator[Om identifikator (dct:identifer) i Veileder for beskrivelse av datasett osv. &#x29C9;, window="_blank", role="ext-link"]__
+|Merknad / __Note  2__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111 er identifikator for klassifikasjonssammenligningen mellom «Klassifisering av informasjonssektoren 2007» og «Næringsgruppering 2007 (SN 2007)»
 |===
 
@@ -74,17 +75,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |name 
+|__English name__ |__name__
 |URI |dct:title 
 |Range |rdfs:Literal 
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi navnet til sammenligningen. Egenskapen bør gjentas når navnet finnes i flere språk.  
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi navnet til sammenligningen. Egenskapen bør gjentas når navnet finnes i flere språk.  
 
-(English) This property is used to specify the name of the correspondence, repeated when the name is in different languages. 
+__(English) This property is used to specify the name of the correspondence, repeated when the name is in different languages.__
 |Multiplisitet |1..n 
-|Kravnivå / Requirement level | Obligatorisk / Mandatory 
-|Merknad / Note  | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory __
+|Merknad / __Note  __| (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS. 
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)» er navn på klassifikasjonssammenligningen https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111
 |===
 
@@ -99,13 +100,14 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |compares
+|__English name__ |__compares__
 |URI |xkos:compares
 |Range |skos:ConceptScheme
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til klassifikasjonene (eller versjonene/variantene av samme klassifikasjon) som det sammenlignes mellom.
-|Usage note | (English) This property is used to link directly the xkos:Correspondence to the classification schemes that it puts in relation.
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til klassifikasjonene (eller versjonene/variantene av samme klassifikasjon) som det sammenlignes mellom.
+
+__(English) This property is used to link directly the xkos:Correspondence to the classification schemes that it puts in relation.__
 |Multiplisitet |2..2
-|Kravnivå / Requirement level | Obligatorisk / Mandatory
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory__
 |Eksempel |«Klassifisering av informasjonssektoren 2007» sammenlignes med «Næringsgruppering 2007 (SN2007)».
 |===
 
@@ -126,17 +128,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |publisher 
+|__English name__ |__publisher__ 
 |URI |dct:publisher 
 |Range |foaf:Agent 
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å referere til utgiver av sammenligningen.  
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å referere til utgiver av sammenligningen.  
 
-(English) This property is used to refer to the publisher of the corespondence.
+__(English) This property is used to refer to the publisher of the corespondence.__
 |Multiplisitet |1..1 
-|Kravnivå / Requirement level | Obligatorisk / Mandatory 
-|Merknad / Note  |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Obligatorisk / __Mandatory __
+|Merknad / __Note__  |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |Statistisk sentralbyrå (med org.nr. 971526920) er utgiver av klassifikasjonssammenligningen https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[«Klassifisering av informasjonssektoren 2007 - Næringsgruppering 2007 (SN 2007)»]. 
 |===
 
@@ -153,17 +155,17 @@ Eksempel i RDF Turtle:
 
 [cols="30s,70d"]
 |===
-|English name |description 
+|__English name__ |__description__ 
 |URI |dct:description 
 |Range |rdfs:Literal 
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi en kortfattet beskrivelse av sammenligningen. Egenskapen bør gjentas når beskrivelsen er i flere språk.  
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi en kortfattet beskrivelse av sammenligningen. Egenskapen bør gjentas når beskrivelsen er i flere språk.  
 
-(English) This property is used to give a short description of the correspondence, repeated when the description is in different languages.
+__(English) This property is used to give a short description of the correspondence, repeated when the description is in different languages.__
 |Multiplisitet |0..n 
-|Kravnivå / Requirement level | Anbefalt / Recommended 
-|Merknad / Note  |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended __
+|Merknad / __Note__  |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS. 
+__(English) Norwegian extension: not explicitly specified in XKOS.__ 
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/109 med navn “Variant av SN - Miljøregnskap 2012 - Næringsgruppering 2007 (SN 2007)” har beskrivelse “Denne korrespondansetabellen viser korrespondansene på nivå 2 av miljøregnskapet (tilsvarer koden xx.xx)”
 |===
  
@@ -178,17 +180,17 @@ Eksempel i RDF Turtle: 
 
 [cols="30s,70d"]
 |===
-|English name |modified 
+|__English name__ |__modified__ 
 |URI |dct:modified 
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime 
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi dato/tidspunkt når sammenligningen sist ble oppdatert.  
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi dato/tidspunkt når sammenligningen sist ble oppdatert.  
 
-(English) This property is used to specify the date or time when the correspondence was last modified. 
+__(English) This property is used to specify the date or time when the correspondence was last modified.__
 |Multiplisitet |0..1 
-|Kravnivå / Requirement level | Anbefalt / Recommended 
-|Merknad / Note  |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__ 
+|Merknad / __Note__  |(norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS. 
+__(English) Norwegian extension: not explicitly specified in XKOS.__
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111] var sist oppdatert 01.01.2009
 |===
  
@@ -203,20 +205,20 @@ Eksempel i RDF Turtle: 
 
 [cols="30s,70d"]
 |===
-|English name |language 
+|__English name__ |__language__ 
 |URI |dct:language 
 |Range |URI 
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi språk som sammenligningen er utgitt i. 
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi språk som sammenligningen er utgitt i. 
 
-(English) This property is used to specify the language(s) that the correspondence is in. 
+__(English) This property is used to specify the language(s) that the correspondence is in.__ 
 |Multiplisitet |0..n 
-|Kravnivå / Requirement level | Anbefalt / Recommended 
-|Merknad / Note  1 | (norsk) Verdien skal hentes fra EUs kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language]. 
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended__ 
+|Merknad / __Note  1__ | (norsk) Verdien skal hentes fra EUs kontrollerte liste over https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"]. 
 
-(English) The value shall be chosen from EU's controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language]. 
-|Merknad / Note  2 | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+__(English) The value shall be chosen from EU's controlled vocabulary for https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"]. __
+|Merknad / __Note  2__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS. 
+__(English) Norwegian extension: not explicitly specified in XKOS. __
 |Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111 finnes i NOB (bokmål), NNN (nynorsk) og ENG (engelsk)
 |===
  
@@ -235,18 +237,18 @@ Eksempel i RDF Turtle: 
 
 [cols="30s,70d"]
 |===
-|English name |issued 
+|__English name__ |__issued __
 |URI |dct:issued 
 |Range |rdfs:Literal typed as xsd:date or xsd:dateTime 
-|Anvendelse / Usage note | (norsk) Egenskapen brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.  
+|Anvendelse / __Usage note__ | (norsk) Egenskapen brukes til å oppgi dato/tid når klassifikasjonen ble tilgjengeliggjort.  
 
-(English) This property is used to specify the date/time when the classification was made accessible.
+__(English) This property is used to specify the date/time when the classification was made accessible.__
 |Multiplisitet |0..1 
-|Kravnivå / Requirement level | Anbefalt / Recommended 
-|Merknad / Note | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
+|Kravnivå / __Requirement level__ | Anbefalt / __Recommended __
+|Merknad / __Note__ | (norsk) Norsk utvidelse: ikke eksplisitt tatt med i XKOS.
 
-(English) Norwegian extension: not explicitly specified in XKOS.
-|Eksempel |https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111 var tilgjengeliggjort 01.01.2009
+__(English) Norwegian extension: not explicitly specified in XKOS.__
+|Eksempel | https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111[https://www.ssb.no/klass/klassifikasjoner/6/korrespondanser/111  &#x29C9;, window="_blank", role="ext-link"] var tilgjengeliggjort 01.01.2009
 |===
  
 Eksempel i RDF Turtle: 
