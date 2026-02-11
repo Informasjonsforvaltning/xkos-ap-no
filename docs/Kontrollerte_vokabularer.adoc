@@ -2,17 +2,17 @@
 
 For å øke semantisk interoperabilitet er det i dette dokumentet stilt krav til bruk av kontrollerte vokabularer (lagt inn som merknad til de aktuelle egenskapene).
 
-Kjernegruppen som utarbeidet denne versjonen av spesifikasjonen, valgte å samkjøre med bl.a. https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO] når det gjelder krav til bruk av kontrollerte vokabularer for egenskaper som overlapper med DCAT-AP-NO.
+Kjernegruppen som utarbeidet denne versjonen av spesifikasjonen, valgte å samkjøre med bl.a. https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] når det gjelder krav til bruk av kontrollerte vokabularer for egenskaper som overlapper med DCAT-AP-NO.
 
 === Forslag til et kontrollert vokabular for endringstyper [[ForslagTilEndringstyper]]
 
-Under utarbeidelse av dette dokumentet ble det identifisert behov for å ha en kontrollert liste over lovlige typer av endringer mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie, endringer som vil ha betydning for bruken av klassifikasjonene. Ved å bruke verdier fra en kontrollert liste over endringstyper, kan endringene oppgis som strukturert data og dermed også maskinprosesserbart. Med egnet verktøystøtte vil dette gjøre det lettere for brukere av en klassifikasjon å fange opp endringer fra en versjon til en annen. Kjernegruppen foreslo å basere dette vokabularet på «A typology of Item Changes» (Appendix 3 i https://statswiki.unece.org/display/gsim/Background+Documents?preview=%2F65372409%2F65339469%2FPart+I+Neuchatel_version+2_1.pdf[Neuchâtel Terminology Model - Classification database object types and their attributes, v.2.1 (PDF)]).
+Under utarbeidelse av dette dokumentet ble det identifisert behov for å ha en kontrollert liste over lovlige typer av endringer mellom to klassifikasjoner i samme klassifikasjonsfamilie/-serie, endringer som vil ha betydning for bruken av klassifikasjonene. Ved å bruke verdier fra en kontrollert liste over endringstyper, kan endringene oppgis som strukturert data og dermed også maskinprosesserbart. Med egnet verktøystøtte vil dette gjøre det lettere for brukere av en klassifikasjon å fange opp endringer fra en versjon til en annen. Kjernegruppen foreslo å basere dette vokabularet på «A typology of Item Changes» (Appendix 3 i https://statswiki.unece.org/display/gsim/Background+Documents?preview=%2F65372409%2F65339469%2FPart+I+Neuchatel_version+2_1.pdf["Neuchâtel Terminology Model - Classification database object types and their attributes, v.2.1 (PDF) &#x29C9;", window="_blank", role="ext-link"]).
 
 *Forslag til vokabularet/klassifikasjonen* (en instans av `skos:ConceptScheme`):
 
 * antall nivå (`xkos:numberOfLevels`): 1
 * navn (`dct:title`): "Kategoriendringstype"@nb / "Classification Items Change Types"@en
-* identifikator (`dct:identifier`): https://data.norge.no/vocabulary/xkosno#ItemChangeTypes (`xkosno:ItemChangeType`)
+* identifikator (`dct:identifier`): \https://data.norge.no/vocabulary/xkosno#ItemChangeTypes (`xkosno:ItemChangeType`)
 * utgiver (`dct:publisher`): Digdir
 * inneholder følgende kategorier (`uneskos:contains`):
 ** “Endringstype 1” (en instans av `skos:Concept`)
@@ -63,4 +63,4 @@ Under utarbeidelse av dette dokumentet ble det identifisert behov for å ha en k
 *** anbefalt kategorinavn (`skos:prefLabel`): "navneendring"@nb , "name change"@en
 *** identifikator (`dct:identifier`): `xkosno:NameChange`
 
-Det foreslåtte vokabularet for endringstyper er beskrevet i henhold til XKOS-AP-NO (denne spesifikasjonen), og gjort tilgjengelig i maskinprosesserbart format RDF Turtle, på https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/examples/eksEndringstyper.ttl[Github].
+Det foreslåtte vokabularet for endringstyper er beskrevet i henhold til XKOS-AP-NO (denne spesifikasjonen), og gjort tilgjengelig i maskinprosesserbart format RDF Turtle, på https://raw.githubusercontent.com/Informasjonsforvaltning/xkos-ap-no/develop/examples/eksEndringstyper.ttl[Github &#x29C9;, window="_blank", role="ext-link"].
