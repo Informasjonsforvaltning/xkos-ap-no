@@ -41,6 +41,13 @@ jobs:
           args: bash -c "asciidoctor-pdf -D docs -o files/xkos-ap-no.pdf -a lang=nb docs/main.adoc"
         continue-on-error: true
 
+      # TEST-ONLY: validate that bash -c wrapper handles shell features (env interpolation, quoted literals, globs, pipes, multi-command).
+      # Output is grepped in the run log to confirm each feature evaluated. Removed before merging.
+      - name: Shell wrapper smoke test (test-only)
+        uses: docker://asciidoctor/docker-asciidoctor:1.106@sha256:6266e05784c2d8ece9d9fe5e593b12c3beebebbc467135fd6f4a56269c93cea3
+        with:
+          args: bash -c "set -eu; echo SMOKE_ENV=run_id=$GITHUB_RUN_ID; echo 'SMOKE_QUOTED=literal text with spaces'; printf 'SMOKE_GLOB=found %s adoc files\n' $(ls docs/*.adoc | wc -l); echo SMOKE_MULTI=second-command-ran"
+
       # TEST-ONLY: expose build outputs so the test branch can diff against the gh-pages baseline.
       # Removed before merging — the production workflow only needs to deploy.
       - name: Upload built docs (test-only)
