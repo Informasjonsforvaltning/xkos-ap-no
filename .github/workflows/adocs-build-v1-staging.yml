@@ -43,7 +43,7 @@ jobs:
 
       - name: Upload rdf to static-rdf-server
         if: github.event_name != 'workflow_dispatch' || github.ref == 'refs/heads/v1'
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@84beeeacd364f310ef6a253bc079354cdf62e5dd  # v3.2.0
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@f9b41f11e07006762215dbd80a6e09b97834f93c  # v3.3.0
         id: upload-rdf
         with:
           ontology-type: "specification"
