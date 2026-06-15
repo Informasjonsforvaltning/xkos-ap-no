@@ -1,9 +1,5 @@
 name: build adocs and publish v1 to production (legacy)
 
-permissions:
-  contents: write
-  pages: write
-
 on:
   push:
     branches:
@@ -13,39 +9,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  adoc_build:
-    runs-on: ubuntu-latest
-    name: asciidoctor build
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6
-        with:
-          ref: v1
-          submodules: true
-          fetch-depth: 0
-
-      - name: Update submodules to latest main
-        run: |
-          git submodule foreach --recursive git fetch origin
-          git submodule foreach --recursive git checkout origin/main
-
-      - name: Build html
-        id: adocbuild
-        uses: docker://asciidoctor/docker-asciidoctor:1.106@sha256:6266e05784c2d8ece9d9fe5e593b12c3beebebbc467135fd6f4a56269c93cea3
-        with:
-          args: bash -c "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
-
-      - name: Build pdf
-        id: adocbuild_pdf
-        uses: docker://asciidoctor/docker-asciidoctor:1.106@sha256:6266e05784c2d8ece9d9fe5e593b12c3beebebbc467135fd6f4a56269c93cea3
-        with:
-          args: bash -c "asciidoctor-pdf -D docs -o files/xkos-ap-no.pdf -a lang=nb docs/main.adoc"
-        continue-on-error: true
-
-      - name: Deploy
-        if: github.event_name != 'workflow_dispatch' || github.ref == 'refs/heads/v1'
-        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e  # v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: html
-          publish_dir: ./docs
+  build-and-publish:
+    name: Build adocs and publish to html branch
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-github-pages.yaml@main
+    with:
+      ref: v1
+      program_html: |
+        asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc
+      program_pdf: |
+        asciidoctor-pdf -D docs -o files/xkos-ap-no.pdf -a lang=nb docs/main.adoc
+      program_pdf_continue_on_error: true
+      publish_branch: html
+      publish_dir: ./docs
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
